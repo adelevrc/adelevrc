@@ -1,3 +1,44 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended", // Utilisez cette ligne si vous travaillez avec React
+    "plugin:@typescript-eslint/recommended", // Utilisez cette ligne si vous travaillez avec TypeScript
+    "plugin:prettier/recommended" // Intègre Prettier avec ESLint
+  ],
+  "parser": "@typescript-eslint/parser", // Utilisez cette ligne si vous travaillez avec TypeScript
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true // Utilisez cette ligne si vous travaillez avec React
+    }
+  },
+  "plugins": [
+    "react", // Utilisez cette ligne si vous travaillez avec React
+    "@typescript-eslint", // Utilisez cette ligne si vous travaillez avec TypeScript
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error", // Indique à ESLint de traiter les erreurs Prettier comme des erreurs ESLint
+    "quotes": ["error", "single"], // Utiliser des guillemets simples pour les chaînes de caractères
+    "semi": ["error", "always"], // Toujours utiliser un point-virgule à la fin des lignes
+    "no-unused-vars": "warn", // Avertir en cas de variables inutilisées
+    "no-console": "warn", // Avertir en cas d'utilisation de console.log
+    "eqeqeq": "error", // Exiger l'utilisation de === et !==
+    "curly": "error", // Exiger des accolades pour les blocs conditionnels
+    "comma-dangle": ["error", "always-multiline"], // Exiger une virgule finale pour les objets et les tableaux multilignes
+    "arrow-parens": ["error", "always"], // Toujours utiliser des parenthèses autour des arguments des fonctions fléchées
+    "indent": ["error", 2], // Indentation de 2 espaces
+    "space-before-function-paren": ["error", "never"] // Pas d'espace avant les parenthèses des fonctions
+  },
+  "settings": {
+    "react": {
+      "version": "detect" // Indique à ESLint de détecter automatiquement la version de React à utiliser
+    }
+  }
 }
