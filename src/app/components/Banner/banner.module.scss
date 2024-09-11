@@ -1,0 +1,33 @@
+@import '../../styles/mixins';
+.banner{
+    background:$color-green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    gap:4rem;
+    padding: 2rem 0;
+    h1{
+        size: 32px;
+        font-style: italic;
+        font-weight: 700;
+        color:$color-white;
+    }
+
+    h2{
+        text-transform: uppercase;
+        color: $color-white;
+        font-weight: 400;
+        padding: 0 3rem;
+        text-align: center;
+        letter-spacing: 1px;
+    span {
+        border: 1px solid $color-white;
+        border-radius: 60px;
+        padding: 3px 16px ;
+        margin-right:0.4rem;
+        line-height: 60px;
+    }
+    }
+               
+}

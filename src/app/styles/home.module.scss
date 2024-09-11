@@ -1,46 +1,9 @@
 .main{
     display:flex; 
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    gap: 1rem;
-    h2{
-        margin-bottom: 3rem;
+    justify-content: flex-start;
+    .picture{
+        object-fit: cover;
+        width: 100%;
     }
-
-p{
-    a{
-        color:#5C5470;
-        font-weight: 600;
-    }
-
-}
-article{
-    padding: 1rem;
-    gap: 1rem;
-    display: flex;
-    flex-direction: column;
-    background: #B9B4C7;
-    border-radius: 20px;
-
-    ul{
-        padding: 1rem;
-        span{
-            font-weight: 600;
-        }
-        .info{
-            list-style-type: none;
-            font-style: italic;
-        }
-        .price{
-            font-style: oblique;
-            font-weight: normal;
-        }
-        li:not(:first-child){
-    margin-top: 1rem;
-  
-}
-    }
-}
 }

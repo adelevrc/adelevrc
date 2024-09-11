@@ -1,28 +1,28 @@
-import style from "./styles/home.module.scss"
-
+import Banner from "./components/Banner/Banner";
+import Header from "./components/Header/Header";
+import Marquee from "./components/Marquee/Marquee";
+import style from "./styles/home.module.scss";
+import Image from "next/image";
+import image from "./images/accueil.webp";
+import Description from "./components/Description/Description";
+import Offers from "./components/Offers/Offers";
 const Home = () => {
-    return (
-      <main className={style.main}>
-        <h2> Site en cours de construction </h2>
-        <p> Vous pouvez me contacter sur instagram :
-          <a href="https://www.instagram.com/adelevrc/"> @adelevrc</a> 
-           {' '}ou par<a href="mailto:adele.vercaygne@gmail.com"> mail  </a>
-    
-           </p>
-       <article>
-        <p>Les cours de yoga de la semaine sur Zoom : </p>
-        <ul>
-          <li> <span> Mercredi 19h - 20h  </span>: yoga dynamique  </li>
-          <li> <span> Vendredi 19h - 20h </span> : yoga dynamique </li>
-          <li> <span> Dimanche de 10h - 11h </span> : yoga dynamique </li>
-          <li className={style.info}> 1 heure de cours en ligne : 10 euros  </li>
-          <li> <span> Dimanche de 19h à 19h30 </span> : méditation guidée <span className={style.price}> (5 euros)</span> </li> 
-          <li> <span>Offre :   Premier samedi de chaque mois 10h - 11h </span>: yoga dynamique - prix libre <span className={style.price}>(minimum 3 euros)</span> </li>
-        </ul>
-       </article>
+  return (
+    <main className={style.main}>
+      <Header />
+      <Banner />
+      <Marquee />
+      <Image
+        className={style.picture}
+        src={image}
+        width={550}
+        height={500}
+        alt='Picture of the author'
+      />
+      <Description />
+      <Offers />
+    </main>
+  );
+};
 
-      </main>
-    );
-  }
-
-  export default Home
+export default Home;

@@ -1,0 +1,11 @@
+@import "../../../styles/mixins";
+
+.link {
+  background-color: $color-white;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  font-size: 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  color: $color-green;
+}
