@@ -1,39 +1,44 @@
-@import '../../styles/mixins';
+@import "../../styles/mixins";
 
-.marquee{
-    background-color: $color-white;
-    width: 100vw;
-    overflow: hidden;
+.marquee {
+  background-color: $color-pure-white;
+  width: 100vw;
+  overflow: hidden;
+  align-items: center;
+  height: 100px;
+
+  .scrollingContent {
+    font-family: "Lora";
+    font-size: 1.5em;
+    display: flex;
     align-items: center;
-    height:100px;
- 
-    .scrollingContent{
-        font-family: 'Lora';
-        font-size: 1.5em;
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        white-space: nowrap;
-        animation: scroll-left 15s linear infinite;
-        padding: 1.5rem;
-         p {
-            text-wrap: nowrap;
-            }
-        .dot {
-            width: 10px;
-            height: 10px;
-            background-color: $color-green;
-            border-radius: 50%;
-            margin-left: 1rem;
-            display: inline-block;
-         }
-         @keyframes scroll-left {
-            0% {
-                transform: translateX(150%);
-            }
-            100% {
-                transform: translateX(-200%);
-            }
-        }
+    gap: 1rem;
+    white-space: nowrap;
+    animation: scroll-left 15s linear infinite;
+    padding: 1.5rem;
+    @include breakpoint-lg {
+      animation: none;
+      justify-content: center;
     }
+    justify-content: c;
+    p {
+      text-wrap: nowrap;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      background-color: $color-mint-green;
+      border-radius: 50%;
+      margin-left: 1rem;
+      display: inline-block;
+    }
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(150%);
+      }
+      100% {
+        transform: translateX(-200%);
+      }
+    }
+  }
 }

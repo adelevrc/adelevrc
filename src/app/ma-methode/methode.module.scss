@@ -1,0 +1,13 @@
+@import "../styles//mixins";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 1rem;
+  background-color: $color-white;
+  h1,
+  h2 {
+    color: $color-black;
+  }
+}

@@ -16,7 +16,9 @@ const Marquee = () => {
         <p>
           Respiration <span className={style.dot} />
         </p>
-        <p>Anatomie</p>
+        <p>
+          Anatomie <span className={style.dot} />
+        </p>
         <p>Mobilité</p>
       </div>
     </aside>

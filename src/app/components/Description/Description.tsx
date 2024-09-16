@@ -18,7 +18,7 @@ const Description = () => {
         permettre d'explorer le plus de mouvements possibles et de gagner en
         mobilité dans ces mouvements parfois peu conventionnels.
       </p>
-      <ButtonLink href='#' title='Ma méthode' />
+      <ButtonLink href='ma-methode' title='Ma méthode' />
     </section>
   );
 };

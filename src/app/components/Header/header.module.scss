@@ -1,8 +1,86 @@
-@import '../../styles/mixins';
+@import "../../styles/mixins";
 .header {
-    display: flex;
-    justify-content: space-between;
-    background-color: $color-green;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: $color-white;
+  @include breakpoint-lg {
+    flex-direction: column-reverse;
+  }
+  h1 {
     width: 100%;
-    padding: 1rem 2rem;
+    text-align: center;
+    size: 32px;
+    font-style: italic;
+    font-weight: 700;
+    color: $color-white;
+  }
+  button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 22px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    @include breakpoint-lg {
+      display: none;
+    }
+    div {
+      width: 100%;
+      height: 3px;
+      background-color: $color-white;
+
+      border-radius: 3px;
+    }
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 250px;
+    background-size: cover;
+    transition: right 0.3s ease;
+    z-index: 1;
+    @include breakpoint-lg {
+      position: unset;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 50px 20px;
+    @include breakpoint-lg {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      padding: 2rem 0;
+      :hover {
+        text-decoration: underline;
+        color: $color-mint-green;
+      }
+    }
+  }
+
+  nav ul li {
+    margin: 20px 0;
+    @include breakpoint-lg {
+      display: inline;
+    }
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: $color-white;
+    font-size: 18px;
+  }
+
+  nav.open {
+    right: 0;
+  }
 }

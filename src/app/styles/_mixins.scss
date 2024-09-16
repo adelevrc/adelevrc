@@ -4,9 +4,22 @@ $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 $breakpoint-xxl: 1400px;
 
-/// COLORS 
-$color-white:#FFF7E1;
-$color-green:#516154;
+/// COLORS
+$color-white: #fff7e1;
+$color-green: #516154;
+$color-pure-white: #fff;
+$color-black: #000;
+/* $color-white: #000;
+$color-green: #fff; */
+
+$color-mint-green: #3eb489;
+$color-pink: #faaca8;
+$linear-gradiant-pink: linear-gradient(
+  19deg,
+  #faaca8 0%,
+  #ddd6f3 50%,
+  #ffffff 100%
+);
 
 @mixin breakpoint-sm {
   @media (min-width: #{$breakpoint-sm}) {

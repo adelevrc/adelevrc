@@ -1,0 +1,22 @@
+@import "../../styles/mixins";
+
+.contactMe {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 3rem;
+  color: $color-pure-white;
+  font-size: 20px;
+  line-height: 30px;
+  img {
+    display: none;
+  }
+  a {
+    align-self: center;
+  }
+  @include breakpoint-lg {
+    line-height: 40px;
+    width: 70%;
+    align-self: center;
+  }
+}

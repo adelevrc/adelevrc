@@ -1,3 +1,5 @@
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 import "./styles/globals.scss";
 export const metadata = {
   title: "Adèle Vercaygne",
@@ -11,7 +13,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

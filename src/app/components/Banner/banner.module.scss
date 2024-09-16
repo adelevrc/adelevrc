@@ -1,33 +1,49 @@
-@import '../../styles/mixins';
-.banner{
-    background:$color-green;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-    align-items: center;
-    gap:4rem;
-    padding: 2rem 0;
-    h1{
-        size: 32px;
-        font-style: italic;
-        font-weight: 700;
-        color:$color-white;
+@import "../../styles/mixins";
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  padding: 2rem 0;
+  h1 {
+    size: 32px;
+    font-style: italic;
+    font-weight: 700;
+    color: $color-white;
+    @include breakpoint-lg {
+      font-size: 51px;
     }
+  }
 
-    h2{
-        text-transform: uppercase;
-        color: $color-white;
-        font-weight: 400;
-        padding: 0 3rem;
-        text-align: center;
-        letter-spacing: 1px;
+  h2 {
+    text-transform: uppercase;
+    color: $color-white;
+    font-weight: 400;
+    padding: 0 3rem;
+    text-align: center;
+    letter-spacing: 1px;
     span {
-        border: 1px solid $color-white;
-        border-radius: 60px;
-        padding: 3px 16px ;
-        margin-right:0.4rem;
-        line-height: 60px;
+      text-wrap: nowrap;
+      border: 1px solid $color-white;
+      border-radius: 60px;
+      padding: 3px 16px;
+      margin-right: 0.4rem;
+      line-height: 60px;
     }
+    @include breakpoint-lg {
+      font-size: 40px;
     }
-               
+  }
+}
+.bannerWhite {
+  //  background-color: $color-white;
+  border-top: 1px solid $color-mint-green;
+  border-bottom: 1px solid $color-mint-green;
+  h2 {
+    color: $color-pure-white;
+    span {
+      border: 1px solid $color-pure-white;
+    }
+  }
 }
