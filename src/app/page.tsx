@@ -16,9 +16,9 @@ const Home = () => (
       <Image
         className={style.picture}
         src={image}
-        layout='fill' // Utilise "fill" pour que l'image remplisse le conteneur
+        layout='fill'
         objectFit='cover'
-        alt='Picture of the author'
+        alt="L’image montre une personne faisant du yoga en plein air dans une posture appelée 'Cobra' ou 'Bhujangasana'. Elle est allongée sur un tapis de yoga vert, les paumes des mains appuyées au sol, les bras tendus, et le haut du corps relevé. Son visage est tourné vers l'avant, et son dos est arqué. La personne est vêtue d'un débardeur noir et d'un legging noir ajusté. En arrière-plan, on voit des plantes vertes luxuriantes et des arbres, créant un cadre naturel et paisible sous la lumière du soleil."
       />
     </div>
 

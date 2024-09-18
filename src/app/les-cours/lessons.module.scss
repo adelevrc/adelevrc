@@ -74,12 +74,10 @@
     h1 {
       position: absolute;
     }
-    @include breakpoint-sm {
-      img {
-        width: 100%;
-        object-fit: cover;
-        height: 30rem;
-      }
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 30rem;
     }
   }
   .introduction {

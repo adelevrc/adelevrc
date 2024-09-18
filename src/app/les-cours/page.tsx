@@ -12,7 +12,7 @@ const Lessons = () => {
           src={image}
           width={1250}
           height={1200}
-          alt='Picture of the author'
+          alt="L'image montre une personne assise sur les talons sur un tapis de yoga bleu, devant un mur blanc. Elle est habillée d'une brassère violette et d'un legging bleu foncé. Ses mains reposent sur ses cuisses. Elle semble être en train de sourire, affichant une expression joyeuse et détendue. Derrière elle, on voit un mur blanc."
         />
       </div>
 

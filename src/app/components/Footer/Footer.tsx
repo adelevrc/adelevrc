@@ -76,6 +76,14 @@ const Footer = () => {
           </li>
         </ul>
       </div>
+      <div>
+        <span> Adèle Vercaygne 2024</span> - <span> Tous droits réservés </span>
+        -{" "}
+        <span>
+          {" "}
+          <Link href={"/conditions-generales"}>Conditions générales</Link>{" "}
+        </span>
+      </div>
     </footer>
   );
 };

@@ -11,7 +11,7 @@ const AboutMe = () => (
       <div className={styles.imageContainer}>
         <Image
           src={image}
-          alt='Description of the image'
+          alt="L'image montre trois personnes nageant ou se baignant dans une grande étendue d'eau calme, probablement un lac ou une mer. La scène est capturée en vue aérienne, ce qui montre l'eau s'étendant autour des nageurs, avec de légers reflets du soleil sur la surface de l'eau, créant des éclats lumineux argentés. Les nageurs sont dispersés, avec de légères ondulations circulaires visibles autour d'eux, indiquant leurs mouvements. L'atmosphère de l'image est paisible, avec une lumière douce éclairant la surface de l'eau."
           layout='fill'
           objectFit='cover'
           loading='eager'
@@ -55,7 +55,7 @@ const AboutMe = () => (
           src={laughImage}
           width={550}
           height={700}
-          alt='Picture of the author'
+          alt="L'image montre une personne assise en tailleur sur un tapis de yoga vert, dans un jardin extérieur verdoyant. Elle est habillée d'un t-shirt ample gris et d'un legging bleu foncé. Ses mains reposent sur ses genoux, paumes vers le haut, dans une position de méditation ou la détente. Elle est en train de rire, affichant une expression joyeuse et détendue. Derrière elle, on voit des plantes luxuriantes et des arbres, ce qui crée une atmosphère sereine et naturelle sous la lumière du soleil."
         />
       </div>
     </div>

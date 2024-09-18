@@ -11,7 +11,7 @@ const Method = () => (
         src={image}
         width={550}
         height={500}
-        alt='Picture of the author'
+        alt="L'image représente le ciel. C'est un ciel bleu foncé avec un nuage très blanc et voluptueux juste un mileu de la photo. La photo a été prise vue du ciel."
       />
     </div>
     <section>
