@@ -122,7 +122,7 @@ const Footer = () => {
           </li>
           <li>
             <a
-              href='https://www.tiktok.com/@adlevercaygne?_t=8ppe5DDzB1k&_r=1'
+              href='https://www.tiktok.com/@adelevrc'
               aria-label='Visitez mon compte Tiktok'
             >
               <svg
