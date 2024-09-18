@@ -1,10 +1,21 @@
 import ButtonLink from "../components/Button/Link/Link";
 import styles from "./about.module.scss";
-
-const AboutMe = () => {
-  return (
-    <main className={styles.main}>
+import Image from "next/image";
+import image from "../images/warrior3.webp";
+const AboutMe = () => (
+  <main className={styles.main}>
+    <div className={styles.title}>
       <h1>À propos</h1>
+      <Image
+        className={styles.picture}
+        src={image}
+        width={550}
+        height={500}
+        alt='Picture of the author'
+      />
+    </div>
+
+    <div className={styles.history}>
       <section>
         <h2>Mon histoire</h2>
         <p>
@@ -35,7 +46,7 @@ const AboutMe = () => {
           heure, le matin, après le travail, avant ou après les repas. Je ne
           savais pas pourquoi ni comment, mais ça me faisait du bien.
         </p>
-        <p>
+        {/*    <p>
           Cependant, j'étais bien pendant ma séance et quelques heures après,
           puis les effets disparaissaient et les angoisses revenaient. J'ai donc
           commencé à chercher : pourquoi le yoga fait-il du bien, et que puis-je
@@ -64,15 +75,19 @@ const AboutMe = () => {
           En 2024, j'ai obtenu mon diplôme de professeur de yoga 200 heures avec
           Alba Yoga Academy, dirigée par deux personnes incroyablement
           qualifiées et humaines : Celest Pereira et Hannah Barrett.
-        </p>
-        <ButtonLink
-          title={"Découvrir ma méthode"}
-          href={"/ma-methode"}
-          reversed
-        />
+        </p> */}
       </section>
-    </main>
-  );
-};
+
+      <Image
+        className={styles.picture}
+        src={image}
+        width={550}
+        height={500}
+        alt='Picture of the author'
+      />
+    </div>
+    <ButtonLink title={"Découvrir ma méthode"} href={"/ma-methode"} />
+  </main>
+);
 
 export default AboutMe;

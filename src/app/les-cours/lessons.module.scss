@@ -3,12 +3,145 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  padding: 3rem 1rem;
-  background-color: $color-white;
-  h1,
-  h2,
+  background-color: $color-leaf-100;
+  @include breakpoint-lg {
+    align-items: center;
+  }
+
+  h1 {
+    color: $color-leaf-800;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0 3rem;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 600;
+    span {
+      text-wrap: nowrap;
+      border: 1px solid $color-leaf-600;
+      border-radius: 60px;
+      padding: 3px 16px;
+      margin-right: 0.4rem;
+      line-height: 60px;
+    }
+    @include breakpoint-lg {
+      font-size: 40px;
+    }
+  }
+  li,
+  .timeline {
+    padding: 0.5rem 1.5rem;
+    list-style-type: none;
+    background-color: $color-leaf-200;
+    color: $color-leaf-950;
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+    border-left: 5px solid $color-leaf-600;
+    display: flex;
+    flex-direction: column;
+    min-width: fit-content;
+    span:last-child {
+      font-style: italic;
+    }
+    @include breakpoint-lg {
+      width: 30rem;
+    }
+  }
+
   h3 {
-    color: $color-black;
+    color: $color-leaf-200;
+    @include breakpoint-lg {
+      font-size: 45px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    h1 {
+      position: absolute;
+    }
+    @include breakpoint-lg {
+      img {
+        width: 100%;
+        object-fit: cover;
+        height: 30rem;
+      }
+    }
+  }
+  .introduction {
+    background-color: $color-leaf-400;
+    color: $color-leaf-50;
+    padding: 1.5rem 2.5rem;
+    font-size: 24px;
+    font-family: "Lora";
+    text-align: center;
+    font-style: italic;
+    width: 100%;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    line-height: 1.8;
+    padding: 0 1.5rem;
+    margin-bottom: 2rem;
+    @include breakpoint-lg {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 80%;
+      gap: 5rem;
+      button,
+      a {
+        align-self: center;
+      }
+    }
+  }
+
+  h2 {
+    color: $color-leaf-800;
+    margin-top: 3.5rem;
+    @include breakpoint-lg {
+      font-size: 2rem;
+    }
+  }
+  .others {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 2.5rem;
+    width: 100%;
+    gap: 0.5rem;
+
+    @include breakpoint-lg {
+      width: 80%;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .moreInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 2.5rem;
+    background-color: $color-leaf-800;
+    width: 100%;
+    p {
+      color: $color-leaf-50;
+    }
+    button {
+      align-self: center;
+    }
+    @include breakpoint-lg {
+      p {
+        width: 80%;
+        align-self: center;
+      }
+    }
   }
 }

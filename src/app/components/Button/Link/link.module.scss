@@ -1,30 +1,26 @@
 @import "../../../styles/mixins";
 
 .link {
-  padding: 10px 20px;
-  background-color: $color-mint-green;
-  color: $color-white;
-  border: 3px solid $color-mint-green;
-  border-radius: 20px;
-  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+  background-color: $color-leaf-500;
+  color: $color-leaf-50;
+  border-radius: 0.5rem;
   cursor: pointer;
   font-size: 1rem;
-  font-weight: bold;
   text-align: center;
 
   &:hover {
-    background-color: $color-mint-green;
-    color: $color-pure-white;
+    background-color: $color-leaf-600;
   }
 }
 
 .reversed {
   background-color: transparent;
-  color: $color-black;
-  border: 2px solid $color-black;
+  color: $color-leaf-500;
+  border: 1px solid $color-leaf-500;
   &:hover {
     background-color: transparent;
-    border: 2px solid $color-mint-green;
-    color: $color-mint-green;
+    color: $color-leaf-600;
+    border: 1px solid $color-leaf-600;
   }
 }

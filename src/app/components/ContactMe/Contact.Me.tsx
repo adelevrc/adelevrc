@@ -19,7 +19,7 @@ const ContactMe = () => {
         discuter de vos besoins spécifiques, planifier une séance ou simplement
         en savoir plus sur mes cours, n'hésitez pas à me contacter.
       </p>
-      <ButtonLink title={"Contact"} href={"contact"} reversed />
+      <ButtonLink title={"Contact"} href={"contact"} />
     </section>
   );
 };

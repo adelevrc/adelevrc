@@ -1,6 +1,7 @@
 "use client";
 import { useForm } from "react-hook-form";
 import styles from "./contactForm.module.scss";
+import Button from "../Button/Button/Button";
 const ContactForm = () => {
   const {
     register,
@@ -33,6 +34,22 @@ const ContactForm = () => {
   };
 
   const selectedContactMethod = watch("contactMethod");
+  const watchFields = watch([
+    "name",
+    "firstname",
+    "contactMethod",
+    "email",
+    "phoneNumber",
+    "message",
+  ]);
+  const isFormValid =
+    watchFields[0] && // name
+    watchFields[1] && // firstname
+    watchFields[2] && // contactMethod
+    ((selectedContactMethod === "email" && watchFields[3]) || // email
+      (selectedContactMethod === "phoneNumber" && watchFields[4])) && // phoneNumber
+    watchFields[5]; // message
+
   return (
     <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
       <div className={styles.inputContainer}>
@@ -108,7 +125,9 @@ const ContactForm = () => {
         </label>
       </div>
 
-      <button type='submit'>Envoyer</button>
+      <button type='submit' disabled={!isFormValid}>
+        Envoyer
+      </button>
     </form>
   );
 };

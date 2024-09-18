@@ -1,19 +1,77 @@
 @import "../styles//mixins";
 
 .main {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 3rem 1rem;
-  //background-color: $color-white;
-  h1,
-  h2 {
-    color: $color-black;
+  @include breakpoint-lg {
+    align-items: center;
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 30rem;
+    }
   }
-  section {
+
+  h2 {
+    color: $color-leaf-800;
+    @include breakpoint-lg {
+      font-size: 2rem;
+    }
+  }
+  h1 {
+    color: $color-leaf-800;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0 3rem;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 600;
+    span {
+      text-wrap: nowrap;
+      border: 1px solid $color-leaf-600;
+      border-radius: 60px;
+      padding: 3px 16px;
+      margin-right: 0.4rem;
+      line-height: 60px;
+    }
+    @include breakpoint-lg {
+      font-size: 40px;
+    }
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    position: relative;
+    h1 {
+      position: absolute;
+    }
+  }
+  .history {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    line-height: 1.8;
+    gap: 1.5rem;
+    background-color: $color-leaf-600;
+    section {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      line-height: 1.8;
+      padding: 0 1rem;
+    }
+    img {
+      object-fit: cover;
+    }
+    @include breakpoint-lg {
+      flex-direction: row;
+      width: 80vw;
+      a {
+        align-self: center;
+      }
+    }
   }
 }

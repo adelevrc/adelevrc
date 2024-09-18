@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
+@import "./mixins";
 :root {
   --max-width: 1200px;
   --font-mono: "Montserrat", sans-serif;
@@ -16,7 +16,7 @@ body {
   font-family: "Montserrat", sans-serif;
   max-width: 100vw;
   overflow-x: hidden;
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background-color: $color-leaf-100;
 }
 
 h1,
@@ -28,6 +28,9 @@ h6 {
   font-family: "Lora", serif;
 }
 
+p {
+  color: $color-leaf-950;
+}
 a {
   color: inherit;
   text-decoration: none;

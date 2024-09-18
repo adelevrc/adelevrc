@@ -6,26 +6,17 @@
   align-items: center;
   gap: 4rem;
   padding: 2rem 0;
-  h1 {
-    size: 32px;
-    font-style: italic;
-    font-weight: 700;
-    color: $color-white;
-    @include breakpoint-lg {
-      font-size: 51px;
-    }
-  }
 
   h2 {
     text-transform: uppercase;
-    color: $color-white;
+    color: $color-leaf-600;
     font-weight: 400;
     padding: 0 3rem;
     text-align: center;
     letter-spacing: 1px;
     span {
       text-wrap: nowrap;
-      border: 1px solid $color-white;
+      border: 1px solid $color-leaf-600;
       border-radius: 60px;
       padding: 3px 16px;
       margin-right: 0.4rem;
@@ -37,13 +28,13 @@
   }
 }
 .bannerWhite {
-  //  background-color: $color-white;
-  border-top: 1px solid $color-mint-green;
-  border-bottom: 1px solid $color-mint-green;
+  //background-color: $color-leaf-100;
+  border-top: 1px solid $color-leaf-600;
+  border-bottom: 1px solid $color-leaf-600;
   h2 {
-    color: $color-pure-white;
+    color: $color-leaf-600;
     span {
-      border: 1px solid $color-pure-white;
+      border: 1px solid $color-leaf-600;
     }
   }
 }

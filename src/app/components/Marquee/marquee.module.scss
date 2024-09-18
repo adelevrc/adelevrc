@@ -1,7 +1,7 @@
 @import "../../styles/mixins";
 
 .marquee {
-  background-color: $color-pure-white;
+  background-color: $color-leaf-200;
   width: 100vw;
   overflow: hidden;
   align-items: center;
@@ -27,7 +27,7 @@
     .dot {
       width: 10px;
       height: 10px;
-      background-color: $color-mint-green;
+      background-color: $color-leaf-700;
       border-radius: 50%;
       margin-left: 1rem;
       display: inline-block;

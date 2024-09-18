@@ -5,7 +5,16 @@ import photo from "../images/photo-profil.webp";
 const Contact = () => {
   return (
     <main className={styles.main}>
-      <h1> Fomulaire de contact </h1>
+      <div className={styles.title}>
+        <h1> Fomulaire de contact </h1>
+        <Image
+          className={styles.picture}
+          src={photo}
+          width={550}
+          height={300}
+          alt='Picture of the author'
+        />
+      </div>
       <section>
         <div>
           <p>

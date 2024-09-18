@@ -23,7 +23,11 @@ const Home = () => (
     <Description />
     <Offers />
     <div className={style.bookClass}>
-      <ButtonLink title={"En savoir plus sur les cours"} href={"#"} reversed />
+      <ButtonLink
+        title={"En savoir plus sur les cours"}
+        href={"les-cours"}
+        reversed
+      />
     </div>
     <Banner2 />
     <ContactMe />

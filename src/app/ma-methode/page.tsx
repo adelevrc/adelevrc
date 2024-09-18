@@ -1,17 +1,32 @@
 import styles from "./methode.module.scss";
-
-const Method = () => {
-  return (
-    <main className={styles.main}>
+import Image from "next/image";
+import image from "../images/warrior3.webp";
+import ButtonLink from "../components/Button/Link/Link";
+const Method = () => (
+  <main className={styles.main}>
+    <div className={styles.title}>
       <h1>Ma méthode</h1>
-      <h2>Travailler de manière consciente, dans un but précis.</h2>
+      <Image
+        className={styles.picture}
+        src={image}
+        width={550}
+        height={500}
+        alt='Picture of the author'
+      />
+    </div>
+    <section>
+      <h2>
+        Travailler de manière <span>consciente</span> dans un but précis.
+      </h2>
       <p>
         Le yoga que je propose est un yoga dynamique, qui permet de faire
         travailler la force et la mobilité, tout en renforçant son mental pour
         être calme dans toutes les situations.
       </p>
 
-      <h2>Comment une séance est-elle construite ?</h2>
+      <h2>
+        Comment une séance est-elle <span> construite</span> ?
+      </h2>
       <p>
         Une séance est construite à partir d'un objectif de posture (qu'elle
         soit une posture d'équilibre ou une posture de base).
@@ -41,7 +56,9 @@ const Method = () => {
         respiration très spécifiques, mais aussi des exercices d'équilibre pour
         travailler l'oreille interne ou encore des exercices de vision.
       </p>
-      <h2> L'objectif dans tout ça ? </h2>
+      <h2>
+        L'<span>objectif</span> dans tout ça ?{" "}
+      </h2>
       <p>
         L'objectif de ces séances est que vous compreniez les exercices qui vous
         font du bien et sur lesquels vous devez travailler pour les intégrer
@@ -50,8 +67,9 @@ const Method = () => {
         est plus qu'important de bouger son corps et travailler son esprit, pour
         être dans la meilleure forme possible et dans le plus grand des calmes.
       </p>
-    </main>
-  );
-};
+      <ButtonLink title={"Réserver un cours"} href={"/reserver-cours"} />
+    </section>
+  </main>
+);
 
 export default Method;

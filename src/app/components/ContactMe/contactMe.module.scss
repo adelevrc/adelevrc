@@ -5,9 +5,10 @@
   flex-direction: column;
   gap: 1rem;
   padding: 3rem;
-  color: $color-pure-white;
+  color: $color-leaf-900;
   font-size: 20px;
   line-height: 30px;
+  background-color: $color-leaf-200;
   img {
     display: none;
   }
@@ -15,8 +16,10 @@
     align-self: center;
   }
   @include breakpoint-lg {
-    line-height: 40px;
-    width: 70%;
-    align-self: center;
+    p {
+      line-height: 40px;
+      width: 70%;
+      align-self: center;
+    }
   }
 }
