@@ -5,8 +5,34 @@
   flex-direction: column;
   justify-content: flex-start;
   .picture {
-    object-fit: cover;
+    object-fit: fill;
     width: 100%;
+    //height: 20rem !important;
+
+    color: $color-leaf-950;
+    @include breakpoint-lg {
+      object-fit: cover;
+      height: 35rem !important;
+    }
+  }
+  .imageContainer {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 70%;
+    overflow: hidden;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include breakpoint-lg {
+      // padding-top: 0;
+      padding-top: 35%;
+    }
   }
   .bookClass {
     display: flex;

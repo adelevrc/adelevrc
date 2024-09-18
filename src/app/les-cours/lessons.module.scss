@@ -13,7 +13,10 @@
   }
 
   h1 {
-    color: $color-leaf-800;
+    background-color: $color-leaf-600;
+    border-radius: 4px;
+
+    color: $color-leaf-200;
     text-transform: uppercase;
     font-weight: 400;
     padding: 0 3rem;
@@ -29,7 +32,7 @@
       line-height: 60px;
     }
     @include breakpoint-lg {
-      font-size: 40px;
+      font-size: 64px;
     }
   }
   li,

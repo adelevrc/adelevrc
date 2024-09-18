@@ -1,20 +1,8 @@
-import Image from "next/image";
 import ContactForm from "../components/ContactForm/ContactForm";
 import styles from "./contact.module.scss";
-import photo from "../images/photo-profil.webp";
 const Contact = () => {
   return (
     <main className={styles.main}>
-      {/*       <div className={styles.title}>
-        <h1> Fomulaire de contact </h1>
-        <Image
-          className={styles.picture}
-          src={photo}
-          width={550}
-          height={300}
-          alt='Picture of the author'
-        />
-      </div> */}
       <h1> Fomulaire de contact </h1>
       <section>
         <div>

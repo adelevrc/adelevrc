@@ -1,9 +1,9 @@
 "use client";
 import Image, { StaticImageData } from "next/image";
 import { useState } from "react";
-import warrior3Image from "../../images/warrior3.webp";
 import downwardogImage from "../../images/dd.webp";
-import plankImage from "../../images/plank.webp";
+import meditation from "../../images/profil.webp";
+import warrior3Image from "../../images/warrior3.webp";
 import Button from "../Button/Button/Button";
 import style from "./offer.module.scss";
 interface CardProps {
@@ -65,6 +65,26 @@ const Offers = () => {
           </div>
         }
       />
+
+      <Card
+        title='Cours de méditation'
+        alt='Professeur de yoga exécutant la posture de la planche sur le côté : une main au sol et une main sur la hanche, les deux jambes sont tendues.'
+        src={meditation}
+        info={
+          <div className={style.class}>
+            <h2>Cours de méditation en ligne</h2>
+            <p> Recommencer la semaine sans appréhension</p>
+            <p>
+              Ce travail de respiration et méditation guidée vous permettra
+              d'enlever le blues du dimanche soir.
+            </p>
+            <p>
+              L'objectif est de construire avec vous des outils de respiration
+              et de méditation pour vous aider dans toutes les situations.
+            </p>
+          </div>
+        }
+      />
       <Card
         title='Cours 1:1'
         alt='Professeur de yoga exécutant la posture du chien tête en bas. Le corps fait un V inversé : les deux mains sont sur le sol, les fesses sont vers le ciel et les talons sont sur le sol, jambes tendues '
@@ -81,25 +101,6 @@ const Offers = () => {
             <p>
               Afin de mieux se connaître et de connaître vos besoins, un premier
               contact est nécessaire.
-            </p>
-          </div>
-        }
-      />
-      <Card
-        title='Cours de méditation'
-        alt='Professeur de yoga exécutant la posture de la planche sur le côté : une main au sol et une main sur la hanche, les deux jambes sont tendues.'
-        src={plankImage}
-        info={
-          <div className={style.class}>
-            <h2>Cours de méditation en ligne</h2>
-            <p> Recommencer la semaine sans appréhension</p>
-            <p>
-              Ce travail de respiration et méditation guidée vous permettra
-              d'enlever le blues du dimanche soir.
-            </p>
-            <p>
-              L'objectif est de construire avec vous des outils de respiration
-              et de méditation pour vous aider dans toutes les situations.
             </p>
           </div>
         }

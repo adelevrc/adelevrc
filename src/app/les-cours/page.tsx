@@ -1,5 +1,5 @@
 import Image from "next/image";
-import image from "../images/warrior3.webp";
+import image from "../images/test1.png";
 import ButtonLink from "../components/Button/Link/Link";
 import styles from "./lessons.module.scss";
 const Lessons = () => {
@@ -10,8 +10,8 @@ const Lessons = () => {
         <Image
           className={styles.picture}
           src={image}
-          width={550}
-          height={500}
+          width={1250}
+          height={1200}
           alt='Picture of the author'
         />
       </div>

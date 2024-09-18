@@ -1,6 +1,6 @@
 import styles from "./methode.module.scss";
 import Image from "next/image";
-import image from "../images/warrior3.webp";
+import image from "../images/sky.webp";
 import ButtonLink from "../components/Button/Link/Link";
 const Method = () => (
   <main className={styles.main}>
