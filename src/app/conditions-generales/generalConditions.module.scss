@@ -1,0 +1,19 @@
+@import "../styles//mixins";
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 5rem;
+  background-color: $color-leaf-50;
+  h1 {
+    color: $color-leaf-600;
+  }
+  h2 {
+    color: $color-leaf-400;
+    text-transform: uppercase;
+  }
+  h3,
+  p {
+    color: $color-leaf-950;
+  }
+}
