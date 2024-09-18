@@ -40,7 +40,7 @@
     h1 {
       position: absolute;
     }
-    @include breakpoint-lg {
+    @include breakpoint-sm {
       img {
         width: 100%;
         object-fit: cover;
@@ -54,12 +54,15 @@
     flex-direction: column;
     gap: 1rem;
     line-height: 1.8;
-    // padding: 0 1rem;
+    padding: 0 1rem;
     a {
       align-self: center;
     }
     @include breakpoint-lg {
       width: 80%;
+    }
+    @include breakpoint-xl {
+      max-width: 1000px;
     }
   }
 

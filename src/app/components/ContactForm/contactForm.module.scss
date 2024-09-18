@@ -2,15 +2,16 @@
 
 .form {
   position: relative;
+  background-color: $color-leaf-400;
   width: 100%;
   max-width: 600px;
-  border: 1px solid $color-leaf-200;
   box-shadow: 0 10px 40px -12px rgba(16, 24, 40, 0.1);
-  padding: 1.5rem 0.5rem;
+  padding: 2.5rem;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-top: 2.5rem;
   .inputContainer {
     position: relative;
     margin-bottom: 20px;
@@ -31,7 +32,7 @@
     select {
       width: 100%;
       padding: 10px;
-      border: 1px solid #ccc;
+      border: none;
       font-size: 1rem;
       border-radius: 4px;
       outline: none;
@@ -40,13 +41,13 @@
       &:not(:placeholder-shown) + label {
         top: -10px;
         font-size: 0.8rem;
-        color: $color-leaf-950;
+        color: $color-leaf-100;
       }
     }
     input,
     textarea {
       &:focus {
-        border-color: $color-leaf-950;
+        border-color: $color-leaf-100;
       }
     }
 
@@ -58,9 +59,11 @@
     label {
       display: flex;
       gap: 1rem;
+      color: $color-leaf-100;
     }
   }
   button {
+    align-self: center;
     padding: 0.5rem 1.5rem;
     background-color: $color-leaf-500;
     color: $color-leaf-50;

@@ -76,6 +76,7 @@ const AboutMe = () => (
           Alba Yoga Academy, dirigée par deux personnes incroyablement
           qualifiées et humaines : Celest Pereira et Hannah Barrett.
         </p> */}
+        <ButtonLink title={"Découvrir ma méthode"} href={"/ma-methode"} />
       </section>
 
       <Image
@@ -86,7 +87,6 @@ const AboutMe = () => (
         alt='Picture of the author'
       />
     </div>
-    <ButtonLink title={"Découvrir ma méthode"} href={"/ma-methode"} />
   </main>
 );
 

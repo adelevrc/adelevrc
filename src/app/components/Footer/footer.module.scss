@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  color: $color-leaf-950;
+  color: $color-leaf-700;
 
   .firstSection {
     display: flex;
@@ -42,14 +42,14 @@
       width: 100%;
       padding: 10px 10px 10px 10px;
       font-size: 16px;
-      border: 2px solid $color-leaf-950;
+      border: 2px solid $color-leaf-700;
       border-radius: 4px;
       outline: none;
       transition: border-color 0.3s ease;
     }
 
     input:focus {
-      border-color: $color-leaf-950;
+      border-color: $color-leaf-700;
     }
 
     label {
@@ -58,7 +58,7 @@
       left: 10px;
       transform: translateY(-50%);
       font-size: 16px;
-      color: $color-leaf-950;
+      color: $color-leaf-700;
       padding: 0 5px;
       pointer-events: none;
       transition: all 0.3s ease;
@@ -71,10 +71,10 @@
     input:not(:placeholder-shown) + label {
       top: -10px;
       font-size: 12px;
-      color: $color-leaf-950;
+      color: $color-leaf-700;
     }
     input:focus + label {
-      color: $color-leaf-950;
+      color: $color-leaf-700;
     }
   }
 
@@ -83,7 +83,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    color: $color-leaf-950;
+    color: $color-leaf-700;
     ul {
       display: flex;
       gap: 1rem;
@@ -95,7 +95,7 @@
             cursor: pointer;
           }
           svg {
-            fill: $color-leaf-950;
+            fill: $color-leaf-700;
             &:hover {
               fill: $color-leaf-800;
             }

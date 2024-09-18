@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import styles from "./header.module.scss";
+
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -25,6 +26,10 @@ const Header = () => {
     };
   }, [menuOpen]);
 
+  const handleLinkClick = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <header className={styles.header}>
       <button
@@ -37,7 +42,10 @@ const Header = () => {
         <div />
         <div />
       </button>
-      <h1> Adèle Vercaygne</h1>
+      <Link href={"/"} className={styles.logo}>
+        <h1> Adèle Vercaygne</h1>
+      </Link>
+
       <nav
         className={`${styles.nav} ${menuOpen ? styles.open : ""}`}
         id='nav'
@@ -46,26 +54,39 @@ const Header = () => {
       >
         <ul>
           <li>
-            <Link href={"/"}>Accueil </Link>
+            <Link href={"/"} onClick={handleLinkClick}>
+              Accueil
+            </Link>
           </li>
           <li>
-            <Link href={"a-propos"}>À propos </Link>
+            <Link href={"a-propos"} onClick={handleLinkClick}>
+              À propos
+            </Link>
           </li>
           <li>
-            <Link href={"ma-methode"}> Méthode</Link>
+            <Link href={"ma-methode"} onClick={handleLinkClick}>
+              Méthode
+            </Link>
           </li>
           <li>
-            <Link href={"les-cours"}>Les cours </Link>
+            <Link href={"les-cours"} onClick={handleLinkClick}>
+              Les cours
+            </Link>
           </li>
           <li>
-            <Link href={"#"}>Réserver un cours</Link>
+            <Link href={"#"} onClick={handleLinkClick}>
+              Réserver un cours
+            </Link>
           </li>
           <li>
-            <Link href={"contact"}> Contact </Link>
+            <Link href={"contact"} onClick={handleLinkClick}>
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>
     </header>
   );
 };
+
 export default Header;

@@ -5,7 +5,7 @@ import photo from "../images/photo-profil.webp";
 const Contact = () => {
   return (
     <main className={styles.main}>
-      <div className={styles.title}>
+      {/*       <div className={styles.title}>
         <h1> Fomulaire de contact </h1>
         <Image
           className={styles.picture}
@@ -14,7 +14,8 @@ const Contact = () => {
           height={300}
           alt='Picture of the author'
         />
-      </div>
+      </div> */}
+      <h1> Fomulaire de contact </h1>
       <section>
         <div>
           <p>

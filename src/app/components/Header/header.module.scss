@@ -4,8 +4,16 @@
   align-items: center;
   padding: 10px;
   color: $color-leaf-200;
-  @include breakpoint-lg {
+  @include breakpoint-xl {
     align-items: center;
+  }
+  .logo {
+    width: fit-content;
+    text-wrap: nowrap;
+    margin-left: 2.5rem;
+    @include breakpoint-xl {
+      margin-left: 0;
+    }
   }
   h1 {
     width: 100%;
@@ -14,11 +22,12 @@
     font-style: italic;
     font-weight: 700;
     color: $color-leaf-950;
-    @include breakpoint-lg {
+    @include breakpoint-xl {
       width: 30%;
     }
   }
   button {
+    align-self: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -27,7 +36,7 @@
     cursor: pointer;
     background: none;
     border: none;
-    @include breakpoint-lg {
+    @include breakpoint-xl {
       display: none;
     }
     div {
@@ -48,7 +57,7 @@
     transition: right 0.3s ease;
     z-index: 1;
     background-color: $color-leaf-100;
-    @include breakpoint-lg {
+    @include breakpoint-xl {
       position: unset;
       width: 100%;
       height: auto;
@@ -58,7 +67,7 @@
   nav ul {
     list-style-type: none;
     padding: 50px 20px;
-    @include breakpoint-lg {
+    @include breakpoint-xl {
       display: flex;
       justify-content: center;
       gap: 3rem;
@@ -72,7 +81,7 @@
 
   nav ul li {
     margin: 20px 0;
-    @include breakpoint-lg {
+    @include breakpoint-xl {
       display: inline;
     }
   }

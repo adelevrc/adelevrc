@@ -4,6 +4,10 @@
   display: flex;
   flex-direction: column;
   background-color: $color-leaf-100;
+  button,
+  a {
+    align-self: center;
+  }
   @include breakpoint-lg {
     align-items: center;
   }
@@ -43,7 +47,8 @@
     span:last-child {
       font-style: italic;
     }
-    @include breakpoint-lg {
+
+    @include breakpoint-md {
       width: 30rem;
     }
   }
@@ -66,7 +71,7 @@
     h1 {
       position: absolute;
     }
-    @include breakpoint-lg {
+    @include breakpoint-sm {
       img {
         width: 100%;
         object-fit: cover;
@@ -92,7 +97,7 @@
     line-height: 1.8;
     padding: 0 1.5rem;
     margin-bottom: 2rem;
-    @include breakpoint-lg {
+    @include breakpoint-xl {
       display: grid;
       grid-template-columns: 1fr 1fr;
       width: 80%;
@@ -129,14 +134,12 @@
     flex-direction: column;
     gap: 1.5rem;
     padding: 1.5rem 2.5rem;
-    background-color: $color-leaf-800;
+    background-color: $color-leaf-600;
     width: 100%;
     p {
       color: $color-leaf-50;
     }
-    button {
-      align-self: center;
-    }
+
     @include breakpoint-lg {
       p {
         width: 80%;

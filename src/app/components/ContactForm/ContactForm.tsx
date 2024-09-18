@@ -1,7 +1,6 @@
 "use client";
 import { useForm } from "react-hook-form";
 import styles from "./contactForm.module.scss";
-import Button from "../Button/Button/Button";
 const ContactForm = () => {
   const {
     register,
