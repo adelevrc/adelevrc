@@ -18,6 +18,7 @@ const Home = () => (
       src={image}
       width={550}
       height={500}
+      layout='responsive'
       alt='Picture of the author'
     />
     <Description />

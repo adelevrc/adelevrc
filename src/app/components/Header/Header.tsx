@@ -54,32 +54,56 @@ const Header = () => {
       >
         <ul>
           <li>
-            <Link href={"/"} onClick={handleLinkClick}>
+            <Link
+              href={"/"}
+              onClick={handleLinkClick}
+              tabIndex={menuOpen ? 0 : -1}
+            >
               Accueil
             </Link>
           </li>
           <li>
-            <Link href={"a-propos"} onClick={handleLinkClick}>
+            <Link
+              href={"a-propos"}
+              onClick={handleLinkClick}
+              tabIndex={menuOpen ? 0 : -1}
+            >
               À propos
             </Link>
           </li>
           <li>
-            <Link href={"ma-methode"} onClick={handleLinkClick}>
+            <Link
+              href={"ma-methode"}
+              onClick={handleLinkClick}
+              tabIndex={menuOpen ? 0 : -1}
+            >
               Méthode
             </Link>
           </li>
           <li>
-            <Link href={"les-cours"} onClick={handleLinkClick}>
+            <Link
+              href={"les-cours"}
+              onClick={handleLinkClick}
+              tabIndex={menuOpen ? 0 : -1}
+            >
               Les cours
             </Link>
           </li>
           <li>
-            <Link href={"#"} onClick={handleLinkClick}>
+            <Link
+              href={"#"}
+              onClick={handleLinkClick}
+              tabIndex={menuOpen ? 0 : -1}
+            >
               Réserver un cours
             </Link>
           </li>
           <li>
-            <Link href={"contact"} onClick={handleLinkClick}>
+            <Link
+              href={"contact"}
+              onClick={handleLinkClick}
+              tabIndex={menuOpen ? 0 : -1}
+            >
               Contact
             </Link>
           </li>

@@ -48,7 +48,6 @@
     width: 100%;
     position: relative;
     @include breakpoint-md {
-      background-color: red;
       margin-bottom: 0;
     }
     h1 {

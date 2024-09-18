@@ -39,7 +39,7 @@ const Footer = () => {
         <p>Suivez-moi ! </p>
         <ul>
           <li>
-            <a>
+            <a href='#' aria-label='Visitez mon profil instagram'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='24px'
@@ -51,7 +51,7 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href=''>
+            <a href='#' aria-label='Visitez mon compte Tiktok'>
               <svg
                 width='40px'
                 height='40px'
@@ -63,7 +63,7 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href=''>
+            <a href='#' aria-label='Visitez mon compte Youtube'>
               <svg
                 width='30px'
                 height='30px'
