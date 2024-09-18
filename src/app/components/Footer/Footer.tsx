@@ -1,6 +1,42 @@
+"use client";
+import { useRef, useState } from "react";
 import Link from "next/link";
 import style from "./footer.module.scss";
+import emailjs from "@emailjs/browser";
+
 const Footer = () => {
+  const form = useRef<HTMLFormElement | null>(null);
+  const [emailIsPending, setEmailIsPending] = useState(false);
+  const [emailIsSend, setEmailIsSend] = useState(false);
+  const [emailIsNotSend, setEmailIsNotSend] = useState(false);
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setEmailIsPending(true);
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const userEmail = formData.get("email") as string;
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "";
+    const publicKeyId = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "";
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "";
+    const templateIdAddingUser =
+      process.env.NEXT_PUBLIC_EMAILSJS_TEMPLATE_ID_ADD_USER || "";
+    emailjs.sendForm(serviceId, templateIdAddingUser, form, publicKeyId);
+
+    emailjs
+      .send(serviceId, templateId, { user_email: userEmail }, publicKeyId)
+      .then(
+        () => {
+          setEmailIsSend(true);
+          setEmailIsPending(false);
+        },
+        (error) => {
+          setEmailIsNotSend(true);
+          setEmailIsPending(false);
+        }
+      );
+  };
+
   return (
     <footer className={style.footer}>
       <h1> Adèle Vercaygne </h1>
@@ -24,22 +60,41 @@ const Footer = () => {
         </ul>
         <div className={style.newsletter}>
           <h2> S'inscrire à la newsletter</h2>
-          <form>
-            <input
-              name='email'
-              placeholder='Écrivez votre email'
-              required
-            ></input>
+          {emailIsNotSend && (
+            <div className={style.error}>Une erreur s'est produite</div>
+          )}
+          {emailIsSend && (
+            <div className={style.success}>
+              Vous êtes inscrit à la newsletter !
+            </div>
+          )}
+          {emailIsPending && (
+            <div className={style.loaderContainer}>
+              <div className={style.loader}></div>
+            </div>
+          )}
+          {!emailIsNotSend && !emailIsSend && !emailIsPending && (
+            <form ref={form} onSubmit={sendEmail}>
+              <input
+                name='user_email'
+                placeholder='Écrivez votre email'
+                required
+                type='email'
+              ></input>
 
-            <label>Email</label>
-          </form>
+              <label>Email</label>
+            </form>
+          )}
         </div>
       </div>
       <div className={style.socialMedia}>
         <p>Suivez-moi ! </p>
         <ul>
           <li>
-            <a href='#' aria-label='Visitez mon profil instagram'>
+            <a
+              href='https://www.instagram.com/adelevrc_yoga/'
+              aria-label='Visitez mon profil instagram'
+            >
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='24px'
@@ -51,7 +106,10 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href='#' aria-label='Visitez mon compte Tiktok'>
+            <a
+              href='https://www.youtube.com/@adelevrc'
+              aria-label='Visitez mon compte Youtube'
+            >
               <svg
                 width='40px'
                 height='40px'
@@ -63,7 +121,10 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href='#' aria-label='Visitez mon compte Youtube'>
+            <a
+              href='https://www.tiktok.com/@adlevercaygne?_t=8ppe5DDzB1k&_r=1'
+              aria-label='Visitez mon compte Tiktok'
+            >
               <svg
                 width='30px'
                 height='30px'

@@ -4,10 +4,10 @@ import nodemailer from 'nodemailer';
 
 // Définir le type des données attendues dans le corps de la requête
 interface ContactFormData {
-  nom: string;
-  prenom: string;
+  lastname: string;
+  firstname: string;
   email: string;
-  phone:string;
+  phoneNumber:string;
   contactMethod: 'mail' | 'phone';
   message: string;
   newsletter: boolean;
@@ -16,29 +16,38 @@ interface ContactFormData {
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
+    user: process.env.NEXT_PUBLIC_EMAIL_USER,
+    pass: process.env.NEXT_PUBLIC_EMAIL_PASS,
   },
 });
 
 export async function POST(request: Request) {
   const data: ContactFormData = await request.json();
 
-  const mailOptions = {
-    from: data.email,
-    to: 'adele.vercaygne@gmail.com',
-    subject: 'Nouvelle demande de contact via le site internet',
-    text: `
-    Une nouvelle demande de contact a été faite via le site internet
-      Nom: ${data.nom}
-      Prénom: ${data.prenom}
-      Méthode de contact: ${data.contactMethod}
-      Message: ${data.message}
-      Emai:${data.email}
-      Téléphone:${data.phone}
-      Intéressé par la newsletter: ${data.newsletter ? 'Oui' : 'Non'}
-    `,
-  };
+     const sanitizedData = {
+      ...data,
+      lastname: data.lastname.replace(/</g, "&lt;").replace(/>/g, "&gt;"),
+      firstname: data.firstname.replace(/</g, "&lt;").replace(/>/g, "&gt;"),
+      email: data.email?.replace(/</g, "&lt;").replace(/>/g, "&gt;"),
+      phoneNumber: data.phoneNumber?.replace(/</g, "&lt;").replace(/>/g, "&gt;"),
+      message: data.message.replace(/</g, "&lt;").replace(/>/g, "&gt;"),
+    };
+
+    const mailOptions = {
+      from: sanitizedData.email,
+      to: 'adele.vercaygne@gmail.com',
+      subject: 'Nouvelle demande de contact via le site internet',
+      text: `
+        Une nouvelle demande de contact a été faite via le site internet
+        Nom: ${sanitizedData.lastname}
+        Prénom: ${sanitizedData.firstname}
+        Méthode de contact: ${sanitizedData.contactMethod}
+        Message: ${sanitizedData.message}
+        Email: ${sanitizedData.email || 'Non fourni'}
+        Téléphone: ${sanitizedData.phoneNumber || 'Non fourni'}
+        Intéressé par la newsletter: ${sanitizedData.newsletter ? 'Oui' : 'Non'}
+      `,
+    };
 
   try {
     await transporter.sendMail(mailOptions);

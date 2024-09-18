@@ -1,16 +1,16 @@
 "use client";
 import { useForm } from "react-hook-form";
 import styles from "./contactForm.module.scss";
+import Button from "../Button/Button/Button";
+import { useState } from "react";
 const ContactForm = () => {
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm();
+  const { register, handleSubmit, watch } = useForm();
+  const [emailIsPending, setEmailIsPending] = useState(false);
+  const [emailIsSend, setEmailIsSend] = useState(false);
+  const [emailIsNotSend, setEmailIsNotSend] = useState(false);
 
   const onSubmit = async (data: any) => {
-    console.log(data);
+    setEmailIsPending(true);
     try {
       const response = await fetch("/api/send-email", {
         method: "POST",
@@ -19,22 +19,22 @@ const ContactForm = () => {
         },
         body: JSON.stringify(data),
       });
-      console.log("RESPONSE", response);
       const result = await response.json();
       if (response.ok) {
-        //alert(result.message);
-        console.log("ok");
+        setEmailIsSend(true);
+        setEmailIsPending(false);
       } else {
-        console.log("erreor");
+        setEmailIsNotSend(true);
+        setEmailIsPending(false);
       }
     } catch (error) {
-      alert("Une erreur est survenue. Veuillez réessayer.");
+      setEmailIsNotSend(true);
     }
   };
 
   const selectedContactMethod = watch("contactMethod");
   const watchFields = watch([
-    "name",
+    "lastname",
     "firstname",
     "contactMethod",
     "email",
@@ -42,23 +42,23 @@ const ContactForm = () => {
     "message",
   ]);
   const isFormValid =
-    watchFields[0] && // name
-    watchFields[1] && // firstname
-    watchFields[2] && // contactMethod
-    ((selectedContactMethod === "email" && watchFields[3]) || // email
-      (selectedContactMethod === "phoneNumber" && watchFields[4])) && // phoneNumber
-    watchFields[5]; // message
+    watchFields[0] &&
+    watchFields[1] &&
+    watchFields[2] &&
+    ((selectedContactMethod === "email" && watchFields[3]) ||
+      (selectedContactMethod === "phoneNumber" && watchFields[4])) &&
+    watchFields[5];
 
   return (
     <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
       <div className={styles.inputContainer}>
         <input
-          id='name'
+          id='lastname'
           type='text'
           placeholder=' '
-          {...register("name", { required: "Le nom est requis" })}
+          {...register("lastname", { required: "Le nom est requis" })}
         />
-        <label htmlFor='name'>Nom</label>
+        <label htmlFor='lastname'>Nom</label>
       </div>
 
       <div className={styles.inputContainer}>
@@ -123,10 +123,24 @@ const ContactForm = () => {
           Je m'abonne à la newsletter
         </label>
       </div>
-
-      <button type='submit' disabled={!isFormValid}>
-        Envoyer
-      </button>
+      {emailIsNotSend && (
+        <div className={styles.error}>Une erreur s'est produite</div>
+      )}
+      {emailIsSend && (
+        <div className={styles.success}>
+          Vous êtes inscrit à la newsletter !
+        </div>
+      )}
+      {emailIsPending && (
+        <div className={styles.loaderContainer}>
+          <div className={styles.loader}></div>
+        </div>
+      )}
+      {!emailIsNotSend && !emailIsSend && !emailIsPending && (
+        <button type='submit' disabled={!isFormValid}>
+          Envoyer
+        </button>
+      )}
     </form>
   );
 };

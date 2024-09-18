@@ -23,7 +23,7 @@
     font-weight: 700;
     color: $color-leaf-950;
     @include breakpoint-xl {
-      width: 30%;
+      padding-left: 1.5rem;
     }
   }
   button {
@@ -58,6 +58,9 @@
     z-index: 1;
     background-color: $color-leaf-100;
     @include breakpoint-xl {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: unset;
       width: 100%;
       height: auto;
