@@ -9,8 +9,8 @@ const GeneralConditions = () => {
         Site ») est le site de commerce électronique de la micro entreprise
         Adèle Vercaygne accessible par le réseau internet, ouvert à tout
         utilisateur de ce réseau. Il est édité par Adèle Vercaygne immatriculée
-        sous le numéro SIRET 838503597 00018 et bénéficiant d’une dispense de
-        TVA conformément à l’article 293B du CGI.
+        sous le numéro SIRET 93247908200012et bénéficiant d’une dispense de TVA
+        conformément à l’article 293B du CGI.
       </p>
       <p>
         Le site permet aux utilisateurs de procéder à l’achat de prestations

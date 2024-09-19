@@ -1,21 +1,17 @@
-import Image from "next/image";
-import image from "../images/photoOfMeStudio.webp";
 import ButtonLink from "../components/Button/Link/Link";
+import PageHeader from "../components/PageHeader/PageHeader";
+import image from "../images/photoOfMeStudio.webp";
 import styles from "./lessons.module.scss";
 const Lessons = () => {
   return (
     <main className={styles.main}>
-      <div className={styles.title}>
-        <h1>Les différents cours </h1>
-        <Image
-          className={styles.picture}
-          src={image}
-          width={1250}
-          height={1200}
-          alt="L'image montre une personne assise sur les talons sur un tapis de yoga bleu, devant un mur blanc. Elle est habillée d'une brassère violette et d'un legging bleu foncé. Ses mains reposent sur ses cuisses. Elle semble être en train de sourire, affichant une expression joyeuse et détendue. Derrière elle, on voit un mur blanc."
-        />
-      </div>
-
+      <PageHeader
+        title='Les cours'
+        alt={
+          "L'image montre une personne assise sur les talons sur un tapis de yoga bleu, devant un mur blanc. Elle est habillée d'une brassère violette et d'un legging bleu foncé. Ses mains reposent sur ses cuisses. Elle semble être en train de sourire, affichant une expression joyeuse et détendue. Derrière elle, on voit un mur blanc."
+        }
+        image={image}
+      />
       <p className={styles.introduction}>
         Je propose différents types de cours, en ligne ou en présentiel, toute
         la semaine et le week-end.

@@ -1,6 +1,5 @@
 @import "../styles//mixins";
-$image-ratio-desktop: 33.33%;
-$image-ratio-mobile: 100%;
+
 .main {
   position: relative;
   display: flex;
@@ -14,52 +13,7 @@ $image-ratio-mobile: 100%;
     color: $color-leaf-800;
 
     @include breakpoint-lg {
-      font-size: 2rem;
-    }
-  }
-
-  .titleContainer {
-    position: relative;
-    width: 100%;
-
-    .imageContainer {
-      position: relative;
-      width: 100%;
-      height: 0;
-      overflow: hidden;
-      padding-top: $image-ratio-mobile;
-
-      @include breakpoint-lg {
-        padding-top: $image-ratio-desktop;
-      }
-
-      img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-
-    h1 {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      z-index: 10;
-      color: $color-leaf-800;
-      text-transform: uppercase;
-      font-weight: 600;
-      padding: 0 3rem;
-      letter-spacing: 1px;
-      color: $color-leaf-50;
-
-      @include breakpoint-lg {
-        font-size: 64px;
-      }
+      //  font-size: 2rem;
     }
   }
 

@@ -1,49 +1,60 @@
 @import "../../styles/mixins";
+
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 1rem 1.5rem;
+  gap: 1rem;
   color: $color-leaf-200;
+
   @include breakpoint-xl {
     align-items: center;
   }
+
   .logo {
-    width: fit-content;
-    text-wrap: nowrap;
-    margin-left: 2.5rem;
+    white-space: nowrap;
+    width: 100%;
+
     @include breakpoint-xl {
       margin-left: 0;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
     }
   }
+
   h1 {
     width: 100%;
     text-align: center;
-    size: 32px;
     font-style: italic;
     font-weight: 700;
     color: $color-leaf-950;
-    @include breakpoint-xl {
-      padding-left: 1.5rem;
-    }
+    z-index: 2;
   }
+
   button {
     align-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 35px;
-    height: 22px;
+    width: 2rem;
+    height: 2rem;
     cursor: pointer;
     background: none;
     border: none;
     @include breakpoint-xl {
       display: none;
     }
+
     div {
       width: 100%;
-      height: 3px;
+      height: 4px;
       background-color: $color-leaf-950;
-      border-radius: 3px;
+      border-radius: 4px;
     }
   }
 
@@ -54,9 +65,11 @@
     height: 100%;
     width: 250px;
     background-size: cover;
+    -webkit-transition: right 0.3s ease;
     transition: right 0.3s ease;
-    z-index: 1;
+    z-index: 2;
     background-color: $color-leaf-100;
+
     @include breakpoint-xl {
       display: flex;
       justify-content: center;
@@ -70,20 +83,18 @@
   nav ul {
     list-style-type: none;
     padding: 50px 20px;
+
     @include breakpoint-xl {
       display: flex;
       justify-content: center;
       gap: 3rem;
       padding: 2rem 0;
-      :hover {
-        text-decoration: underline;
-        color: $color-leaf-500;
-      }
     }
   }
 
   nav ul li {
     margin: 20px 0;
+
     @include breakpoint-xl {
       display: inline;
     }
@@ -92,7 +103,12 @@
   nav ul li a {
     text-decoration: none;
     color: $color-leaf-950;
-    font-size: 18px;
+    font-size: 1.1rem;
+    &:hover {
+      color: $color-leaf-500;
+      text-decoration: underline;
+      color: $color-leaf-500;
+    }
   }
 
   nav.open {

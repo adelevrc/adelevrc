@@ -26,7 +26,7 @@
       line-height: 60px;
     }
     @include breakpoint-lg {
-      font-size: 64px;
+      //font-size: 64px;
     }
   }
 
@@ -39,6 +39,10 @@
     position: relative;
     h1 {
       position: absolute;
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
     }
     @include breakpoint-sm {
       img {
@@ -75,7 +79,7 @@
       color: $color-leaf-600;
     }
     @include breakpoint-lg {
-      font-size: 30px;
+      // font-size: 30px;
     }
   }
 }

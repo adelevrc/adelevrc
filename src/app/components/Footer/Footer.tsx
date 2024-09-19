@@ -137,7 +137,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div>
+      <div className={style.generalConditions}>
         <span> Adèle Vercaygne 2024</span> - <span> Tous droits réservés </span>
         -{" "}
         <span>

@@ -45,6 +45,7 @@ const Card = ({ title, alt, src, info }: CardProps) => {
     </div>
   );
 };
+
 const Offers = () => {
   return (
     <section className={style.offers}>

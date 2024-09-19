@@ -5,11 +5,10 @@
   width: 100vw;
   overflow: hidden;
   align-items: center;
-  height: 100px;
 
   .scrollingContent {
     font-family: "Lora";
-    font-size: 1.5em;
+
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -20,8 +19,8 @@
       animation: none;
       justify-content: center;
     }
-    justify-content: c;
     p {
+      font-size: 1.5em;
       text-wrap: nowrap;
     }
     .dot {

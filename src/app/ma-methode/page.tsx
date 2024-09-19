@@ -1,19 +1,16 @@
-import styles from "./methode.module.scss";
-import Image from "next/image";
-import image from "../images/sky.webp";
 import ButtonLink from "../components/Button/Link/Link";
+import PageHeader from "../components/PageHeader/PageHeader";
+import image from "../images/sky.webp";
+import styles from "./methode.module.scss";
 const Method = () => (
   <main className={styles.main}>
-    <div className={styles.title}>
-      <h1>Ma méthode</h1>
-      <Image
-        className={styles.picture}
-        src={image}
-        width={550}
-        height={500}
-        alt="L'image représente le ciel. C'est un ciel bleu foncé avec un nuage très blanc et voluptueux juste un mileu de la photo. La photo a été prise vue du ciel."
-      />
-    </div>
+    <PageHeader
+      title='Ma méthode'
+      alt={
+        "L'image représente le ciel. C'est un ciel bleu foncé avec un nuage très blanc et voluptueux juste un mileu de la photo. La photo a été prise vue du ciel."
+      }
+      image={image}
+    />
     <section>
       <h2>
         Travailler de manière <span>consciente</span> dans un but précis.

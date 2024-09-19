@@ -3,22 +3,17 @@ import ButtonLink from "../components/Button/Link/Link";
 import laughImage from "../images/laughoutsideVertical.webp";
 import image from "../images/water.webp";
 import styles from "./about.module.scss";
+import PageHeader from "../components/PageHeader/PageHeader";
 
 const AboutMe = () => (
   <main className={styles.main}>
-    <div className={styles.titleContainer}>
-      <h1>À propos</h1>
-      <div className={styles.imageContainer}>
-        <Image
-          src={image}
-          alt="L'image montre trois personnes nageant ou se baignant dans une grande étendue d'eau calme, probablement un lac ou une mer. La scène est capturée en vue aérienne, ce qui montre l'eau s'étendant autour des nageurs, avec de légers reflets du soleil sur la surface de l'eau, créant des éclats lumineux argentés. Les nageurs sont dispersés, avec de légères ondulations circulaires visibles autour d'eux, indiquant leurs mouvements. L'atmosphère de l'image est paisible, avec une lumière douce éclairant la surface de l'eau."
-          layout='fill'
-          objectFit='cover'
-          loading='eager'
-          priority
-        />
-      </div>
-    </div>
+    <PageHeader
+      title='À propos'
+      alt={
+        "L'image montre trois personnes nageant ou se baignant dans une grande étendue d'eau calme, probablement un lac ou une mer. La scène est capturée en vue aérienne, ce qui montre l'eau s'étendant autour des nageurs, avec de légers reflets du soleil sur la surface de l'eau, créant des éclats lumineux argentés. Les nageurs sont dispersés, avec de légères ondulations circulaires visibles autour d'eux, indiquant leurs mouvements. L'atmosphère de l'image est paisible, avec une lumière douce éclairant la surface de l'eau."
+      }
+      image={image}
+    />
 
     <div className={styles.history}>
       <section>

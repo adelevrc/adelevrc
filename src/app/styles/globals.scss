@@ -27,7 +27,18 @@ h5,
 h6 {
   font-family: "Lora", serif;
 }
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  line-height: 2.5rem;
+}
 
+a,
+p {
+  font-size: 1rem;
+  line-height: 2rem;
+}
 p {
   color: $color-leaf-950;
 }
