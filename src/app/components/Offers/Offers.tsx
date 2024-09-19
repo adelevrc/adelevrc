@@ -27,7 +27,7 @@ const Card = ({ title, alt, src, info }: CardProps) => {
     <div className={style.card}>
       <div className={`${style.cardInner} ${isFlipped ? style.flipped : ""}`}>
         <div className={style.cardFront} style={styles}>
-          <h2> {title} </h2>
+          <h3> {title} </h3>
           <Image
             className={style.cardImage}
             src={src}

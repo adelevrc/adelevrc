@@ -59,7 +59,6 @@
   h3 {
     color: $color-leaf-200;
     @include breakpoint-lg {
-      //font-size: 45px;
       text-transform: uppercase;
       text-align: center;
     }

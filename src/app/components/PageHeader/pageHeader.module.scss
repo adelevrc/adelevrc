@@ -41,9 +41,10 @@ $image-ratio-mobile: 100%;
     padding: 0 3rem;
     letter-spacing: 1px;
     color: $color-leaf-50;
+    font-size: 3rem;
 
     @include breakpoint-lg {
-      // font-size: 64px;
+      font-size: 4.5rem;
     }
   }
 }

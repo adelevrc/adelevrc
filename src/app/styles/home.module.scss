@@ -7,13 +7,14 @@
   .picture {
     object-fit: fill;
     width: 100%;
-    //height: 20rem !important;
-
     color: $color-leaf-950;
     @include breakpoint-lg {
       object-fit: cover;
       height: 35rem !important;
     }
+  }
+  h2 {
+    font-size: 3rem;
   }
   .imageContainer {
     position: relative;
@@ -39,7 +40,6 @@
     flex-direction: column;
     gap: 3rem;
     padding: 3rem;
-    // font-size: 20px;
     line-height: 30px;
     color: $color-leaf-950;
     @include breakpoint-lg {
