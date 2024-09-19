@@ -1,5 +1,5 @@
 import Image from "next/image";
-import image from "../images/test1.png";
+import image from "../images/photoOfMeStudio.webp";
 import ButtonLink from "../components/Button/Link/Link";
 import styles from "./lessons.module.scss";
 const Lessons = () => {
