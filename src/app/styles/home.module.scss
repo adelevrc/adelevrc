@@ -14,7 +14,11 @@
     }
   }
   h2 {
-    font-size: 3rem;
+    font-size: 2rem;
+    @include breakpoint-lg {
+      font-size: 3rem;
+      line-height: 4.5rem;
+    }
   }
   .imageContainer {
     position: relative;
