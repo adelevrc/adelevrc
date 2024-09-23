@@ -12,7 +12,7 @@
     justify-content: center;
     background: linear-gradient(
       to top,
-      $color-leaf-100 50%,
+      $color-leaf-50 50%,
       $color-leaf-600 50%
     );
   }
@@ -20,13 +20,15 @@
 
 .card {
   width: 300px;
-  height: 400px;
+  height: 500px;
   perspective: 1000px;
   cursor: pointer;
   border-radius: 20px;
+  h4 {
+    color: $color-leaf-800;
+  }
   @include breakpoint-lg {
-    width: 20rem;
-    height: 400px;
+    width: 24rem;
   }
 }
 
@@ -40,9 +42,10 @@
 
 .flipped {
   transform: rotateY(180deg);
+  height: 500px;
+
   @include breakpoint-lg {
-    width: 20rem;
-    height: 400px;
+    width: 24rem;
   }
   .cardImage {
     display: none;
@@ -78,6 +81,8 @@
     color: $color-leaf-100;
     background-color: $color-leaf-600;
     width: 100%;
+    letter-spacing: 1px;
+    font-weight: 300;
     @include breakpoint-lg {
       transform: translateY(50%);
     }
@@ -87,9 +92,10 @@
     max-width: 100%;
     object-fit: cover;
     border-radius: 10px;
+    height: 500px;
+
     @include breakpoint-lg {
-      width: 20rem;
-      height: 400px;
+      width: 24rem;
     }
   }
 }

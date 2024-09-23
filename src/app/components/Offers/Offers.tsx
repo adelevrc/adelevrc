@@ -55,7 +55,7 @@ const Offers = () => {
         src={warrior3Image}
         info={
           <div className={style.class}>
-            <h2>Cours en ligne</h2>
+            <h4>Cours en ligne</h4>
             <p> Dans le confort de votre maison</p>
             <p>
               Les cours en ligne durent une heure et vous permettent de faire du
@@ -73,7 +73,7 @@ const Offers = () => {
         src={meditation}
         info={
           <div className={style.class}>
-            <h2>Cours de méditation en ligne</h2>
+            <h4>Cours de méditation en ligne</h4>
             <p> Recommencer la semaine sans appréhension</p>
             <p>
               Ce travail de respiration et méditation guidée vous permettra
@@ -92,7 +92,7 @@ const Offers = () => {
         src={downwardogImage}
         info={
           <div className={style.class}>
-            <h2>Cours individuel</h2>
+            <h4>Cours individuel</h4>
             <p> Allez plus loin dans sa pratique. </p>
             <p>
               Les cours individuels sont construits autour de ce que vous avez

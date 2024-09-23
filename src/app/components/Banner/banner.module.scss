@@ -6,29 +6,38 @@
   align-items: center;
   gap: 4rem;
   padding: 2rem 0;
+  background-color: $color-leaf-600;
 
   h2 {
     text-transform: uppercase;
-    color: $color-leaf-600;
-    font-weight: 400;
+    color: $color-leaf-50;
+    font-weight: 500;
     padding: 0 3rem;
     text-align: center;
     letter-spacing: 1px;
-    span {
-      text-wrap: nowrap;
-      border: 1px solid $color-leaf-600;
-      border-radius: 60px;
-      padding: 3px 16px;
-      margin-right: 0.4rem;
-      line-height: 2.5rem;
-    }
+    line-height: 3rem;
+  }
+  p {
+    color: $color-leaf-50;
+    font-weight: 300;
+    text-align: center;
+    padding: 0 3rem;
+
     @include breakpoint-lg {
-      //  font-size: 40px;
+      padding: initial;
+      transform: translate(30%);
+      border-radius: 60px;
+      padding: 1rem 3rem;
+      border: 2px solid $color-leaf-50;
+      font-size: 1.2rem;
     }
+    //line-height: 2.5rem;
+  }
+  .lineBreak {
+    display: block;
   }
 }
 .bannerWhite {
-  //background-color: $color-leaf-100;
   border-top: 1px solid $color-leaf-600;
   border-bottom: 1px solid $color-leaf-600;
   h2 {

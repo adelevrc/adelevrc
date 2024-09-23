@@ -25,8 +25,11 @@
       width: fit-content;
     }
   }
+  .name {
+    font-size: 2rem;
+  }
 
-  h1 {
+  p {
     width: 100%;
     text-align: center;
     font-style: italic;
@@ -69,7 +72,7 @@
     -webkit-transition: right 0.3s ease;
     transition: right 0.3s ease;
     z-index: 2;
-    background-color: $color-leaf-100;
+    background-color: $color-leaf-50;
 
     @include breakpoint-xl {
       display: flex;

@@ -43,7 +43,7 @@ const Header = () => {
         <div />
       </button>
       <Link href={"/"} className={styles.logo}>
-        <h1> Adèle Vercaygne</h1>
+        <p className={styles.name}> Adèle Vercaygne</p>
       </Link>
 
       <nav
