@@ -7,7 +7,6 @@ interface ContactFormData {
   lastname: string;
   firstname: string;
   email: string;
-  phoneNumber:string;
   contactMethod: 'mail' | 'phone';
   message: string;
   newsletter: boolean;
@@ -29,7 +28,6 @@ export async function POST(request: Request) {
       lastname: data.lastname.replace(/</g, "&lt;").replace(/>/g, "&gt;"),
       firstname: data.firstname.replace(/</g, "&lt;").replace(/>/g, "&gt;"),
       email: data.email?.replace(/</g, "&lt;").replace(/>/g, "&gt;"),
-      phoneNumber: data.phoneNumber?.replace(/</g, "&lt;").replace(/>/g, "&gt;"),
       message: data.message.replace(/</g, "&lt;").replace(/>/g, "&gt;"),
     };
 
@@ -44,7 +42,6 @@ export async function POST(request: Request) {
         Méthode de contact: ${sanitizedData.contactMethod}
         Message: ${sanitizedData.message}
         Email: ${sanitizedData.email || 'Non fourni'}
-        Téléphone: ${sanitizedData.phoneNumber || 'Non fourni'}
         Intéressé par la newsletter: ${sanitizedData.newsletter ? 'Oui' : 'Non'}
       `,
     };

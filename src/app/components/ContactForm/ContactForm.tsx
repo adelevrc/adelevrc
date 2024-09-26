@@ -31,22 +31,19 @@ const ContactForm = () => {
     }
   };
 
-  const selectedContactMethod = watch("contactMethod");
   const watchFields = watch([
     "lastname",
     "firstname",
     "contactMethod",
     "email",
-    "phoneNumber",
     "message",
   ]);
   const isFormValid =
     watchFields[0] &&
     watchFields[1] &&
     watchFields[2] &&
-    ((selectedContactMethod === "email" && watchFields[3]) ||
-      (selectedContactMethod === "phoneNumber" && watchFields[4])) &&
-    watchFields[5];
+    watchFields[3] &&
+    watchFields[4];
 
   return (
     <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
