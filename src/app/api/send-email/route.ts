@@ -20,8 +20,7 @@ const transporter = nodemailer.createTransport({
 
 
 export async function POST(request: Request) {
-
-      console.log("process.env.NEXT_PUBLIC_EMAIL_USER", process.env.NEXT_PUBLIC_EMAIL_USERptions)
+    console.log("process.env.NEXT_PUBLIC_EMAIL_USER", process.env.NEXT_PUBLIC_EMAIL_USER)
     console.log("process.env.NEXT_PUBLIC_EMAIL_PASS", process.env.NEXT_PUBLIC_EMAIL_PASS)
 
   const data: ContactFormData = await request.json();
