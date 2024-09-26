@@ -31,19 +31,9 @@ const ContactForm = () => {
     }
   };
 
-  const watchFields = watch([
-    "lastname",
-    "firstname",
-    "contactMethod",
-    "email",
-    "message",
-  ]);
+  const watchFields = watch(["lastname", "firstname", "email", "message"]);
   const isFormValid =
-    watchFields[0] &&
-    watchFields[1] &&
-    watchFields[2] &&
-    watchFields[3] &&
-    watchFields[4];
+    watchFields[0] && watchFields[1] && watchFields[2] && watchFields[3];
 
   return (
     <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>

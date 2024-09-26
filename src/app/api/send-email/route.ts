@@ -1,13 +1,10 @@
-// src/app/api/send-email/route.ts
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
-// Définir le type des données attendues dans le corps de la requête
 interface ContactFormData {
   lastname: string;
   firstname: string;
   email: string;
-  contactMethod: 'mail' | 'phone';
   message: string;
   newsletter: boolean;
 }
@@ -39,7 +36,6 @@ export async function POST(request: Request) {
         Une nouvelle demande de contact a été faite via le site internet
         Nom: ${sanitizedData.lastname}
         Prénom: ${sanitizedData.firstname}
-        Méthode de contact: ${sanitizedData.contactMethod}
         Message: ${sanitizedData.message}
         Email: ${sanitizedData.email || 'Non fourni'}
         Intéressé par la newsletter: ${sanitizedData.newsletter ? 'Oui' : 'Non'}
