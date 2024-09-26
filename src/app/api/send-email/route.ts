@@ -20,6 +20,10 @@ const transporter = nodemailer.createTransport({
 
 
 export async function POST(request: Request) {
+
+      console.log("process.env.NEXT_PUBLIC_EMAIL_USER", process.env.NEXT_PUBLIC_EMAIL_USERptions)
+    console.log("process.env.NEXT_PUBLIC_EMAIL_PASS", process.env.NEXT_PUBLIC_EMAIL_PASS)
+
   const data: ContactFormData = await request.json();
 
      const sanitizedData = {
@@ -44,10 +48,10 @@ export async function POST(request: Request) {
       `,
     };
 
-    console.log(mailOptions)
+    console.log("mailOptions", mailOptions)
   try {
     await transporter.sendMail(mailOptions);
-    return NextResponse.json({ message: 'Success: email was sent' });
+    return NextResponse.json({ message: '200' });
   } catch (error) {
     console.error('Erreur lors de l\'envoi de l\'email:', error);
     return NextResponse.json({ error: 'Erreur lors de l\'envoi de l\'email' });

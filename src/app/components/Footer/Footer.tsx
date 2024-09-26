@@ -1,5 +1,4 @@
 "use client";
-import emailjs from "@emailjs/browser";
 import Link from "next/link";
 import { useRef, useState } from "react";
 import style from "./footer.module.scss";
@@ -10,31 +9,27 @@ const Footer = () => {
   const [emailIsSend, setEmailIsSend] = useState(false);
   const [emailIsNotSend, setEmailIsNotSend] = useState(false);
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const email = (event.currentTarget.elements as any).email.value;
     setEmailIsPending(true);
-    const form = e.currentTarget;
-    const formData = new FormData(form);
-    const userEmail = formData.get("email") as string;
-    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "";
-    const publicKeyId = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "";
-    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "";
-    const templateIdAddingUser =
-      process.env.NEXT_PUBLIC_EMAILSJS_TEMPLATE_ID_ADD_USER || "";
-    emailjs.sendForm(serviceId, templateIdAddingUser, form, publicKeyId);
-
-    emailjs
-      .send(serviceId, templateId, { user_email: userEmail }, publicKeyId)
-      .then(
-        () => {
-          setEmailIsSend(true);
-          setEmailIsPending(false);
-        },
-        (error) => {
-          setEmailIsNotSend(true);
-          setEmailIsPending(false);
-        }
-      );
+    try {
+      const response = await fetch("/api/subscribe", {
+        body: JSON.stringify(email),
+        headers: { "Content-Type": "application/json" },
+        method: "POST",
+      });
+      const result = await response.json();
+      if (result.message === "200") {
+        setEmailIsSend(true);
+        setEmailIsPending(false);
+      } else {
+        setEmailIsNotSend(true);
+        setEmailIsPending(false);
+      }
+    } catch (error) {
+      setEmailIsNotSend(true);
+    }
   };
 
   return (
@@ -74,15 +69,15 @@ const Footer = () => {
             </div>
           )}
           {!emailIsNotSend && !emailIsSend && !emailIsPending && (
-            <form ref={form} onSubmit={sendEmail}>
+            <form onSubmit={onSubmit}>
               <input
-                name='user_email'
+                name='email'
                 placeholder='Écrivez votre email'
                 required
                 type='email'
               ></input>
-
               <label>Email</label>
+              <button type='submit'> ok</button>
             </form>
           )}
         </div>

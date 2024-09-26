@@ -19,8 +19,7 @@ const ContactForm = () => {
         body: JSON.stringify(data),
       });
       const result = await response.json();
-      console.log("result", result);
-      if (response.ok) {
+      if (result.message === "200") {
         setEmailIsSend(true);
         setEmailIsPending(false);
       } else {
