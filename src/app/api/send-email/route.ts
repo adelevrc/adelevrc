@@ -17,6 +17,9 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+console.log(process.env.NEXT_PUBLIC_EMAIL_USER)
+console.log(process.env.NEXT_PUBLIC_EMAIL_PASS)
+
 export async function POST(request: Request) {
   const data: ContactFormData = await request.json();
 
@@ -42,6 +45,7 @@ export async function POST(request: Request) {
       `,
     };
 
+    console.log(mailOptions)
   try {
     await transporter.sendMail(mailOptions);
     return NextResponse.json({ message: 'Success: email was sent' });
