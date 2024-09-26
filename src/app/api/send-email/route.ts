@@ -17,8 +17,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-console.log(process.env.NEXT_PUBLIC_EMAIL_USER)
-console.log(process.env.NEXT_PUBLIC_EMAIL_PASS)
+
 
 export async function POST(request: Request) {
   const data: ContactFormData = await request.json();

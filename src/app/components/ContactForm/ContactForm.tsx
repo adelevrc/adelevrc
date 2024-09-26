@@ -19,6 +19,7 @@ const ContactForm = () => {
         body: JSON.stringify(data),
       });
       const result = await response.json();
+      console.log("result", result);
       if (response.ok) {
         setEmailIsSend(true);
         setEmailIsPending(false);
@@ -34,6 +35,9 @@ const ContactForm = () => {
   const watchFields = watch(["lastname", "firstname", "email", "message"]);
   const isFormValid =
     watchFields[0] && watchFields[1] && watchFields[2] && watchFields[3];
+
+  console.log(process.env.NEXT_PUBLIC_EMAIL_USER);
+  console.log(process.env.NEXT_PUBLIC_EMAIL_PASS);
 
   return (
     <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
