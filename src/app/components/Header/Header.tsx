@@ -91,7 +91,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              href={"#"}
+              href={"reserver-cours"}
               onClick={handleLinkClick}
               tabIndex={menuOpen ? 0 : -1}
             >
