@@ -59,7 +59,6 @@ const ContactForm = () => {
         />
         <label htmlFor='lastname'>Nom</label>
       </div>
-
       <div className={styles.inputContainer}>
         <input
           id='firstname'
@@ -69,44 +68,15 @@ const ContactForm = () => {
         />
         <label htmlFor='firstname'>Prénom</label>
       </div>
-
       <div className={styles.inputContainer}>
-        <select
-          id='contactMethod'
-          {...register("contactMethod", {
-            required: "Veuillez choisir une méthode de contact",
-          })}
-        >
-          <option value='email'>Email</option>
-          <option value='phoneNumber'>Téléphone</option>
-        </select>
-        <label htmlFor='contactMethod'>Préférence de contact</label>
+        <input
+          id='email'
+          type='email'
+          placeholder=' '
+          {...register("email", { required: "L'email est requis" })}
+        />
+        <label htmlFor='email'>Email</label>
       </div>
-      {selectedContactMethod === "email" && (
-        <div className={styles.inputContainer}>
-          <input
-            id='email'
-            type='email'
-            placeholder=' '
-            {...register("email", { required: "L'email est requis" })}
-          />
-          <label htmlFor='email'>Email</label>
-        </div>
-      )}
-      {selectedContactMethod === "phoneNumber" && (
-        <div className={styles.inputContainer}>
-          <input
-            id='phoneNumber'
-            type='tel'
-            placeholder=' '
-            {...register("phoneNumber", {
-              required: "Le numéro de téléphone est requis",
-            })}
-          />
-          <label htmlFor='phoneNumber'>Téléphone</label>
-        </div>
-      )}
-
       <div className={styles.inputContainer}>
         <textarea
           id='message'
@@ -115,7 +85,6 @@ const ContactForm = () => {
         />
         <label htmlFor='message'>Message</label>
       </div>
-
       <div className={styles.newsletter}>
         <label htmlFor='newsletter'>
           <input id='newsletter' type='checkbox' {...register("newsletter")} />
