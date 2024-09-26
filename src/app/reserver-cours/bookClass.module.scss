@@ -1,0 +1,9 @@
+@import "../styles//mixins";
+
+.main {
+  overflow: hidden;
+  padding: 3rem;
+  iframe {
+    border: none;
+  }
+}
