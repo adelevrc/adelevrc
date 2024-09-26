@@ -1,5 +1,13 @@
+import ButtonLink from "../components/Button/Link/Link";
 import ContactForm from "../components/ContactForm/ContactForm";
 import styles from "./contact.module.scss";
+
+export const metadata = {
+  title: "Page de contact - Adèle Vercaygne",
+  description:
+    "Contactez-moi pour toute question sur les cours de yoga, respiration et méditation, en ligne ou en studio. Je suis disponible pour vous fournir plus d'informations.",
+};
+
 const Contact = () => {
   return (
     <main className={styles.main}>
@@ -16,6 +24,16 @@ const Contact = () => {
             yoga pour vos salariés ?
           </p>
           <p> Vous voulez prendre contact pour un cours particulier ? </p>
+          <p>
+            Vous avez deux possibilités : prendre un rendez-vous de 15 minutes
+            pour discuter en ligne ou m'écrire un message via le formulaire de
+            contact.
+          </p>
+          <ButtonLink
+            href='https://app.acuityscheduling.com/schedule.php?owner=33520682&owner=33520682&appointmentType=69034331'
+            title='Discuter en ligne'
+            targetBlank={true}
+          />
           <ContactForm />
         </div>
       </section>

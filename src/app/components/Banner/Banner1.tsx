@@ -16,7 +16,7 @@ const Banner = () => {
           pour gagner en amplitude, en force et en contrôle.
         </span>
       </p>
-      <ButtonLink href='#' title='Réserver votre cours' />
+      <ButtonLink href='reserver-cours' title='Réserver votre cours' />
     </section>
   );
 };

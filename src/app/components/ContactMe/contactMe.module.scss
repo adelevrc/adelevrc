@@ -11,14 +11,17 @@
   img {
     display: none;
   }
-  a {
-    align-self: center;
-  }
+
   @include breakpoint-lg {
     p {
       line-height: 40px;
       width: 70%;
       align-self: center;
     }
+  }
+  .buttonsSection {
+    display: flex;
+    align-self: center;
+    gap: 3rem;
   }
 }

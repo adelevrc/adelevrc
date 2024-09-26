@@ -5,12 +5,18 @@ import image from "../images/water.webp";
 import styles from "./about.module.scss";
 import PageHeader from "../components/PageHeader/PageHeader";
 
+export const metadata = {
+  title: "À propos - Adèle Vercaygne",
+  description:
+    "Découvrez mon parcours et comment le yoga a transformé ma vie. Je souhaite partager avec vous mon expérience, ma formation en yoga, et mon envie de vous transmettre cette passion.",
+};
+
 const AboutMe = () => (
   <main className={styles.main}>
     <PageHeader
       title='À propos'
       alt={
-        "L'image montre trois personnes nageant ou se baignant dans une grande étendue d'eau calme, probablement un lac ou une mer. La scène est capturée en vue aérienne, ce qui montre l'eau s'étendant autour des nageurs, avec de légers reflets du soleil sur la surface de l'eau, créant des éclats lumineux argentés. Les nageurs sont dispersés, avec de légères ondulations circulaires visibles autour d'eux, indiquant leurs mouvements. L'atmosphère de l'image est paisible, avec une lumière douce éclairant la surface de l'eau."
+        "Vue aérienne de trois personnes nageant dans une étendue d'eau calme, avec des reflets du soleil sur la surface, créant une ambiance paisible"
       }
       image={image}
     />

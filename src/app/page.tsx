@@ -8,6 +8,13 @@ import Marquee from "./components/Marquee/Marquee";
 import Offers from "./components/Offers/Offers";
 import image from "./images/updogoutside.webp";
 import style from "./styles/home.module.scss";
+
+export const metadata = {
+  title: "Accueil - Adèle Vercaygne",
+  description:
+    "Cours de yoga, respiration et méditation basés sur l’anatomie, la neuroscience et le mouvement pour un corps et un esprit sains, durablement.",
+};
+
 const Home = () => (
   <main className={style.main}>
     <Banner />
@@ -18,7 +25,7 @@ const Home = () => (
         src={image}
         layout='fill'
         objectFit='cover'
-        alt="L’image montre une personne faisant du yoga en plein air dans une posture appelée 'Cobra' ou 'Bhujangasana'. Elle est allongée sur un tapis de yoga vert, les paumes des mains appuyées au sol, les bras tendus, et le haut du corps relevé. Son visage est tourné vers l'avant, et son dos est arqué. La personne est vêtue d'un débardeur noir et d'un legging noir ajusté. En arrière-plan, on voit des plantes vertes luxuriantes et des arbres, créant un cadre naturel et paisible sous la lumière du soleil."
+        alt="Personne faisant du yoga en plein air en posture Cobra (Bhujangasana) sur un tapis vert, avec un arrière-plan naturel de plantes et d'arbres."
       />
     </div>
 

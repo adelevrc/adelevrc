@@ -2,6 +2,13 @@ import ButtonLink from "../components/Button/Link/Link";
 import PageHeader from "../components/PageHeader/PageHeader";
 import image from "../images/sky.webp";
 import styles from "./methode.module.scss";
+
+export const metadata = {
+  title: "Ma méthode - Adèle Vercaygne",
+  description:
+    "Découvrez ma méthode unique de yoga pour développer votre force, améliorer votre souplesse et maîtriser vos postures, tout en cultivant un mental calme et fort",
+};
+
 const Method = () => (
   <main className={styles.main}>
     <PageHeader

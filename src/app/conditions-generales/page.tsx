@@ -1,4 +1,10 @@
 import styles from "./generalConditions.module.scss";
+
+export const metadata = {
+  title: "Condition Générales - Adèle Vercaygne",
+  description:
+    "Consultez nos conditions générales pour comprendre les droits et obligations liés à nos services de yoga. Informez-vous sur les politiques, annulations et modalités.",
+};
 const GeneralConditions = () => {
   return (
     <section className={styles.section}>

@@ -1,8 +1,7 @@
 "use client";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import styles from "./contactForm.module.scss";
-import Button from "../Button/Button/Button";
-import { useState } from "react";
 const ContactForm = () => {
   const { register, handleSubmit, watch } = useForm();
   const [emailIsPending, setEmailIsPending] = useState(false);
@@ -127,9 +126,7 @@ const ContactForm = () => {
         <div className={styles.error}>Une erreur s'est produite</div>
       )}
       {emailIsSend && (
-        <div className={styles.success}>
-          Vous êtes inscrit à la newsletter !
-        </div>
+        <div className={styles.success}>Votre message a bien été envoyé</div>
       )}
       {emailIsPending && (
         <div className={styles.loaderContainer}>

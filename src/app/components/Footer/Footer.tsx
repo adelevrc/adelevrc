@@ -1,8 +1,8 @@
 "use client";
-import { useRef, useState } from "react";
-import Link from "next/link";
-import style from "./footer.module.scss";
 import emailjs from "@emailjs/browser";
+import Link from "next/link";
+import { useRef, useState } from "react";
+import style from "./footer.module.scss";
 
 const Footer = () => {
   const form = useRef<HTMLFormElement | null>(null);
@@ -52,7 +52,7 @@ const Footer = () => {
             <Link href={"les-cours"}>Les cours </Link>
           </li>
           <li>
-            <Link href={"#"}>Réserver un cours</Link>
+            <Link href={"reserver-cours"}>Réserver un cours</Link>
           </li>
           <li>
             <Link href={"contact"}> Contact </Link>
@@ -94,6 +94,7 @@ const Footer = () => {
             <a
               href='https://www.instagram.com/adelevrc_yoga/'
               aria-label='Visitez mon profil instagram'
+              target='_blank'
             >
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -109,6 +110,7 @@ const Footer = () => {
             <a
               href='https://www.youtube.com/@adelevrc'
               aria-label='Visitez mon compte Youtube'
+              target='_blank'
             >
               <svg
                 width='40px'
@@ -124,6 +126,7 @@ const Footer = () => {
             <a
               href='https://www.tiktok.com/@adelevrc'
               aria-label='Visitez mon compte Tiktok'
+              target='_blank'
             >
               <svg
                 width='30px'

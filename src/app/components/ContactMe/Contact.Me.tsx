@@ -10,7 +10,15 @@ const ContactMe = () => {
         discuter de vos besoins spécifiques, planifier une séance ou simplement
         en savoir plus sur mes cours, n'hésitez pas à me contacter.
       </p>
-      <ButtonLink title={"Contact"} href={"contact"} />
+      <div className={style.buttonsSection}>
+        <ButtonLink
+          href='https://app.acuityscheduling.com/schedule.php?owner=33520682&owner=33520682&appointmentType=69034331'
+          title='Prendre rendez-vous'
+          targetBlank={true}
+          reversed
+        />
+        <ButtonLink title={"Contactez-moi"} href={"contact"} />
+      </div>
     </section>
   );
 };

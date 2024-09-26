@@ -16,8 +16,7 @@ const PageHeader = ({ image, alt, title }: PageHeaderProps) => {
           alt={alt}
           layout='fill'
           objectFit='cover'
-          loading='eager'
-          priority
+          loading='lazy'
         />
       </div>
     </div>

@@ -6,14 +6,16 @@ import meditation from "../../images/profil.webp";
 import warrior3Image from "../../images/warrior3.webp";
 import Button from "../Button/Button/Button";
 import style from "./offer.module.scss";
+import ButtonLink from "../Button/Link/Link";
 interface CardProps {
   title: string;
   alt: string;
   src: StaticImageData;
   info: React.ReactNode;
+  button: React.ReactNode;
 }
 
-const Card = ({ title, alt, src, info }: CardProps) => {
+const Card = ({ title, alt, src, info, button }: CardProps) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleFlip = () => {
@@ -39,7 +41,7 @@ const Card = ({ title, alt, src, info }: CardProps) => {
         </div>
         <div className={style.cardBack}>
           {info}
-          <Button title={"Retourner"} onClick={handleFlip} />
+          {button}
         </div>
       </div>
     </div>
@@ -65,6 +67,7 @@ const Offers = () => {
             <p> Les cours en ligne se déroulent le soir et le week-end</p>
           </div>
         }
+        button={<ButtonLink href='/reserver-cours' title='Réserver un cours' />}
       />
 
       <Card
@@ -85,6 +88,9 @@ const Offers = () => {
             </p>
           </div>
         }
+        button={
+          <ButtonLink href='/reserver-cours' title='Réserver une méditation' />
+        }
       />
       <Card
         title='Cours 1:1'
@@ -104,6 +110,13 @@ const Offers = () => {
               contact est nécessaire.
             </p>
           </div>
+        }
+        button={
+          <ButtonLink
+            href='https://app.acuityscheduling.com/schedule.php?owner=33520682&owner=33520682&appointmentType=69034331'
+            title='Prendre rendez-vous'
+            targetBlank={true}
+          />
         }
       />
     </section>

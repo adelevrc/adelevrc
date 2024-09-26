@@ -2,13 +2,20 @@ import ButtonLink from "../components/Button/Link/Link";
 import PageHeader from "../components/PageHeader/PageHeader";
 import image from "../images/photoOfMeStudio.webp";
 import styles from "./lessons.module.scss";
+
+export const metadata = {
+  title: "Les offres de cours - Adèle Vercaygne",
+  description:
+    "Découvrez mes cours de yoga d'une heure, ainsi que des sessions de méditation et de respiration de 30 minutes. Explorez également ma chaîne YouTube pour plus de contenu.",
+};
+
 const Lessons = () => {
   return (
     <main className={styles.main}>
       <PageHeader
         title='Les cours'
         alt={
-          "L'image montre une personne assise sur les talons sur un tapis de yoga bleu, devant un mur blanc. Elle est habillée d'une brassère violette et d'un legging bleu foncé. Ses mains reposent sur ses cuisses. Elle semble être en train de sourire, affichant une expression joyeuse et détendue. Derrière elle, on voit un mur blanc."
+          "Moi, pratiquant le yoga, assise sur un tapis bleu, portant une brassière violette et un legging bleu foncé, souriant devant un mur blanc."
         }
         image={image}
       />
@@ -89,7 +96,14 @@ const Lessons = () => {
           avec votre professeur avant. N'hésitez pas à me contacter, nous
           pourrons échanger par message, email ou de vive voix.
         </p>
-        <ButtonLink title={"Me contacter"} href={"contact"} />
+        <div className={styles.buttonsSection}>
+          <ButtonLink
+            href='https://app.acuityscheduling.com/schedule.php?owner=33520682&owner=33520682&appointmentType=69034331'
+            title='Prendre rendez-vous'
+            targetBlank={true}
+          />
+          <ButtonLink title={"Envoyer un message"} href={"contact"} />
+        </div>
       </section>
     </main>
   );

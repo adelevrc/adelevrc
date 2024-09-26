@@ -46,10 +46,8 @@
     padding: 3rem;
     line-height: 30px;
     color: $color-leaf-950;
-    @include breakpoint-lg {
-      a {
-        align-self: center;
-      }
+    a {
+      align-self: center;
     }
   }
 }
