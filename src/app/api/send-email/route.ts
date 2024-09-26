@@ -20,8 +20,6 @@ const transporter = nodemailer.createTransport({
 
 
 export async function POST(request: Request) {
-    console.log("process.env.NEXT_PUBLIC_EMAIL_USER", process.env.NEXT_PUBLIC_EMAIL_USER)
-    console.log("process.env.NEXT_PUBLIC_EMAIL_PASS", process.env.NEXT_PUBLIC_EMAIL_PASS)
 
   const data: ContactFormData = await request.json();
 
@@ -36,7 +34,7 @@ export async function POST(request: Request) {
     const mailOptions = {
       from: sanitizedData.email,
       to: 'adele.vercaygne@gmail.com',
-      subject: 'Nouvelle demande de contact via le site internet',
+      subject: '[CONTACT] - Nouvelle demande de contact via le site internet',
       text: `
         Une nouvelle demande de contact a été faite via le site internet
         Nom: ${sanitizedData.lastname}
@@ -47,7 +45,6 @@ export async function POST(request: Request) {
       `,
     };
 
-    console.log("mailOptions", mailOptions)
   try {
     await transporter.sendMail(mailOptions);
     return NextResponse.json({ message: '200' });
