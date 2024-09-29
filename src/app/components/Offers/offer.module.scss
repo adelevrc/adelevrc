@@ -4,11 +4,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4rem;
-  padding-top: 4rem;
+  gap: 3rem;
+  padding: 3rem 1.5rem;
+  background-color: $color-leaf-50;
   @include breakpoint-lg {
-    padding: 4rem;
     flex-direction: row;
+    overflow: auto;
+  }
+
+  @include breakpoint-xl {
+    flex-direction: row;
+    padding: 3rem;
     justify-content: center;
     background: linear-gradient(
       to top,
@@ -19,15 +25,23 @@
 }
 
 .card {
-  width: 300px;
-  height: 500px;
+  width: 100%;
+  height: 550px;
   perspective: 1000px;
   cursor: pointer;
   border-radius: 20px;
   h4 {
     color: $color-leaf-800;
+    span {
+      color: $color-leaf-950;
+      font-weight: 200;
+      font-family: "Lora";
+      display: block;
+      font-style: italic;
+    }
   }
-  @include breakpoint-lg {
+
+  @include breakpoint-sm {
     width: 24rem;
   }
 }
@@ -38,15 +52,20 @@
   height: 100%;
   transition: transform 0.6s;
   transform-style: preserve-3d;
+  @include breakpoint-sm {
+    width: 24rem;
+  }
 }
 
 .flipped {
   transform: rotateY(180deg);
-  height: 500px;
+  height: 550px;
+  width: 100%;
 
-  @include breakpoint-lg {
+  @include breakpoint-sm {
     width: 24rem;
   }
+
   .cardImage {
     display: none;
   }
@@ -64,6 +83,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include breakpoint-sm {
+    width: 24rem;
+  }
 
   button,
   a {
@@ -84,7 +106,7 @@
     width: 100%;
     letter-spacing: 1px;
     font-weight: 300;
-    @include breakpoint-lg {
+    @include breakpoint-xl {
       transform: translateY(50%);
     }
   }
@@ -93,9 +115,10 @@
     max-width: 100%;
     object-fit: cover;
     border-radius: 10px;
-    height: 500px;
+    height: 550px;
+    width: 100%;
 
-    @include breakpoint-lg {
+    @include breakpoint-md {
       width: 24rem;
     }
   }
@@ -104,27 +127,6 @@
 .cardBack {
   background-size: cover;
   transform: rotateY(180deg);
-}
-
-.onlineClass {
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
-  h3 {
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-  ul {
-    li {
-      list-style: none;
-      margin: 0.5rem 0;
-    }
-  }
-  p {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
 }
 
 .class {
@@ -140,24 +142,5 @@
     + p {
       font-style: italic;
     }
-  }
-}
-
-.meditationClass {
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  h2 {
-    text-transform: uppercase;
-    text-align: center;
-    + p {
-      font-style: italic;
-    }
-  }
-  p:last-child {
-    font-style: italic;
   }
 }

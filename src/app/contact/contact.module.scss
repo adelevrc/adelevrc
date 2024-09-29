@@ -2,17 +2,16 @@
 .main {
   display: flex;
   flex-direction: column;
-  background-color: $color-leaf-600;
+  background: $color-background-radiant;
   h2 {
-    color: $color-leaf-950;
+    color: $color-leaf-50;
   }
 
   h1 {
-    color: $color-leaf-100;
-    background-color: $color-leaf-600;
+    color: $color-leaf-50;
     text-transform: uppercase;
     font-weight: 400;
-    padding: 0 2.5rem;
+    padding: 0 1.5rem;
     text-align: center;
     letter-spacing: 1px;
     font-weight: 600;
@@ -20,8 +19,7 @@
   }
 
   section {
-    padding: 3rem 1rem;
-    background-color: $color-leaf-600;
+    padding: 3rem 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
@@ -29,12 +27,20 @@
     align-items: center;
     p {
       color: $color-leaf-50;
+      text-align: start;
+      width: 100%;
+      @include breakpoint-lg {
+        width: 80%;
+      }
+    }
+    @include breakpoint-lg {
+      padding: 3rem;
     }
 
     > div {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      gap: 1.5rem;
       align-items: center;
       @include breakpoint-lg {
         width: 55%;

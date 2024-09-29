@@ -4,35 +4,39 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 4rem;
+  gap: 1rem;
   padding: 2rem 0;
-  background-color: $color-leaf-600;
+  background-image: $color-background-radiant;
 
   h2 {
     text-transform: uppercase;
     color: $color-leaf-50;
     font-weight: 500;
-    padding: 0 3rem;
+    padding: 0 1.5rem;
     text-align: center;
     letter-spacing: 1px;
     line-height: 3rem;
+
+    @include breakpoint-lg {
+      padding: 0 3rem;
+    }
+    span {
+      font-size: inherit;
+    }
   }
   p {
     color: $color-leaf-50;
     font-weight: 300;
     text-align: center;
-    padding: 0 3rem;
+    padding: 0 1.5rem;
 
     @include breakpoint-lg {
       padding: initial;
-      transform: translate(30%);
       border-radius: 60px;
       padding: 1rem 3rem;
-      border: 2px solid $color-leaf-50;
-      font-size: 1.2rem;
     }
   }
-  .lineBreak {
-    display: block;
+  a {
+    margin-top: 1rem;
   }
 }

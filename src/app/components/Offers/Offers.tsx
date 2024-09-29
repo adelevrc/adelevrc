@@ -52,19 +52,26 @@ const Offers = () => {
   return (
     <section className={style.offers}>
       <Card
-        title='Cours en ligne'
+        title='Cours de yoga en ligne'
         alt='Professeur de yoga exécutant la posture Guerrier III (Virabhadrasana III) avec équilibre, une jambe levée et tendue en arrière, une jmabe au sol et les mains en prière sur la poitrine.'
         src={warrior3Image}
         info={
           <div className={style.class}>
-            <h4>Cours en ligne</h4>
-            <p> Dans le confort de votre maison</p>
+            <h4>
+              Cours de yoga en ligne -{" "}
+              <span> Dans le confort de votre maison</span>
+            </h4>
             <p>
-              Les cours en ligne durent une heure et vous permettent de faire du
-              yoga tout en restant chez vous.
+              Profitez de <strong>cours en ligne de yoga</strong> d'une heure
+              pour pratiquer confortablement depuis votre maison. C'est la
+              solution idéale pour intégrer <strong>le yoga</strong> dans votre
+              quotidien, tout en restant chez vous.
             </p>
-            <p>C'est la solution pratique et confortable par excellence.</p>
-            <p> Les cours en ligne se déroulent le soir et le week-end</p>
+            <p>
+              Les <strong>cours de yoga en ligne</strong> se déroulent le soir
+              et le week-end, offrant une flexibilité parfaite pour votre emploi
+              du temps.
+            </p>
           </div>
         }
         button={<ButtonLink href='/reserver-cours' title='Réserver un cours' />}
@@ -76,15 +83,22 @@ const Offers = () => {
         src={meditation}
         info={
           <div className={style.class}>
-            <h4>Cours de méditation en ligne</h4>
-            <p> Recommencer la semaine sans appréhension</p>
+            <h4>
+              Cours de méditation en ligne -{" "}
+              <span>Recommencer la semaine sans appréhension</span>
+            </h4>
             <p>
-              Ce travail de respiration et méditation guidée vous permettra
-              d'enlever le blues du dimanche soir.
+              Grâce à ce travail de <strong>respiration</strong> et de{" "}
+              <strong>méditation guidée</strong>, vous pourrez dire adieu au
+              blues du dimanche soir et aborder chaque nouvelle semaine sans
+              appréhension.
             </p>
             <p>
-              L'objectif est de construire avec vous des outils de respiration
-              et de méditation pour vous aider dans toutes les situations.
+              L'objectif des <strong>cours de méditation en ligne</strong> est
+              de vous aider à développer des{" "}
+              <strong>outils de respiration</strong> et de méditation que vous
+              pourrez utiliser dans toutes les situations de stress ou
+              d'anxiété.
             </p>
           </div>
         }
@@ -98,16 +112,20 @@ const Offers = () => {
         src={downwardogImage}
         info={
           <div className={style.class}>
-            <h4>Cours individuel</h4>
-            <p> Allez plus loin dans sa pratique. </p>
+            <h4>
+              Cours de yoga individuel -{" "}
+              <span>Atteignez de nouveaux objectifs dans votre pratique</span>
+            </h4>
+
             <p>
-              Les cours individuels sont construits autour de ce que vous avez
-              envie d'améliorer ou de découvrir dans la pratique du yoga.
+              Les <strong>cours de yoga individuels</strong> s'adaptent à vos
+              besoins, que vous souhaitiez perfectionner certaines postures,
+              gagner en flexibilité ou découvrir de nouvelles techniques. Chaque
+              session est personnalisée selon vos objectifs.
             </p>
-            <p> Les cours peuvent aller d'une heure à une heure et demi </p>
             <p>
-              Afin de mieux se connaître et de connaître vos besoins, un premier
-              contact est nécessaire.
+              Les cours durent de 1 à 1h30, selon vos préférences. Un premier
+              contact est nécessaire pour définir vos attentes avant de débuter.
             </p>
           </div>
         }

@@ -1,0 +1,14 @@
+@import "../../styles/mixins";
+
+.text {
+  border: 1px solid $color-leaf-100;
+  border-radius: 60px;
+  padding: 3px 16px;
+  margin-right: 0.4rem;
+  line-height: 60px;
+  margin-left: 0.4rem;
+  font-size: inherit;
+}
+.reversed {
+  border: 1px solid $color-leaf-600;
+}

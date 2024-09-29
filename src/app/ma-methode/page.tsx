@@ -1,3 +1,4 @@
+import BorderedText from "../components/BorderedText/BorderedText";
 import ButtonLink from "../components/Button/Link/Link";
 import PageHeader from "../components/PageHeader/PageHeader";
 import image from "../images/sky.webp";
@@ -14,64 +15,67 @@ const Method = () => (
     <PageHeader
       title='Ma méthode'
       alt={
-        "L'image représente le ciel. C'est un ciel bleu foncé avec un nuage très blanc et voluptueux juste un mileu de la photo. La photo a été prise vue du ciel."
+        "Ciel bleu avec un nuage blanc, symbolisant la paix intérieure après une séance de yoga et de méditation."
       }
       image={image}
     />
     <section>
       <h2>
-        Travailler de manière <span>consciente</span> dans un but précis.
+        Travailler de manière{" "}
+        <BorderedText text='consciente' isReversed={true} /> pour améliorer la
+        force, la mobilité et le calme mental.
       </h2>
       <p>
-        Le yoga que je propose est un yoga dynamique, qui permet de faire
-        travailler la force et la mobilité, tout en renforçant son mental pour
-        être calme dans toutes les situations.
+        Le yoga que je propose est un yoga dynamique, qui combine force,
+        mobilité et maîtrise du mental pour rester serein·e dans toutes les
+        situations.
       </p>
 
       <h2>
-        Comment une séance est-elle <span> construite</span> ?
+        Comment se déroule une <span>séance de yoga</span> ?
       </h2>
       <p>
-        Une séance est construite à partir d'un objectif de posture (qu'elle
-        soit une posture d'équilibre ou une posture de base).
+        Chaque séance est construite autour d'un objectif précis, qu'il s'agisse
+        d'une posture d'équilibre ou de base. Nous travaillons l'ensemble des
+        muscles nécessaires pour atteindre cet objectif : renforcement et
+        souplesse sont les maîtres mots.
       </p>
       <p>
-        Pour arriver à cette posture, nous travaillerons tous les muscles
-        nécessaires : certains muscles doivent gagner en force, d'autres en
-        souplesse. Pour chaque muscle, nous travaillerons ces deux aspects à
-        chaque fois, en faisant des postures traditionnelles ainsi que des
-        variations et des transitions beaucoup moins classiques.
+        Nous utiliserons des postures traditionnelles, ainsi que des variations
+        créatives, pour maximiser la force et la mobilité, tout en ajoutant des
+        exercices moins classiques pour enrichir la pratique.
       </p>
       <p>
-        L'objectif est de vous permettre d'avoir la plus grande gamme de
-        mouvements possible, pour pouvoir faire le plus de choses dans votre
-        vie, mais aussi pour permettre à votre cerveau d'avoir une carte immense
-        de votre corps et des mouvements qu'il est capable de faire. Cela le
-        rendra très heureux, et vous aussi.
+        L'objectif est d'élargir votre gamme de mouvements, afin d'améliorer
+        votre quotidien et de renforcer la connexion corps-esprit, créant ainsi
+        une carte cérébrale plus étendue qui contribue à votre bien-être global.
       </p>
       <p>
-        À ces mouvements, nous allons ajouter d'autres éléments : la
-        respiration, la méditation statique ou en mouvement, ainsi que des
-        exercices neurologiques pour vous aider à aller plus loin dans votre
-        force et votre souplesse, et donc gagner en mobilité.
+        À ces mouvements, nous ajouterons des pratiques de respiration, de
+        méditation (statique ou en mouvement), ainsi que des exercices
+        neurologiques pour optimiser à la fois votre force et votre souplesse,
+        et ainsi améliorer votre mobilité.
       </p>
       <p>
-        Dans ces exercices neurologiques, vous trouverez des exercices de
-        respiration très spécifiques, mais aussi des exercices d'équilibre pour
-        travailler l'oreille interne ou encore des exercices de vision.
+        Les exercices neurologiques incluent des techniques de respiration
+        spécifiques, des exercices d'équilibre pour renforcer l'oreille interne
+        et des exercices de vision pour travailler les connexions sensorielles.
       </p>
+
       <h2>
-        L'<span>objectif</span> dans tout ça ?{" "}
+        Quel est l'<span>objectif</span> de ces séances ?
       </h2>
       <p>
-        L'objectif de ces séances est que vous compreniez les exercices qui vous
-        font du bien et sur lesquels vous devez travailler pour les intégrer
-        dans votre vie quotidienne, et ainsi avoir enfin le pouvoir de la
-        contrôler. Dans un monde de sédentarité et toujours plus stressant, il
-        est plus qu'important de bouger son corps et travailler son esprit, pour
-        être dans la meilleure forme possible et dans le plus grand des calmes.
+        L'objectif est que chacun·e puisse identifier les exercices bénéfiques à
+        son bien-être et les intégrer dans son quotidien. Dans un monde de plus
+        en plus sédentaire et stressant, il est essentiel de bouger son corps et
+        d'entraîner son esprit afin d'atteindre un état de forme optimal et de
+        sérénité.
       </p>
-      <ButtonLink title={"Réserver un cours"} href={"/reserver-cours"} />
+      <ButtonLink
+        title={"Réserver un cours de yoga"}
+        href={"/reserver-cours"}
+      />
     </section>
   </main>
 );

@@ -2,8 +2,38 @@
 
 .main {
   overflow: hidden;
-  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  div {
+    background: $color-background-radiant;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    @include breakpoint-lg {
+      padding: 3rem;
+    }
+    h1 {
+      color: $color-leaf-50;
+      @include breakpoint-lg {
+        text-align: center;
+      }
+    }
+    h2 {
+      color: $color-leaf-200;
+    }
+    p {
+      color: $color-leaf-50;
+    }
+  }
+
   iframe {
     border: none;
+    @include breakpoint-lg {
+      align-self: center;
+      padding: 3rem;
+      width: 80%;
+    }
   }
 }

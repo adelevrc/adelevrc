@@ -17,6 +17,23 @@ $color-leaf-800: #354639;
 $color-leaf-900: #000000;
 $color-leaf-950: #151e18;
 
+$color-background-radiant: linear-gradient(
+  50deg,
+  hsl(134deg 17% 36%) 0%,
+  hsl(134deg 17% 37%) 13%,
+  hsl(134deg 17% 38%) 42%,
+  hsl(134deg 17% 38%) 63%,
+  hsl(134deg 16% 39%) 74%,
+  hsl(134deg 16% 40%) 82%,
+  hsl(134deg 16% 41%) 87%,
+  hsl(134deg 16% 41%) 91%,
+  hsl(134deg 16% 42%) 94%,
+  hsl(134deg 16% 43%) 96%,
+  hsl(134deg 16% 44%) 98%,
+  hsl(135deg 16% 45%) 99%,
+  hsl(135deg 16% 45%) 100%
+);
+
 @mixin breakpoint-sm {
   @media (min-width: #{$breakpoint-sm}) {
     @content;

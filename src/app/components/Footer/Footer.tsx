@@ -77,7 +77,9 @@ const Footer = () => {
                 type='email'
               ></input>
               <label>Email</label>
-              <button type='submit'> ok</button>
+              <button type='submit' className={style.arrowButton}>
+                →
+              </button>
             </form>
           )}
         </div>

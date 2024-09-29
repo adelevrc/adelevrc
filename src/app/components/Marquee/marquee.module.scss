@@ -1,13 +1,13 @@
 @import "../../styles/mixins";
 
 .marquee {
-  background-color: $color-leaf-100;
   width: 100vw;
   overflow: hidden;
   align-items: center;
+  background-color: $color-leaf-50;
 
   .scrollingContent {
-    font-family: "Lora";
+    font-family: "Anton";
 
     display: flex;
     align-items: center;

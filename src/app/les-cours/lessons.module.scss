@@ -1,22 +1,32 @@
 @import "../styles//mixins";
 
 .main {
+  background-color: $color-leaf-50;
+  h2 {
+    color: $color-leaf-800;
+    margin-top: 1.5rem;
+  }
+  h2.reversed {
+    color: $color-leaf-50;
+  }
   display: flex;
   flex-direction: column;
-  background-color: $color-leaf-100;
   button,
   a {
     align-self: center;
   }
   @include breakpoint-lg {
     align-items: center;
+    h2 {
+      margin-top: 3rem;
+    }
   }
 
   h1 {
     background-color: $color-leaf-600;
     border-radius: 4px;
 
-    color: $color-leaf-200;
+    color: $color-leaf-50;
     text-transform: uppercase;
     font-weight: 400;
     padding: 0 3rem;
@@ -57,7 +67,7 @@
   }
 
   h3 {
-    color: $color-leaf-200;
+    color: $color-leaf-50;
     @include breakpoint-lg {
       text-transform: uppercase;
       text-align: center;
@@ -80,10 +90,9 @@
     }
   }
   .introduction {
-    background-color: $color-leaf-400;
+    background: $color-background-radiant;
     color: $color-leaf-50;
     padding: 1.5rem 2.5rem;
-    //font-size: 24px;
     font-family: "Lora";
     text-align: center;
     font-style: italic;
@@ -96,26 +105,39 @@
     gap: 0.5rem;
     line-height: 1.8;
     padding: 0 1.5rem;
-    margin-bottom: 2rem;
+    article {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.5rem;
+      .underline {
+        text-decoration: underline;
+        &:hover {
+          color: $color-leaf-600;
+        }
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      gap: 1.5rem;
+    }
     @include breakpoint-xl {
       display: grid;
       grid-template-columns: 1fr 1fr;
       width: 80%;
       gap: 5rem;
+
       button,
       a {
         align-self: center;
+        justify-self: flex-end;
+        bottom: 0;
       }
     }
   }
 
-  h2 {
-    color: $color-leaf-800;
-    margin-top: 3.5rem;
-    @include breakpoint-lg {
-      // font-size: 2rem;
-    }
-  }
   .others {
     display: flex;
     flex-direction: column;
@@ -132,9 +154,12 @@
   .moreInfo {
     display: flex;
     flex-direction: column;
+    h2 {
+      text-align: center;
+    }
     gap: 1.5rem;
     padding: 1.5rem 2.5rem;
-    background-color: $color-leaf-600;
+    background: $color-background-radiant;
     width: 100%;
     p {
       color: $color-leaf-50;
@@ -146,11 +171,20 @@
         align-self: center;
       }
     }
-  }
+    .buttonsSection {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      gap: 1.5rem;
+      a {
+        width: 100%;
+      }
 
-  .buttonsSection {
-    display: flex;
-    gap: 3rem;
-    align-self: center;
+      @include breakpoint-lg {
+        flex-direction: row;
+        gap: 3rem;
+        margin-bottom: 1.5rem;
+      }
+    }
   }
 }
