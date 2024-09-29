@@ -1,6 +1,5 @@
-"use client";
+import ReservationFrame from "../components/ReservationFrame/ReservationFrame";
 import styles from "./bookClass.module.scss";
-import { useEffect } from "react";
 
 export const metadata = {
   title: "Réservez un cours de Yoga et Méditation",
@@ -9,17 +8,6 @@ export const metadata = {
 };
 
 const BookClass = () => {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://embed.acuityscheduling.com/js/embed.js";
-    script.async = true;
-    script.type = "text/javascript";
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
     <main className={styles.main}>
       <div>
@@ -34,13 +22,7 @@ const BookClass = () => {
           sélectionner "Premier rendez-vous".
         </p>
       </div>
-
-      <iframe
-        src='https://app.acuityscheduling.com/schedule.php?owner=33520682&ref=embedded_csp'
-        title='Prendre rendez-vous'
-        width='100%'
-        height='800'
-      ></iframe>
+      <ReservationFrame />
     </main>
   );
 };
