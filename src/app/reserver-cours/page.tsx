@@ -2,6 +2,12 @@
 import styles from "./bookClass.module.scss";
 import { useEffect } from "react";
 
+export const metadata = {
+  title: "Réservez un cours de Yoga et Méditation",
+  description:
+    "Réservez facilement un cours de yoga ou une séance de méditation en ligne. Utilisez le formulaire pour planifier votre session ou prenez un premier rendez-vous pour un cours individuel.",
+};
+
 const BookClass = () => {
   useEffect(() => {
     const script = document.createElement("script");
