@@ -37,8 +37,8 @@ const Lessons = () => {
             </p>
             <p>Les cours en ligne ont lieu :</p>
             <ul>
-              <li>Mercredi de 19h à 20h</li>
-              <li> Vendredi de 19h à 20h</li>
+              <li>Mercredi de 19h30 à 20h30</li>
+              <li> Vendredi de 19h30 à 20h30</li>
               <li>Dimanche de 10h à 11h</li>
             </ul>
           </div>
