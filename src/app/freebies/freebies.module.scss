@@ -1,0 +1,28 @@
+@import "../styles/mixins";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 2rem;
+  ul {
+    display: flex;
+    li {
+      list-style-type: none;
+      cursor: pointer;
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 1rem;
+      img {
+        height: 15rem;
+        object-fit: contain;
+        width: auto;
+      }
+      @include breakpoint-lg {
+        width: 25rem;
+        align-items: flex-start;
+      }
+    }
+  }
+}
