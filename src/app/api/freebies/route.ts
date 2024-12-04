@@ -16,8 +16,8 @@ export async function POST(req: NextRequest) {
     port: process.env.NEXT_PUBLIC_PORT, 
     secure: process.env.NEXT_PUBLIC_SECURE, 
     auth: {
-      user: process.env.NEXT_PUBLIC_EMAIL_USER, 
-      pass: process.env.NEXT_PUBLIC_EMAIL_PASS, 
+      user: process.env.NEXT_EMAIL_USER, 
+      pass: process.env.NEXT_EMAIL_PASS, 
     },
   } as SMTPTransport.Options);
 
@@ -90,7 +90,7 @@ const htmlTemplate = `
   `;
 
   const mailOptions = {
-    from: process.env.NEXT_PUBLIC_EMAIL_USER,
+    from: process.env.NEXT_EMAIL_USER,
     to: email,
     subject: 'Freebie de yoga : 5 astuces pour trouver son calme',
     html: htmlTemplate,
