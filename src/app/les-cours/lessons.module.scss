@@ -1,13 +1,14 @@
 @import "../styles//mixins";
 
 .main {
+  display: flex;
+  flex-direction: column;
+
   h2 {
     color: $color-red;
     margin-top: 1.5rem;
   }
 
-  display: flex;
-  flex-direction: column;
   button,
   a {
     align-self: center;
@@ -24,9 +25,11 @@
   }
 
   h3 {
-    @include breakpoint-lg {
-      text-transform: uppercase;
-      text-align: center;
+    & {
+      @include breakpoint-lg {
+        text-transform: uppercase;
+        text-align: center;
+      }
     }
   }
 
@@ -67,17 +70,19 @@
       }
       gap: 1.5rem;
     }
-    @include breakpoint-xl {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      width: 80%;
-      gap: 5rem;
+    & {
+      @include breakpoint-xl {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+        gap: 5rem;
 
-      button,
-      a {
-        align-self: center;
-        justify-self: flex-end;
-        bottom: 0;
+        button,
+        a {
+          align-self: center;
+          justify-self: flex-end;
+          bottom: 0;
+        }
       }
     }
   }
@@ -89,9 +94,11 @@
     width: 100%;
     gap: 0.5rem;
 
-    @include breakpoint-lg {
-      width: 80%;
-      margin-bottom: 2rem;
+    & {
+      @include breakpoint-lg {
+        width: 80%;
+        margin-bottom: 2rem;
+      }
     }
   }
 
@@ -105,10 +112,12 @@
     padding: 1.5rem 2.5rem;
     width: 100%;
 
-    @include breakpoint-lg {
-      p {
-        width: 80%;
-        align-self: center;
+    & {
+      @include breakpoint-lg {
+        p {
+          width: 80%;
+          align-self: center;
+        }
       }
     }
     .buttonsSection {
@@ -120,10 +129,12 @@
         width: 100%;
       }
 
-      @include breakpoint-lg {
-        flex-direction: row;
-        gap: 3rem;
-        margin-bottom: 1.5rem;
+      & {
+        @include breakpoint-lg {
+          flex-direction: row;
+          gap: 3rem;
+          margin-bottom: 1.5rem;
+        }
       }
     }
   }
