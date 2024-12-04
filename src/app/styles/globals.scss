@@ -1,6 +1,94 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Mrs+Saint+Delafield&display=swap");
 @import "./mixins";
+
+// Libre Bodoni
+@font-face {
+  font-family: "Libre Bodoni";
+  src:
+    url("https://fonts.gstatic.com/s/librebodoni/v1/oxGx7rtGLb82PdlolZp7GLAztu0nTa0lDgn53l0nqpA.woff2")
+      format("woff2"),
+    url("https://fonts.gstatic.com/s/librebodoni/v1/oxGx7rtGLb82PdlolZp7GLAztu0nTa0lDgn53l0nqpA.woff")
+      format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Libre Bodoni";
+  src:
+    url("https://fonts.gstatic.com/s/librebodoni/v1/oxGx7rtGLb82PdlolZp7GLAztu0nTa0lDgn53l0nqpA-Bold.woff2")
+      format("woff2"),
+    url("https://fonts.gstatic.com/s/librebodoni/v1/oxGx7rtGLb82PdlolZp7GLAztu0nTa0lDgn53l0nqpA-Bold.woff")
+      format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Libre Bodoni";
+  src:
+    url("https://fonts.gstatic.com/s/librebodoni/v1/oxGx7rtGLb82PdlolZp7GLAztu0nTa0lDgn53l0nqpA-Italic.woff2")
+      format("woff2"),
+    url("https://fonts.gstatic.com/s/librebodoni/v1/oxGx7rtGLb82PdlolZp7GLAztu0nTa0lDgn53l0nqpA-Italic.woff")
+      format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Libre Bodoni";
+  src:
+    url("https://fonts.gstatic.com/s/librebodoni/v1/oxGx7rtGLb82PdlolZp7GLAztu0nTa0lDgn53l0nqpA-BoldItalic.woff2")
+      format("woff2"),
+    url("https://fonts.gstatic.com/s/librebodoni/v1/oxGx7rtGLb82PdlolZp7GLAztu0nTa0lDgn53l0nqpA-BoldItalic.woff")
+      format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+// Mrs Saint Delafield
+@font-face {
+  font-family: "Mrs Saint Delafield";
+  src:
+    url("https://fonts.gstatic.com/s/mrssaintdelafield/v1/aeF1HlkS5itvdQ2QOYaP2E2g7ttF5OZwqeoY6Rfgwo.woff2")
+      format("woff2"),
+    url("https://fonts.gstatic.com/s/mrssaintdelafield/v1/aeF1HlkS5itvdQ2QOYaP2E2g7ttF5OZwqeoY6Rfgwo.woff")
+      format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mrs Saint Delafield";
+  src:
+    url("https://fonts.gstatic.com/s/mrssaintdelafield/v1/aeF1HlkS5itvdQ2QOYaP2E2g7ttF5OZwqeoY6Rfgwo-Bold.woff2")
+      format("woff2"),
+    url("https://fonts.gstatic.com/s/mrssaintdelafield/v1/aeF1HlkS5itvdQ2QOYaP2E2g7ttF5OZwqeoY6Rfgwo-Bold.woff")
+      format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mrs Saint Delafield";
+  src:
+    url("https://fonts.gstatic.com/s/mrssaintdelafield/v1/aeF1HlkS5itvdQ2QOYaP2E2g7ttF5OZwqeoY6Rfgwo-Italic.woff2")
+      format("woff2"),
+    url("https://fonts.gstatic.com/s/mrssaintdelafield/v1/aeF1HlkS5itvdQ2QOYaP2E2g7ttF5OZwqeoY6Rfgwo-Italic.woff")
+      format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Mrs Saint Delafield";
+  src:
+    url("https://fonts.gstatic.com/s/mrssaintdelafield/v1/aeF1HlkS5itvdQ2QOYaP2E2g7ttF5OZwqeoY6Rfgwo-BoldItalic.woff2")
+      format("woff2"),
+    url("https://fonts.gstatic.com/s/mrssaintdelafield/v1/aeF1HlkS5itvdQ2QOYaP2E2g7ttF5OZwqeoY6Rfgwo-BoldItalic.woff")
+      format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
 
 :root {
   --max-width: 1200px;
