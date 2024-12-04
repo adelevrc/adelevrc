@@ -1,18 +1,3 @@
-@font-face {
-  font-family: "Mrs Saint Delafield";
-  src: url("/public/fonts/mrs-saint-delafield-regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Libre Bodoni Bold */
-@font-face {
-  font-family: "Libre Bodoni";
-  src: url("/public/fonts/llibrebodoni-regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
 //BREAKPOINTS
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
