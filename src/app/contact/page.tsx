@@ -14,26 +14,33 @@ const Contact = () => {
       <h1>Formulaire de contact</h1>
       <section>
         <h2>Contactez-moi</h2>
-        <p>
-          Vous souhaitez en savoir plus sur mes cours de yoga ou de méditation ?
-          Vous préférez discuter avant de réserver ? Je suis ici pour répondre à
-          toutes vos questions.
-        </p>
-        <p>
-          Si vous êtes une entreprise et que vous souhaitez proposer des cours
-          de yoga pour vos salariés, ou si vous voulez prendre contact pour un
-          cours particulier, vous avez deux possibilités :
-        </p>
-        <p>
-          Prenez un rendez-vous de 15 minutes pour discuter en ligne ou
-          écrivez-moi un message via le formulaire ci-dessous.
-        </p>
-        <ButtonLink
-          href='https://app.acuityscheduling.com/schedule.php?owner=33520682&owner=33520682&appointmentType=69034331'
-          title='Discuter en ligne'
-          targetBlank={true}
-        />
-        <ContactForm />
+        <div className={styles.global}>
+          <div className={styles.informations}>
+            <p>
+              Vous souhaitez en savoir plus sur mes cours de yoga ou de
+              méditation ? Vous préférez discuter avant de réserver ? Je suis
+              ici pour répondre à toutes vos questions.
+            </p>
+            <p>
+              Si vous êtes une entreprise et que vous souhaitez proposer des
+              cours de yoga pour vos salariés, ou si vous voulez prendre contact
+              pour un cours particulier, vous avez deux possibilités :
+            </p>
+            <p>
+              Prenez un rendez-vous de 15 minutes pour discuter en ligne ou
+              écrivez-moi un message via le formulaire ci-dessous.
+            </p>
+
+            <ButtonLink
+              href='https://app.acuityscheduling.com/schedule.php?owner=33520682&owner=33520682&appointmentType=69034331'
+              title='Discuter en ligne'
+              targetBlank={true}
+              color='red'
+            />
+          </div>
+
+          <ContactForm />
+        </div>
       </section>
     </main>
   );

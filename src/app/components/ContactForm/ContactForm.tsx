@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import styles from "./contactForm.module.scss";
+
 const ContactForm = () => {
   const { register, handleSubmit, watch } = useForm();
   const [emailIsPending, setEmailIsPending] = useState(false);

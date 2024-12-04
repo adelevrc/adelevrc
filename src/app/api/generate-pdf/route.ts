@@ -7,7 +7,7 @@ import path from 'path'
 export async function GET() {
   try {
     // Charger le fichier PDF à partir du dossier public
-    const findCalmEbookPdfPath = path.join(process.cwd(), 'public', 'ebook-findcalm.pdf')
+    const findCalmEbookPdfPath = path.join(process.cwd(), 'public', 'ebook_trouver_son_calme.pdf')
 
     const findCalmEbookPdfBytes = fs.readFileSync(findCalmEbookPdfPath)
 

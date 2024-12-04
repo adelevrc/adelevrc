@@ -3,17 +3,17 @@
 .footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: $color-leaf-800;
-  color: $color-leaf-50;
+  background-color: $color-pink;
+  color: $color-black;
   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
-
+  h1 {
+    font-family: $cursive;
+  }
   .firstSection {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
     @include breakpoint-lg {
       flex-direction: row;
       width: 100%;
@@ -25,10 +25,8 @@
     li {
       list-style-type: none;
       text-align: center;
-      margin-top: 1rem;
       a {
-        font-family: "Anton";
-        text-transform: uppercase;
+        font-family: $arial;
         letter-spacing: 0.5px;
         &:hover {
           text-decoration: underline;
@@ -44,20 +42,20 @@
       background-color: #f73c50;
       padding: 0.5rem 1.5rem;
       border-radius: 4px;
-      color: $color-leaf-50;
+      color: $color-white;
     }
     .success {
-      background-color: $color-leaf-500;
+      background-color: green;
       padding: 0.5rem 1.5rem;
       border-radius: 4px;
-      color: $color-leaf-50;
+      color: $color-white;
     }
     .loaderContainer {
       display: flex;
       justify-content: center;
       .loader {
-        border: 3px solid $color-leaf-50;
-        border-top: 3px solid $color-leaf-50;
+        border: 3px solid $color-white;
+        border-top: 3px solid $color-white;
         border-radius: 50%;
         width: 20px;
         height: 20px;
@@ -82,14 +80,14 @@
       width: 100%;
       padding: 10px 10px 10px 10px;
       font-size: 16px;
-      border: 2px solid $color-leaf-50;
+      border: 2px solid $color-white;
       border-radius: 4px;
       outline: none;
       transition: border-color 0.3s ease;
     }
 
     input:focus {
-      border-color: $color-leaf-50;
+      border-color: $color-white;
     }
 
     label {
@@ -98,7 +96,7 @@
       left: 10px;
       transform: translateY(-50%);
       font-size: 16px;
-      color: $color-leaf-800;
+      color: $color-black;
       padding: 0 5px;
       pointer-events: none;
       transition: all 0.3s ease;
@@ -111,10 +109,10 @@
     input:not(:placeholder-shown) + label {
       top: -10px;
       font-size: 12px;
-      color: $color-leaf-50;
+      color: $color-white;
     }
     input:focus + label {
-      color: $color-leaf-50;
+      color: $color-white;
     }
   }
   .arrowButton {
@@ -124,7 +122,7 @@
     transform: translateY(-50%);
     background: transparent;
     border: none;
-    color: $color-leaf-700; /* Couleur de la flèche */
+    color: $color-black; /* Couleur de la flèche */
     cursor: pointer;
     font-size: 16px; /* Ajustez la taille selon vos besoins */
     padding: 0; /* Enlève le padding */
@@ -136,10 +134,10 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    color: $color-leaf-50;
+    color: $color-white;
     p {
-      color: $color-leaf-50;
-      font-family: "Anton";
+      color: $color-white;
+      font-family: $arial;
     }
     ul {
       display: flex;
@@ -152,9 +150,9 @@
             cursor: pointer;
           }
           svg {
-            fill: $color-leaf-50;
+            fill: $color-black;
             &:hover {
-              fill: $color-leaf-200;
+              opacity: 0.8;
             }
           }
         }
@@ -169,5 +167,10 @@
     padding: 0.5rem;
     justify-content: center;
     align-items: center;
+    font-size: 10px;
+    a {
+      font-family: $arial;
+      font-size: 10px;
+    }
   }
 }

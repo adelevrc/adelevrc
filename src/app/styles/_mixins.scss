@@ -1,3 +1,4 @@
+//BREAKPOINTS
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
@@ -5,34 +6,18 @@ $breakpoint-xl: 1200px;
 $breakpoint-xxl: 1400px;
 
 /// COLORS
-$color-leaf-50: #f8f6ee;
-$color-leaf-100: #e8f0ea;
-$color-leaf-200: #d2e0d5;
-$color-leaf-300: #b4cab9;
-$color-leaf-400: #83a58b;
-$color-leaf-500: #61866a;
-$color-leaf-600: #4d6c54;
-$color-leaf-700: #3f5644;
-$color-leaf-800: #354639;
-$color-leaf-900: #000000;
-$color-leaf-950: #151e18;
+$color-white: #ffffff;
+$color-grey: #121212bf;
+$color-red: #a42525;
+$color-black: #333333;
+$color-pink: #e4bed2;
+$color-bright-pink: #de5083;
+$color-light-grey: #f1f1f1;
 
-$color-background-radiant: linear-gradient(
-  50deg,
-  hsl(134deg 17% 36%) 0%,
-  hsl(134deg 17% 37%) 13%,
-  hsl(134deg 17% 38%) 42%,
-  hsl(134deg 17% 38%) 63%,
-  hsl(134deg 16% 39%) 74%,
-  hsl(134deg 16% 40%) 82%,
-  hsl(134deg 16% 41%) 87%,
-  hsl(134deg 16% 41%) 91%,
-  hsl(134deg 16% 42%) 94%,
-  hsl(134deg 16% 43%) 96%,
-  hsl(134deg 16% 44%) 98%,
-  hsl(135deg 16% 45%) 99%,
-  hsl(135deg 16% 45%) 100%
-);
+//FONT
+$libre-bondoni: "Libre Bodoni", serif;
+$arial: Arial, sans-serif;
+$cursive: "Mrs Saint Delafield", cursive;
 
 @mixin breakpoint-sm {
   @media (min-width: #{$breakpoint-sm}) {

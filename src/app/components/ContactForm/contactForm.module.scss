@@ -2,16 +2,14 @@
 
 .form {
   position: relative;
-  background-color: $color-leaf-400;
   width: 100%;
   max-width: 600px;
-  box-shadow: 0 10px 40px -12px rgba(16, 24, 40, 0.1);
+  border: 1px solid $color-black;
   padding: 2.5rem;
-  border-radius: 1rem;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-top: 2.5rem;
   .inputContainer {
     position: relative;
     margin-bottom: 20px;
@@ -21,7 +19,7 @@
       left: 10px;
       top: 50%;
       transform: translateY(-50%);
-      color: $color-leaf-800;
+      color: $color-black;
       font-size: 1rem;
       pointer-events: none;
       transition: all 0.2s ease;
@@ -32,7 +30,7 @@
     select {
       width: 100%;
       padding: 10px;
-      border: none;
+      border: 1px solid $color-black;
       font-size: 1rem;
       border-radius: 4px;
       outline: none;
@@ -41,13 +39,13 @@
       &:not(:placeholder-shown) + label {
         top: -10px;
         font-size: 0.8rem;
-        color: $color-leaf-100;
+        color: $color-pink;
       }
     }
     input,
     textarea {
       &:focus {
-        border-color: $color-leaf-100;
+        border-color: $color-white;
       }
     }
 
@@ -59,21 +57,20 @@
     label {
       display: flex;
       gap: 1rem;
-      color: $color-leaf-100;
     }
   }
   .error {
     background-color: #f73c50;
     padding: 0.5rem 1.5rem;
     border-radius: 4px;
-    color: $color-leaf-50;
+    color: $color-white;
     height: 2.5rem;
   }
   .success {
-    background-color: $color-leaf-500;
+    background-color: green;
     padding: 0.5rem 1.5rem;
     border-radius: 4px;
-    color: $color-leaf-50;
+    color: $color-white;
     height: 2.5rem;
   }
   .loaderContainer {
@@ -82,8 +79,8 @@
     height: 2.5rem;
 
     .loader {
-      border: 3px solid $color-leaf-50;
-      border-top: 3px solid $color-leaf-600;
+      border: 3px solid $color-white;
+      border-top: 3px solid $color-red;
       border-radius: 50%;
       width: 20px;
       height: 20px;
@@ -93,21 +90,23 @@
   button {
     align-self: center;
     padding: 0.5rem 1.5rem;
-    background-color: $color-leaf-500;
-    color: $color-leaf-50;
+    background-color: $color-red;
+    color: $color-white;
     border-radius: 0.5rem;
     border: none;
     height: 2.5rem;
     cursor: pointer;
     font-size: 1rem;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $arial;
 
     &:hover {
-      background-color: $color-leaf-600;
+      opacity: 0.8;
     }
     &:disabled {
-      background-color: $color-leaf-100;
-      color: $color-leaf-400;
+      opacity: 0.2;
       cursor: not-allowed;
       border: none;
       align-self: center;

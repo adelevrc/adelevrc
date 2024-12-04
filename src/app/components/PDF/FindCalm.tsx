@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { useSearchParams } from "next/navigation";
+
 const PdfPage = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [pdfUrl, setPdfUrl] = useState<string | null>(null);
@@ -44,7 +44,7 @@ const PdfPage = () => {
             <iframe src={pdfUrl} width='100%' height='600' title='PDF Viewer' />
             <a
               href={pdfUrl}
-              download={`ebook-trouver-son-calme.pdf`}
+              download={`ebook_trouve_-son_calme.pdf`}
               target='_blank'
               rel='noopener noreferrer'
               onClick={handleOpenInNewTab}

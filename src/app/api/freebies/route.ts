@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import SMTPTransport from 'nodemailer/lib/smtp-transport';
 
 interface IFormInput {
   lastname: string;
@@ -11,13 +12,14 @@ export async function POST(req: NextRequest) {
   const { lastname,firstname , email }: IFormInput = await req.json();
 
   const transporter = nodemailer.createTransport({
-    service: 'gmail',
+    host: process.env.NEXT_PUBLIC_HOST ??"", 
+    port: process.env.NEXT_PUBLIC_PORT, 
+    secure: process.env.NEXT_PUBLIC_SECURE, 
     auth: {
-      user: process.env.NEXT_PUBLIC_EMAIL_USER,
-      pass: process.env.NEXT_PUBLIC_EMAIL_PASS,
+      user: process.env.NEXT_PUBLIC_EMAIL_USER, 
+      pass: process.env.NEXT_PUBLIC_EMAIL_PASS, 
     },
-  });
-
+  } as SMTPTransport.Options);
 
 const htmlTemplate = `
     <html>
@@ -74,7 +76,7 @@ const htmlTemplate = `
           <p>Merci pour votre inscription ! </p>
           <p>Nous sommes ravis de vous offrir notre ebook exclusif "5 techniques pour gérer toutes les situations".</p>
             <p> Pour le récupérer, vous pouvez cliquer sur le lien ci-dessous  : </p>
-            <a href="https://www.adelevrc.com/ebook-findcalm.pdf">
+            <a href="https://www.adelevrc.com/ebook_trouver_son_calme.pdf">
            Récupérer mon freebie
             </a>
           </div>

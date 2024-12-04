@@ -1,7 +1,5 @@
-import BorderedText from "../components/BorderedText/BorderedText";
 import ButtonLink from "../components/Button/Link/Link";
 import PageHeader from "../components/PageHeader/PageHeader";
-import image from "../images/sky.webp";
 import styles from "./methode.module.scss";
 
 export const metadata = {
@@ -12,18 +10,11 @@ export const metadata = {
 
 const Method = () => (
   <main className={styles.main}>
-    <PageHeader
-      title='Ma méthode'
-      alt={
-        "Ciel bleu avec un nuage blanc, symbolisant la paix intérieure après une séance de yoga et de méditation."
-      }
-      image={image}
-    />
+    <PageHeader title='Ma méthode' />
     <section>
       <h2>
-        Travailler de manière{" "}
-        <BorderedText text='consciente' isReversed={true} /> pour améliorer la
-        force, la mobilité et le calme mental.
+        Travailler de manière <span>consciente </span> pour améliorer la force,
+        la mobilité et le calme mental.
       </h2>
       <p>
         Le yoga que je propose est un yoga dynamique, qui combine force,
@@ -32,7 +23,7 @@ const Method = () => (
       </p>
 
       <h2>
-        Comment se déroule une <span>séance de yoga</span> ?
+        Comment se déroule une <span>séance de yoga </span> ?
       </h2>
       <p>
         Chaque séance est construite autour d'un objectif précis, qu'il s'agisse
@@ -63,7 +54,7 @@ const Method = () => (
       </p>
 
       <h2>
-        Quel est l'<span>objectif</span> de ces séances ?
+        Quel est <span>l'objectif </span> de ces séances ?
       </h2>
       <p>
         L'objectif est que chacun·e puisse identifier les exercices bénéfiques à
@@ -75,6 +66,7 @@ const Method = () => (
       <ButtonLink
         title={"Réserver un cours de yoga"}
         href={"/reserver-cours"}
+        color='red'
       />
     </section>
   </main>

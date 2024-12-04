@@ -6,7 +6,6 @@
   flex-direction: column;
   gap: 2.5rem;
   div {
-    background: $color-background-radiant;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -15,16 +14,13 @@
       padding: 3rem;
     }
     h1 {
-      color: $color-leaf-50;
+      color: $color-red;
       @include breakpoint-lg {
         text-align: center;
       }
     }
     h2 {
-      color: $color-leaf-200;
-    }
-    p {
-      color: $color-leaf-50;
+      color: $color-red;
     }
   }
 

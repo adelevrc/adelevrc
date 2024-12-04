@@ -4,20 +4,11 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background: $color-background-radiant;
-  .picture {
-    object-fit: fill;
-    width: 100%;
-    color: $color-leaf-950;
-    @include breakpoint-lg {
-      object-fit: cover;
-      height: 35rem !important;
-    }
-  }
+  gap: 3rem;
+
   h2 {
     font-size: 1.7rem;
     @include breakpoint-lg {
-      font-size: 3rem;
       line-height: 6rem;
     }
   }
@@ -27,18 +18,20 @@
     height: 0;
     padding-top: 70%;
     overflow: hidden;
-    background: $color-background-radiant;
     img {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+
       max-width: 100%;
     }
     @include breakpoint-lg {
-      padding-top: 35%;
+      padding-top: 400px;
+      img {
+        height: 400px !important;
+        object-fit: contain;
+      }
     }
   }
   .bookClass {
@@ -47,8 +40,7 @@
     gap: 3rem;
     padding: 3rem;
     line-height: 30px;
-    color: $color-leaf-950;
-    background-color: $color-leaf-50;
+    color: $color-black;
     a {
       align-self: center;
     }

@@ -1,5 +1,6 @@
 import ButtonLink from "../components/Button/Link/Link";
 import PageHeader from "../components/PageHeader/PageHeader";
+import StyledContainer from "../components/StyledContainer/StyledContainer";
 import image from "../images/photoOfMeStudio.webp";
 import styles from "./lessons.module.scss";
 
@@ -12,17 +13,7 @@ export const metadata = {
 const Lessons = () => {
   return (
     <main className={styles.main}>
-      <PageHeader
-        title='Les cours'
-        alt={
-          "Moi, pratiquant le yoga, assise sur un tapis bleu, portant une brassière violette et un legging bleu foncé, souriant devant un mur blanc."
-        }
-        image={image}
-      />
-      <p className={styles.introduction}>
-        Je propose différents types de cours, en ligne ou en présentiel, toute
-        la semaine et le week-end.
-      </p>
+      <PageHeader title='Les cours' />
       <section>
         <article>
           <div>
@@ -37,13 +28,19 @@ const Lessons = () => {
             </p>
             <p>Les cours en ligne ont lieu :</p>
             <ul>
-              <li>Mercredi de 19h30 à 20h30</li>
-              <li> Vendredi de 19h30 à 20h30</li>
-              <li>Dimanche de 10h à 11h</li>
+              <StyledContainer children={<li>Mercredi de 19h30 à 20h30</li>} />
+              <StyledContainer children={<li> Vendredi de 19h30 à 20h30</li>} />
+              <StyledContainer children={<li>Dimanche de 10h00 à 11h00</li>} />
             </ul>
           </div>
 
-          {<ButtonLink href='/reserver-cours' title='Réserver un cours' />}
+          {
+            <ButtonLink
+              href='/reserver-cours'
+              title='Réserver un cours'
+              color='red'
+            />
+          }
         </article>
 
         <article>
@@ -54,28 +51,46 @@ const Lessons = () => {
               découvrir les bienfaits de la pratique sans engagement.
             </p>
             <ul>
-              <li className={styles.timeline}>
-                <span>Jeudi - 17h00</span>
-                <span>
-                  Cours de 5 à 30 minutes disponibles sur{" "}
-                  <a
-                    className={styles.underline}
-                    target='_blank'
-                    href='https://www.youtube.com/@adelevrc'
-                  >
-                    Youtube
-                  </a>
-                  .
-                </span>
+              <li>
+                <StyledContainer
+                  children={
+                    <>
+                      <span>Jeudi - 17h00</span>
+                      <span>
+                        Cours de 5 à 30 minutes disponibles sur{" "}
+                        <a
+                          className={styles.underline}
+                          target='_blank'
+                          href='https://www.youtube.com/@adelevrc'
+                        >
+                          Youtube
+                        </a>
+                        .
+                      </span>
+                    </>
+                  }
+                />
               </li>
               <li className={styles.timeline}>
-                <span>Premier samedi du mois - 11h à 12h </span>
-                <span> Prix libre - min 3 euros </span>
+                <StyledContainer
+                  children={
+                    <>
+                      <span>Premier samedi du mois - 11h à 12h </span>
+                      <span> Prix libre - min 3 euros </span>
+                    </>
+                  }
+                />
               </li>
             </ul>
           </div>
 
-          {<ButtonLink href='/reserver-cours' title='Réserver sa place' />}
+          {
+            <ButtonLink
+              href='/reserver-cours'
+              title='Réserver sa place'
+              color='red'
+            />
+          }
         </article>
         <article>
           <div>
@@ -100,21 +115,26 @@ const Lessons = () => {
           <ButtonLink
             title={"Prendre rendez-vous"}
             href='https://app.acuityscheduling.com/schedule.php?owner=33520682&owner=33520682&appointmentType=69034331'
+            color='red'
           />
         </article>
         <article>
           <div>
             <h2> Les cours de respiration et de méditation </h2>
-            <p className={styles.timeline}>
-              Tous les dimanches, de 19h à 19h30 en ligne.
-            </p>
+            <StyledContainer
+              children={<p> Tous les dimanches, de 19h à 19h30 en ligne.</p>}
+            />
             <p>
               Cette demi heure vous permettre de sortir du blues du dimanche
               soir, mais aussi de gagner en réflexe pour lutter contre tout
               stress ou anxiété, et démarrer la semaine en forme et calme.
             </p>
           </div>
-          <ButtonLink href='/reserver-cours' title='Réserver une méditation' />
+          <ButtonLink
+            href='/reserver-cours'
+            title='Réserver une méditation'
+            color='red'
+          />
         </article>
       </section>
 
@@ -132,7 +152,7 @@ const Lessons = () => {
           <strong>formulaire de contact</strong> pour discuter de vos besoins
           spécifiques et planifier une séance.
         </p>
-        <ButtonLink title={"Me contacter"} href={"contact"} />
+        <ButtonLink title={"Me contacter"} href={"contact"} color='red' />
       </article>
 
       <section className={styles.moreInfo}>
@@ -149,8 +169,13 @@ const Lessons = () => {
             href='https://app.acuityscheduling.com/schedule.php?owner=33520682&owner=33520682&appointmentType=69034331'
             title='Prendre rendez-vous'
             targetBlank={true}
+            color='red'
           />
-          <ButtonLink title={"Envoyer un message"} href={"contact"} />
+          <ButtonLink
+            title={"Envoyer un message"}
+            href={"contact"}
+            color='red'
+          />
         </div>
       </section>
     </main>

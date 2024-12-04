@@ -1,3 +1,4 @@
+import PageHeader from "../components/PageHeader/PageHeader";
 import ReservationFrame from "../components/ReservationFrame/ReservationFrame";
 import styles from "./bookClass.module.scss";
 
@@ -11,7 +12,7 @@ const BookClass = () => {
   return (
     <main className={styles.main}>
       <div>
-        <h1>Réserver un cours de yoga ou de méditation</h1>
+        <PageHeader title={"Réserver un cours de yoga ou de méditation"} />
         <h2>Comment réserver ?</h2>
         <p>
           Réservez directement un cours de yoga en ligne ou une séance de

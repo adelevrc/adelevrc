@@ -55,15 +55,6 @@ const Header = () => {
         <ul>
           <li>
             <Link
-              href={"/"}
-              onClick={handleLinkClick}
-              tabIndex={menuOpen ? 0 : -1}
-            >
-              Accueil
-            </Link>
-          </li>
-          <li>
-            <Link
               href={"a-propos"}
               onClick={handleLinkClick}
               tabIndex={menuOpen ? 0 : -1}

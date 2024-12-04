@@ -1,8 +1,6 @@
 @import "../../../styles/mixins";
 .button {
   padding: 0.5rem 1.5rem;
-  background-color: $color-leaf-500;
-  color: $color-leaf-50;
   border: none;
   border-radius: 0.5rem;
   width: fit-content;
@@ -11,7 +9,17 @@
   font-size: 1rem;
   text-align: center;
   text-transform: uppercase;
+}
+
+.color-white {
+  background-color: $color-white;
+  color: $color-black;
+}
+
+.color-red {
+  background-color: $color-red;
+  color: $color-white;
   &:hover {
-    background-color: $color-leaf-600;
+    background-color: $color-pink;
   }
 }

@@ -1,8 +1,8 @@
 "use client";
-import Image from "next/image";
 import { useState } from "react";
+import PageHeader from "../components/PageHeader/PageHeader";
 import FreebiesPopin from "../components/Popin/Freebies/Freebies";
-import FiveTechniquesIMG from "../images/freebies/Page-de-couverture.webp";
+import StyledContainer from "../components/StyledContainer/StyledContainer";
 import styles from "./freebies.module.scss";
 
 export interface Popin {
@@ -19,7 +19,7 @@ const Freebies = () => {
   return (
     <main className={styles.main}>
       {popin.isOpen && <FreebiesPopin setPopin={setPopin} popin={popin} />}
-      <h1> Freebies</h1>
+      <PageHeader title={"Freebies"} />
       <p> Qui n'aime pas les cadeaux ?! </p>
       <p>
         Sur cette page, retrouvez tous les programmes, astuces, techniques,
@@ -28,8 +28,13 @@ const Freebies = () => {
       <h3> Liste des freebies : </h3>
       <ul>
         <li onClick={() => handlePopinOpening("5-tips-to-be-calm")}>
-          <p>5 techniques pour se calmer dans toutes les situations</p>
-          <Image src={FiveTechniquesIMG} alt='' />
+          <StyledContainer
+            children={
+              <span>
+                5 techniques pour rester calme dans toutes les situations
+              </span>
+            }
+          />
         </li>
       </ul>
     </main>

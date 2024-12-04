@@ -1,12 +1,9 @@
-import Banner from "./components/Banner/Banner1";
-import Banner2 from "./components/Banner/Banner2";
 import Image from "next/image";
-import ButtonLink from "./components/Button/Link/Link";
-import ContactMe from "./components/ContactMe/Contact.Me";
+import Banner from "./components/Banner/Banner1";
+import ContactMe from "./components/ContactMe/ContactMe";
 import Description from "./components/Description/Description";
-import Marquee from "./components/Marquee/Marquee";
 import Offers from "./components/Offers/Offers";
-import image from "./images/updogoutside.webp";
+import image from "./images/plank.webp";
 import style from "./styles/home.module.scss";
 
 export const metadata = {
@@ -18,27 +15,18 @@ export const metadata = {
 const Home = () => (
   <main className={style.main}>
     <Banner />
-    <Marquee />
     <div className={style.imageContainer}>
       <Image
         className={style.picture}
         src={image}
         layout='fill'
         objectFit='cover'
-        alt="Personne faisant du yoga en plein air en posture Cobra (Bhujangasana) sur un tapis vert, avec un arrière-plan naturel de plantes et d'arbres."
+        alt='Personne faisant du yoga en intérieur. Elle est en planche sur le côté et rigole en regardant la caméra devant elle.'
       />
     </div>
 
     <Description />
     <Offers />
-    <div className={style.bookClass}>
-      <ButtonLink
-        title={"En savoir plus sur les cours"}
-        href={"les-cours"}
-        reversed
-      />
-    </div>
-    <Banner2 />
     <ContactMe />
   </main>
 );

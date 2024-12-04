@@ -9,7 +9,7 @@ const ReservationFrame = () => {
     script.type = "text/javascript";
     document.body.appendChild(script);
     return () => {
-      document.body.removeChild(script);
+      document?.body?.removeChild(script);
     };
   }, []);
   return (

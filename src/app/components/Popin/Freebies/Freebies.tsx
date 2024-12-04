@@ -55,7 +55,7 @@ const FreebiesPopin = ({ setPopin, popin }: FreebiesPopinProps) => {
       isPending: true,
     }));
 
-    const response = await fetch("../../../api/freebies", {
+    await fetch("../../../api/freebies", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
@@ -163,7 +163,7 @@ const FreebiesPopin = ({ setPopin, popin }: FreebiesPopinProps) => {
     <div
       role='dialog'
       aria-modal='true'
-      aria-labelledby='modal-title'
+      aria-labelledby={`modal-freeby-${getTitle(popin.name)}`}
       className={styles.overlay}
       onClick={onClose}
     >

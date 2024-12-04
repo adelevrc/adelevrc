@@ -1,4 +1,3 @@
-import BorderedText from "../BorderedText/BorderedText";
 import ButtonLink from "../Button/Link/Link";
 import style from "./description.module.scss";
 
@@ -6,52 +5,56 @@ const Description = () => {
   return (
     <section className={style.description}>
       <h2>
-        {" "}
-        Des cours de yoga construits pour gagner en{" "}
-        <BorderedText text='force' /> et en <BorderedText text='mobilité' />{" "}
-      </h2>{" "}
-      <h3>
-        {" "}
-        Créer des mouvements nouveaux et originaux pour être libre dans{" "}
-        <span>tous</span> ses mouvements.{" "}
-      </h3>{" "}
+        Des cours de yoga construits autour de l'<strong>anatomie </strong> et
+        de la <strong> neuroscience </strong> pour gagner en{" "}
+        <strong> force</strong> et en
+        <strong> mobilité </strong> rapidement.
+      </h2>
       <p>
-        {" "}
-        Le principal objectif de mes cours est de vous apporter une aisance dans
-        vos mouvements, des plus simples aux plus compliqués.{" "}
-      </p>{" "}
-      <h4 className={style.italic}>Pourquoi cet objectif ?</h4>
+        Une de mes plus grandes passions est de comprendre le fonctionnement du
+        corps humain et du cerveau.
+      </p>
+      <h4 className={style.italic}>
+        Des séquences de yoga <span>pointues </span> et <span> faciles</span> à
+        suivre pour répondre à un besoin spécifique.
+      </h4>
       <ul>
         <li>
           <p>
-            Pour votre <strong>cerveau</strong> : quand nous avons un large
-            catalogue de mouvements, notre cerveau sera capable de gérer toutes
-            les informations et de rester dans un état de calme et de contrôle.
+            Prise en compte de votre <strong> cerveau </strong> et de ses
+            réactions face à certains stimuli : des exercices spécifiques sont
+            intégrés en fonction du flow de yoga, des mouvements et des parties
+            anatomiques ciblées. En utilisant des{" "}
+            <strong> "neurodrills" </strong>, il sera possible d'aller plus
+            loin, plus facilement et avec davantage de force dans une posture.
           </p>
         </li>
         <li>
           <p>
-            Pour votre <strong>corps</strong> : la vie sédentaire ne nous fait
-            pas de bien. Adopter des mouvements fonctionnels et originaux permet
-            de gagner de la force dans certaines parties du corps qui peuvent
-            être inexploitées, ce qui augmente le risque de blessure, de chute
-            et potentiellement un vieillissement prématuré.
+            <strong>Anatomie </strong> et <strong> biomécanique </strong> : mes
+            séquences se concentrent principalement sur une partie spécifique du
+            corps ou sur un mouvement particulier, que nous explorerons dans
+            toutes les directions possibles pour améliorer la mobilité, quelle
+            que soit la position.
           </p>
         </li>
       </ul>
-      <h4>Comment ?</h4>
+      <h4>
+        Des cours ouverts à <span>tout le monde</span>, pour gagner en autonomie
+        dans sa pratique{" "}
+      </h4>
       <p>
-        Les cours sont un mélange de <strong>science du mouvement</strong> et de{" "}
-        <strong>principes anatomiques</strong>, en incluant la{" "}
-        <strong>neuroscience</strong>. Ils vous permettront d'explorer
-        différents rythmes, différentes façons d'aller plus loin dans les
-        postures, tout en brisant quelques "règles" du yoga.{" "}
-      </p>{" "}
-      <p>
-        <strong>Comprendre votre corps </strong> et gagner en{" "}
-        <strong>autonomie</strong> sont deux piliers de votre liberté.
+        Voici une version corrigée et légèrement révisée pour améliorer la
+        fluidité : Les flows de yoga sont conçus pour être précis et pointus,
+        mais cela ne signifie pas que mes cours sont réservés à un public
+        d'initiés. Ma méthode d'enseignement permet à chacun de trouver son
+        propre rythme et de s'approprier les informations tout en explorant les
+        postures et mouvements. En apprenant à mieux comprendre votre{" "}
+        <strong> corps </strong> et votre <strong> esprit </strong>, grâce à des
+        tests intégrés dans les séquences, vous découvrirez ce qui vous convient
+        le mieux et comment enrichir votre pratique pour la faire évoluer.
       </p>
-      <ButtonLink href='ma-methode' title='Ma méthode' />
+      <ButtonLink href='ma-methode' title='Ma méthode' color='red' />
     </section>
   );
 };

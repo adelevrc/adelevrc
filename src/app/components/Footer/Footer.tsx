@@ -4,7 +4,6 @@ import { useRef, useState } from "react";
 import style from "./footer.module.scss";
 
 const Footer = () => {
-  const form = useRef<HTMLFormElement | null>(null);
   const [emailIsPending, setEmailIsPending] = useState(false);
   const [emailIsSend, setEmailIsSend] = useState(false);
   const [emailIsNotSend, setEmailIsNotSend] = useState(false);
@@ -85,7 +84,6 @@ const Footer = () => {
         </div>
       </div>
       <div className={style.socialMedia}>
-        <p>Suivez-moi ! </p>
         <ul>
           <li>
             <a

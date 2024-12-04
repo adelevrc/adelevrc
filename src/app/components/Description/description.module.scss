@@ -3,47 +3,42 @@
 .description {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2.5rem;
   padding: 3rem 1.5rem;
-  background: $color-leaf-600;
   h2 {
-    color: $color-leaf-50;
-    font-weight: 400;
-    text-transform: uppercase;
-    line-height: 60px;
-    @include breakpoint-lg {
-      text-align: center;
-    }
-    span {
-      border: 1px solid $color-leaf-100;
-      border-radius: 60px;
-      padding: 3px 16px;
-      margin-right: 0.4rem;
-      line-height: 60px;
-      margin-left: 0.4rem;
-      font-size: inherit;
+    color: $color-red;
+    font-size: 36px;
+    strong {
+      font-size: 40px;
     }
     @include breakpoint-lg {
-      padding: 3rem 3rem;
+      max-width: 1200px;
+      align-self: center;
+      padding: 0 3rem;
+      line-height: 3rem !important;
+    }
+  }
+  h2,
+  h4 {
+    span,
+    strong {
+      font-family: $cursive;
+      color: $color-bright-pink;
     }
   }
   h3,
   h4 {
-    color: $color-leaf-50;
+    color: $color-red;
     text-align: center;
-
-    span {
-      font-style: italic;
-      text-decoration: underline;
-      font-size: inherit;
-    }
   }
   h4 {
-    font-family: "Lora";
+    font-family: $libre-bondoni;
     font-style: italic;
+    span {
+      font-size: 30px;
+    }
   }
   p {
-    color: $color-leaf-100;
     line-height: 2rem;
     @include breakpoint-lg {
       line-height: 40px;
