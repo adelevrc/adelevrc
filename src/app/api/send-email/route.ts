@@ -33,11 +33,10 @@ export async function POST(request: Request) {
       message: data.message.replace(/</g, "&lt;").replace(/>/g, "&gt;"),
     };
 
-    console.log("sanitizedData", sanitizedData)
 
     const mailOptions = {
-      from: sanitizedData.email,
-      to: 'adele.vercaygne@gmail.com',
+      from: process.env.NEXT_EMAIL_USER,
+      to: process.env.NEXT_EMAIL_USER,
       subject: '[CONTACT] - Nouvelle demande de contact via le site internet',
       text: `
         Une nouvelle demande de contact a été faite via le site internet
