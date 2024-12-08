@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import SMTPTransport from 'nodemailer/lib/smtp-transport';
 
 interface ContactFormData {
   lastname: string;
@@ -9,19 +10,20 @@ interface ContactFormData {
   newsletter: boolean;
 }
 
-const transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: process.env.NEXT_EMAIL_USER,
-    pass: process.env.NEXT_EMAIL_PASS,
-  },
-});
-
-
 
 export async function POST(request: Request) {
 
   const data: ContactFormData = await request.json();
+ const transporter = nodemailer.createTransport({
+  
+    host: process.env.NEXT_PUBLIC_HOST ??"", 
+    port: process.env.NEXT_PUBLIC_PORT, 
+    secure: process.env.NEXT_PUBLIC_SECURE, 
+    auth: {
+      user: process.env.NEXT_EMAIL_USER, 
+      pass: process.env.NEXT_EMAIL_PASS, 
+    },
+  } as SMTPTransport.Options);
 
      const sanitizedData = {
       ...data,
@@ -30,6 +32,8 @@ export async function POST(request: Request) {
       email: data.email?.replace(/</g, "&lt;").replace(/>/g, "&gt;"),
       message: data.message.replace(/</g, "&lt;").replace(/>/g, "&gt;"),
     };
+
+    console.log("sanitizedData", sanitizedData)
 
     const mailOptions = {
       from: sanitizedData.email,

@@ -15,8 +15,8 @@ const Description = () => {
         corps humain et du cerveau.
       </p>
       <h4 className={style.italic}>
-        Des séquences de yoga <span>pointues </span> et <span> faciles</span> à
-        suivre pour répondre à un besoin spécifique.
+        Des séquences de yoga <span> pointues </span> et <span> faciles </span>{" "}
+        à suivre pour répondre à un besoin spécifique.
       </h4>
       <ul>
         <li>
