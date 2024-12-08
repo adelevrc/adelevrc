@@ -28,11 +28,9 @@ const FreebiesPopin = ({ setPopin, popin }: FreebiesPopinProps) => {
     isNotSend: false,
   });
 
-  const [isLoading, setIsLoading] = useState(true);
   const [pdfUrl, setPdfUrl] = useState<string | null>(null);
 
   const generatePdf = async () => {
-    setIsLoading(true);
     try {
       const response = await fetch(`../../../api/generate-pdf`);
       if (response.ok) {
@@ -40,12 +38,9 @@ const FreebiesPopin = ({ setPopin, popin }: FreebiesPopinProps) => {
         const url = URL.createObjectURL(blob);
         setPdfUrl(url);
       } else {
-        console.error("Erreur lors de la génération du PDF");
       }
     } catch (error) {
-      console.error("Erreur de connexion à l'API:", error);
-    } finally {
-      setIsLoading(false);
+      console.log(error);
     }
   };
 

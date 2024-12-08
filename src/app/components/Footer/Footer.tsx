@@ -14,9 +14,9 @@ const Footer = () => {
     setEmailIsPending(true);
     try {
       const response = await fetch("/api/subscribe", {
-        body: JSON.stringify(email),
-        headers: { "Content-Type": "application/json" },
         method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(email),
       });
       const result = await response.json();
       if (result.message === "200") {

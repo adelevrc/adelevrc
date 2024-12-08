@@ -6,14 +6,11 @@ mailchimp.setConfig({
   server: process.env.MAILCHIMP_SERVER_PREFIX as string,
 });
 
-type Data = {
-  message?: string;
-  error?: string;
-};
+
 
 export async function POST(req: Request) {
-  const { email } = await req.json();
-  
+  const  email  = await req.json();
+
   if (!email) {
     return NextResponse.json({ error: 'Email is required', message: "400" });
   }
