@@ -19,9 +19,8 @@ const Home = () => (
       <Image
         className={style.picture}
         src={image}
-        layout='fill'
-        objectFit='cover'
         alt='Personne faisant du yoga en intérieur. Elle est en planche sur le côté et rigole en regardant la caméra devant elle.'
+        priority
       />
     </div>
 

@@ -1,0 +1,49 @@
+@import "../../styles/mixins";
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    padding: 40px 20px;
+    width: 100%;
+    @include breakpoint-lg {
+      flex-direction: row;
+      max-width: 1200px;
+    }
+    form {
+      padding: 0;
+      @include breakpoint-lg {
+        width: 50%;
+      }
+    }
+    .info {
+      padding: 40px;
+      border: 1px solid $color-black;
+      max-width: 600px;
+      @include breakpoint-lg {
+        max-width: none;
+        width: 50%;
+      }
+      p {
+        font-family: $libre-bondoni;
+        font-size: 42px;
+        padding-bottom: 2rem;
+      }
+      li {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.2rem 0;
+        svg {
+          width: 22px;
+        }
+      }
+    }
+  }
+}

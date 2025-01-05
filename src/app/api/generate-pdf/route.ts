@@ -15,7 +15,7 @@ export async function GET() {
     const pdfDoc = await PDFDocument.create()
 
     // Charger le fichier PDF existant
-    const findCalmEbookPdf = await PDFDocument.load(findCalmEbookPdfBytes)
+    const findCalmEbookPdf = await PDFDocument.load(new Uint8Array(findCalmEbookPdfBytes))
 
     // Copier chaque page du fichier "findCalmEbook.pdf" dans le nouveau document
     const pageCount = findCalmEbookPdf.getPages().length
