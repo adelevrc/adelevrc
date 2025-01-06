@@ -52,7 +52,8 @@ const Newsletter = () => {
             </li>
             <li>
               <FontAwesomeIcon icon={faCheckCircle} color='#a42525' />
-              Un conseil de neurosciences expliqué avec mise en pratique
+              Un conseil de neurosciences + mise en pratique ou un debunk de
+              mythe
             </li>
             <li>
               <FontAwesomeIcon icon={faCheckCircle} color='#a42525' />

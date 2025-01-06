@@ -49,7 +49,13 @@ const Footer = () => {
             <Link href={"reserver-cours"}>Réserver un cours</Link>
           </li>
           <li>
+            <Link href={"freebies"}>Freebies</Link>
+          </li>
+          <li>
             <Link href={"contact"}> Contact </Link>
+          </li>
+          <li>
+            <Link href={"newsletter"}>Newsletter</Link>
           </li>
         </ul>
         <div className={style.newsletter}>
