@@ -40,8 +40,11 @@
         align-items: center;
         gap: 1rem;
         padding: 0.2rem 0;
+        text-align: left;
         svg {
           width: 22px;
+          min-width: 22px;
+          max-width: 22px;
         }
       }
     }
