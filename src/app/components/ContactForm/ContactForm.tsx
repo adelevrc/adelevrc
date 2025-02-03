@@ -2,8 +2,10 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import styles from "./contactForm.module.scss";
+import { useTranslations } from "next-intl";
 
 const ContactForm = () => {
+  const t = useTranslations("Freebies.form");
   const { register, handleSubmit, watch } = useForm();
   const [emailIsPending, setEmailIsPending] = useState(false);
   const [emailIsSend, setEmailIsSend] = useState(false);
@@ -42,48 +44,46 @@ const ContactForm = () => {
           id='lastname'
           type='text'
           placeholder=' '
-          {...register("lastname", { required: "Le nom est requis" })}
+          {...register("lastname", { required: t("requiredName") })}
         />
-        <label htmlFor='lastname'>Nom</label>
+        <label htmlFor='lastname'>{t("lastName")}</label>
       </div>
       <div className={styles.inputContainer}>
         <input
           id='firstname'
           type='text'
           placeholder=' '
-          {...register("firstname", { required: "Le prénom est requis" })}
+          {...register("firstname", { required: t("requiredFirstName") })}
         />
-        <label htmlFor='firstname'>Prénom</label>
+        <label htmlFor='firstname'>{t("firstName")}</label>
       </div>
       <div className={styles.inputContainer}>
         <input
           id='email'
           type='email'
           placeholder=' '
-          {...register("email", { required: "L'email est requis" })}
+          {...register("email", { required: t("requiredEmail") })}
         />
-        <label htmlFor='email'>Email</label>
+        <label htmlFor='email'>{t("email")}</label>
       </div>
       <div className={styles.inputContainer}>
         <textarea
           id='message'
           placeholder=' '
-          {...register("message", { required: "Le message est requis" })}
+          {...register("message", { required: t("requiredMessage") })}
         />
-        <label htmlFor='message'>Message</label>
+        <label htmlFor='message'>{t("message")}</label>
       </div>
       <div className={styles.newsletter}>
         <label htmlFor='newsletter'>
           <input id='newsletter' type='checkbox' {...register("newsletter")} />
-          Je m'abonne à la newsletter
+          {t("subscribeNewsletter")}
         </label>
       </div>
       {emailIsNotSend && (
-        <div className={styles.error}>Une erreur s'est produite</div>
+        <div className={styles.error}>{t("errorOccured")}</div>
       )}
-      {emailIsSend && (
-        <div className={styles.success}>Votre message a bien été envoyé</div>
-      )}
+      {emailIsSend && <div className={styles.success}>{t("success")} </div>}
       {emailIsPending && (
         <div className={styles.loaderContainer}>
           <div className={styles.loader}></div>
@@ -91,7 +91,7 @@ const ContactForm = () => {
       )}
       {!emailIsNotSend && !emailIsSend && !emailIsPending && (
         <button type='submit' disabled={!isFormValid}>
-          Envoyer
+          {t("send")}
         </button>
       )}
     </form>

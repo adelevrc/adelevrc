@@ -10,16 +10,65 @@
     padding: 0 1.5rem;
     font-weight: 400;
     span {
-      font-family: $cursive;
+      font-style: italic;
       color: $color-bright-pink;
-      font-size: 40px;
     }
   }
   h1 {
-    padding: 2.5rem 0;
+    line-height: 2.5rem;
+    text-transform: none;
+    @include breakpoint-lg {
+      padding-top: 2.5rem;
+    }
+    span {
+      font-style: italic;
+      color: $color-bright-pink;
+    }
   }
   h2 {
     color: $color-red;
+  }
+  ul {
+    li {
+      padding: 1.5rem 0;
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      .empahsis {
+        padding: 5px 10px;
+        background-color: $color-red;
+        font-weight: bold;
+        border-radius: 5px;
+        width: fit-content;
+        color: $color-white;
+      }
+      span:last-child {
+        padding-top: 0.5rem;
+      }
+    }
+    @include breakpoint-lg {
+      display: flex;
+      gap: 1rem;
+      padding: 3rem;
+
+      li {
+        max-width: 33.33%;
+        width: 33.33%;
+        background-color: $color-light-grey;
+        padding: 1.5rem;
+        border-radius: 5px;
+
+        .empahsis {
+          padding: 0;
+          padding-bottom: 0.5rem;
+          font-weight: normal;
+          color: $color-red;
+          background-color: transparent;
+          font-size: 150%;
+          font-family: $libre-bondoni;
+        }
+      }
+    }
   }
   p {
     color: $color-black;

@@ -1,13 +1,14 @@
 "use client";
-import Link from "next/link";
-import { useRef, useState } from "react";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
+import { useState } from "react";
 import style from "./footer.module.scss";
 
 const Footer = () => {
   const [emailIsPending, setEmailIsPending] = useState(false);
   const [emailIsSend, setEmailIsSend] = useState(false);
   const [emailIsNotSend, setEmailIsNotSend] = useState(false);
-
+  const t = useTranslations("Footer");
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const email = (event.currentTarget.elements as any).email.value;
@@ -37,37 +38,31 @@ const Footer = () => {
       <div className={style.firstSection}>
         <ul className={style.pagesList}>
           <li>
-            <Link href={"a-propos"}>À propos </Link>
+            <Link href={"/about"}> {t("about")} </Link>
           </li>
           <li>
-            <Link href={"ma-methode"}> Méthode</Link>
+            <Link href={"method"}> {t("method")}</Link>
           </li>
           <li>
-            <Link href={"les-cours"}>Les cours </Link>
+            <Link href={"lessons"}>{t("lessons")}</Link>
           </li>
           <li>
-            <Link href={"reserver-cours"}>Réserver un cours</Link>
+            <Link href={"book-class"}>{t("bookClass")}</Link>
           </li>
           <li>
             <Link href={"freebies"}>Freebies</Link>
           </li>
           <li>
-            <Link href={"contact"}> Contact </Link>
+            <Link href={"contact"}> {t("contact")} </Link>
           </li>
           <li>
             <Link href={"newsletter"}>Newsletter</Link>
           </li>
         </ul>
         <div className={style.newsletter}>
-          <h2> S'inscrire à la newsletter</h2>
-          {emailIsNotSend && (
-            <div className={style.error}>Une erreur s'est produite</div>
-          )}
-          {emailIsSend && (
-            <div className={style.success}>
-              Vous êtes inscrit à la newsletter !
-            </div>
-          )}
+          <h2> {t("subscribe")} </h2>
+          {emailIsNotSend && <div className={style.error}>{t("error")}</div>}
+          {emailIsSend && <div className={style.success}>{t("success")}</div>}
           {emailIsPending && (
             <div className={style.loaderContainer}>
               <div className={style.loader}></div>
@@ -77,7 +72,7 @@ const Footer = () => {
             <form onSubmit={onSubmit}>
               <input
                 name='email'
-                placeholder='Écrivez votre email'
+                placeholder={t("email.placeholder")}
                 required
                 type='email'
               ></input>
@@ -94,7 +89,7 @@ const Footer = () => {
           <li>
             <a
               href='https://www.instagram.com/adelevrc_yoga/'
-              aria-label='Visitez mon profil instagram'
+              aria-label={t("socialNetwork.instagram")}
               target='_blank'
             >
               <svg
@@ -110,7 +105,7 @@ const Footer = () => {
           <li>
             <a
               href='https://www.youtube.com/@adelevrc'
-              aria-label='Visitez mon compte Youtube'
+              aria-label={t("socialNetwork.youTube")}
               target='_blank'
             >
               <svg
@@ -126,7 +121,7 @@ const Footer = () => {
           <li>
             <a
               href='https://www.tiktok.com/@adelevrc'
-              aria-label='Visitez mon compte Tiktok'
+              aria-label={t("socialNetwork.tiktok")}
               target='_blank'
             >
               <svg
@@ -142,11 +137,13 @@ const Footer = () => {
         </ul>
       </div>
       <div className={style.generalConditions}>
-        <span> Adèle Vercaygne 2024</span> - <span> Tous droits réservés </span>
-        -{" "}
+        <span> Adèle Vercaygne 2025</span> -{" "}
+        <span> {t("allRighReserved")}</span>-{" "}
         <span>
           {" "}
-          <Link href={"/conditions-generales"}>Conditions générales</Link>{" "}
+          <Link href={"terms-and-conditions"}>
+            {t("generalConditions")}
+          </Link>{" "}
         </span>
       </div>
     </footer>

@@ -1,3 +1,4 @@
+import { Link } from "@/i18n/routing";
 import { ColorOptions } from "../Button/Button";
 import style from "./link.module.scss";
 interface ButtonLinkProps {
@@ -15,15 +16,15 @@ const ButtonLink = ({
   color = "green",
 }: ButtonLinkProps) => {
   return (
-    <a
+    <Link
       className={` ${reversed && style.reversed} ${style.link} ${
         color ? style[`color-${color}`] : ""
       }`}
-      href={href}
+      href={"/" + href}
       target={targetBlank ? "_blank" : "_self"}
     >
       {title}
-    </a>
+    </Link>
   );
 };
 

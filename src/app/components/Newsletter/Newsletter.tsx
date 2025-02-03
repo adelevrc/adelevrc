@@ -5,10 +5,11 @@ import { useForm } from "react-hook-form";
 import Form from "../Popin/Freebies/Form";
 import styles from "./newsletter.module.scss";
 import useEmailStatus from "@/app/hooks/useEmailStatus";
-
+import { useTranslations } from "next-intl";
 const Newsletter = () => {
   const { emailStatus, setEmailStatus } = useEmailStatus();
   const { register, watch, handleSubmit } = useForm();
+  const t = useTranslations("Newsletter");
 
   const onSubmit = async (data: any) => {
     setEmailStatus((prevState) => ({
@@ -44,28 +45,27 @@ const Newsletter = () => {
     <div className={styles.container}>
       <div className={styles.newsletter}>
         <div className={styles.info}>
-          <p> Gratuit</p>
+          <p>{t("free")}</p>
           <ul>
             <li>
               <FontAwesomeIcon icon={faCheckCircle} color='#a42525' />
-              Annonce du thème du mois
+              {t("monthlyTheme")}
             </li>
             <li>
               <FontAwesomeIcon icon={faCheckCircle} color='#a42525' />
-              Un conseil de neurosciences + mise en pratique ou un debunk de
-              mythe
+              {t("neuroscienceTip")}
             </li>
             <li>
               <FontAwesomeIcon icon={faCheckCircle} color='#a42525' />
-              Avant première sur les cours exceptionnels, retraites, atelier...
+              {t("exclusivePreview")}
             </li>
             <li>
               <FontAwesomeIcon icon={faCheckCircle} color='#a42525' />
-              Annonce des réductions en exclusivité
+              {t("exclusiveDiscounts")}
             </li>
             <li>
               <FontAwesomeIcon icon={faCheckCircle} color='#a42525' />
-              Challenge mensuel
+              {t("monthlyChallenge")}
             </li>
           </ul>
         </div>

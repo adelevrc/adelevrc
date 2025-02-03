@@ -1,0 +1,35 @@
+@import "../../styles//mixins";
+
+.main {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    @include breakpoint-lg {
+      padding: 3rem;
+    }
+    h1 {
+      color: $color-red;
+      @include breakpoint-lg {
+        text-align: center;
+      }
+    }
+    h2 {
+      color: $color-red;
+    }
+  }
+
+  iframe {
+    border: none;
+    @include breakpoint-lg {
+      align-self: center;
+      padding: 3rem;
+      width: 80%;
+    }
+  }
+}

@@ -8,9 +8,6 @@
   h2 {
     color: $color-red;
     font-size: 36px;
-    strong {
-      font-size: 40px;
-    }
     @include breakpoint-lg {
       max-width: 1200px;
       align-self: center;
@@ -22,7 +19,7 @@
   h4 {
     span,
     strong {
-      font-family: $cursive;
+      font-style: italic;
       color: $color-bright-pink;
     }
   }
@@ -34,9 +31,6 @@
   h4 {
     font-family: $libre-bondoni;
     font-style: italic;
-    span {
-      font-size: 30px;
-    }
   }
   p {
     line-height: 2rem;
