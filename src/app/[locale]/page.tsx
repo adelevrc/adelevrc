@@ -8,17 +8,16 @@ import Description from "../components/Description/Description";
 import Offers from "../components/Offers/Offers";
 import image from "../images/plank.webp";
 import style from "../styles/home.module.scss";
+import { Props } from "../[locale]/about/page";
+import { Metadata } from "next";
 
-export async function generateMetadata({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "HomePage.metaData" });
 
   return {
     title: t("title"),
-    message: t("description"),
+    description: t("description"),
   };
 }
 

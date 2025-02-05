@@ -5,17 +5,19 @@ import ButtonLink from "@/app/components/Button/Link/Link";
 import PageHeader from "@/app/components/PageHeader/PageHeader";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
+import type { Metadata, ResolvingMetadata } from "next";
 
-export async function generateMetadata({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
+export type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "AboutMe.metaData" });
 
   return {
     title: t("title"),
-    message: t("description"),
+    description: t("description"), // Ensure correct property naming
   };
 }
 

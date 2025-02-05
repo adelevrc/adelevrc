@@ -3,17 +3,16 @@ import ButtonLink from "../../components/Button/Link/Link";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import styles from "./contact.module.scss";
 import { useTranslations } from "next-intl";
+import { Props } from "../about/page";
+import { Metadata } from "next";
 
-export async function generateMetadata({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Contact.metaData" });
 
   return {
     title: t("title"),
-    message: t("description"),
+    description: t("description"),
   };
 }
 

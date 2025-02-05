@@ -8,7 +8,7 @@ interface IFormInput {
   email: string;
 }
 
-export async function POST(req: NextRequest) {
+export const POST = async (req: NextRequest) => {
   const { lastname,firstname , email }: IFormInput = await req.json();
 
   const transporter = nodemailer.createTransport({

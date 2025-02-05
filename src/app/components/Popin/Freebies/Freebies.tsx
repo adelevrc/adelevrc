@@ -1,9 +1,9 @@
-import { Popin } from "@/app/[locale]/freebies/page";
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 import styles from "./freebies.module.scss";
 import { useForm } from "react-hook-form";
 import Form from "./Form";
 import { useTranslations } from "next-intl";
+import { Popin } from "../../Freebies/Container";
 
 export interface EmailStatus {
   isPending: boolean;

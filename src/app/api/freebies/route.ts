@@ -4,15 +4,15 @@ import SMTPTransport from 'nodemailer/lib/smtp-transport';
 
 interface IFormInput {
   lastname: string;
-  firstname:string;
+  firstname: string;
   email: string;
 }
 
 export async function POST(req: NextRequest) {
-  const { lastname,firstname , email }: IFormInput = await req.json();
+  const { lastname, firstname, email }: IFormInput = await req.json();
 
   const transporter = nodemailer.createTransport({
-    host: process.env.NEXT_PUBLIC_HOST ??"", 
+    host: process.env.NEXT_PUBLIC_HOST ?? "", 
     port: process.env.NEXT_PUBLIC_PORT, 
     secure: process.env.NEXT_PUBLIC_SECURE, 
     auth: {
@@ -21,11 +21,12 @@ export async function POST(req: NextRequest) {
     },
   } as SMTPTransport.Options);
 
-const htmlTemplate = `
+  const htmlTemplate = `
     <html>
       <head>
+        <meta charset="UTF-8">
         <style>
-             body {
+          body {
             font-family: Arial, sans-serif;
             background-color: #354639;
             color: #333;
@@ -66,23 +67,21 @@ const htmlTemplate = `
           }
         </style>
       </head>
-   <body>
+      <body>
         <div class="email-container">
           <div class="header">
-            <h2>Votre Freebie - 5 techniques pour trouver son calme dans toutes les situations </h2>
+            <h2>Votre Freebie - 5 techniques pour trouver son calme dans toutes les situations</h2>
           </div>
           <div class="content">
             <p>Bonjour ${firstname + " " + lastname},</p>
-          <p>Merci pour votre inscription ! </p>
-          <p>Nous sommes ravis de vous offrir notre ebook exclusif "5 techniques pour gérer toutes les situations".</p>
-            <p> Pour le récupérer, vous pouvez cliquer sur le lien ci-dessous  : </p>
-            <a href="https://www.adelevrc.com/ebook_trouver_son_calme.pdf">
-           Récupérer mon freebie
-            </a>
+            <p>Merci pour votre inscription !</p>
+            <p>Nous sommes ravis de vous offrir notre ebook exclusif "5 techniques pour gérer toutes les situations".</p>
+            <p>Pour le récupérer, vous pouvez cliquer sur le lien ci-dessous :</p>
+            <a href="https://www.adelevrc.com/ebook_trouver_son_calme.pdf">Récupérer mon freebie</a>
           </div>
           <div class="footer">
             <p>Si vous avez des questions, n'hésitez pas à nous contacter à l'adresse suivante : contact@adelevrc.com</p>
-            <p>&copy; 2024 Adèle Vercaygne - Tous droits réservés.</p>
+            <p>&copy; 2025 Adèle Vercaygne - Tous droits réservés.</p>
           </div>
         </div>
       </body>
@@ -94,7 +93,6 @@ const htmlTemplate = `
     to: email,
     subject: 'Freebie de yoga : 5 astuces pour trouver son calme',
     html: htmlTemplate,
-
   };
 
   try {
