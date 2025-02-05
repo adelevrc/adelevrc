@@ -7,7 +7,6 @@
   padding: 3rem 1.5rem;
   h2 {
     color: $color-red;
-    font-size: 36px;
     @include breakpoint-lg {
       max-width: 1200px;
       align-self: center;
@@ -16,24 +15,22 @@
     }
   }
   h2,
-  h4 {
+  h3 {
     span,
     strong {
-      font-style: italic;
       color: $color-bright-pink;
     }
   }
-  h3,
-  h4 {
+  h3 {
     color: $color-red;
     text-align: center;
   }
-  h4 {
-    font-family: $libre-bondoni;
-    font-style: italic;
-  }
+
   p {
     line-height: 2rem;
+    span {
+      color: $color-bright-pink;
+    }
     @include breakpoint-lg {
       line-height: 40px;
       align-self: center;

@@ -16,7 +16,6 @@
     line-height: 1.8;
     padding: 0 1rem;
     span {
-      font-style: italic;
       color: $color-bright-pink;
     }
     a {
@@ -28,10 +27,27 @@
     @include breakpoint-xl {
       max-width: 1000px;
     }
+
+    ul {
+      display: flex;
+      gap: 1.5rem;
+      li {
+        list-style-type: none;
+        max-width: 33.33%;
+        width: 33.33%;
+        background-color: $color-light-grey;
+        padding: 1.5rem;
+        border-radius: 5px;
+        p:first-child {
+          font-family: $libre-bondoni;
+          color: $color-bright-pink;
+        }
+      }
+    }
   }
 
   h2 {
-    color: $color-black;
+    color: $color-red;
     text-align: center;
     margin-bottom: 2rem;
     padding: 0.5rem;

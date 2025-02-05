@@ -11,7 +11,7 @@
       "bookClass": "Book a class",
       "method": "My method"
     },
-    "title": "The method for a <span>dynamic</span>, <span>powerful</span>, and <span>joyful</span> yoga!",
+    "title": "The method for a <span>dynamic</span>, <span>cutting-edge</span> and <span>original</span> yoga!",
     "dynamic": {
       "title": "Dynamic",
       "text": "Nurture your energy, strength, and mobility to transcend all aspects of your life."
@@ -21,19 +21,19 @@
       "text": "Ultra-precise flows based on neuroscience and biomechanics for the most efficient movements."
     },
     "fun": {
-      "title": "Playful",
-      "text": "No need to be serious or take yourself too seriously to do yoga! Let's loosen up!"
+      "title": "Original",
+      "text": "Traditional postures and much more modern twists to explore the full range of movement in a joyful practice—without taking oneself too seriously!"
     },
     "description": {
-      "title": "Yoga classes built around <strong>anatomy</strong> and <strong>neuroscience</strong> to quickly gain <strong>strength</strong> and <strong>mobility</strong>.",
-      "text": "One of my greatest passions is understanding how the human body and brain work.",
+      "title": "Yoga classes built around <strong> biomechanics </strong> and <strong>neuroscience</strong> to quickly gain <strong>strength</strong> and <strong>mobility</strong>.",
+      "text": "My bet: Yoga flows where every movement is efficient, with a precise physical and mental intention, to progress faster, go further, and gain autonomy in movement—all with joy and without taking oneself too seriously!",
       "h4": "Sharp and <span>easy-to-follow</span> yoga sequences to meet a specific need.",
       "list": {
-        "firstPoint": "Considering your <strong>brain</strong> and its reactions to certain stimuli: specific exercises are integrated based on the yoga flow, movements, and targeted anatomical areas. Using <strong>\"neurodrills\"</strong>, it will be possible to go further, more easily, and with more strength in a posture.",
-        "secondPoint": "<strong>Anatomy</strong> and <strong>biomechanics</strong>: my sequences focus mainly on a specific part of the body or a particular movement, which we will explore in all possible directions to improve mobility, regardless of the position."
+        "firstPoint": "Integration of neuroscience into yoga flows! Your nervous system controls everything—understanding it and knowing which stimuli work (or don’t!) will help you improve your practice while also giving you daily tools and resources for other sports to push your limits. One or more specific exercises are integrated into each flow to align with the class objective: extension, flexion, calm, energy, coordination, strength….",
+        "secondPoint": "<strong>Anatomy</strong> and <strong>biomechanics</strong>: Understand how the body works and moves to give you the best advices and achieve the postures you aim for."
       },
-      "secondH4": "Classes open to <span>everyone</span>, to gain autonomy in your practice.",
-      "flowDescription": "Yoga flows are designed to be precise and sharp, but that does not mean my classes are reserved for experienced practitioners. My teaching method allows everyone to find their own rhythm and take ownership of the information while exploring postures and movements. By learning to better understand your <strong>body</strong> and <strong>mind</strong> through integrated tests in the sequences, you will discover what suits you best and how to enrich your practice for further progress."
+      "secondH4": "Classes open to anyone ready to <span>sweat</span>, <span>give their all</span>, and <span>challenge themselves</span> on the mat",
+      "flowDescription": "My classes are <span>not reserved for a select group</span>! You are welcome, whether you are a <span>beginner or advanced</span> in this practice! You will love it if you enjoy challenges, sweating, and <span>not taking yourself too seriously</span>. You will love it if you enjoy discovering <span>new forms of movement</span> that can sometimes be unconventional. You will love it if you enjoy <span>exploration</span>. You will hate it if you prefer staying in what are called traditional postures, don't like physical activity, or believe that yoga should be a practice taken with the utmost seriousness."
     },
     "offers": {
       "firstOffer": {
@@ -60,28 +60,28 @@
       "p1": "Each class is uniquely designed to help you go further in your practice",
       "features": {
         "feature1": {
-          "title": "Original sequences",
-          "text": "No sequence is the same, allowing you to discover new movements and avoid falling into routine."
+          "title": "Original Sequences",
+          "text": "Unique sequences and amazing transitions you've never seen anywhere, designed to work your muscles in all possible positions."
         },
         "feature2": {
-          "title": "Neurological exercises",
-          "text": "To progress further, with more strength and more quickly, in yoga or fitness postures."
+          "title": "Neurological Exercises",
+          "text": "To improve your flexion, extension, balance, and coordination in just 3 minutes, plus tailored techniques to help you feel calmer or more energetic!"
         },
         "feature3": {
-          "title": "Precise flows",
-          "text": "Designed with a specific goal in mind, whether anatomical or movement-related, using biomechanics, anatomy, and neuroscience."
+          "title": "Sharp Flows",
+          "text": "Developed with a specific goal in mind (getting into a posture / working a body part), using biomechanics, anatomy, and neuroscience. No movement is wasted; everything is efficient."
         },
         "feature4": {
-          "title": "Dynamic yoga",
-          "text": "Dynamic flows, far from being static. They will allow you to feel every muscle in your body while moving on your mat."
+          "title": "Dynamic Yoga",
+          "text": "Dynamic flows, far from static. They will help you feel every muscle in your body while moving on your mat."
         },
         "feature5": {
-          "title": "A blend of tradition and modernity",
-          "text": "Yoga is an ancient practice, but that doesn't mean it should remain stagnant. In my classes, we push boundaries and disregard the rules."
+          "title": "Joy and Good Vibes",
+          "text": "Why can’t peace and calm be found in joy? Why should the physical practice of yoga be taken so seriously? No one knows! And that’s why, in my flows, I do everything to make sure you move with a smile."
         },
         "feature6": {
-          "title": "Accessible for all levels",
-          "text": "Everyone is welcome on the mat, and I am committed to offering different options tailored to the levels and desires of each participant."
+          "title": "Accessible for All Levels",
+          "text": "As long as you're ready to challenge yourself and explore new forms of movement! If you’re looking for tradition and stillness, this isn't for you. If you want to sweat, challenge yourself, and have fun, you're in the right place!"
         }
       },
       "button": "Contact me"
@@ -147,14 +147,14 @@
       "email": "Email",
       "requiredName": "Name is required",
       "requiredFirstName": "First name is required",
-      "message":"Message",
+      "message": "Message",
       "requiredEmail": "Email is required",
-      "requiredMessage":"Message is required", 
+      "requiredMessage": "Message is required",
       "invalidEmail": "Email is invalid",
       "errorOccured": "An error occurred",
       "success": "Success!",
       "send": "Send",
-      "subscribeNewsletter":"Get the newsletter"
+      "subscribeNewsletter": "Get the newsletter"
     }
   },
   "Lessons": {
@@ -177,7 +177,7 @@
     },
     "freeClasses": {
       "title": "Free Classes",
-      "p1": "Enjoy my <strong>free yoga classes</strong> to discover the benefits of practice without commitment.",
+      "p1": "Enjoy my (almost) <strong>free yoga classes</strong> to discover the benefits of practice without commitment.",
       "schedule": {
         "thursday": {
           "time": "Thursday - 5:00 PM",
@@ -216,30 +216,58 @@
       "button1": "Book an Appointment"
     }
   },
-  "Methods": {
-    "metaData": {
-      "title": "My Method - Adèle Vercaygne",
-      "description": "Discover my unique yoga method to develop strength, improve flexibility, and master your postures, while cultivating a calm and strong mind."
+
+    "Methods": {
+        "metaData": {
+            "title": "My Method - Adèle Vercaygne",
+            "description": "Discover my unique yoga method to develop strength, improve flexibility, and master your postures while cultivating a calm and strong mind."
+        },
+        "title": "My Method",
+        "classPrep": {
+            "title": "How is a class prepared?",
+            "p1": "Class preparation follows a specific physical objective:",
+            "list": {
+                "bulletOne": "Helping you achieve a specific posture (from the simplest to the most complex).",
+                "bulletTwo": "Targeting a specific body part (rehabilitation, strength training, mobility, endurance, balance).",
+                "bulletThree": "Enhancing your performance in sports by providing tailored sequences."
+            },
+            "approaches": {
+                "title": "Different scientific approaches for better results:",
+                "feature1": {
+                    "title": "Neuroscience",
+                    "text": "Using the brain to gain strength, flexibility, balance, and coordination."
+                },
+                "feature2": {
+                    "title": "Biomechanics",
+                    "text": "Understanding movement and its mechanics to better comprehend your body and optimize performance."
+                },
+                "feature3": {
+                    "title": "Anatomy",
+                    "text": "Understanding the body to use it more effectively and better approach movements."
+                }
+            },
+            "nonNegotiables": "The non-negotiables in a class:"
+        },
+        "section1": {
+            "title": "Move <span>consciously</span> to improve <span>strength</span>, <span>mobility</span>, <span>endurance</span>, and <span>control</span>.",
+            "p1": "Each class is uniquely and meticulously designed to help you progress in your practice."
+        },
+        "section2": {
+            "title": "How does a <span>yoga session</span> unfold?",
+            "p1": "A yoga session lasts between one hour and an hour and a half (only for private lessons).",
+            "p2": "The flow is explained at the beginning of the session along with its specific objectives. Every session starts and ends with a breathing practice.",
+            "p3": "The flow consists of a sequence of postures with original transitions, repeated multiple times at different intensities and with various intentions.",
+            "p4": "Neurological exercises are integrated into the flow, accompanied by tests and retests to assess their effectiveness for the intended goal.",
+            "p5": "Neurological exercises include specific breathing techniques, balance exercises to strengthen the inner ear, and visual exercises to enhance sensory connections."
+        },
+        "section3": {
+            "title": "Is this <span>method</span> right for you?",
+            "p1": "In my classes, we don't take ourselves too seriously: we move, we explore movements that few yoga teachers introduce. The physical practice of yoga is much more modern than people think (dating back to the 1940s), and for me, it's essential that it evolves with scientific advancements and our own desires. I have never found my calm in static postures held for minutes, but rather in fluid and dynamic flows. I am convinced that peace can be found in laughter and joy, in failure and discovery. Respecting yoga means understanding its philosophy, sharing, and discussing it. Laughing or trying unconventional movements is not disrespectful, but rather a tribute to this practice.",
+            "p2": "If you are ready to challenge yourself, sweat, explore new movements, and understand how your body (and brain, of course) works to elevate yourself in all areas of life, then my classes are for you."
+        },
+        "button": "Book a class"
     },
-    "title": "My Method",
-    "section1": {
-      "title": "Work in a <span>conscious</span> way to improve strength, mobility, and mental calm.",
-      "p1": "The yoga I offer is dynamic, combining strength, mobility, and mental mastery to remain calm in all situations."
-    },
-    "section2": {
-      "title": "How does a <span>yoga session</span> unfold?",
-      "p1": "Each session is built around a specific goal, whether it's a balance posture or a basic one. We work all the muscles necessary to achieve this goal: strengthening and flexibility are key.",
-      "p2": "We will use traditional postures as well as creative variations to maximize strength and mobility, while adding less traditional exercises to enrich the practice.",
-      "p3": "The goal is to expand your range of motion to improve your daily life and strengthen the mind-body connection, thus creating a broader brain map that contributes to your overall well-being.",
-      "p4": "Along with these movements, we will incorporate breathing practices, meditation (static or in movement), and neurological exercises to optimize both your strength and flexibility, thus enhancing your mobility.",
-      "p5": "Neurological exercises include specific breathing techniques, balance exercises to strengthen the inner ear, and vision exercises to work on sensory connections."
-    },
-    "section3": {
-      "title": "What is the <span>goal</span> of these sessions?",
-      "p1": "The goal is for each person to identify the exercises that benefit their well-being and integrate them into their daily life. In an increasingly sedentary and stressful world, it is essential to move your body and train your mind to achieve an optimal state of fitness and serenity."
-    },
-    "button": "Book a Class"
-  },
+
   "Newsletter": {
     "title": "Subscribe to the Newsletter",
     "free": "Free",

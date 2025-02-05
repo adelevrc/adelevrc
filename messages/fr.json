@@ -12,7 +12,7 @@
             "method":"Ma méthode"
             
         },
-        "title":"La méthode pour un yoga <span>dynamique</span>, <span>puissant</span> et <span>joyeux</span> !",
+        "title":"La méthode pour un yoga <span>dynamique</span>, <span>pointu</span> et <span>original</span> !",
         "dynamic":{
             "title":"Dynamique",
             "text":" Nourrissez votre énergie, force et mobilité pour transcender tous les domaines de votre vie"
@@ -22,20 +22,19 @@
             "text":"Des flows ultras pointus basés sur la neurosciences et la biomécanique pour avoir les mouvements les plus performants."
         }, 
         "fun":{
-            "title":"Facétieux",
-            "text":"Pas besoin d'être sérieux•euse ni de se prendre au sérieux pourfaire du yoga ! Lâchons-nous la grappe !"
+            "title":"Original",
+            "text":"Postures traditionnelles et twist beaucoup plus modernes pour explorer toute la capacité de ses mouvements dans une pratique joyeuse, et sans se prendre au sérieux !"
         }, 
         "description":{
-            "title":"Des cours de yoga construits autour de <strong>l'anatomie</strong> et de la <strong> neuroscience </strong> pour gagner en <strong> force</strong> et en<strong> mobilité </strong> rapidement.", 
-            "text" :"Une de mes plus grandes passions est de comprendre le fonctionnement du corps humain et du cerveau.", 
+            "title":"Des cours de yoga construits autour de la <strong>biomécanique</strong> et de la <strong> neuroscience </strong> pour gagner en <strong> force</strong> et en<strong> mobilité </strong> rapidement.", 
+            "text" :"Mon pari : des flows de yoga où chaque mouvement est efficace, avec une intention physique et mentale précise, pour progresser plus rapidement, aller plus loin et devenir autonome dans ses mouvements, le tout dans la joie et sans se prendre au sérieux !", 
             "h4":"   Des séquences de yoga <span> pointues </span> et <span> faciles </span> à suivre pour répondre à un besoin spécifique.",
             "list":{
-                "firstPoint":"Prise en compte de votre <strong> cerveau </strong> et de ses réactions face à certains stimuli : des exercices spécifiques sont intégrés en fonction du flow de yoga, des mouvements et des parties anatomiques ciblées. En utilisant des <strong> \"neurodrills\" </strong>, il sera possible d'aller plus loin, plus facilement et avec davantage de force dans une posture.", 
-                "secondPoint":"<strong>Anatomie </strong> et <strong> biomécanique </strong> : mes séquences se concentrent principalement sur une partie spécifique du corps ou sur un mouvement particulier, que nous explorerons dans toutes les directions possibles pour améliorer la mobilité, quelle que soit la position."
+                "firstPoint":"Intégration de la <strong>neuroscience</strong> dans les flows de yoga ! Votre système nerveux contrôle tout : le comprendre et savoir quels stimuli fonctionnent (ou non !) vous permettra d'améliorer votre pratique, mais aussi d'acquérir des outils quotidiens et des ressources pour vos autres sports afin de vous surpasser. Un ou plusieurs exercices spécifiques sont intégrés dans chaque flow pour répondre à l'objectif du cours : extension, flexion, calme, énergie, coordination, force…",
+                "secondPoint":"<strong>Anatomie </strong> et <strong> biomécanique </strong> : comprendre comment fonctionne le corps et comment il s'articule pour vous donner les meilleurs conseils et atteindre les postures que vous voulez."
             },
-            "secondH4":"Des cours ouverts à <span>tout le monde</span>, pour gagner en autonomie dans sa pratique", 
-            "flowDescription":"  Les flows de yoga sont conçus pour être précis et pointus, mais cela ne signifie pas que mes cours sont réservés à un public d'initiés. Ma méthode d'enseignement permet à chacun de trouver son propre rythme et de s'approprier les informations tout en explorant les postures et mouvements. En apprenant à mieux comprendre votre <strong> corps </strong> et votre <strong> esprit </strong>, grâce à des tests intégrés dans les séquences, vous découvrirez ce qui vous convient le mieux et comment enrichir votre pratique pour la faire évoluer."
-        },
+            "secondH4":"Des cours ouverts à oute personne prête à <span>transpirer</span>, <span>tout donner</span> et à se <span>challenger</span> sur le tapis", 
+            "flowDescription":"Mes cours ne sont <span>pas réservés à un public d'initiés</span> ! Vous êtes les bienvenu•e•s, que vous soyez <span>débutant•e•s ou confirmé•e•s</span> dans cette pratique ! Vous allez adorer si vous aimez les challenges, transpirer et <span> ne pas vous prendre au sérieux</span>. Vous allez adorer si vous aimez découvrir de <span>nouvelles formes de mouvements</span> qui peuvent être atypiques parfois. Vous allez adorer si vous aimez <span>l'exploration</span>. Vous allez détester si vous aimez rester dans les postures dites traditionnelles, que vous n'aimez pas l'activité physique et si pour vous le yoga doit être une pratique à prendre avec le plus grand sérieux."        },
         "offers":{
             "firstOffer":{
                 "title":"Cours de yoga",
@@ -59,31 +58,31 @@
         },
         "contact":{
             "h2": "Ce que vous avez à chaque cours",
-            "p1": "Chaque cours est préparé de façon unique pour vous aider à aller plus loin dans votre pratique",
+            "p1": "Chaque cours est préparé de façon unique et méticuleuse pour vous aider à aller plus loin dans votre pratique.",
             "features": {
                 "feature1": {
                     "title": "Séquences originales",
-                    "text": "Aucune séquence ne se ressemble, permettant ainsi de découvrir de nouveaux mouvements et d'éviter de tomber dans la routine."
-                },
+                    "text": "Des séquences uniques et des transitions étonnantes que vous n'avez jamais vues nulle part, pour faire travailler vos muscles dans toutes les positions possibles."           
+                 },
                 "feature2": {
                     "title": "Exercices neurologiques",
-                    "text": "Pour aller plus loin, avec plus de force et plus rapidement, dans les postures de yoga ou de fitness."
+                    "text": "Pour améliorer en 3 minutes chrono vos flexions, extensions, équilibre et coordination, avec en plus des techniques sur mesure pour vous aider à être plus calme ou plus énergique !"        
                 },
                 "feature3": {
                     "title": "Flow pointus",
-                    "text": "Élaborés avec un objectif précis, qu'il soit anatomique ou lié aux mouvements, grâce à la biomécanique, l'anatomie et la neuroscience."
+                    "text": "Élaborés avec un objectif précis (aller dans une posture / travailler une partie du corps), grâce à la biomécanique, l'anatomie et la neuroscience. Aucun mouvement à jeter, tout est efficient."          
                 },
                 "feature4": {
                     "title": "Yoga dynamique",
                     "text": "Des flows dynamiques, loin d’être statiques. Ils vous permettront de ressentir chaque muscle de votre corps tout en bougeant sur votre tapis."
                 },
                 "feature5": {
-                    "title": "Mélange de tradition et de modernité",
-                    "text": "Le yoga est une pratique ancienne, mais ce n'est pas une raison pour y rester figé. Dans mes cours, nous repoussons les limites et faisons fi des règles."
-                },
+                    "title": "Joie et bonne humeur",
+                    "text": "Pourquoi ne serait-il pas possible de trouver la paix et le calme dans la joie ? Pourquoi la pratique physique du yoga doit-elle être prise autant au sérieux ? Personne ne sait ! Et c'est pourquoi, dans mes flows, je mets tout en œuvre pour vous faire bouger dans la bonne humeur."               
+                 },
                 "feature6": {
                     "title": "Accessible pour tous les niveaux",
-                    "text": "Tout le monde est le bienvenu sur le tapis, et je tiens à cœur de proposer différentes options adaptées aux niveaux et aux envies de chaque participant."
+                    "text": "À condition d'être prêt•e à se challenger et à explorer des nouvelles formes de mouvements ! Si vous voulez de la tradition et de l'immobilité, vous pouvez passer votre chemin. Si vous voulez transpirer, vous challenger et vous amuser, vous êtes au bon endroit !"
                 }
             },
             "button":"Contactez-moi"
@@ -180,7 +179,7 @@
         },
         "freeClasses": {
             "title": "Les cours gratuits",
-            "p1": "Profitez de mes <strong>cours gratuits de yoga</strong> pour découvrir les bienfaits de la pratique sans engagement.",
+            "p1": "Profitez de mes <strong>cours gratuits de yoga</strong> (ou presque) pour découvrir les bienfaits de la pratique sans engagement.",
             "schedule": {
                 "thursday": {
                     "time": "Jeudi - 17h00",
@@ -220,30 +219,57 @@
             "button1":"Prendre rendez-vous"
         }
     },
+
     "Methods": {
-             "metaData": {
+        "metaData": {
             "title": "Ma méthode - Adèle Vercaygne",
-            "description": "Découvrez ma méthode unique de yoga pour développer votre force, améliorer votre souplesse et maîtriser vos postures, tout en cultivant un mental calme et fort"
+            "description": "Découvrez ma méthode unique de yoga pour développer votre force, améliorer votre souplesse et maîtriser vos postures, tout en cultivant un mental calme et fort."
         },
-    "title": "Ma méthode",
-    "section1": {
-      "title": "Travailler de manière <span>consciente </span> pour améliorer la force, la mobilité et le calme mental.",
-      "p1": "Le yoga que je propose est un yoga dynamique, qui combine force, mobilité et maîtrise du mental pour rester serein·e dans toutes les situations."
+        "title": "Ma méthode",
+        "classPrep": {
+            "title": "Comment est préparé un cours ?",
+            "p1": "La préparation des cours répond à un objectif physique précis :",
+            "list": {
+                "bulletOne": "Vous permettre d'accéder à une posture spécifique (des plus simples aux plus complexes).",
+                "bulletTwo": "Vous faire mobiliser une partie du corps spécifique (réhabilitation, travail de force, mobilité, endurance, équilibre).",
+                "bulletThree": "Vous aider à performer dans les sports que vous pratiquez en vous proposant des séquences sur mesure."
+            },
+            "approaches": {
+                "title": "Différentes approches scientifiques pour un meilleur résultat :",
+                "feature1": {
+                    "title": "Neurosciences",
+                    "text": "Utiliser le cerveau pour gagner en force, souplesse, équilibre et coordination."
+                },
+                "feature2": {
+                    "title": "Biomécanique",
+                    "text": "Comprendre les mouvements et leur mécanique pour mieux appréhender son corps et optimiser ses performances."
+                },
+                "feature3": {
+                    "title": "Anatomie",
+                    "text": "Comprendre le corps pour mieux l'utiliser et appréhender les mouvements."
+                }
+            },
+            "nonNegotiables": "Les non-négociables dans un cours :"
+        },
+        "section1": {
+            "title": "Bouger de manière <span>consciente</span> pour améliorer <span>force</span>, <span>mobilité</span>, <span>endurance</span> et <span>contrôle</span>.",
+            "p1": "Chaque cours est préparé de façon unique et méticuleuse pour vous aider à aller plus loin dans votre pratique."
+        },
+        "section2": {
+            "title": "Comment se déroule une <span>séance de yoga</span> ?",
+            "p1": "Une séance de yoga dure entre une heure et une heure et demie (uniquement pour les cours particuliers).",
+            "p2": "Le flow est expliqué en début de séance avec les objectifs spécifiques du cours. Toutes les séances commencent et se terminent par un temps de respiration.",
+            "p3": "Le flow est une séquence de postures avec des transitions originales, répétée plusieurs fois à différentes intensités et avec diverses intentions.",
+            "p4": "Des exercices neurologiques sont intégrés au flow, accompagnés de tests et de retests pour évaluer leur efficacité selon l'objectif visé.",
+            "p5": "Les exercices neurologiques incluent des techniques de respiration spécifiques, des exercices d'équilibre pour renforcer l'oreille interne et des exercices visuels pour améliorer les connexions sensorielles."
+        },
+        "section3": {
+            "title": "Est-ce que cette <span>méthode</span> peut vous convenir ?",
+            "p1": "Dans mes cours, on ne se prend pas au sérieux : on bouge, on explore des mouvements que peu d'enseignants de yoga proposent. La pratique physique du yoga est bien plus moderne qu'on ne le pense (elle date des années 40), et pour moi, il est essentiel qu'elle évolue en fonction des avancées scientifiques et de nos envies. Je n’ai jamais trouvé mon calme dans des postures statiques tenues plusieurs minutes, mais plutôt dans des flows fluides et dynamiques. Je suis convaincue que la paix se trouve dans le rire et la joie, dans l'échec et la découverte. Respecter le yoga, c'est comprendre sa philosophie, la partager et la discuter. Rire ou expérimenter des mouvements originaux n'est pas un manque de respect, mais une célébration de cette pratique. ",
+            "p2": "Si vous êtes prêt·e à vous challenger, à transpirer, à explorer de nouvelles formes et à comprendre comment fonctionnent votre corps et votre cerveau pour vous surpasser dans tous les domaines de votre vie, alors mes cours sont faits pour vous."
+        },
+        "button": "Réserver un cours"
     },
-    "section2": {
-      "title": "Comment se déroule une <span>séance de yoga </span> ?",
-      "p1": "Chaque séance est construite autour d'un objectif précis, qu'il s'agisse d'une posture d'équilibre ou de base. Nous travaillons l'ensemble des muscles nécessaires pour atteindre cet objectif : renforcement et souplesse sont les maîtres mots.",
-      "p2": "Nous utiliserons des postures traditionnelles, ainsi que des variations créatives, pour maximiser la force et la mobilité, tout en ajoutant des exercices moins classiques pour enrichir la pratique.",
-      "p3": "L'objectif est d'élargir votre gamme de mouvements, afin d'améliorer votre quotidien et de renforcer la connexion corps-esprit, créant ainsi une carte cérébrale plus étendue qui contribue à votre bien-être global.",
-      "p4": "À ces mouvements, nous ajouterons des pratiques de respiration, de méditation (statique ou en mouvement), ainsi que des exercices neurologiques pour optimiser à la fois votre force et votre souplesse, et ainsi améliorer votre mobilité.",
-      "p5": "Les exercices neurologiques incluent des techniques de respiration spécifiques, des exercices d'équilibre pour renforcer l'oreille interne et des exercices de vision pour travailler les connexions sensorielles."
-    },
-    "section3": {
-      "title": "Quel est <span>l'objectif </span> de ces séances ?",
-      "p1": "L'objectif est que chacun·e puisse identifier les exercices bénéfiques à son bien-être et les intégrer dans son quotidien. Dans un monde de plus en plus sédentaire et stressant, il est essentiel de bouger son corps et d'entraîner son esprit afin d'atteindre un état de forme optimal et de sérénité."
-    }, 
-    "button":"Réserver un cours"
-  },
   "Newsletter":{
     "title":"S'inscrire à la newsletter",
     "free": "Gratuit",

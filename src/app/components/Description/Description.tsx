@@ -17,11 +17,11 @@ const Description = () => {
           strong: (chunks) => <strong>{chunks}</strong>,
         })}
       </p>
-      <h4 className={style.italic}>
+      <h3 className={style.italic}>
         {t.rich("description.h4", {
           span: (chunks) => <span>{chunks}</span>,
         })}
-      </h4>
+      </h3>
       <ul>
         <li>
           <p>
@@ -38,13 +38,14 @@ const Description = () => {
           </p>
         </li>
       </ul>
-      <h4>
+      <h3>
         {t.rich("description.secondH4", {
           span: (chunks) => <span>{chunks}</span>,
         })}
-      </h4>
+      </h3>
       <p>
         {t.rich("description.flowDescription", {
+          span: (chunks) => <span>{chunks}</span>,
           strong: (chunks) => <strong>{chunks}</strong>,
         })}
       </p>
