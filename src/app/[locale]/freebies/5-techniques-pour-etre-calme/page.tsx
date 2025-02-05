@@ -1,4 +1,4 @@
-import CalmTechniques from "../../components/Freebies/CalmTechniques";
+import CalmTechniques from "@/app/components/Freebies/CalmTechniques";
 
 const Freebies = () => {
   return (
