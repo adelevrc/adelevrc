@@ -114,11 +114,26 @@
             "title":"Réservez un cours de Yoga et Méditation",
             "description":"Réservez facilement un cours de yoga ou une séance de méditation en ligne. Utilisez le formulaire pour planifier votre session ou prenez un premier rendez-vous pour un cours individuel."
         },
+        "differentsClasses": "Les différents cours",
         "title":"Réserver un cours de yoga ou de méditation",
         "howToBook": "Comment réserver ?",
         "p1": "Réservez directement un cours de yoga en ligne ou une séance de méditation via le formulaire ci-dessous.",
-        "p2": "Pour prendre un premier rendez-vous pour un cours individuel, merci de sélectionner \"Premier rendez-vous\".", 
-        "frameTitle": "Prendre rendez-vous"
+        "oneHourClass": "<span>Un cours de 1 heure</span> : choisir Yoga en ligne à 12€", 
+        "ThreeEurosClass":"<span>Les cours de yoga en ligne à 3€</span> n'ont lieu qu'une fois par mois et durent 1 heure. Ne loupez pas votre place !",
+        "bonusClass":"<span>Yoga en ligne d'anniversaire</span> : cours à 0 euro pour fêter mon anniversaire ! Ne loupez pas votre place !",
+        "mediationClass":"<span>Méditation en ligne</span> : 30 minutes de respiration et de méditation",
+        "firstAppointment":"<span>Premier rendez-vous</span> : pour les personnes voulant faire des cours particuliers pour la première fois mais qui ne me connaissent pas.",
+        "frameTitle": "Prendre rendez-vous", 
+        "classDescription":{
+            "subtitles":" Les cours se présentent à la semaine, en cliquant sur un horaire vous pouvez :",
+            "p1":"Cliquez sur \"Continuer\" pour aller directement au paiement.", 
+            "p2":"Cliquez sur \"Ajouter\" un horaire pour prendre plusieurs cours en même temps", 
+            "p3":"Cliquez sur \"Récurrent\" pour prendre le même cours toutes les semaines selon la répétition que vous voulez"
+        }, 
+        "importantNotes":{
+            "title":"Note importante",
+            "p1":"Parfois on ne contrôle pas tout dans la vie, ou on juste envie de s'allonger dans le canapé en mangeant des chips au lieu de dérouler son tapis. Il est donc possible d'annuler mais pas à la dernière minute : <span>vous avez jusqu'à 12 heures avant le cours pour annuler et être remboursé•e </span> ."
+        }
     },
     "Contact": {
           "metaData":{

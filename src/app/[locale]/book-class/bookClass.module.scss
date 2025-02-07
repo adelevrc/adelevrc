@@ -4,26 +4,42 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 2.5rem;
-  div {
+
+  h1 {
+    color: $color-red;
+    @include breakpoint-lg {
+      text-align: center;
+    }
+  }
+  section {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding: 1.5rem;
+    line-height: 1.8;
+    padding: 0 1.5rem;
     @include breakpoint-lg {
-      padding: 3rem;
-    }
-    h1 {
-      color: $color-red;
-      @include breakpoint-lg {
-        text-align: center;
-      }
+      width: 80%;
     }
     h2 {
+      padding-top: 1.5rem;
       color: $color-red;
     }
+    span {
+      font-weight: 700;
+      color: $color-bright-pink;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      li {
+        list-style-type: none;
+      }
+    }
   }
-
   iframe {
     border: none;
     @include breakpoint-lg {

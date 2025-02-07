@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: t("title"),
-    description: t("description"), // Ensure correct property naming
+    description: t("description"),
   };
 }
 
@@ -20,12 +20,52 @@ const BookClass = () => {
   const t = useTranslations("BookClass");
   return (
     <main className={styles.main}>
-      <div>
-        <PageHeader title={t("title")} />
-        <h2>{t("howToBook")}</h2>
+      <PageHeader title={t("title")} />
+      <section>
+        <h2>{t("differentsClasses")}</h2>
         <p>{t("p1")}</p>
-        <p>{t("p2")}</p>
-      </div>
+        <ul>
+          <li>
+            {t.rich("oneHourClass", {
+              span: (chunks) => <span>{chunks}</span>,
+            })}{" "}
+          </li>
+          <li>
+            {t.rich("ThreeEurosClass", {
+              span: (chunks) => <span>{chunks}</span>,
+            })}{" "}
+          </li>
+          <li>
+            {t.rich("bonusClass", {
+              span: (chunks) => <span>{chunks}</span>,
+            })}{" "}
+          </li>
+          <li>
+            {t.rich("mediationClass", {
+              span: (chunks) => <span>{chunks}</span>,
+            })}{" "}
+          </li>
+          <li>
+            {t.rich("firstAppointment", {
+              span: (chunks) => <span>{chunks}</span>,
+            })}
+          </li>
+        </ul>
+        <h2>{t("howToBook")}</h2>
+        <ul>
+          {t("classDescription.subtitles")}
+          <li>{t("classDescription.p1")}</li>
+          <li>{t("classDescription.p2")}</li>
+          <li>{t("classDescription.p3")}</li>
+        </ul>
+        <h2>{t("importantNotes.title")}</h2>
+        <p>
+          {t.rich("importantNotes.p1", {
+            span: (chunks) => <span>{chunks}</span>,
+          })}
+        </p>
+      </section>
+
       <ReservationFrame />
     </main>
   );

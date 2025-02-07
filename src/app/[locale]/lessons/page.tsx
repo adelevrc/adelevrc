@@ -29,6 +29,7 @@ const Lessons = () => {
             <p>{t("onlineClasses.p1")}</p>
             <p>{t("onlineClasses.p2")}</p>
             <p>{t("onlineClasses.p3")}</p>
+            <p></p>
             <ul>
               <StyledContainer
                 children={<li>{t("onlineClasses.schedule.wednesday")}</li>}

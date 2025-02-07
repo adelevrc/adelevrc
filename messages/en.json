@@ -109,14 +109,29 @@
   },
   "BookClass": {
     "metaData": {
-      "title": "Book a Yoga and Meditation Class",
-      "description": "Easily book a yoga class or a meditation session online. Use the form to schedule your session or book a first appointment for a private class."
+        "title": "Book a Yoga and Meditation Class",
+        "description": "Easily book a yoga class or an online meditation session. Use the form to schedule your session or make an initial appointment for a private class."
     },
+    "differentsClasses": "Different Classes",
     "title": "Book a Yoga or Meditation Class",
-    "howToBook": "How to book?",
-    "p1": "Book a yoga class online or a meditation session directly through the form below.",
-    "p2": "To book a first appointment for a private class, please select \"First appointment\".",
-    "frameTitle": "Book an Appointment"
+    "howToBook": "How to Book?",
+    "p1": "Directly book an online yoga class or a meditation session via the form below.",
+    "oneHourClass": "<span>One-hour class</span>: choose Online Yoga at €12",
+    "ThreeEurosClass": "<span>Online yoga classes at €3</span> are held only once a month and last 1 hour. Don't miss your spot!",
+    "bonusClass": "<span>Birthday online yoga</span>: free class to celebrate my birthday! Don't miss your spot!",
+    "mediationClass": "<span>Online meditation: 30 minutes</span> of breathing and meditation",
+    "firstAppointment": "<span>First appointment</span>: for those wanting to take private classes for the first time but who don't know me.",
+    "frameTitle": "Make an Appointment",
+    "classDescription": {
+        "subtitles": "Classes are presented weekly, by clicking on a schedule you can:",
+        "p1": "Click 'Continue' to go directly to payment.",
+        "p2": "Click 'Add' a schedule to book multiple classes at once",
+        "p3": "Click 'Recurring' to book the same class every week according to your desired repetition"
+    },
+    "importantNotes": {
+        "title": "Important Note",
+        "p1": "Sometimes we can't control everything in life, or we just want to lie on the couch eating chips instead of rolling out our mat. It is possible to cancel but not at the last minute: <span>you have up to 12 hours before the class to cancel and be refunded</span>."
+    }
   },
   "Contact": {
     "metaData": {
