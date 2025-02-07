@@ -1,0 +1,21 @@
+@import "../../styles/mixins";
+
+.container {
+  padding: 1.5rem;
+  border-radius: 30px;
+  background-color: #fbab7e;
+  span,
+  h4 {
+    line-height: 33px;
+    font-weight: 700;
+    font-size: 25px;
+    padding-bottom: 1rem;
+  }
+}
+
+.color-orange {
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+}
+.color-purple {
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}

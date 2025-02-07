@@ -1,0 +1,54 @@
+@import "../../styles/mixins";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: $pageGap;
+  padding-bottom: 3rem;
+  @include breakpoint-lg {
+    align-items: center;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: $pageGap;
+    padding: 0 1rem;
+
+    span {
+      border: $border;
+      border-radius: $borderRadius;
+      padding: $borderSpacing;
+    }
+
+    a {
+      align-self: center;
+    }
+    @include breakpoint-lg {
+      width: 80%;
+    }
+    @include breakpoint-xl {
+      max-width: 1000px;
+    }
+
+    ul {
+      display: flex;
+      gap: 1.5rem;
+      li {
+        list-style-type: none;
+        max-width: 33.33%;
+        width: 33.33%;
+        padding: 1.5rem;
+        border-radius: 5px;
+        p:first-child {
+          font-family: $bebasNeue;
+        }
+      }
+    }
+  }
+
+  h2 {
+    text-align: center;
+    line-height: 65px;
+  }
+}
