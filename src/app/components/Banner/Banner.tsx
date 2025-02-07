@@ -12,24 +12,20 @@ const Banner = () => {
     <section className={styles.banner}>
       <PageHeader title={title} />
       <ul>
-        <li>
+        <li className={styles.dynamic}>
           <span className={styles.empahsis}>{t("dynamic.title")}</span>{" "}
           <span>{t("dynamic.text")}</span>
         </li>
-        <li>
+        <li className={styles.cuttingEdge}>
           <span className={styles.empahsis}>{t("cuttingEdge.title")}</span>{" "}
           <span>{t("cuttingEdge.text")}</span>
         </li>
-        <li>
+        <li className={styles.fun}>
           <span className={styles.empahsis}> {t("fun.title")} </span>{" "}
           <span>{t("fun.text")}</span>
         </li>
       </ul>
-      <ButtonLink
-        href={"book-class"}
-        title={t("button.bookClass")}
-        color='red'
-      />
+      <ButtonLink href={"book-class"} title={t("button.bookClass")} />
     </section>
   );
 };

@@ -50,7 +50,7 @@ const FlowsDescription = () => {
       </div>
 
       <div className={style.buttonsSection}>
-        <ButtonLink title={t("button")} href={"contact"} color='red' />
+        <ButtonLink title={t("button")} href={"contact"} />
       </div>
     </section>
   );

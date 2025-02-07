@@ -2,7 +2,7 @@
 
 :root {
   --max-width: 1200px;
-  --font-mono: $arial;
+  --font-mono: $bebasNeue;
 }
 
 * {
@@ -13,7 +13,7 @@
 
 html,
 body {
-  font-family: $arial;
+  font-family: $bebasNeue;
   max-width: 100vw;
   overflow-x: hidden;
   // background-color: $color-white;
@@ -25,16 +25,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $libre-bondoni;
+  font-family: $bebasNeue;
 }
-h1 {
-  // font-size: 2rem;
-}
+
 h2 {
   line-height: 2.5rem;
 }
 h3 {
-  // font-size: 1.5rem;
   line-height: 2.5rem;
 }
 h4 {
@@ -57,7 +54,7 @@ a,
 button {
   color: inherit;
   text-decoration: none;
-  font-family: $libre-bondoni;
+  font-family: $bebasNeue;
 }
 strong {
   font-weight: 200;

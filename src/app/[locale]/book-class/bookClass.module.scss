@@ -6,10 +6,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2.5rem;
+  gap: $pageGap;
 
   h1 {
-    color: $color-red;
     @include breakpoint-lg {
       text-align: center;
     }
@@ -25,11 +24,10 @@
     }
     h2 {
       padding-top: 1.5rem;
-      color: $color-red;
     }
     span {
       font-weight: 700;
-      color: $color-bright-pink;
+      color: $color-orange;
     }
     ul {
       display: flex;

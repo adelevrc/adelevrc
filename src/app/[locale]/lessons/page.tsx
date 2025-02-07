@@ -43,11 +43,7 @@ const Lessons = () => {
             </ul>
           </div>
 
-          <ButtonLink
-            href='/book-class'
-            title={t("onlineClasses.button")}
-            color='red'
-          />
+          <ButtonLink href='/book-class' title={t("onlineClasses.button")} />
         </article>
 
         <article>
@@ -99,11 +95,7 @@ const Lessons = () => {
             </ul>
           </div>
 
-          <ButtonLink
-            href='/book-class'
-            title={t("freeClasses.button")}
-            color='red'
-          />
+          <ButtonLink href='/book-class' title={t("freeClasses.button")} />
         </article>
         <article>
           <div>
@@ -120,7 +112,6 @@ const Lessons = () => {
           <ButtonLink
             title={t("freeClasses.rdv")}
             href='https://app.acuityscheduling.com/schedule.php?owner=33520682&owner=33520682&appointmentType=69034331'
-            color='red'
           />
         </article>
         <article>
@@ -134,7 +125,6 @@ const Lessons = () => {
           <ButtonLink
             href='/reserver-cours'
             title={t("meditationClasses.button")}
-            color='red'
           />
         </article>
       </section>
@@ -151,11 +141,7 @@ const Lessons = () => {
             strong: (chunks) => <strong>{chunks}</strong>,
           })}{" "}
         </p>
-        <ButtonLink
-          title={t("otherOffers.button")}
-          href={"contact"}
-          color='red'
-        />
+        <ButtonLink title={t("otherOffers.button")} href={"contact"} />
       </article>
 
       <section className={styles.moreInfo}>
@@ -170,13 +156,8 @@ const Lessons = () => {
             href='https://app.acuityscheduling.com/schedule.php?owner=33520682&owner=33520682&appointmentType=69034331'
             title={t("moreInfo.button1")}
             targetBlank={true}
-            color='red'
           />
-          <ButtonLink
-            title={t("moreInfo.button2")}
-            href={"contact"}
-            color='red'
-          />
+          <ButtonLink title={t("moreInfo.button2")} href={"contact"} />
         </div>
       </section>
     </main>

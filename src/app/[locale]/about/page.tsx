@@ -1,11 +1,11 @@
+import ButtonLink from "@/app/components/Button/Link/Link";
+import PageHeader from "@/app/components/PageHeader/PageHeader";
+import type { Metadata } from "next";
+import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import laughImage from "../../images/smile.png";
 import styles from "./about.module.scss";
-import ButtonLink from "@/app/components/Button/Link/Link";
-import PageHeader from "@/app/components/PageHeader/PageHeader";
-import { useTranslations } from "next-intl";
-import { getTranslations } from "next-intl/server";
-import type { Metadata, ResolvingMetadata } from "next";
 
 export type Props = {
   params: Promise<{ locale: string }>;
@@ -28,11 +28,10 @@ const AboutMe = () => {
       <PageHeader title={t("title")} />
       <div className={styles.history}>
         <section>
-          <h2>{t("title")}</h2>
           <p>{t("p1")}</p>
           <p>{t("p2")}</p>
           <p>{t("p3")}</p>
-          <ButtonLink title={t("button1")} href={"method"} color='red' />
+          <ButtonLink title={t("button1")} href={"method"} />
         </section>
 
         <div className={styles.imageInSection}>
@@ -52,11 +51,7 @@ const AboutMe = () => {
           <h2>{t("section2.title2")}</h2>
           <p>{t("section2.p2")}</p>
           <p>{t("section2.p3")}</p>
-          <ButtonLink
-            title={t("section2.button2")}
-            href={"lessons"}
-            color='red'
-          />
+          <ButtonLink title={t("section2.button2")} href={"lessons"} />
         </section>
       </div>
     </main>

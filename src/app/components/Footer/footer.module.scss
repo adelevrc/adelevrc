@@ -3,13 +3,14 @@
 .footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: $color-pink;
   color: $color-black;
   align-items: center;
   display: flex;
+  gap: $pageGap;
   flex-direction: column;
+  border-top: $border;
   h1 {
-    font-style: italic;
+    font-size: 70px;
   }
   .firstSection {
     display: flex;
@@ -26,7 +27,6 @@
       list-style-type: none;
       text-align: center;
       a {
-        font-family: $arial;
         letter-spacing: 0.5px;
         &:hover {
           text-decoration: underline;
@@ -137,7 +137,6 @@
     color: $color-white;
     p {
       color: $color-white;
-      font-family: $arial;
     }
     ul {
       display: flex;
@@ -169,7 +168,6 @@
     align-items: center;
     font-size: 10px;
     a {
-      font-family: $arial;
       font-size: 10px;
     }
   }

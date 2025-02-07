@@ -1,11 +1,11 @@
-import Description from "@/app/components/Description/Description";
-import ButtonLink from "../../components/Button/Link/Link";
-import PageHeader from "../../components/PageHeader/PageHeader";
-import styles from "./methode.module.scss";
+import { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
+import ButtonLink from "../../components/Button/Link/Link";
+import PageHeader from "../../components/PageHeader/PageHeader";
 import { Props } from "../about/page";
-import { Metadata } from "next";
+import styles from "./method.module.scss";
+import ColoredContainer from "@/app/components/ColoredContainer/ColoredContainer";
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
@@ -39,39 +39,45 @@ const Method = () => {
         </h2>
         <h3>{t("classPrep.p1")}</h3>
         <ul>
-          <li> {t("classPrep.list.bulletOne")}</li>
-          <li> {t("classPrep.list.bulletTwo")}</li>
-          <li> {t("classPrep.list.bulletThree")}</li>
+          <ColoredContainer color='orange'>
+            {t("classPrep.list.bulletOne")}
+          </ColoredContainer>
+          <ColoredContainer color='purple'>
+            {t("classPrep.list.bulletTwo")}
+          </ColoredContainer>
+          <ColoredContainer color='orange'>
+            {t("classPrep.list.bulletThree")}
+          </ColoredContainer>
         </ul>
         <h3>{t("classPrep.approaches.title")} </h3>
         <ul>
-          <li>
-            <p>{t("classPrep.approaches.feature1.title")} </p>
+          <ColoredContainer color='purple'>
+            <h4>{t("classPrep.approaches.feature1.title")} </h4>
             <p>{t("classPrep.approaches.feature1.text")}</p>
-          </li>
-          <li>
-            <p>{t("classPrep.approaches.feature2.title")} </p>
+          </ColoredContainer>
+          <ColoredContainer color='orange'>
+            <h4>{t("classPrep.approaches.feature2.title")} </h4>
             <p>{t("classPrep.approaches.feature2.text")}</p>
-          </li>
-          <li>
-            <p>{t("classPrep.approaches.feature3.title")} </p>
+          </ColoredContainer>
+          <ColoredContainer color='orange'>
+            <h4>{t("classPrep.approaches.feature3.title")} </h4>
             <p>{t("classPrep.approaches.feature3.text")}</p>
-          </li>
+          </ColoredContainer>
         </ul>
         <h3> {t("classPrep.nonNegotiables")} </h3>
         <ul>
-          <li>
-            <p>{t2("features.feature1.title")}</p>
+          <ColoredContainer color='orange'>
+            <h4>{t2("features.feature1.title")}</h4>
             <p>{t2("features.feature1.text")}</p>
-          </li>
-          <li>
-            <p>{t2("features.feature5.title")}</p>
+          </ColoredContainer>
+          <ColoredContainer color='orange'>
+            <h4>{t2("features.feature5.title")}</h4>
             <p>{t2("features.feature5.text")}</p>
-          </li>
-          <li>
-            <p>{t2("features.feature6.title")}</p>
+          </ColoredContainer>
+          <ColoredContainer color='purple'>
+            <h4>{t2("features.feature6.title")}</h4>
             <p>{t2("features.feature6.text")}</p>
-          </li>
+          </ColoredContainer>
         </ul>
 
         <h2>
@@ -93,7 +99,7 @@ const Method = () => {
         <p>{t("section3.p1")}</p>
         <p>{t("section3.p2")}</p>
 
-        <ButtonLink title={t("button")} href={"/book-class"} color='red' />
+        <ButtonLink title={t("button")} href={"/book-class"} />
       </section>
     </main>
   );

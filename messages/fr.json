@@ -12,10 +12,10 @@
             "method":"Ma méthode"
             
         },
-        "title":"La méthode pour un yoga <span>dynamique</span>, <span>pointu</span> et <span>original</span> !",
+        "title":"La méthode pour un yoga <span>dynamique</span>  <span>pointu</span> et <span>original</span> !",
         "dynamic":{
             "title":"Dynamique",
-            "text":" Nourrissez votre énergie, force et mobilité pour transcender tous les domaines de votre vie"
+            "text":" Nourrissez votre énergie, force et mobilité pour transcender tous les domaines de votre vie."
         }, 
         "cuttingEdge":{
             "title":"De pointe",
@@ -26,9 +26,9 @@
             "text":"Postures traditionnelles et twist beaucoup plus modernes pour explorer toute la capacité de ses mouvements dans une pratique joyeuse, et sans se prendre au sérieux !"
         }, 
         "description":{
-            "title":"Des cours de yoga construits autour de la <strong>biomécanique</strong> et de la <strong> neuroscience </strong> pour gagner en <strong> force</strong> et en<strong> mobilité </strong> rapidement.", 
+            "title":"Des cours de yoga construits autour de la <strong>biomécanique</strong> et de la <strong>neuroscience</strong> pour gagner en <strong>force</strong> et en <strong>mobilité</strong> rapidement.", 
             "text" :"Mon pari : des flows de yoga où chaque mouvement est efficace, avec une intention physique et mentale précise, pour progresser plus rapidement, aller plus loin et devenir autonome dans ses mouvements, le tout dans la joie et sans se prendre au sérieux !", 
-            "h4":"   Des séquences de yoga <span> pointues </span> et <span> faciles </span> à suivre pour répondre à un besoin spécifique.",
+            "h4":"   Des séquences de yoga <span>pointues</span> et <span>faciles</span> à suivre pour répondre à un besoin spécifique.",
             "list":{
                 "firstPoint":"Intégration de la <strong>neuroscience</strong> dans les flows de yoga ! Votre système nerveux contrôle tout : le comprendre et savoir quels stimuli fonctionnent (ou non !) vous permettra d'améliorer votre pratique, mais aussi d'acquérir des outils quotidiens et des ressources pour vos autres sports afin de vous surpasser. Un ou plusieurs exercices spécifiques sont intégrés dans chaque flow pour répondre à l'objectif du cours : extension, flexion, calme, énergie, coordination, force…",
                 "secondPoint":"<strong>Anatomie </strong> et <strong> biomécanique </strong> : comprendre comment fonctionne le corps et comment il s'articule pour vous donner les meilleurs conseils et atteindre les postures que vous voulez."
@@ -267,7 +267,7 @@
             "nonNegotiables": "Les non-négociables dans un cours :"
         },
         "section1": {
-            "title": "Bouger de manière <span>consciente</span> pour améliorer <span>force</span>, <span>mobilité</span>, <span>endurance</span> et <span>contrôle</span>.",
+            "title": "Bouger de manière <span>consciente</span> pour améliorer <span>force</span> <span>mobilité</span> <span>endurance</span> et <span>contrôle</span>.",
             "p1": "Chaque cours est préparé de façon unique et méticuleuse pour vous aider à aller plus loin dans votre pratique."
         },
         "section2": {

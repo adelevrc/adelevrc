@@ -1,6 +1,11 @@
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
-import { Libre_Bodoni, Mrs_Saint_Delafield } from "next/font/google";
+import {
+  Libre_Bodoni,
+  Mrs_Saint_Delafield,
+  Bebas_Neue,
+  Poppins,
+} from "next/font/google";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import { getMessages, setRequestLocale } from "next-intl/server";
@@ -8,15 +13,9 @@ import { NextIntlClientProvider } from "next-intl";
 
 import "../styles/globals.scss";
 
-export const libreBodoni = Libre_Bodoni({
+export const bebasNeue = Poppins({
   subsets: ["latin"],
   weight: ["400", "700"],
-  display: "swap",
-});
-
-export const mrsSaintDelafield = Mrs_Saint_Delafield({
-  subsets: ["latin"],
-  weight: "400",
   display: "swap",
 });
 

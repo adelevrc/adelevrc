@@ -7,7 +7,6 @@
   background-color: $color-white;
 
   .scrollingContent {
-    font-family: $arial;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -19,24 +18,7 @@
       justify-content: center;
     }
     p {
-      //font-size: 1.5em;
       text-wrap: nowrap;
-    }
-    .dot {
-      /*       width: 10px;
-      height: 10px;
-      background-color: $color-black;
-      border-radius: 50%;
-      margin-left: 1rem;
-      display: inline-block;
-    }
-    @keyframes scroll-left {
-      0% {
-        transform: translateX(150%);
-      }
-      100% {
-        transform: translateX(-200%);
-      } */
     }
   }
 }

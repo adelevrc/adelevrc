@@ -20,11 +20,7 @@ const Offers = () => {
           </div>
         }
         button={
-          <ButtonLink
-            href='/book-class'
-            title={t("firstOffer.button")}
-            color='red'
-          />
+          <ButtonLink href='/book-class' title={t("firstOffer.button")} />
         }
       />
 
@@ -40,11 +36,7 @@ const Offers = () => {
           </div>
         }
         button={
-          <ButtonLink
-            href='/book-class'
-            title={t("secondOffer.button")}
-            color='red'
-          />
+          <ButtonLink href='/book-class' title={t("secondOffer.button")} />
         }
       />
       <Card
@@ -64,7 +56,6 @@ const Offers = () => {
             href='https://app.acuityscheduling.com/schedule.php?owner=33520682&owner=33520682&appointmentType=69034331'
             title={t("thirdOffer.button")}
             targetBlank={true}
-            color='red'
           />
         }
       />

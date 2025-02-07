@@ -3,14 +3,13 @@
 .contactMe {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: $pageGap;
   padding: 0rem 1.5rem 3rem 1.5em;
   color: $color-black;
   line-height: 30px;
   h2,
   h3 {
-    color: $color-red;
-    font-weight: 400;
+    font-weight: 700;
   }
 
   .introduction {
@@ -18,9 +17,6 @@
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    p {
-      color: $color-grey;
-    }
   }
   .features {
     display: grid;
@@ -36,8 +32,7 @@
         line-height: 2rem;
         padding: 1rem 0;
         span {
-          font-style: italic;
-          color: $color-bright-pink;
+          color: $color-orange;
         }
       }
     }

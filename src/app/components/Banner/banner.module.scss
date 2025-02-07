@@ -4,28 +4,30 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 1.5rem;
+  gap: $pageGap;
   padding: 0rem 1.5rem;
   h2 {
     padding: 0 1.5rem;
     font-weight: 400;
     span {
-      color: $color-bright-pink;
+      color: $color-orange;
     }
   }
   h1 {
-    line-height: 2.5rem;
     text-transform: none;
+    letter-spacing: 1px;
+    font-size: 70px;
     @include breakpoint-lg {
       padding-top: 2.5rem;
     }
     span {
-      color: $color-bright-pink;
+      border: $border;
+      border-radius: 100px;
+      border-spacing: $borderSpacing;
+      padding: 0.5rem 1rem;
     }
   }
-  h2 {
-    color: $color-red;
-  }
+
   ul {
     li {
       padding: 1.5rem 0;
@@ -34,7 +36,6 @@
       list-style-type: none;
       .empahsis {
         padding: 5px 10px;
-        background-color: $color-red;
         font-weight: bold;
         border-radius: 5px;
         width: fit-content;
@@ -52,19 +53,33 @@
       li {
         max-width: 33.33%;
         width: 33.33%;
-        background-color: $color-light-grey;
         padding: 1.5rem;
-        border-radius: 5px;
+        border-radius: 30px;
 
         .empahsis {
           padding: 0;
           padding-bottom: 0.5rem;
           font-weight: normal;
-          color: $color-red;
+          color: $color-black;
+          font-weight: 700;
           background-color: transparent;
-          font-size: 150%;
-          font-family: $libre-bondoni;
+          font-size: 25px;
+          font-family: $bebasNeue;
         }
+        span {
+          line-height: 33px;
+        }
+      }
+      .dynamic {
+        background-color: #fbab7e;
+        background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+      }
+      .cuttingEdge {
+        background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+      }
+      .fun {
+        background-color: #fbab7e;
+        background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
       }
     }
   }
@@ -78,8 +93,5 @@
       padding: initial;
       border-radius: 60px;
     }
-  }
-  a {
-    margin-top: 2.5rem;
   }
 }

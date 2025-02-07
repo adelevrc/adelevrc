@@ -8,10 +8,11 @@
   gap: 1rem;
   .info {
     padding: 5px 10px;
-    background-color: $color-light-grey;
+    background-color: $color-orange;
     font-weight: bold;
     border-radius: 5px;
     width: fit-content;
+    color: $color-white;
   }
   h4 {
     text-transform: uppercase;

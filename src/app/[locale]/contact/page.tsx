@@ -5,6 +5,7 @@ import styles from "./contact.module.scss";
 import { useTranslations } from "next-intl";
 import { Props } from "../about/page";
 import { Metadata } from "next";
+import PageHeader from "@/app/components/PageHeader/PageHeader";
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
@@ -20,7 +21,7 @@ const Contact = () => {
   const t = useTranslations("Contact");
   return (
     <main className={styles.main}>
-      <h1>{t("title")}</h1>
+      <PageHeader title={t("title")} />
       <section>
         <div className={styles.global}>
           <div className={styles.informations}>
@@ -32,7 +33,6 @@ const Contact = () => {
               href='https://app.acuityscheduling.com/schedule.php?owner=33520682&owner=33520682&appointmentType=69034331'
               title='Discuter en ligne'
               targetBlank={true}
-              color='red'
             />
           </div>
 

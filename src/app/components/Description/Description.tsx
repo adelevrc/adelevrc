@@ -49,7 +49,7 @@ const Description = () => {
           strong: (chunks) => <strong>{chunks}</strong>,
         })}
       </p>
-      <ButtonLink href='method' title={t("button.method")} color='red' />
+      <ButtonLink href='method' title={t("button.method")} />
     </section>
   );
 };

@@ -3,10 +3,10 @@
 .description {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: $pageGap;
   padding: 3rem 1.5rem;
   h2 {
-    color: $color-red;
+    color: $color-black;
     @include breakpoint-lg {
       max-width: 1200px;
       align-self: center;
@@ -18,18 +18,20 @@
   h3 {
     span,
     strong {
-      color: $color-bright-pink;
+      border: $border;
+      border-radius: $borderRadius;
+      border-spacing: $borderSpacing;
+      padding: 0.5rem;
     }
   }
   h3 {
-    color: $color-red;
     text-align: center;
   }
 
   p {
     line-height: 2rem;
     span {
-      color: $color-bright-pink;
+      color: $color-orange;
     }
     @include breakpoint-lg {
       line-height: 40px;
