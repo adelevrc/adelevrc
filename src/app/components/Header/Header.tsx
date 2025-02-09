@@ -1,11 +1,13 @@
 "use client";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import styles from "./header.module.scss";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "../LangageSwitcher/LangageSwitcher";
 
 const Header = () => {
+  const t = useTranslations("Footer");
   const [menuOpen, setMenuOpen] = useState(false);
-
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -38,9 +40,15 @@ const Header = () => {
         aria-expanded={menuOpen}
         aria-label='Menu principal'
       >
-        <div />
-        <div />
-        <div />
+        <div
+          className={`${styles.line} ${styles.lineOne} ${menuOpen ? styles.lineOneRotation : ""}`}
+        />
+        <div
+          className={`${styles.line} ${styles.lineTwo} ${menuOpen ? styles.lineTwoRotation : ""}`}
+        />
+        <div
+          className={`${styles.line} ${styles.lineThree} ${menuOpen ? styles.lineThreeRotation : ""}`}
+        />
       </button>
       <Link href={"/"} className={styles.logo}>
         <p className={styles.name}> Adèle Vercaygne</p>
@@ -55,56 +63,56 @@ const Header = () => {
         <ul>
           <li>
             <Link
-              href={"a-propos"}
+              href={"/about"}
               onClick={handleLinkClick}
               tabIndex={menuOpen ? 0 : -1}
             >
-              À propos
+              {t("about")}
             </Link>
           </li>
           <li>
             <Link
-              href={"ma-methode"}
+              href={"/method"}
               onClick={handleLinkClick}
               tabIndex={menuOpen ? 0 : -1}
             >
-              Méthode
+              {t("method")}
             </Link>
           </li>
           <li>
             <Link
-              href={"les-cours"}
+              href={"/lessons"}
               onClick={handleLinkClick}
               tabIndex={menuOpen ? 0 : -1}
             >
-              Les cours
+              {t("lessons")}
             </Link>
           </li>
           <li>
             <Link
-              href={"reserver-cours"}
+              href={"/book-class"}
               onClick={handleLinkClick}
               tabIndex={menuOpen ? 0 : -1}
             >
-              Réserver un cours
+              {t("bookClass")}
             </Link>
           </li>
           <li>
             <Link
-              href={"freebies"}
+              href={"/freebies"}
               onClick={handleLinkClick}
               tabIndex={menuOpen ? 0 : -1}
             >
-              Freebies
+              {t("freebies")}
             </Link>
           </li>
           <li>
             <Link
-              href={"contact"}
+              href={"/contact"}
               onClick={handleLinkClick}
               tabIndex={menuOpen ? 0 : -1}
             >
-              Contact
+              {t("contact")}
             </Link>
           </li>
         </ul>

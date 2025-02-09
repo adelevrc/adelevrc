@@ -7,17 +7,20 @@ $breakpoint-xxl: 1400px;
 
 /// COLORS
 $color-white: #ffffff;
-$color-grey: #121212bf;
-$color-red: #a42525;
 $color-black: #333333;
-$color-pink: #e4bed2;
-$color-bright-pink: #de5083;
-$color-light-grey: #f1f1f1;
+$color-orange: #ff461e;
 
 //FONT
-$libre-bondoni: "Libre Bodoni", serif;
-$arial: Arial, sans-serif;
-$cursive: "Mrs Saint Delafield", cursive;
+$bebasNeue: "Poppins", serif;
+
+//BORDER
+$border: 2px solid $color-black;
+$borderRadius: 33px;
+$borderSpacing: 10px;
+
+//SPACING
+$smallPageGap: 3rem;
+$pageGap: 5rem;
 
 @mixin breakpoint-sm {
   @media (min-width: #{$breakpoint-sm}) {

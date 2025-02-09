@@ -1,0 +1,59 @@
+@import "../../styles//mixins";
+.main {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 2.5rem;
+  }
+
+  section {
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    .global {
+      display: flex;
+      gap: 3rem;
+      max-width: $breakpoint-xl;
+      a {
+        align-self: center;
+      }
+      @include breakpoint-lg {
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+    }
+    .informations {
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start;
+      gap: 3rem;
+    }
+    p {
+      text-align: start;
+      width: 100%;
+      @include breakpoint-lg {
+        width: 80%;
+      }
+    }
+    @include breakpoint-lg {
+      padding: 3rem;
+    }
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+      @include breakpoint-lg {
+        width: 55%;
+      }
+    }
+  }
+}

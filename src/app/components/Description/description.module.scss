@@ -3,14 +3,15 @@
 .description {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: $smallPageGap;
   padding: 3rem 1.5rem;
+  @include breakpoint-lg {
+    gap: $pageGap;
+  }
   h2 {
-    color: $color-red;
-    font-size: 36px;
-    strong {
-      font-size: 40px;
-    }
+    color: $color-black;
+    line-height: 3.5rem;
+
     @include breakpoint-lg {
       max-width: 1200px;
       align-self: center;
@@ -18,28 +19,29 @@
       line-height: 3rem !important;
     }
   }
+  h3 {
+    line-height: 3.5rem;
+  }
   h2,
-  h4 {
+  h3 {
     span,
     strong {
-      font-family: $cursive;
-      color: $color-bright-pink;
+      font-weight: 700;
+      border: $border;
+      border-radius: $borderRadius;
+      border-spacing: $borderSpacing;
+      padding: 0.5rem;
     }
   }
-  h3,
-  h4 {
-    color: $color-red;
+  h3 {
     text-align: center;
   }
-  h4 {
-    font-family: $libre-bondoni;
-    font-style: italic;
-    span {
-      font-size: 30px;
-    }
-  }
+
   p {
     line-height: 2rem;
+    span {
+      color: $color-orange;
+    }
     @include breakpoint-lg {
       line-height: 40px;
       align-self: center;

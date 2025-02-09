@@ -6,9 +6,7 @@
   display: flex;
   align-items: center;
   padding: 1rem;
-
   color: $color-black;
-  background-color: $color-white;
 
   @include breakpoint-xl {
     align-items: center;
@@ -30,13 +28,41 @@
   }
   .name {
     font-size: 2rem;
-    font-family: $cursive;
+  }
+  .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #0e2431;
+  }
+  .lineOne {
+    transform-origin: 25% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+  .lineTwo {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .lineThree {
+    transform-origin: 5% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  .lineOneRotation {
+    transform: rotate(45deg);
+  }
+
+  .lineTwoRotation {
+    transform: scaleY(0);
+  }
+
+  .lineThreeRotation {
+    transform: rotate(-40deg);
   }
 
   p {
     width: 100%;
     text-align: center;
-    font-style: italic;
     font-weight: 700;
     z-index: 2;
   }
@@ -67,15 +93,16 @@
 
   nav {
     position: fixed;
-    top: 0;
-    right: -100%;
+    top: 3rem;
+    left: -100%;
     height: 100%;
-    width: 250px;
+    width: 70%;
     background-size: cover;
-    -webkit-transition: right 0.3s ease;
-    transition: right 0.3s ease;
+    -webkit-transition: left 0.3s ease;
+    transition: left 0.3s ease;
     z-index: 2;
     background-color: $color-white;
+    opacity: 0.9;
 
     @include breakpoint-xl {
       display: flex;
@@ -109,14 +136,17 @@
 
   nav ul li a {
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.5em;
+
+    @include breakpoint-lg {
+      font-size: 1rem;
+    }
     &:hover {
-      color: $color-red;
-      text-decoration: underline;
+      color: $color-orange;
     }
   }
 
   nav.open {
-    right: 0;
+    left: 0;
   }
 }

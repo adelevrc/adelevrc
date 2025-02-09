@@ -1,0 +1,49 @@
+@import "../../styles//mixins";
+
+.main {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: $pageGap;
+
+  h1 {
+    @include breakpoint-lg {
+      text-align: center;
+    }
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    line-height: 1.8;
+    padding: 0 1.5rem;
+    @include breakpoint-lg {
+      width: 80%;
+    }
+    h2 {
+      padding-top: 1.5rem;
+    }
+    span {
+      font-weight: 700;
+      color: $color-orange;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      li {
+        list-style-type: none;
+      }
+    }
+  }
+  iframe {
+    border: none;
+    @include breakpoint-lg {
+      align-self: center;
+      padding: 3rem;
+      width: 80%;
+    }
+  }
+}

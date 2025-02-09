@@ -1,0 +1,22 @@
+@import "../../styles/mixins";
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: $color-white;
+  @include breakpoint-lg {
+    padding: 5rem;
+  }
+  h1 {
+    color: $color-black;
+  }
+  h2 {
+    color: $color-black;
+    text-transform: uppercase;
+  }
+  h3,
+  p {
+    color: $color-black;
+  }
+}

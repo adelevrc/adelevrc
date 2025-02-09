@@ -1,0 +1,401 @@
+{
+  "HomePage": {
+    "metaData": {
+      "title": "Home - Adèle Vercaygne",
+      "description": "Yoga, breathing, and meditation classes based on anatomy, neuroscience, and movement for a healthy and sustainable body and mind."
+    },
+    "image": {
+      "image1": "Person doing yoga indoors. They are in a side plank position, laughing while looking at the camera in front of them."
+    },
+    "button": {
+      "bookClass": "Book a class",
+      "method": "My method"
+    },
+    "title": "The method for a <span>dynamic</span> <span>cutting-edge</span> and <span>original</span> yoga!",
+    "dynamic": {
+      "title": "Dynamic",
+      "text": "Nurture your energy, strength, and mobility to transcend all aspects of your life."
+    },
+    "cuttingEdge": {
+      "title": "Cutting-edge",
+      "text": "Ultra-precise flows based on neuroscience and biomechanics for the most efficient movements."
+    },
+    "fun": {
+      "title": "Original",
+      "text": "Traditional postures and much more modern twists to explore the full range of movement in a joyful practice—without taking oneself too seriously!"
+    },
+    "description": {
+      "title": "Yoga classes built around <strong> biomechanics </strong> and <strong>neuroscience</strong> to quickly gain <strong>strength</strong> and <strong>mobility</strong>.",
+      "text": "My bet: Yoga flows where every movement is efficient, with a precise physical and mental intention, to progress faster, go further, and gain autonomy in movement—all with joy and without taking oneself too seriously!",
+      "h4": "Sharp and <span>easy-to-follow</span> yoga sequences to meet a specific need.",
+      "list": {
+        "firstPoint": "Integration of neuroscience into yoga flows! Your nervous system controls everything—understanding it and knowing which stimuli work (or don’t!) will help you improve your practice while also giving you daily tools and resources for other sports to push your limits. One or more specific exercises are integrated into each flow to align with the class objective: extension, flexion, calm, energy, coordination, strength….",
+        "secondPoint": "<strong>Anatomy</strong> and <strong>biomechanics</strong>: Understand how the body works and moves to give you the best advices and achieve the postures you aim for."
+      },
+      "secondH4": "Classes open to anyone ready to <span>sweat</span> <span>give their all</span> and <span>challenge themselves</span> on the mat",
+      "flowDescription": "My classes are <span>not reserved for a select group</span>! You are welcome, whether you are a <span>beginner or advanced</span> in this practice! You will love it if you enjoy challenges, sweating, and <span>not taking yourself too seriously</span>. You will love it if you enjoy discovering <span>new forms of movement</span> that can sometimes be unconventional. You will love it if you enjoy <span>exploration</span>. You will hate it if you prefer staying in what are called traditional postures, don't like physical activity, or believe that yoga should be a practice taken with the utmost seriousness."
+    },
+    "offers": {
+       "online":"Online",
+       "inPerson":"In person",
+      "firstOffer": {
+        "title": "Yoga classes",
+        "subtitle": "Practice with me from the comfort of your home",
+        "text": "<p>Enjoy <strong>one-hour online yoga classes</strong> to practice comfortably from your home.</p><p>This is the ideal solution to incorporate <strong>yoga</strong> into your daily life while staying at home.</p><p><strong>Online yoga classes</strong> take place in the evening and on weekends, offering perfect flexibility for your schedule.</p>",
+        "button": "Book a class"
+      },
+      "secondOffer": {
+        "title": "Meditation classes",
+        "subtitle": "Start the week without apprehension with meditation and breathwork",
+        "text": "<p>Through <strong>breathing</strong> and <strong>guided meditation</strong>, you can say goodbye to Sunday night blues and approach each new week without apprehension.</p><p>The goal of <strong>online meditation classes</strong> is to help you develop <strong>breathing tools</strong> and meditation techniques that you can use in any stressful or anxious situation.</p>",
+        "button": "Book a meditation"
+      },
+      "thirdOffer": {
+        "title": "Private sessions",
+        "subtitle": "(only in Nantes, France) Reach new heights in your practice with tailored classes",
+        "text": "<p><strong>Private yoga classes</strong> are tailored to your needs, whether you want to perfect certain postures, gain flexibility, or discover new techniques.</p><p>Each session is personalized according to your goals.</p><p>Classes last from 1 to 1.5 hours, depending on your preferences. An initial contact is required to define your expectations before starting.</p>",
+        "button": "Book an appointment"
+      }
+    },
+    "contact": {
+      "h2": "What you get in each class",
+      "p1": "Each class is uniquely designed to help you go further in your practice",
+      "features": {
+        "feature1": {
+          "title": "Original Sequences",
+          "text": "Unique sequences and amazing transitions you've never seen anywhere, designed to work your muscles in all possible positions."
+        },
+        "feature2": {
+          "title": "Neurological Exercises",
+          "text": "To improve your flexion, extension, balance, and coordination in just 3 minutes, plus tailored techniques to help you feel calmer or more energetic!"
+        },
+        "feature3": {
+          "title": "Sharp Flows",
+          "text": "Developed with a specific goal in mind (getting into a posture / working a body part), using biomechanics, anatomy, and neuroscience. No movement is wasted; everything is efficient."
+        },
+        "feature4": {
+          "title": "Dynamic Yoga",
+          "text": "Dynamic flows, far from static. They will help you feel every muscle in your body while moving on your mat."
+        },
+        "feature5": {
+          "title": "Joy and Good Vibes",
+          "text": "Why can’t peace and calm be found in joy? Why should the physical practice of yoga be taken so seriously? No one knows! And that’s why, in my flows, I do everything to make sure you move with a smile."
+        },
+        "feature6": {
+          "title": "Accessible for All Levels",
+          "text": "As long as you're ready to challenge yourself and explore new forms of movement! If you’re looking for tradition and stillness, this isn't for you. If you want to sweat, challenge yourself, and have fun, you're in the right place!"
+        }
+      },
+      "button": "Contact me"
+    }
+  },
+  "AboutMe": {
+    "metaData": {
+      "title": "About - Adèle Vercaygne",
+      "description": "Discover my journey and how yoga transformed my life. I want to share with you my experience, my yoga training, and my desire to pass on this passion."
+    },
+    "title": "My Story: Feeling Better Through Yoga",
+    "p1": "In 2014, I discovered yoga, a practice that transformed my life. At the time, I was going through a tough period, dealing with a lot of anxiety, panic attacks, and insomnia. I was looking for a way to regain a sense of well-being and manage my daily life.",
+    "p2": "One evening, I decided to follow a yoga session on YouTube, and in just 15 minutes, I felt the benefits of movement, conscious breathing, and meditation. My anxious thoughts disappeared, and that night, I slept peacefully. For almost a year, I practiced yoga every evening, and little by little, I started to feel better, improving both my sleep quality and daily life.",
+    "p3": "However, I felt the need to understand what was happening within me during these sessions. I then delved into research on the brain, neuroscience, the benefits of breathing, meditation, as well as anatomy and biomechanics. The more I deepened my research, the more I fell in love with yoga as a whole: a practice that combines movement, anatomy, and mind.",
+    "button1": "Discover my method",
+    "imageAlt": "The image shows a person sitting cross-legged on a blue yoga mat in front of a white wall. She is wearing a black tank top and black leggings. Her hands rest on her knees, and she is looking at the camera. She is smiling, with a joyful and relaxed expression.",
+    "section2": {
+      "title1": "The Science of Movement and Yoga",
+      "p1": "What fascinated me was discovering the impact of yoga on the brain and body. Yoga is not just a series of postures; in addition to the traditional and ritualistic aspects, it is a science of movement that takes into account biomechanics, neuroscience, and how our body and mind are part of the same entity. Through this practice, I learned to manage my stress and emotions, reconnect, and better handle the challenges of daily life.",
+      "title2": "My Training at Alba Yoga",
+      "p2": "In 2024, after a long search for a program that combines the science of movement, anatomy, and the philosophy of yoga, I graduated from the Alba Yoga Academy. Under the guidance of Celest Perreira and Hannah Barrett, two internationally recognized figures, I deepened my understanding of the connections between yoga, anatomy, and neuroscience to create original, dynamic sequences with specific goals.",
+      "p3": "Today, I am convinced that everyone can benefit from yoga, whether you run, lift weights, do Pilates, or do nothing at all. Yoga is there as a friend, helping us improve our body, health, well-being, as well as managing our emotions and living in society.",
+      "button2": "The Classes"
+    }
+  },
+  "BookClass": {
+    "metaData": {
+        "title": "Book a Yoga and Meditation Class",
+        "description": "Easily book a yoga class or an online meditation session. Use the form to schedule your session or make an initial appointment for a private class."
+    },
+    "info":"all classes are scheduled in Paris time",
+    "differentsClasses": "Different Classes",
+    "title": "Book a Class",
+    "howToBook": "How to Book?",
+    "p1": "Directly book an online yoga class or a meditation session via the form below.",
+    "oneHourClass": "<span>One-hour class</span>: choose Online Yoga at €12",
+    "ThreeEurosClass": "<span>Online yoga classes at €3</span> are held only once a month and last 1 hour. Don't miss your spot!",
+    "bonusClass": "<span>Birthday online yoga</span>: free class to celebrate my birthday! Don't miss your spot!",
+    "mediationClass": "<span>Online meditation: 30 minutes</span> of breathing and meditation",
+    "firstAppointment": "<span>First appointment</span>: for those wanting to take private classes for the first time but who don't know me.",
+    "frameTitle": "Make an Appointment",
+    "classDescription": {
+        "subtitles": "Classes are presented weekly, by clicking on a schedule you can:",
+        "p1": "Click 'Continue' to go directly to payment.",
+        "p2": "Click 'Add' a schedule to book multiple classes at once",
+        "p3": "Click 'Recurring' to book the same class every week according to your desired repetition"
+    },
+    "importantNotes": {
+        "title": "Important Note",
+        "p1": "Sometimes we can't control everything in life, or we just want to lie on the couch eating chips instead of rolling out our mat. It is possible to cancel but not at the last minute: <span>you have up to 12 hours before the class to cancel and be refunded</span>."
+    }
+  },
+  "Contact": {
+    "metaData": {
+      "title": "Contact Adèle Vercaygne - Yoga and Meditation Classes",
+      "description": "Contact me for any questions about yoga, breathing, and meditation classes, online or in the studio. I am available to provide you with more information."
+    },
+    "title": "Contact Me",
+    "p1": "Would you like to learn more about my yoga or meditation classes? Prefer to discuss before booking? I am here to answer all your questions.",
+    "p2": "If you are a company and would like to offer yoga classes for your employees, or if you want to inquire about a private class, you have two options:",
+    "p3": "Book a 15-minute appointment to chat online or send me a message through the form below.",
+    "buttonTitle": "Chat Online"
+  },
+  "Freebies": {
+    "metaData": {
+      "title": "Get Your Freebies!",
+      "description": "List of available freebies!"
+    },
+    "title": "Freebies",
+    "p1": "Who doesn't love freebies?!",
+    "p2": "On this page, find all the programs, tips, techniques, and challenges related to yoga, neurology, and mobility.",
+    "listTitle": "List of freebies:",
+    "item1": "5 techniques to stay calm in every situations (french)",
+    "form": {
+      "freebiesTitle": "5 tips to find calm in all situations",
+      "getFreebie": "Get the freebie:",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "requiredName": "Name is required",
+      "requiredFirstName": "First name is required",
+      "message": "Message",
+      "requiredEmail": "Email is required",
+      "requiredMessage": "Message is required",
+      "invalidEmail": "Email is invalid",
+      "errorOccured": "An error occurred",
+      "success": "Success!",
+      "send": "Send",
+      "subscribeNewsletter": "Get the newsletter"
+    }
+  },
+  "Lessons": {
+    "metaData": {
+      "title": "Course Offers - Adèle Vercaygne",
+      "description": "Discover my one-hour yoga classes, as well as 30-minute meditation and breathing sessions. Also, explore my YouTube channel for more content."
+    },
+    "info":"all classes are scheduled in Paris time",
+    "title": "The Classes",
+    "onlineClasses": {
+      "title": "Online Classes",
+      "p1": "Join my online yoga classes and enjoy practicing from the comfort of your home.",
+      "p2": "Each session lasts one hour and only requires an internet connection and your yoga mat.",
+      "p3": "Online classes are held:",
+      "schedule": {
+        "wednesday": "Wednesday from 7:30 PM to 8:30 PM",
+        "friday": "Friday from 7:30 PM to 8:30 PM",
+        "sunday": "Sunday from 10:00 AM to 11:00 AM"
+      },
+      "button": "Book a Class"
+    },
+    "freeClasses": {
+      "title": "Free Classes",
+      "p1": "Enjoy my (almost) <strong>free yoga classes</strong> to discover the benefits of practice without commitment.",
+      "schedule": {
+        "thursday": {
+          "time": "Thursday - 5:00 PM",
+          "description": "Classes from 5 to 30 minutes available on <a>YouTube</a>"
+        },
+        "firstSaturday": {
+          "time": "One Saturday per month - 11:00 AM to 12:00 PM",
+          "description": "Pay what you want - min 3 euros"
+        }
+      },
+      "button": "Reserve Your Spot",
+      "rdv": "Book an Appointment"
+    },
+    "meditationClasses": {
+      "title": "Breathing and Meditation Classes",
+      "schedule": "Every Sunday from 7:00 PM to 7:30 PM online.",
+      "description": "This half-hour session will help you escape the Sunday night blues, build reflexes to fight stress or anxiety, and start the week feeling calm and energized.",
+      "button": "Book a Meditation"
+    },
+    "otherOffers": {
+      "title": "Other Offers",
+      "description1": "I offer corporate yoga classes during lunch or in the evening around Saint Herblain and Saint Joseph de Porterie. Give your teams a well-being break to improve focus and reduce stress.",
+      "description2": "If you're interested, please use the contact form to discuss your specific needs and schedule a session.",
+      "button": "Contact Me"
+    },
+    "individualClasses": {
+      "title": "Individual Yoga Classes",
+      "p1": "<strong>Individual classes</strong> allow you to focus on specific areas you wish to improve. Each session is tailor-made based on your <strong>needs</strong> and <strong>wants</strong>.",
+      "p2": "To ensure an optimal experience, an initial video call is necessary to better understand your expectations.",
+      "p3": "Contact me to schedule your first individual class and discover the benefits of personalized practice."
+    },
+    "moreInfo": {
+      "title": "Need More Information?",
+      "description": "It is normal to want to know if these classes are right for you, how they are structured, or to meet your teacher beforehand. Feel free to contact me, and we can discuss by message, email, or in person.",
+      "button2": "Send Me a Message",
+      "button1": "Book an Appointment"
+    }
+  },
+
+    "Methods": {
+        "metaData": {
+            "title": "My Method - Adèle Vercaygne",
+            "description": "Discover my unique yoga method to develop strength, improve flexibility, and master your postures while cultivating a calm and strong mind."
+        },
+        "title": "My Method",
+        "classPrep": {
+            "title": "How is a class prepared?",
+            "p1": "Class preparation follows a specific physical objective:",
+            "list": {
+                "bulletOne": "Helping you achieve a specific posture (from the simplest to the most complex).",
+                "bulletTwo": "Targeting a specific body part (rehabilitation, strength training, mobility, endurance, balance).",
+                "bulletThree": "Enhancing your performance in sports by providing tailored sequences."
+            },
+            "approaches": {
+                "title": "Different scientific approaches for better results:",
+                "feature1": {
+                    "title": "Neuroscience",
+                    "text": "Using the brain to gain strength, flexibility, balance, and coordination."
+                },
+                "feature2": {
+                    "title": "Biomechanics",
+                    "text": "Understanding movement and its mechanics to better comprehend your body and optimize performance."
+                },
+                "feature3": {
+                    "title": "Anatomy",
+                    "text": "Understanding the body to use it more effectively and better approach movements."
+                }
+            },
+            "nonNegotiables": "The non-negotiables in a class:"
+        },
+        "section1": {
+            "title": "Move <span>consciously</span> to improve <span>strength</span>, <span>mobility</span>, <span>endurance</span>, and <span>control</span>.",
+            "p1": "Each class is uniquely and meticulously designed to help you progress in your practice."
+        },
+        "section2": {
+            "title": "How does a <span>yoga session</span> unfold?",
+            "p1": "A yoga session lasts between one hour and an hour and a half (only for private lessons).",
+            "p2": "The flow is explained at the beginning of the session along with its specific objectives. Every session starts and ends with a breathing practice.",
+            "p3": "The flow consists of a sequence of postures with original transitions, repeated multiple times at different intensities and with various intentions.",
+            "p4": "Neurological exercises are integrated into the flow, accompanied by tests and retests to assess their effectiveness for the intended goal.",
+            "p5": "Neurological exercises include specific breathing techniques, balance exercises to strengthen the inner ear, and visual exercises to enhance sensory connections."
+        },
+        "section3": {
+            "title": "Is this <span>method</span> right for you?",
+            "p1": "In my classes, we don't take ourselves too seriously: we move, we explore movements that few yoga teachers introduce. The physical practice of yoga is much more modern than people think (dating back to the 1940s), and for me, it's essential that it evolves with scientific advancements and our own desires. I have never found my calm in static postures held for minutes, but rather in fluid and dynamic flows. I am convinced that peace can be found in laughter and joy, in failure and discovery. Respecting yoga means understanding its philosophy, sharing, and discussing it. Laughing or trying unconventional movements is not disrespectful, but rather a tribute to this practice.",
+            "p2": "If you are ready to challenge yourself, sweat, explore new movements, and understand how your body (and brain, of course) works to elevate yourself in all areas of life, then my classes are for you."
+        },
+        "button": "Book a class"
+    },
+
+  "Newsletter": {
+    "title": "Subscribe to the Newsletter",
+    "free": "Free",
+    "monthlyTheme": "Announcement of the monthly theme",
+    "neuroscienceTip": "A neuroscience tip + practical application or a myth debunk",
+    "exclusivePreview": "Exclusive preview of special classes, retreats, workshops...",
+    "exclusiveDiscounts": "Exclusive discount announcements",
+    "monthlyChallenge": "Monthly challenge"
+  },
+  "GeneralTermsAndCondition": {
+    "title": "General Terms and Conditions - Adèle Vercaygne",
+    "description": "Check our general terms and conditions to understand the rights and obligations related to our yoga services. Learn about our policies, cancellations, and terms.",
+    "content": {
+      "h1": "General Terms and Conditions of Use and Sale",
+      "prelude": {
+        "title": "Preamble",
+        "p1": "The site <strong>www.adelevercaygne.com</strong> (hereafter referred to as 'the Site') is the e-commerce site of the microenterprise Adèle Vercaygne, accessible via the internet network and open to any user of this network. It is edited by Adèle Vercaygne, registered under the SIRET number 93247908200012 and exempt from VAT in accordance with Article 293B of the French General Tax Code.",
+        "p2": "The site allows users to purchase services and/or products offered.",
+        "p3": "The site does not allow the purchase of services or products for resale purposes. As a result, the user of the site cannot claim any loss of opportunity, exploitation, or profit against Adèle Vercaygne."
+      },
+      "articleOne": {
+        "title": "Article 1: Purpose",
+        "p1": "The purpose of these 'General Terms of Use' is to provide the legal framework for the use of the Adèle Vercaygne site and its services.",
+        "p2": "This contract is concluded between:",
+        "p3": "The site manager, hereafter referred to as 'the Editor',",
+        "p4": "Any individual or entity wishing to access the site and its services, hereafter referred to as 'the User'.",
+        "p5": "The general terms of use must be accepted by every User, and access to the site is considered as acceptance of these terms."
+      },
+      "articleTwo": {
+        "title": "Article 2: Legal Mentions",
+        "p1": "The Adèle Vercaygne site is published by Adèle Vercaygne, located in Nantes, France. The site is hosted by the platform <strong>Vercel</strong><br /> Address: <strong>340 S Lemon Ave #4133, Walnut, CA 91789, USA</strong>."
+      },
+      "articleThree": {
+        "title": "Article 3: Access to Services",
+        "p1": "The User of the Adèle Vercaygne site has access to the following services:",
+        "p2": "Presentation information",
+        "p3": "Course, workshop, retreat, and event schedule",
+        "p4": "Online course reservation schedule",
+        "p5": "Any user with internet access can access the site for free from anywhere. The costs incurred by the User to access the site (internet connection, computer equipment, etc.) are not the responsibility of the Editor."
+      },
+      "articleFour": {
+        "title": "Article 4: General Terms of Sale and Use",
+        "p1": "These General Terms of Sale and Use are concluded between Adèle Vercaygne and any individual or entity making a purchase of products on the Site (hereafter referred to as 'Member' for the purchase of a service and 'Client' for the purchase of a product).",
+        "p2": "They are systematically sent or handed to each Member or Client to allow them to make purchases of services and/or products offered by Adèle Vercaygne. As a result, placing an order implies the full and unconditional acceptance of these Terms by the Member or Client, regardless of any contrary provisions that may appear on any document from the Member or Client, including any general terms of purchase.",
+        "p3": "The Member or Client acknowledges having read these General Terms of Sale and Use at the time of any order and expressly agrees to accept them without reservation. However, Adèle Vercaygne reserves the right to modify its General Terms of Sale and Use at any time. In such cases, the applicable terms will be those in effect at the time of the order.",
+        "sectionOne": {
+          "title": "4.1 – Services Offered and Products Sold",
+          "p1": "The services offered are those presented on the Site. These include online Yoga classes for adults, online workshops/conferences, online courses, as well as in-person Yoga classes in individual or group sessions, and Yoga retreats.",
+          "p2": "These services are offered in the form of:",
+          "p3": "A la carte consumption: passes valid for 2, 6, and 12 months entitle the user to a certain number of physical or online courses or sessions (hereafter referred to as 'Course Unit').",
+          "p4": "The offered services require the reservation of an individual or group course or session. Reservation can be made directly on the Site."
+        },
+        "sectionTwo": {
+          "title": "4.2 – Price",
+          "p1": "The prices for products and services are indicated in euros, including all taxes (TTC).",
+          "p2": "Adèle Vercaygne reserves the right to change prices at any time, but products and services will be invoiced based on the rates in effect at the time of order validation.",
+          "p3": "The prices indicated do not include processing, transport, and delivery fees, which are billed in addition to the price of the purchased products."
+        }
+      },
+      "articleFive": {
+        "title": "Article 5: User Responsibility",
+        "p1": "The User is responsible for the risks related to the use of their login and password. The User's password must remain confidential. In case of password disclosure, the Editor disclaims any responsibility."
+      },
+      "articleSix": {
+        "title": "Article 6: Editor Responsibility",
+        "p1": "Any malfunction of the server or network cannot engage the responsibility of the Editor.",
+        "p2": "The Adèle Vercaygne site commits to using all necessary means to ensure the security and confidentiality of data. However, it does not guarantee total security."
+      },
+      "articleSeven": {
+        "title": "Article 7: Intellectual Property",
+        "p1": "The contents of the Adèle Vercaygne site (logos, texts, graphics, videos, etc.) are protected by copyright under the French Intellectual Property Code. The User must obtain authorization from the Editor before reproducing, copying, or publishing these contents in whole or in part."
+      },
+      "articleEight": {
+        "title": "Article 8: Hyperlinks",
+        "p1": "The domains to which the hyperlinks on the site lead do not engage the responsibility of the Editor of Adèle Vercaygne, who has no control over these links."
+      },
+      "articleNine": {
+        "title": "Article 9: Evolution of the General Terms of Use",
+        "p1": "The Adèle Vercaygne site reserves the right to modify the clauses of these general terms of use at any time and without justification."
+      },
+      "articleTen": {
+        "title": "Article 10: Duration of the General Terms",
+        "p1": "The duration of these general terms is indefinite. They come into effect for the User from the moment the service is used."
+      },
+      "articleEleven": {
+        "title": "Article 11: Applicable Law and Jurisdiction",
+        "p1": "This contract is governed by French law. In case of a dispute that cannot be resolved amicably between the User and the Editor, the courts of Nantes are competent to resolve the dispute."
+      }
+    }
+  },
+  "Footer": {
+    "about": "About",
+    "method": "Method",
+    "lessons": "Lessons",
+    "bookClass": "Book a class",
+    "freebies": "Freebies",
+    "contact": "Contact",
+    "subscribe": "Subscribe to the newsletter",
+    "error": "An error occurred",
+    "success": "You are subscribed to the newsletter!",
+    "email": {
+      "placeholder": "Your email address"
+    },
+    "socialNetwork": {
+      "instagram": "Visit my Instagram profile",
+      "youTube": "Visit my YouTube channel",
+      "tiktok": "Visit my TikTok profile"
+    },
+    "allRighReserved": "All rights reserved",
+    "generalConditions": "General conditions"
+  }
+}

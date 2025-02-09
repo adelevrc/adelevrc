@@ -1,0 +1,72 @@
+@import "../../styles//mixins";
+
+.main {
+  position: relative;
+  display: flex;
+  gap: $pageGap;
+  flex-direction: column;
+  @include breakpoint-sm {
+    gap: 0;
+    align-items: center;
+  }
+  h2 {
+    color: $color-orange;
+    font-weight: 400;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: $pageGap;
+    line-height: 1.8;
+    padding: 2.5rem 1.5rem;
+
+    a {
+      align-self: center;
+    }
+    @include breakpoint-lg {
+      width: 150%;
+    }
+  }
+  .history {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f093fb;
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+
+    .imageInSection {
+      @include breakpoint-lg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+      img {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 50px;
+      }
+    }
+
+    @include breakpoint-lg {
+      margin-top: 5rem;
+      flex-direction: row;
+      padding: 5rem 5rem 0 5rem;
+
+      a {
+        align-self: center;
+      }
+    }
+  }
+
+  .secondSection {
+    width: 100%;
+    section {
+      width: 100%;
+    }
+    @include breakpoint-lg {
+      padding: 0 5rem 5rem 5rem;
+    }
+  }
+}

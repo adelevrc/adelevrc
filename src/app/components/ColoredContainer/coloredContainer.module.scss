@@ -1,0 +1,27 @@
+@import "../../styles/mixins";
+
+.container {
+  padding: 1.5rem;
+  border-radius: 30px;
+  background-color: #fbab7e;
+  span,
+  h4 {
+    line-height: 33px;
+    font-weight: 700;
+    font-size: 25px;
+    padding-bottom: 1rem;
+  }
+}
+
+.color-orange {
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+}
+.color-purple {
+  background-color: #f093fb;
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+.color-green {
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+}

@@ -1,0 +1,402 @@
+{  
+    "HomePage":{
+        "metaData":{
+            "title":"Accueil - Adèle Vercaygne",
+            "description":"Cours de yoga, respiration et méditation basés sur l’anatomie, la neuroscience et le mouvement pour un corps et un esprit sains, durablement."
+        },
+        "image":{
+            "image1":"Personne faisant du yoga en intérieur. Elle est en planche sur le côté et rigole en regardant la caméra devant elle."
+        },
+        "button":{
+            "bookClass":"Réserver un cours",
+            "method":"Ma méthode"
+            
+        },
+        "title":"La méthode pour un yoga <span>dynamique</span>  <span>pointu</span> et <span>original</span> !",
+        "dynamic":{
+            "title":"Dynamique",
+            "text":" Nourrissez votre énergie, force et mobilité pour transcender tous les domaines de votre vie."
+        }, 
+        "cuttingEdge":{
+            "title":"De pointe",
+            "text":"Des flows ultras pointus basés sur la neurosciences et la biomécanique pour avoir les mouvements les plus performants."
+        }, 
+        "fun":{
+            "title":"Original",
+            "text":"Postures traditionnelles et twist beaucoup plus modernes pour explorer toute la capacité de ses mouvements dans une pratique joyeuse, et sans se prendre au sérieux !"
+        }, 
+        "description":{
+            "title":"Des cours de yoga construits autour de la <strong>biomécanique</strong> et de la <strong>neuroscience</strong> pour gagner en <strong>force</strong> et en <strong>mobilité</strong> rapidement.", 
+            "text" :"Mon pari : des flows de yoga où chaque mouvement est efficace, avec une intention physique et mentale précise, pour progresser plus rapidement, aller plus loin et devenir autonome dans ses mouvements, le tout dans la joie et sans se prendre au sérieux !", 
+            "h4":"   Des séquences de yoga <span>pointues</span> et <span>faciles</span> à suivre pour répondre à un besoin spécifique.",
+            "list":{
+                "firstPoint":"Intégration de la <strong>neuroscience</strong> dans les flows de yoga ! Votre système nerveux contrôle tout : le comprendre et savoir quels stimuli fonctionnent (ou non !) vous permettra d'améliorer votre pratique, mais aussi d'acquérir des outils quotidiens et des ressources pour vos autres sports afin de vous surpasser. Un ou plusieurs exercices spécifiques sont intégrés dans chaque flow pour répondre à l'objectif du cours : extension, flexion, calme, énergie, coordination, force…",
+                "secondPoint":"<strong>Anatomie </strong> et <strong> biomécanique </strong> : comprendre comment fonctionne le corps et comment il s'articule pour vous donner les meilleurs conseils et atteindre les postures que vous voulez."
+            },
+            "secondH4":"Des cours ouverts à oute personne prête à <span>transpirer</span> <span>tout donner</span> et à se <span>challenger</span> sur le tapis", 
+            "flowDescription":"Mes cours ne sont <span>pas réservés à un public d'initiés</span> ! Vous êtes les bienvenu•e•s, que vous soyez <span>débutant•e•s ou confirmé•e•s</span> dans cette pratique ! Vous allez adorer si vous aimez les challenges, transpirer et <span> ne pas vous prendre au sérieux</span>. Vous allez adorer si vous aimez découvrir de <span>nouvelles formes de mouvements</span> qui peuvent être atypiques parfois. Vous allez adorer si vous aimez <span>l'exploration</span>. Vous allez détester si vous aimez rester dans les postures dites traditionnelles, que vous n'aimez pas l'activité physique et si pour vous le yoga doit être une pratique à prendre avec le plus grand sérieux."        },
+        "offers":{
+            "online":"En ligne",
+            "inPerson":"Présentiel",
+            "firstOffer":{
+                "title":"Cours de yoga",
+                "subtitle":"Pratiquez avec moi dans le confort de votre maison.",
+                "text":"<p> Profitez de <strong>cours en ligne de yoga</strong> d'une heure pour pratiquer confortablement depuis votre maison.</p><p>C'est la solution idéale pour intégrer <strong>le yoga</strong> dans votre quotidien, tout en restant chez vous.</p><p>Les <strong>cours de yoga en ligne</strong> se déroulent le soir et le week-end, offrant une flexibilité parfaite pour votre emploi du temps.</p>",
+                "button":"Réserver un cours"
+            },
+            "secondOffer":{
+                "title":"Cours de méditation",
+                "subtitle":"Recommencer la semaine sans appréhension avec de la respiration et de la méditation.",
+                "text":"<p> Grâce à ce travail de <strong>respiration</strong> et de <strong>méditation guidée</strong>, vous pourrez dire adieu au blues du dimanche soir et aborder chaque nouvelle semaine sans appréhension.</p><p>L'objectif des <strong>cours de méditation en ligne</strong> est de vous aider à développer des <strong>outils de respiration</strong> et de méditation que vous pourrez utiliser dans toutes les situations de stress ou d'anxiété.</p>",
+                "button":"Réserver une méditation"
+
+            },
+            "thirdOffer":{
+                "title":"Cours individuel",
+                "subtitle":"Atteignez de nouveaux sommets dans votre pratique.",
+                 "text":"<p>Les <strong>cours de yoga individuels</strong> s'adaptent à vos besoins, que vous souhaitiez perfectionner certaines postures, gagner en flexibilité ou découvrir de nouvelles techniques.</p><p>Chaque session est personnalisée selon vos objectifs.</p><p>Les cours durent de 1 à 1h30, selon vos préférences. Un premier contact est nécessaire pour définir vos attentes avant de débuter.</p>",
+                 "button":"Prendre rendez-vous"
+            }
+        },
+        "contact":{
+            "h2": "Ce que vous avez à chaque cours",
+            "p1": "Chaque cours est préparé de façon unique et méticuleuse pour vous aider à aller plus loin dans votre pratique.",
+            "features": {
+                "feature1": {
+                    "title": "Séquences originales",
+                    "text": "Des séquences uniques et des transitions étonnantes que vous n'avez jamais vues nulle part, pour faire travailler vos muscles dans toutes les positions possibles."           
+                 },
+                "feature2": {
+                    "title": "Exercices neurologiques",
+                    "text": "Pour améliorer en 3 minutes chrono vos flexions, extensions, équilibre et coordination, avec en plus des techniques sur mesure pour vous aider à être plus calme ou plus énergique !"        
+                },
+                "feature3": {
+                    "title": "Flow pointus",
+                    "text": "Élaborés avec un objectif précis (aller dans une posture / travailler une partie du corps), grâce à la biomécanique, l'anatomie et la neuroscience. Aucun mouvement à jeter, tout est efficient."          
+                },
+                "feature4": {
+                    "title": "Yoga dynamique",
+                    "text": "Des flows dynamiques, loin d’être statiques. Ils vous permettront de ressentir chaque muscle de votre corps tout en bougeant sur votre tapis."
+                },
+                "feature5": {
+                    "title": "Joie et bonne humeur",
+                    "text": "Pourquoi ne serait-il pas possible de trouver la paix et le calme dans la joie ? Pourquoi la pratique physique du yoga doit-elle être prise autant au sérieux ? Personne ne sait ! Et c'est pourquoi, dans mes flows, je mets tout en œuvre pour vous faire bouger dans la bonne humeur."               
+                 },
+                "feature6": {
+                    "title": "Accessible pour tous les niveaux",
+                    "text": "À condition d'être prêt•e à se challenger et à explorer des nouvelles formes de mouvements ! Si vous voulez de la tradition et de l'immobilité, vous pouvez passer votre chemin. Si vous voulez transpirer, vous challenger et vous amuser, vous êtes au bon endroit !"
+                }
+            },
+            "button":"Contactez-moi"
+
+        }
+    },
+    "AboutMe":{
+        "metaData":{
+            "title":"À propos - Adèle Vercaygne",
+            "description": "Découvrez mon parcours et comment le yoga a transformé ma vie. Je souhaite partager avec vous mon expérience, ma formation en yoga, et mon envie de vous transmettre cette passion."
+        },
+        "title":"Mon histoire : aller mieux grâce au yoga",
+        "p1": "En 2014, j'ai découvert le yoga, une pratique qui a transformé ma vie. À cette époque, je traversais une période difficile, avec beaucoup d'anxiété, des crises d'angoisse et de l'insomnie. Je cherchais un moyen de retrouver un état de bien être et de gérer mon quotidien.",
+        "p2": "Un soir, j'ai décidé de suivre une séance de yoga sur YouTube, et en 15 minutes, j'ai ressenti les bienfaits du mouvement, de la respiration consciente et de la méditation. Mes pensées anxieuses ont disparu, et cette nuit-là, j'ai dormi paisiblement. Pendant presque un an, j'ai pratiqué le yoga chaque soir, et peu à peu, j'ai commencé à me sentir mieux, à retrouver une meilleure qualité de sommeil et dans ma vie quotidienne.",
+        "p3": "Cependant, je ressentais le besoin de comprendre ce qui se passait en moi pendant ces séances. Je me suis alors plongée dans des recherches sur le cerveau, la neuroscience, les bienfaits de la respiration, la méditation, ainsi que sur l'anatomie et la biomécanique. Plus j'approfondissais mes recherches, plus je tombais amoureuse du yoga dans sa globalité : une pratique qui allie mouvement, anatomie et esprit.",
+        "button1": "Découvrir ma méthode",
+        "imageAlt": "L'image montre une personne assise en tailleur sur un tapis de yoga bleu, devant un mur blanc. Elle est habillée d'un débardeur noir et d'un legging noir. Ses mains reposent sur ces genoux et elle regarde la caméra. Elle est en train de sourire, affichant une expression joyeuse et détendue.",
+        "section2": {
+            "title1": "La science du mouvement et le yoga",
+            "p1": "Ce qui m'a fasciné, c'est de découvrir l'impact du yoga sur le cerveau et le corps. Le yoga ne se limite pas à une série de posture; En plus de l'aspect traditionnel et rituel, c'est une science du mouvement qui prend en compte la biomécanique, les neurosciences, et la manière dont notre corps et notre esprit font partie de la même entité. Grâce à cette pratique, j'ai appris à gérer mon stress et mes émotions, à me reconnecter et à mieux gérer les défis du quotidien.",
+            "title2": "Ma formation chez Alba Yoga",
+            "p2": "En 2024, après avoir longuement cherché une formation qui allie la science du mouvement, l'anatomie et la philosophie du yoga, j'ai été diplômée de l'Alba Yoga Academy. Sous la direction de Celest Perreira et Hannah Barrett, deux figures internationalement reconnues, j'ai approfondi ma compréhension des liens entre le yoga, l'anatomie et les neurosciences pour créer des séquences originales, dynamiques avec des objectifs précis.",
+            "p3": "Aujourd'hui, je suis convaincue que tout le monde peut bénéficier du yoga, qu'on fasse de la course, de la musculation, du pilate, ou rien du tout, le yoga est là comme un ami qui nous aide à améliorer notre corps, notre santé, notre bien-être mais aussi à gérer nos émotions et à vivre en société.",
+            "button2": "Les cours"
+        }
+    },
+    "BookClass": {
+        "metaData":{
+            "title":"Réservez un cours de Yoga et Méditation",
+            "description":"Réservez facilement un cours de yoga ou une séance de méditation en ligne. Utilisez le formulaire pour planifier votre session ou prenez un premier rendez-vous pour un cours individuel."
+        },
+       "info":"Toutes les classes sont sur le fuseau horaire de Paris",
+        "differentsClasses": "Les différents cours",
+        "title":"Réserver un cours",
+        "howToBook": "Comment réserver ?",
+        "p1": "Réservez directement un cours de yoga en ligne ou une séance de méditation via le formulaire ci-dessous.",
+        "oneHourClass": "<span>Un cours de 1 heure</span> : choisir Yoga en ligne à 12€", 
+        "ThreeEurosClass":"<span>Les cours de yoga en ligne à 3€</span> n'ont lieu qu'une fois par mois et durent 1 heure. Ne loupez pas votre place !",
+        "bonusClass":"<span>Yoga en ligne d'anniversaire</span> : cours à 0 euro pour fêter mon anniversaire ! Ne loupez pas votre place !",
+        "mediationClass":"<span>Méditation en ligne</span> : 30 minutes de respiration et de méditation",
+        "firstAppointment":"<span>Premier rendez-vous</span> : pour les personnes voulant faire des cours particuliers pour la première fois mais qui ne me connaissent pas.",
+        "frameTitle": "Prendre rendez-vous", 
+        "classDescription":{
+            "subtitles":" Les cours se présentent à la semaine, en cliquant sur un horaire vous pouvez :",
+            "p1":"Cliquez sur \"Continuer\" pour aller directement au paiement.", 
+            "p2":"Cliquez sur \"Ajouter\" un horaire pour prendre plusieurs cours en même temps", 
+            "p3":"Cliquez sur \"Récurrent\" pour prendre le même cours toutes les semaines selon la répétition que vous voulez"
+        }, 
+        "importantNotes":{
+            "title":"Note importante",
+            "p1":"Parfois on ne contrôle pas tout dans la vie, ou on juste envie de s'allonger dans le canapé en mangeant des chips au lieu de dérouler son tapis. Il est donc possible d'annuler mais pas à la dernière minute : <span>vous avez jusqu'à 12 heures avant le cours pour annuler et être remboursé•e </span> ."
+        }
+    },
+    "Contact": {
+          "metaData":{
+            "title":"Contactez Adèle Vercaygne - Cours de Yoga et Méditation",
+            "description":"Contactez-moi pour toute question sur les cours de yoga, respiration et méditation, en ligne ou en studio. Je suis disponible pour vous fournir plus d'informations."
+        },
+        "title": "Contactez-moi",
+        "p1": "Vous souhaitez en savoir plus sur mes cours de yoga ou de méditation ? Vous préférez discuter avant de réserver ? Je suis ici pour répondre à toutes vos questions.",
+        "p2": "Si vous êtes une entreprise et que vous souhaitez proposer des cours de yoga pour vos salariés, ou si vous voulez prendre contact pour un cours particulier, vous avez deux possibilités :",
+        "p3": "Prenez un rendez-vous de 15 minutes pour discuter en ligne ou écrivez-moi un message via le formulaire ci-dessous."
+    ,"buttonTitle":"Discuter en ligne"
+    },
+    "Freebies": {
+        "metaData":{
+            "title":"Récupérer vos freebies ! ",
+            "description":"Liste des freebies disponibles !"
+        },
+        "title": "Freebies",
+        "p1": "Qui n'aime pas les cadeaux ?!",
+        "p2": "Sur cette page, retrouvez tous les programmes, astuces, techniques, challenges autour du yoga, de la neurologie et de la mobilité.",
+        "listTitle": "Liste des freebies :",
+        "item1": "5 techniques pour rester calme dans toutes les situations", 
+        "form":{
+            "freebiesTitle":"5 astuces pour trouver le calme dans toutes les situations", 
+            "getFreebie":" Avoir le freeby :",
+            "firstName":"Prénom",
+            "lastName":"Nom",
+            "email":"Email",
+            "requiredName":"Le nom est requis", 
+            "requiredFirstName":"Le prénom est requis",
+            "requiredMessage":"Le message est requis", 
+            "message":"Message",
+            "requiredEmail":"L'email est requis", 
+            "invalidEmail":"L'email est invalide",
+            "errorOccured":"Une erreur s'est produite", 
+            "success":"Succès !", 
+            "send":"envoyer",
+            "subscribeNewsletter":"S'inscrire à la newsletter"
+        }
+    },
+    "Lessons": {
+        "metaData": {
+            "title": "Les offres de cours - Adèle Vercaygne",
+            "description": "Découvrez mes cours de yoga d'une heure, ainsi que des sessions de méditation et de respiration de 30 minutes. Explorez également ma chaîne YouTube pour plus de contenu."
+        },
+        "info": "Toutes les classes sont sur le fuseau horaire de Paris",
+        "title": "Les cours",
+        "onlineClasses": {
+            "title": "Les cours en ligne",
+            "p1": "Participez à mes cours de yoga en ligne et profitez de la pratique dans le confort de votre maison.",
+            "p2": "Chaque session dure une heure, nécessitant uniquement une connexion internet et votre tapis de yoga.",
+            "p3": "Les cours en ligne ont lieu :",
+            "schedule": {
+                "wednesday": "Mercredi de 19h30 à 20h30",
+                "friday": "Vendredi de 19h30 à 20h30",
+                "sunday": "Dimanche de 10h00 à 11h00"
+            },
+            "button": "Réserver un cours"
+        },
+        "freeClasses": {
+            "title": "Les cours gratuits",
+            "p1": "Profitez de mes <strong>cours gratuits de yoga</strong> (ou presque) pour découvrir les bienfaits de la pratique sans engagement.",
+            "schedule": {
+                "thursday": {
+                    "time": "Jeudi - 17h00",
+                    "description": "Cours de 5 à 30 minutes disponibles sur <a> Youtube </a>"
+                },
+                "firstSaturday": {
+                    "time": "Un samedi par mois - 11h à 12h",
+                    "description": "Prix libre - min 3 euros"
+                }
+            },
+            "button": "Réserver sa place", 
+            "rdv":"Prendre rendez-vous"
+        },
+        "meditationClasses":{
+            "title":"Les cours de respiration et de méditation ",
+            "schedule":" Tous les dimanches, de 19h à 19h30 en ligne.",
+            "description":"Cette demi heure vous permettre de sortir du blues du dimanche soir, mais aussi de gagner en réflexe pour lutter contre tout stress ou anxiété, et démarrer la semaine en forme et calme.", 
+            "button":"Réserver une méditation"
+        },
+        "otherOffers":{
+            "title":"Autres offres",
+            "description1":"Je propose des cours de yoga en entreprise, le midi ou le soir, vers Saint Herblain et Saint Joseph de Porterie. Offrez à vos équipes une pause bien-être pour améliorer leur concentration et réduire le stress.",
+            "description2":"Si vous êtes intéressé·e, merci de passer par le formulaire de contact pour discuter de vos besoins spécifiques et planifier une séance.", 
+            "button":"Contactez-moi"
+        },
+        "individualClasses": {
+            "title": "Les cours individuels de yoga",
+            "p1": "Les <strong>cours individuels</strong> vous permettent de progresser sur des points précis que vous souhaitez améliorer. Chaque séance est conçue sur mesure selon vos <strong>besoins</strong> et vos <strong>envies</strong>.",
+            "p2":"Pour garantir une expérience optimale, un premier contact en visio est nécessaire afin de mieux cerner vos attentes.",
+            "p3":"Contactez-moi pour planifier votre premier cours individuel et découvrir les bienfaits d'une pratique personnalisée."
+
+        },
+        "moreInfo": {
+            "title": "Besoins de plus d'informations ?",
+            "description": "Il est normal de vouloir savoir si ce sont des cours qui sont faits pour vous, comment ils se déroulent ou de vouloir faire connaissance avec votre professeur avant. N'hésitez pas à me contacter, nous pourrons échanger par message, email ou de vive voix.", 
+            "button2":"Envoie-moi un message", 
+            "button1":"Prendre rendez-vous"
+        }
+    },
+
+    "Methods": {
+        "metaData": {
+            "title": "Ma méthode - Adèle Vercaygne",
+            "description": "Découvrez ma méthode unique de yoga pour développer votre force, améliorer votre souplesse et maîtriser vos postures, tout en cultivant un mental calme et fort."
+        },
+        "title": "Ma méthode",
+        "classPrep": {
+            "title": "Comment est préparé un cours ?",
+            "p1": "La préparation des cours répond à un objectif physique précis :",
+            "list": {
+                "bulletOne": "Vous permettre d'accéder à une posture spécifique (des plus simples aux plus complexes).",
+                "bulletTwo": "Vous faire mobiliser une partie du corps spécifique (réhabilitation, travail de force, mobilité, endurance, équilibre).",
+                "bulletThree": "Vous aider à performer dans les sports que vous pratiquez en vous proposant des séquences sur mesure."
+            },
+            "approaches": {
+                "title": "Différentes approches scientifiques pour un meilleur résultat :",
+                "feature1": {
+                    "title": "Neurosciences",
+                    "text": "Utiliser le cerveau pour gagner en force, souplesse, équilibre et coordination."
+                },
+                "feature2": {
+                    "title": "Biomécanique",
+                    "text": "Comprendre les mouvements et leur mécanique pour mieux appréhender son corps et optimiser ses performances."
+                },
+                "feature3": {
+                    "title": "Anatomie",
+                    "text": "Comprendre le corps pour mieux l'utiliser et appréhender les mouvements."
+                }
+            },
+            "nonNegotiables": "Les non-négociables dans un cours :"
+        },
+        "section1": {
+            "title": "Bouger de manière <span>consciente</span> pour améliorer <span>force</span> <span>mobilité</span> <span>endurance</span> et <span>contrôle</span>.",
+            "p1": "Chaque cours est préparé de façon unique et méticuleuse pour vous aider à aller plus loin dans votre pratique."
+        },
+        "section2": {
+            "title": "Comment se déroule une <span>séance de yoga</span> ?",
+            "p1": "Une séance de yoga dure entre une heure et une heure et demie (uniquement pour les cours particuliers).",
+            "p2": "Le flow est expliqué en début de séance avec les objectifs spécifiques du cours. Toutes les séances commencent et se terminent par un temps de respiration.",
+            "p3": "Le flow est une séquence de postures avec des transitions originales, répétée plusieurs fois à différentes intensités et avec diverses intentions.",
+            "p4": "Des exercices neurologiques sont intégrés au flow, accompagnés de tests et de retests pour évaluer leur efficacité selon l'objectif visé.",
+            "p5": "Les exercices neurologiques incluent des techniques de respiration spécifiques, des exercices d'équilibre pour renforcer l'oreille interne et des exercices visuels pour améliorer les connexions sensorielles."
+        },
+        "section3": {
+            "title": "Est-ce que cette <span>méthode</span> peut vous convenir ?",
+            "p1": "Dans mes cours, on ne se prend pas au sérieux : on bouge, on explore des mouvements que peu d'enseignants de yoga proposent. La pratique physique du yoga est bien plus moderne qu'on ne le pense (elle date des années 40), et pour moi, il est essentiel qu'elle évolue en fonction des avancées scientifiques et de nos envies. Je n’ai jamais trouvé mon calme dans des postures statiques tenues plusieurs minutes, mais plutôt dans des flows fluides et dynamiques. Je suis convaincue que la paix se trouve dans le rire et la joie, dans l'échec et la découverte. Respecter le yoga, c'est comprendre sa philosophie, la partager et la discuter. Rire ou expérimenter des mouvements originaux n'est pas un manque de respect, mais une célébration de cette pratique. ",
+            "p2": "Si vous êtes prêt·e à vous challenger, à transpirer, à explorer de nouvelles formes et à comprendre comment fonctionnent votre corps et votre cerveau pour vous surpasser dans tous les domaines de votre vie, alors mes cours sont faits pour vous."
+        },
+        "button": "Réserver un cours"
+    },
+  "Newsletter":{
+    "title":"S'inscrire à la newsletter",
+    "free": "Gratuit",
+    "monthlyTheme": "Annonce du thème du mois",
+    "neuroscienceTip": "Un conseil de neurosciences + mise en pratique ou un debunk de mythe",
+    "exclusivePreview": "Avant première sur les cours exceptionnels, retraites, atelier...",
+    "exclusiveDiscounts": "Annonce des réductions en exclusivité",
+    "monthlyChallenge": "Challenge mensuel"
+  },
+    "GeneralTermsAndCondition":{
+        "title": "Condition Générales - Adèle Vercaygne",
+        "description": "Consultez nos conditions générales pour comprendre les droits et obligations liés à nos services de yoga. Informez-vous sur les politiques, annulations et modalités.",
+        "content": {
+            "h1": "Conditions Générales d'Utilisation et de Vente",
+            "prelude": {
+                "title": "préambule",
+                "p1": "Le site <strong>www.adelevercaygne.com</strong> (ci-après désigné « le Site ») est le site de commerce électronique de la micro entreprise Adèle Vercaygne accessible par le réseau internet, ouvert à tout utilisateur de ce réseau. Il est édité par Adèle Vercaygne immatriculée sous le numéro SIRET 93247908200012et bénéficiant d’une dispense de TVA conformément à l’article 293B du CGI.",
+                "p2": "Le site permet aux utilisateurs de procéder à l’achat de prestations et/ou produits proposés",
+                "p3": "Le site ne permet pas l’achat de prestations ou de produits en vue de leur revente. En conséquence, l’utilisateur du site ne pourra se prévaloir à l’encontre de Adèle Vercaygne, d’aucune perte de chance, d’exploitation ou de profit."
+            }, 
+            "articleOne":{
+                "title": "Article 1 : Objet",
+                "p1": "Les présentes « conditions générales d’utilisation » ont pour objet l’encadrement juridique de l’utilisation du site Adèle Vercaygne et de ses services.",
+                "p2": "Ce contrat est conclu entre :",
+                "p3": "Le gérant du site internet, ci-après désigné « l’Éditeur »,",
+                "p4": "Toute personne physique ou morale souhaitant accéder au site et à ses services, ci-après appelé « l’Utilisateur ».", 
+                "p5":" Les conditions générales d’utilisation doivent être acceptées par toutUtilisateur, et son accès au site vaut acceptation de ces conditions."
+            },
+            "articleTwo": {
+                "title": "Article 2 : Mentions légales",
+                "p1": "Le site Adèle Vercaygne est édité par Adèle Vercaygne, domicilié à Nantes, France. Le site est hébergé par la plateforme <strong>Vercel</strong> <br /> Adresse : <strong>340 S Lemon Ave #4133, Walnut, CA 91789, USA</strong>."
+            },
+            "articleThree": {
+                "title": "Article 3 : Accès aux services",
+                "p1": "L’Utilisateur du site Adèle Vercaygne a accès aux services suivants :",
+                "p2": "Les informations de présentation",
+                "p3": "Le calendrier des cours, stages, week-ends, retraites et ateliers",
+                "p4": "Le planning de réservation des cours en ligne",
+                "p5": "Tout utilisateur ayant accès à internet peut accéder gratuitement et depuis n’importe où au site. Les frais supportés par l’Utilisateur pour y accéder (connexion internet, matériel informatique, etc.) ne sont pas à la charge de l’Éditeur."
+            },
+            "articleFour": {
+                "title": "Article 4 : Conditions générales de Vente et d’Utilisation",
+                "p1": "Les présentes Conditions Générales de Vente et d’Utilisation sont conclues entre d’une part <strong>Adèle Vercaygne</strong> et d’autre part, toute personne physique ou morale procédant à l’achat de produits sur le Site (ci-après désignée « Adhérent » pour l’achat d’une prestation et « Client » pour l’achat d’un produit).",
+                "p2": "Elles sont systématiquement adressées ou remises à chaque Adhérent ou Client pour lui permettre de procéder à l’achat de prestations et/ou produits proposés par Adèle Vercaygne. En conséquence, le fait de passer commande implique l’acceptation entière et sans réserve de l’Adhérent ou du Client de ces Conditions, et ceci, quelles que soient les dispositions contraires pouvant figurer sur tout document émanant de l’Adhérent ou du Client, y compris d’éventuelles conditions générales d’achat.",
+                "p3": "L’Adhérent ou le Client reconnaît avoir pris connaissance au moment de toute commande des présentes Conditions Générales de Vente et d’Utilisation et déclare expressément les accepter sans réserve. Adèle Vercaygne se réserve toutefois de pouvoir modifier ses Conditions Générales de Vente et d’Utilisation à tout moment. Dans ce cas, les Conditions applicables seront celles en vigueur à la date de la commande.",
+                "sectionOne": {
+                    "title": "4.1 – Prestations proposées et produits vendus",
+                    "p1": "Les prestations proposées sont celles qui sont présentées sur le Site. Elles comprennent notamment des cours de Yoga en ligne pour adultes, des ateliers / conférences en ligne, formations en ligne ainsi que des cours de Yoga en présentiel sous la forme de cours individuels ou collectifs, stage de Yoga.",
+                    "p2": "Ces prestations sont proposées sous la forme d’une :",
+                    "p3": "Consommation à la carte : des carnets valables 2, 6 et 12 mois ouvrent droit à un nombre déterminé de cours ou de séances en physique ou en ligne (ci-après désigné « Unité de cours »).",
+                    "p4": "Les prestations proposées donnent lieu à la réservation d’une séance ou d’un cours individuel ou collectif. La réservation peut être effectuée directement sur le Site."
+                },
+                "sectionTwo": {
+                    "title": "4.2 – Prix",
+                    "p1": "Les prix des produits et prestations sont indiqués en euros toutes taxes comprises (TTC).",
+                    "p2": "Adèle Vercaygne se réserve le droit de modifier ses prix à tout moment, mais les produits et prestations seront facturés sur la base des tarifs en vigueur au moment de la validation de la commande.",
+                    "p3": "Les prix indiqués ne comprennent pas les frais de traitement de commandes, de transport et de livraison, qui sont facturés en supplément du prix des produits achetés."
+                }
+            }, 
+            "articleFive": {
+                "title": "Article 5 : Responsabilité de l’Utilisateur",
+                "p1": "L’Utilisateur est responsable des risques liés à l’utilisation de son identifiant de connexion et de son mot de passe. Le mot de passe de l’Utilisateur doit rester secret. En cas de divulgation de mot de passe, l’Éditeur décline toute responsabilité."
+            },
+             "articleSix": {
+                "title": "Article 6 : Responsabilité de l’Éditeur",
+                "p1": "Tout dysfonctionnement du serveur ou du réseau ne peut engager la responsabilité de l’Éditeur.",
+                "p2": "Le site Adèle Vercaygne s’engage à mettre en œuvre tous les moyens nécessaires pour garantir la sécurité et la confidentialité des données. Toutefois, il n’apporte pas une garantie de sécurité totale."
+            },
+                  "articleSeven": {
+                "title": "Article 7 : Propriété intellectuelle",
+                "p1": "Les contenus du site Adèle Vercaygne (logos, textes, éléments graphiques, vidéos, etc.) sont protégés par le droit d’auteur, en vertu du Code de la propriété intellectuelle. L’Utilisateur devra obtenir l’autorisation de l’Éditeur du site avant toute reproduction, copie ou publication de ces différents contenus dans leur intégralité ou en partie."
+            }, 
+                        "articleEight": {
+                "title": "Article 8 : Liens hypertextes",
+                "p1": "Les domaines vers lesquels mènent les liens hypertextes présents sur le site n’engagent pas la responsabilité de l’Éditeur de Adèle Vercaygne, qui n’a pas de contrôle sur ces liens."
+            }, 
+                  "articleNine": {
+                "title": "Article 9 : Évolution des conditions générales d’utilisation",
+                "p1": "Le site Adèle Vercaygne se réserve le droit de modifier les clauses de ces conditions générales d’utilisation à tout moment et sans justification."
+            }, 
+               "articleTen": {
+                "title": "Article 10 : Durée des conditions générales",
+                "p1": "La durée des présentes conditions générales est indéterminée. Elles produisent leurs effets à l’égard de l’Utilisateur à compter du début de l’utilisation du service."
+            }, 
+                "articleEleven": {
+                "title": "Article 11 : Droit applicable et juridiction compétente",
+                "p1": "Le présent contrat dépend de la législation française. En cas de litige non résolu à l’amiable entre l’Utilisateur et l’Éditeur, les tribunaux de Nantes sont compétents pour régler le contentieux."
+            }
+        }
+    },
+    "Footer": {
+    "about" : "À propos", 
+    "method":"Méthode",
+    "lessons":"Les cours",
+    "bookClass":"Réserver un cours",
+    "freebies":"Freebies",
+    "contact":"Contact", 
+    "subscribe":"S'inscrire à la newsletter",
+    "error":"Une erreur s'est produite",
+    "success":"Vous êtes inscrit•e à la newsletter !",
+    "email":{
+        "placeholder":"Votre adresse email"
+    },
+    "socialNetwork":{
+        "instagram":"Visitez mon profil instagram",
+        "youTube":"Visitez ma chaîne YouTube",
+        "tiktok":"Visitez mon profil Tiktok"
+    }, 
+    "allRighReserved":"Tous droits réservés",
+    "generalConditions":"Conditions générales"
+  }}

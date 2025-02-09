@@ -9,7 +9,7 @@ const PdfPage = () => {
     const generatePdf = async () => {
       setIsLoading(true);
       try {
-        const response = await fetch(`../../api/generate-pdf`);
+        const response = await fetch(`@/app/api/generate-pdf/route`);
         if (response.ok) {
           const blob = await response.blob();
           const url = URL.createObjectURL(blob);
