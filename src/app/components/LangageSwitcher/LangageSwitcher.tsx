@@ -14,9 +14,7 @@ const LanguageSwitcher = () => {
       href={`/${newLocale}${pathname.replace(`/${locale}`, "")}`}
     >
       <button className={styles.button}>
-        {locale === "en"
-          ? "🇫🇷 Changer pour le français"
-          : "🇬🇧 Switch to English"}
+        {locale === "en" ? "Changer pour le français" : "Switch to English"}
       </button>
     </Link>
   );
