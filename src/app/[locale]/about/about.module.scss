@@ -32,6 +32,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    background-color: #f093fb;
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
 
     .imageInSection {
       @include breakpoint-lg {
@@ -43,10 +45,12 @@
       img {
         object-fit: cover;
         width: 100%;
+        border-radius: 50px;
       }
     }
 
     @include breakpoint-lg {
+      margin-top: 5rem;
       flex-direction: row;
       padding: 5rem 5rem 0 5rem;
 

@@ -12,6 +12,7 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 
 import "../styles/globals.scss";
+import LanguageSwitcher from "../components/LangageSwitcher/LangageSwitcher";
 
 export const bebasNeue = Poppins({
   subsets: ["latin"],
@@ -37,6 +38,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <Header />
           {children}
+          <LanguageSwitcher />
           <Footer />
         </NextIntlClientProvider>
       </body>

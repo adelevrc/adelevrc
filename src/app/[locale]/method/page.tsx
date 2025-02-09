@@ -32,7 +32,7 @@ const Method = () => {
         </h2>
         <p>{t("section1.p1")}</p>
 
-        <h2>
+        <h2 className={styles.noWrap}>
           {t.rich("classPrep.title", {
             span: (chunks) => <span>{chunks}</span>,
           })}
@@ -42,7 +42,7 @@ const Method = () => {
           <ColoredContainer color='orange'>
             {t("classPrep.list.bulletOne")}
           </ColoredContainer>
-          <ColoredContainer color='purple'>
+          <ColoredContainer color='orange'>
             {t("classPrep.list.bulletTwo")}
           </ColoredContainer>
           <ColoredContainer color='orange'>
@@ -55,26 +55,26 @@ const Method = () => {
             <h4>{t("classPrep.approaches.feature1.title")} </h4>
             <p>{t("classPrep.approaches.feature1.text")}</p>
           </ColoredContainer>
-          <ColoredContainer color='orange'>
+          <ColoredContainer color='purple'>
             <h4>{t("classPrep.approaches.feature2.title")} </h4>
             <p>{t("classPrep.approaches.feature2.text")}</p>
           </ColoredContainer>
-          <ColoredContainer color='orange'>
+          <ColoredContainer color='purple'>
             <h4>{t("classPrep.approaches.feature3.title")} </h4>
             <p>{t("classPrep.approaches.feature3.text")}</p>
           </ColoredContainer>
         </ul>
         <h3> {t("classPrep.nonNegotiables")} </h3>
         <ul>
-          <ColoredContainer color='orange'>
+          <ColoredContainer color='green'>
             <h4>{t2("features.feature1.title")}</h4>
             <p>{t2("features.feature1.text")}</p>
           </ColoredContainer>
-          <ColoredContainer color='orange'>
+          <ColoredContainer color='green'>
             <h4>{t2("features.feature5.title")}</h4>
             <p>{t2("features.feature5.text")}</p>
           </ColoredContainer>
-          <ColoredContainer color='purple'>
+          <ColoredContainer color='green'>
             <h4>{t2("features.feature6.title")}</h4>
             <p>{t2("features.feature6.text")}</p>
           </ColoredContainer>

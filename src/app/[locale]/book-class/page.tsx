@@ -21,6 +21,7 @@ const BookClass = () => {
   return (
     <main className={styles.main}>
       <PageHeader title={t("title")} />
+      <p> {t("info")}</p>
       <section>
         <h2>{t("differentsClasses")}</h2>
         <p>{t("p1")}</p>

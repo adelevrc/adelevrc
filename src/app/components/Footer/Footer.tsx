@@ -3,21 +3,29 @@ import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import style from "./footer.module.scss";
+import { useParams } from "next/navigation";
 
 const Footer = () => {
   const [emailIsPending, setEmailIsPending] = useState(false);
   const [emailIsSend, setEmailIsSend] = useState(false);
   const [emailIsNotSend, setEmailIsNotSend] = useState(false);
   const t = useTranslations("Footer");
+  const { locale } = useParams();
+
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const email = (event.currentTarget.elements as any).email.value;
+    const dataForSubscription = {
+      email,
+      language: locale,
+    };
+
     setEmailIsPending(true);
     try {
       const response = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(email),
+        body: JSON.stringify(dataForSubscription),
       });
       const result = await response.json();
       if (result.message === "200") {
@@ -34,29 +42,29 @@ const Footer = () => {
 
   return (
     <footer className={style.footer}>
-      <h1> Adèle Vercaygne </h1>
+      <p> Adèle Vercaygne </p>
       <div className={style.firstSection}>
         <ul className={style.pagesList}>
           <li>
             <Link href={"/about"}> {t("about")} </Link>
           </li>
           <li>
-            <Link href={"method"}> {t("method")}</Link>
+            <Link href={"/method"}> {t("method")}</Link>
           </li>
           <li>
-            <Link href={"lessons"}>{t("lessons")}</Link>
+            <Link href={"/lessons"}>{t("lessons")}</Link>
           </li>
           <li>
-            <Link href={"book-class"}>{t("bookClass")}</Link>
+            <Link href={"/book-class"}>{t("bookClass")}</Link>
           </li>
           <li>
-            <Link href={"freebies"}>Freebies</Link>
+            <Link href={"/freebies"}>Freebies</Link>
           </li>
           <li>
-            <Link href={"contact"}> {t("contact")} </Link>
+            <Link href={"/contact"}> {t("contact")} </Link>
           </li>
           <li>
-            <Link href={"newsletter"}>Newsletter</Link>
+            <Link href={"/newsletter"}>Newsletter</Link>
           </li>
         </ul>
         <div className={style.newsletter}>
@@ -141,7 +149,7 @@ const Footer = () => {
         <span> {t("allRighReserved")}</span>-{" "}
         <span>
           {" "}
-          <Link href={"terms-and-conditions"}>
+          <Link href={"/terms-and-conditions"}>
             {t("generalConditions")}
           </Link>{" "}
         </span>

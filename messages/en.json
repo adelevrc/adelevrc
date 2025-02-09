@@ -11,7 +11,7 @@
       "bookClass": "Book a class",
       "method": "My method"
     },
-    "title": "The method for a <span>dynamic</span>, <span>cutting-edge</span> and <span>original</span> yoga!",
+    "title": "The method for a <span>dynamic</span> <span>cutting-edge</span> and <span>original</span> yoga!",
     "dynamic": {
       "title": "Dynamic",
       "text": "Nurture your energy, strength, and mobility to transcend all aspects of your life."
@@ -32,10 +32,12 @@
         "firstPoint": "Integration of neuroscience into yoga flows! Your nervous system controls everything—understanding it and knowing which stimuli work (or don’t!) will help you improve your practice while also giving you daily tools and resources for other sports to push your limits. One or more specific exercises are integrated into each flow to align with the class objective: extension, flexion, calm, energy, coordination, strength….",
         "secondPoint": "<strong>Anatomy</strong> and <strong>biomechanics</strong>: Understand how the body works and moves to give you the best advices and achieve the postures you aim for."
       },
-      "secondH4": "Classes open to anyone ready to <span>sweat</span>, <span>give their all</span>, and <span>challenge themselves</span> on the mat",
+      "secondH4": "Classes open to anyone ready to <span>sweat</span> <span>give their all</span> and <span>challenge themselves</span> on the mat",
       "flowDescription": "My classes are <span>not reserved for a select group</span>! You are welcome, whether you are a <span>beginner or advanced</span> in this practice! You will love it if you enjoy challenges, sweating, and <span>not taking yourself too seriously</span>. You will love it if you enjoy discovering <span>new forms of movement</span> that can sometimes be unconventional. You will love it if you enjoy <span>exploration</span>. You will hate it if you prefer staying in what are called traditional postures, don't like physical activity, or believe that yoga should be a practice taken with the utmost seriousness."
     },
     "offers": {
+       "online":"Online",
+       "inPerson":"In person",
       "firstOffer": {
         "title": "Yoga classes",
         "subtitle": "Practice with me from the comfort of your home",
@@ -44,13 +46,13 @@
       },
       "secondOffer": {
         "title": "Meditation classes",
-        "subtitle": "Start the week without apprehension",
+        "subtitle": "Start the week without apprehension with meditation and breathwork",
         "text": "<p>Through <strong>breathing</strong> and <strong>guided meditation</strong>, you can say goodbye to Sunday night blues and approach each new week without apprehension.</p><p>The goal of <strong>online meditation classes</strong> is to help you develop <strong>breathing tools</strong> and meditation techniques that you can use in any stressful or anxious situation.</p>",
         "button": "Book a meditation"
       },
       "thirdOffer": {
         "title": "Private sessions",
-        "subtitle": "Reach new heights in your practice",
+        "subtitle": "(only in Nantes, France) Reach new heights in your practice with tailored classes",
         "text": "<p><strong>Private yoga classes</strong> are tailored to your needs, whether you want to perfect certain postures, gain flexibility, or discover new techniques.</p><p>Each session is personalized according to your goals.</p><p>Classes last from 1 to 1.5 hours, depending on your preferences. An initial contact is required to define your expectations before starting.</p>",
         "button": "Book an appointment"
       }
@@ -112,8 +114,9 @@
         "title": "Book a Yoga and Meditation Class",
         "description": "Easily book a yoga class or an online meditation session. Use the form to schedule your session or make an initial appointment for a private class."
     },
+    "info":"all classes are scheduled in Paris time",
     "differentsClasses": "Different Classes",
-    "title": "Book a Yoga or Meditation Class",
+    "title": "Book a Class",
     "howToBook": "How to Book?",
     "p1": "Directly book an online yoga class or a meditation session via the form below.",
     "oneHourClass": "<span>One-hour class</span>: choose Online Yoga at €12",
@@ -153,7 +156,7 @@
     "p1": "Who doesn't love freebies?!",
     "p2": "On this page, find all the programs, tips, techniques, and challenges related to yoga, neurology, and mobility.",
     "listTitle": "List of freebies:",
-    "item1": "5 techniques to stay calm in all situations (french)",
+    "item1": "5 techniques to stay calm in every situations (french)",
     "form": {
       "freebiesTitle": "5 tips to find calm in all situations",
       "getFreebie": "Get the freebie:",
@@ -177,6 +180,7 @@
       "title": "Course Offers - Adèle Vercaygne",
       "description": "Discover my one-hour yoga classes, as well as 30-minute meditation and breathing sessions. Also, explore my YouTube channel for more content."
     },
+    "info":"all classes are scheduled in Paris time",
     "title": "The Classes",
     "onlineClasses": {
       "title": "Online Classes",
@@ -199,7 +203,7 @@
           "description": "Classes from 5 to 30 minutes available on <a>YouTube</a>"
         },
         "firstSaturday": {
-          "time": "First Saturday of the month - 11:00 AM to 12:00 PM",
+          "time": "One Saturday per month - 11:00 AM to 12:00 PM",
           "description": "Pay what you want - min 3 euros"
         }
       },

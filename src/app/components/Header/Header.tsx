@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import styles from "./header.module.scss";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
+import LanguageSwitcher from "../LangageSwitcher/LangageSwitcher";
 
 const Header = () => {
   const t = useTranslations("Footer");
@@ -39,9 +40,15 @@ const Header = () => {
         aria-expanded={menuOpen}
         aria-label='Menu principal'
       >
-        <div />
-        <div />
-        <div />
+        <div
+          className={`${styles.line} ${styles.lineOne} ${menuOpen ? styles.lineOneRotation : ""}`}
+        />
+        <div
+          className={`${styles.line} ${styles.lineTwo} ${menuOpen ? styles.lineTwoRotation : ""}`}
+        />
+        <div
+          className={`${styles.line} ${styles.lineThree} ${menuOpen ? styles.lineThreeRotation : ""}`}
+        />
       </button>
       <Link href={"/"} className={styles.logo}>
         <p className={styles.name}> Adèle Vercaygne</p>

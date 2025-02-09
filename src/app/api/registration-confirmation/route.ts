@@ -103,7 +103,7 @@ const htmlTemplate = `
 
   try {
     await transporter.sendMail(mailOptions);
-    return NextResponse.json({ message: 'Freebie envoyé avec succès !' }, { status: 200 });
+    return NextResponse.json({ message: 'Message envoyé avec succès !' }, { status: 200 });
   } catch (error) {
     return NextResponse.json({ message: "Erreur lors de l'envoi de l'email" }, { status: 500 });
   }

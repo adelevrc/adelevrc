@@ -3,10 +3,15 @@
 .description {
   display: flex;
   flex-direction: column;
-  gap: $pageGap;
+  gap: $smallPageGap;
   padding: 3rem 1.5rem;
+  @include breakpoint-lg {
+    gap: $pageGap;
+  }
   h2 {
     color: $color-black;
+    line-height: 3.5rem;
+
     @include breakpoint-lg {
       max-width: 1200px;
       align-self: center;
@@ -14,10 +19,14 @@
       line-height: 3rem !important;
     }
   }
+  h3 {
+    line-height: 3.5rem;
+  }
   h2,
   h3 {
     span,
     strong {
+      font-weight: 700;
       border: $border;
       border-radius: $borderRadius;
       border-spacing: $borderSpacing;

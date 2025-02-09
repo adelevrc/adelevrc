@@ -69,7 +69,7 @@
     select {
       width: 100%;
       padding: 10px;
-      border: 1px solid $color-black;
+      border: 2px solid $color-black;
       font-size: 1rem;
       border-radius: 4px;
       outline: none;
@@ -78,13 +78,13 @@
       &:not(:placeholder-shown) + label {
         top: -10px;
         font-size: 0.8rem;
-        // color: red;
+        color: $color-orange;
       }
     }
     input,
     textarea {
       &:focus {
-        border-color: $color-black;
+        border-color: $color-orange;
       }
     }
 

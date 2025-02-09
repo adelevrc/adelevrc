@@ -10,6 +10,7 @@ import image from "../images/plank.webp";
 import style from "../styles/home.module.scss";
 import { Props } from "../[locale]/about/page";
 import { Metadata } from "next";
+import LanguageSwitcher from "../components/LangageSwitcher/LangageSwitcher";
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;

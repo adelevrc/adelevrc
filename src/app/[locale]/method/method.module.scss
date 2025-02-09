@@ -3,16 +3,17 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: $pageGap;
+  gap: $smallPageGap;
   padding-bottom: 3rem;
   @include breakpoint-lg {
     align-items: center;
+    gap: $pageGap;
   }
 
   section {
     display: flex;
     flex-direction: column;
-    gap: $pageGap;
+    gap: $smallPageGap;
     padding: 0 1rem;
 
     span {
@@ -24,24 +25,29 @@
     a {
       align-self: center;
     }
-    @include breakpoint-lg {
-      width: 80%;
-    }
+
     @include breakpoint-xl {
-      max-width: 1000px;
+      padding: 0 5rem 5rem 5rem;
     }
 
     ul {
       display: flex;
+      flex-direction: column;
       gap: 1.5rem;
       li {
         list-style-type: none;
-        max-width: 33.33%;
-        width: 33.33%;
         padding: 1.5rem;
-        border-radius: 5px;
+        border-radius: 33px;
         p:first-child {
           font-family: $bebasNeue;
+        }
+      }
+      @include breakpoint-lg {
+        flex-direction: row;
+        li {
+          list-style-type: none;
+          max-width: 33.33%;
+          width: 33.33%;
         }
       }
     }
@@ -50,5 +56,8 @@
   h2 {
     text-align: center;
     line-height: 65px;
+  }
+  .noWrap {
+    text-wrap: nowrap;
   }
 }

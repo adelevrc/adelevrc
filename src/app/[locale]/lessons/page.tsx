@@ -22,6 +22,7 @@ const Lessons = () => {
   return (
     <main className={styles.main}>
       <PageHeader title={t("title")} />
+      <p> {t("info")}</p>
       <section>
         <article>
           <div>
