@@ -10,7 +10,6 @@
   }
   h2 {
     color: $color-black;
-    line-height: 3.5rem;
 
     @include breakpoint-lg {
       max-width: 1200px;
@@ -20,7 +19,7 @@
     }
   }
   h3 {
-    line-height: 3.5rem;
+    line-height: 3rem;
   }
   h2,
   h3 {
@@ -31,6 +30,14 @@
       border-radius: $borderRadius;
       border-spacing: $borderSpacing;
       padding: 0.5rem;
+      line-height: 3rem;
+    }
+  }
+
+  h2 {
+    span,
+    strong {
+      line-height: 3.5rem;
     }
   }
   h3 {

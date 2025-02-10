@@ -3,11 +3,19 @@
 .main {
   display: flex;
   flex-direction: column;
+  gap: $smallPageGap;
+  a {
+    margin-top: $smallPageGap;
 
-  p:first-child {
+    @include breakpoint-lg {
+      margin-top: $pageGap;
+    }
+  }
+  @include breakpoint-lg {
+    gap: $pageGap;
   }
   h2 {
-    margin-top: 1.5rem;
+    //  margin-top: 1.5rem;
   }
   h1 + p {
     text-align: center;
@@ -71,7 +79,6 @@
       div {
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
       }
       gap: 1.5rem;
     }
@@ -105,9 +112,6 @@
         margin-bottom: 2rem;
       }
     }
-    a {
-      margin-top: $pageGap;
-    }
   }
 
   .moreInfo {
@@ -135,6 +139,7 @@
       gap: 1.5rem;
       margin-top: $pageGap;
       a {
+        margin: 0;
         width: 100%;
       }
 

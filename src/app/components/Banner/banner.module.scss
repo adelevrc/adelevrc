@@ -13,7 +13,7 @@
     text-transform: none;
     letter-spacing: 1px;
     font-size: 40px;
-    line-height: 5rem;
+    // line-height: 5rem;
     @include breakpoint-lg {
       padding-top: 2.5rem;
       font-size: 70px;
@@ -25,6 +25,7 @@
       border-spacing: $borderSpacing;
       padding: 0.5rem 1rem;
       text-wrap: nowrap;
+      line-height: 5rem;
     }
   }
   h2 {
