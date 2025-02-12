@@ -44,12 +44,11 @@
                 "text":"<p> Profitez de <strong>cours en ligne de yoga</strong> d'une heure pour pratiquer confortablement depuis votre maison.</p><p>C'est la solution idéale pour intégrer <strong>le yoga</strong> dans votre quotidien, tout en restant chez vous.</p><p>Les <strong>cours de yoga en ligne</strong> se déroulent le soir et le week-end, offrant une flexibilité parfaite pour votre emploi du temps.</p>",
                 "button":"Réserver un cours"
             },
-            "secondOffer":{
-                "title":"Cours de méditation",
-                "subtitle":"Recommencer la semaine sans appréhension avec de la respiration et de la méditation.",
-                "text":"<p> Grâce à ce travail de <strong>respiration</strong> et de <strong>méditation guidée</strong>, vous pourrez dire adieu au blues du dimanche soir et aborder chaque nouvelle semaine sans appréhension.</p><p>L'objectif des <strong>cours de méditation en ligne</strong> est de vous aider à développer des <strong>outils de respiration</strong> et de méditation que vous pourrez utiliser dans toutes les situations de stress ou d'anxiété.</p>",
-                "button":"Réserver une méditation"
-
+             "secondOffer": {
+                "title": "Ateliers",
+                "subtitle": "Aller plus loin dans la compréhension de votre corps et de votre cerveau pour vous transcender.",
+                "text": "<p>Des ateliers d'une heure à une demi-journée pour comprendre comment vous pouvez mettre à profit la neurologie dans tous les domaines de votre vie !</p><p>Restez plus calme, plus énergique, plus souple et plus fort•e grâce à la compréhension de la neurologie et à des mises en pratique ludiques qui vont complètement changer la façon dont vous vivez et bougez.</p>",
+                "button": "Réserver un atelier"
             },
             "thirdOffer":{
                 "title":"Cours individuel",
@@ -120,22 +119,36 @@
         "differentsClasses": "Les différents cours",
         "title":"Réserver un cours",
         "howToBook": "Comment réserver ?",
-        "p1": "Réservez directement un cours de yoga en ligne ou une séance de méditation via le formulaire ci-dessous.",
-        "oneHourClass": "<span>Un cours de 1 heure</span> : choisir Yoga en ligne à 12€", 
-        "ThreeEurosClass":"<span>Les cours de yoga en ligne à 3€</span> n'ont lieu qu'une fois par mois et durent 1 heure. Ne loupez pas votre place !",
-        "bonusClass":"<span>Yoga en ligne d'anniversaire</span> : cours à 0 euro pour fêter mon anniversaire ! Ne loupez pas votre place !",
-        "mediationClass":"<span>Méditation en ligne</span> : 30 minutes de respiration et de méditation",
-        "firstAppointment":"<span>Premier rendez-vous</span> : pour les personnes voulant faire des cours particuliers pour la première fois mais qui ne me connaissent pas.",
+        "p1": "Réservez directement un cours de yoga en ligne via le formulaire ci-dessous.",
+        "oneHourClass": "<span>Un cours de 1 heure</span> : choisir Yoga à 12€", 
+        "ThreeEurosClass":"<span>Les cours exceptionnels de yoga en ligne à 3€</span> n'ont lieu qu'une fois par mois et durent 1 heure. Ne loupez pas votre place !",
+        "bonusClass":"<span>Yoga en ligne d'anniversaire</span> : cours à <span>0€</span> pour fêter mon anniversaire ! Ne loupez pas votre place !",
+        "firstAppointment":"<span>Pour faire un cours particulier </span> : merci de prendre rendez-vous par le formulaire de contact.",
         "frameTitle": "Prendre rendez-vous", 
         "classDescription":{
-            "subtitles":" Les cours se présentent à la semaine, en cliquant sur un horaire vous pouvez :",
-            "p1":"Cliquez sur \"Continuer\" pour aller directement au paiement.", 
-            "p2":"Cliquez sur \"Ajouter\" un horaire pour prendre plusieurs cours en même temps", 
-            "p3":"Cliquez sur \"Récurrent\" pour prendre le même cours toutes les semaines selon la répétition que vous voulez"
+            "subtitles":" En cliquant sur le bouton \"Réserver un cours \" vous allez être redirigé vers la page de rendez-vous.",
+            "p1":"Vous pouvez choisir entre l'anglais et le français.", 
+            "p2":"Certains cours sont en anglais et certains cours en français.", 
+            "p3":"Vous pouvez prendre un cours à la fois ou en prendre plusieurs de façon récurrente."
         }, 
         "importantNotes":{
             "title":"Note importante",
             "p1":"Parfois on ne contrôle pas tout dans la vie, ou on juste envie de s'allonger dans le canapé en mangeant des chips au lieu de dérouler son tapis. Il est donc possible d'annuler mais pas à la dernière minute : <span>vous avez jusqu'à 12 heures avant le cours pour annuler et être remboursé•e </span> ."
+        }, 
+        "whatYouNeed":{
+            "title":"De quoi vous avez besoin ?", 
+            "list":{
+                "feature1": "Un tapis de yoga.", 
+                "feature2": "Un écran assez large pour bien voir le cours.", 
+                "feature3": "D'une connexion internet."
+            }
+        
+        }, 
+            "whatYouDontNeed":{
+            "title":"De quoi vous n'avez PAS besoin ?", 
+            "list":{
+                "feature1": "Pas besoin d'un compte Zoom, une connexion internet et l'accès à votre navigateur préféré suffit !"
+            }
         }
     },
     "Contact": {
@@ -211,12 +224,6 @@
             },
             "button": "Réserver sa place", 
             "rdv":"Prendre rendez-vous"
-        },
-        "meditationClasses":{
-            "title":"Les cours de respiration et de méditation ",
-            "schedule":" Tous les dimanches, de 19h à 19h30 en ligne.",
-            "description":"Cette demi heure vous permettre de sortir du blues du dimanche soir, mais aussi de gagner en réflexe pour lutter contre tout stress ou anxiété, et démarrer la semaine en forme et calme.", 
-            "button":"Réserver une méditation"
         },
         "otherOffers":{
             "title":"Autres offres",

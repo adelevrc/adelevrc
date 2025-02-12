@@ -45,10 +45,10 @@
         "button": "Book a class"
       },
       "secondOffer": {
-        "title": "Meditation classes",
-        "subtitle": "Start the week without apprehension with meditation and breathwork",
-        "text": "<p>Through <strong>breathing</strong> and <strong>guided meditation</strong>, you can say goodbye to Sunday night blues and approach each new week without apprehension.</p><p>The goal of <strong>online meditation classes</strong> is to help you develop <strong>breathing tools</strong> and meditation techniques that you can use in any stressful or anxious situation.</p>",
-        "button": "Book a meditation"
+        "title": "Workshops",
+        "subtitle": "Go further in understanding your body and mind to transcend yourself.",
+        "text": "<p>Workshops from one hour to half a day to understand how you can leverage neurology in all areas of your life!</p><p>Stay calmer, more energetic, more flexible, and stronger thanks to neurology insights and fun practical exercises that will completely change the way you live and move.</p>",
+        "button": "Book a workshop"
       },
       "thirdOffer": {
         "title": "Private sessions",
@@ -119,22 +119,36 @@
     "title": "Book a Class",
     "howToBook": "How to Book?",
     "p1": "Directly book an online yoga class or a meditation session via the form below.",
-    "oneHourClass": "<span>One-hour class</span>: choose Online Yoga at €12",
-    "ThreeEurosClass": "<span>Online yoga classes at €3</span> are held only once a month and last 1 hour. Don't miss your spot!",
-    "bonusClass": "<span>Birthday online yoga</span>: free class to celebrate my birthday! Don't miss your spot!",
-    "mediationClass": "<span>Online meditation: 30 minutes</span> of breathing and meditation",
-    "firstAppointment": "<span>First appointment</span>: for those wanting to take private classes for the first time but who don't know me.",
-    "frameTitle": "Make an Appointment",
+        "oneHourClass": "<span>A 1-hour class</span>: choose Yoga for €12", 
+    "ThreeEurosClass": "<span>Special online yoga classes for €3</span> take place only once a month and last 1 hour. Don’t miss your spot!",
+    "bonusClass": "<span>Birthday online yoga</span>: a class for <span>€0</span> to celebrate my birthday! Don’t miss your spot!",
+    "firstAppointment": "<span>For a private class</span>: please book an appointment via the contact form.",
+    "frameTitle": "Book an appointment", 
     "classDescription": {
-        "subtitles": "Classes are presented weekly, by clicking on a schedule you can:",
-        "p1": "Click 'Continue' to go directly to payment.",
-        "p2": "Click 'Add' a schedule to book multiple classes at once",
-        "p3": "Click 'Recurring' to book the same class every week according to your desired repetition"
-    },
+        "subtitles": "By clicking the \"Book a class\" button, you will be redirected to the appointment page.",
+        "p1": "You can choose between English and French.", 
+        "p2": "Some classes are in English, and some are in French.", 
+        "p3": "You can take a single class or book multiple recurring sessions."
+    }, 
     "importantNotes": {
         "title": "Important Note",
-        "p1": "Sometimes we can't control everything in life, or we just want to lie on the couch eating chips instead of rolling out our mat. It is possible to cancel but not at the last minute: <span>you have up to 12 hours before the class to cancel and be refunded</span>."
+        "p1": "Sometimes, we can't control everything in life, or we just feel like lying on the couch eating chips instead of rolling out our yoga mat. That's why cancellations are possible, but not at the last minute: <span>you have up to 12 hours before the class to cancel and receive a refund</span>."
+    }, 
+    "whatYouNeed": {
+        "title": "What do you need?", 
+        "list": {
+            "feature1": "A yoga mat.", 
+            "feature2": "A screen large enough to see the class properly.", 
+            "feature3": "An internet connection."
+        }
+    }, 
+    "whatYouDontNeed": {
+        "title": "What do you NOT need?", 
+        "list": {
+            "feature1": "No need for a Zoom account! An internet connection and access to your favorite browser are enough!"
+        }
     }
+
   },
   "Contact": {
     "metaData": {

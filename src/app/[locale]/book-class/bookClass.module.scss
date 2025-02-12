@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   gap: $smallPageGap;
-
+  margin-bottom: $smallPageGap;
   h1 {
     @include breakpoint-lg {
       text-align: center;
@@ -19,6 +19,7 @@
   }
   @include breakpoint-lg {
     gap: $pageGap;
+    margin-bottom: $pageGap;
   }
 
   section {
@@ -46,12 +47,18 @@
       }
     }
   }
-  iframe {
-    border: none;
-    @include breakpoint-lg {
-      align-self: center;
-      padding: 3rem;
-      width: 80%;
+  a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 33px;
+    border: 5px solid $color-black;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    width: fit-content;
+    text-wrap: nowrap;
+    &:hover {
+      border-color: $color-orange;
+      color: $color-orange;
     }
   }
 }

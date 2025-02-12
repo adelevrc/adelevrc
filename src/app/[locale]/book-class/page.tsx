@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import PageHeader from "../../components/PageHeader/PageHeader";
-import ReservationFrame from "../../components/ReservationFrame/ReservationFrame";
+import BookeoWidget from "../../components/ReservationFrame/ReservationFrame";
 import styles from "./bookClass.module.scss";
 import { useTranslations } from "next-intl";
 import { Props } from "../about/page";
@@ -42,16 +42,12 @@ const BookClass = () => {
             })}{" "}
           </li>
           <li>
-            {t.rich("mediationClass", {
-              span: (chunks) => <span>{chunks}</span>,
-            })}{" "}
-          </li>
-          <li>
             {t.rich("firstAppointment", {
               span: (chunks) => <span>{chunks}</span>,
             })}
           </li>
         </ul>
+        <BookeoWidget />
         <h2>{t("howToBook")}</h2>
         <ul>
           {t("classDescription.subtitles")}
@@ -59,15 +55,28 @@ const BookClass = () => {
           <li>{t("classDescription.p2")}</li>
           <li>{t("classDescription.p3")}</li>
         </ul>
+
+        <BookeoWidget />
         <h2>{t("importantNotes.title")}</h2>
         <p>
           {t.rich("importantNotes.p1", {
             span: (chunks) => <span>{chunks}</span>,
           })}
         </p>
+        <h2>{t("whatYouNeed.title")}</h2>
+        <ul>
+          <li>{t("whatYouNeed.list.feature1")}</li>
+          <li>{t("whatYouNeed.list.feature2")}</li>
+          <li>{t("whatYouNeed.list.feature3")}</li>
+        </ul>
+        <h2>{t("whatYouDontNeed.title")}</h2>
+        <p>
+          {t.rich("whatYouDontNeed.list.feature1", {
+            span: (chunks) => <span>{chunks}</span>,
+          })}
+        </p>
+        <BookeoWidget />
       </section>
-
-      <ReservationFrame />
     </main>
   );
 };
