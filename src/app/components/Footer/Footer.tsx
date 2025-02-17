@@ -52,7 +52,7 @@ const Footer = () => {
             <Link href={"/method"}> {t("method")}</Link>
           </li>
           <li>
-            <Link href={"/lessons"}>{t("lessons")}</Link>
+            <Link href={"/classes"}>{t("classes")}</Link>
           </li>
           <li>
             <Link href={"/book-class"}>{t("bookClass")}</Link>

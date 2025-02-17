@@ -189,7 +189,7 @@
       "subscribeNewsletter": "Get the newsletter"
     }
   },
-  "Lessons": {
+  "Classes": {
     "metaData": {
       "title": "Course Offers - Adèle Vercaygne",
       "description": "Discover my one-hour yoga classes, as well as 30-minute meditation and breathing sessions. Also, explore my YouTube channel for more content."
@@ -200,11 +200,16 @@
       "title": "Online Classes",
       "p1": "Join my online yoga classes and enjoy practicing from the comfort of your home.",
       "p2": "Each session lasts one hour and only requires an internet connection and your yoga mat.",
-      "p3": "Online classes are held:",
-      "schedule": {
-        "wednesday": "Wednesday from 7:30 PM to 8:30 PM",
-        "friday": "Friday from 7:30 PM to 8:30 PM",
-        "sunday": "Sunday from 10:00 AM to 11:00 AM"
+      "p3": "Yoga classes in French (1 hour) :",
+      "p4": "Yoga classes in English (1 hour) :",
+      "frenchSchedule": {
+        "wednesday1": "Wednesday : 12:30 PM - 6:15 PM - 7:30 PM ",
+        "friday": "Friday : 12:30 PM - 6:15 PM - 7:30 PM",
+        "sunday": "Sunday : 10:00 AM"
+      },
+      "englishSchedule": {
+        "saturday": "Saturday : 10:00 AM",
+        "sunday": "Sunday : 8:30 AM"
       },
       "button": "Book a Class"
     },
@@ -253,7 +258,7 @@
     "Methods": {
         "metaData": {
             "title": "My Method - Adèle Vercaygne",
-            "description": "Discover my unique yoga method to develop strength, improve flexibility, and master your postures while cultivating a calm and strong mind."
+            "description": "Discover my unique method for a dynamic orginal and cutting-edge yoga !"
         },
         "title": "My Method",
         "classPrep": {
@@ -287,7 +292,7 @@
         },
         "section2": {
             "title": "How does a <span>yoga session</span> unfold?",
-            "p1": "A yoga session lasts between one hour and an hour and a half (only for private lessons).",
+            "p1": "A yoga session lasts between one hour and an hour and a half (only for private class).",
             "p2": "The flow is explained at the beginning of the session along with its specific objectives. Every session starts and ends with a breathing practice.",
             "p3": "The flow consists of a sequence of postures with original transitions, repeated multiple times at different intensities and with various intentions.",
             "p4": "Neurological exercises are integrated into the flow, accompanied by tests and retests to assess their effectiveness for the intended goal.",
@@ -302,6 +307,10 @@
     },
 
   "Newsletter": {
+        "metaData":{
+        "title":"subscribe to the newsletter", 
+        "description": "Sign up for the newsletter to receive exclusive discounts, early access to workshops and courses, and monthly challenges."
+    },
     "title": "Subscribe to the Newsletter",
     "free": "Free",
     "monthlyTheme": "Announcement of the monthly theme",
@@ -394,7 +403,7 @@
   "Footer": {
     "about": "About",
     "method": "Method",
-    "lessons": "Lessons",
+    "classes": "Classes",
     "bookClass": "Book a class",
     "freebies": "Freebies",
     "contact": "Contact",

@@ -81,11 +81,11 @@ const Header = () => {
           </li>
           <li>
             <Link
-              href={"/lessons"}
+              href={"/classes"}
               onClick={handleLinkClick}
               tabIndex={menuOpen ? 0 : -1}
             >
-              {t("lessons")}
+              {t("classes")}
             </Link>
           </li>
           <li>

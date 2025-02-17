@@ -51,7 +51,7 @@ const AboutMe = () => {
           <h2>{t("section2.title2")}</h2>
           <p>{t("section2.p2")}</p>
           <p>{t("section2.p3")}</p>
-          <ButtonLink title={t("section2.button2")} href={"lessons"} />
+          <ButtonLink title={t("section2.button2")} href={"classes"} />
         </section>
       </div>
     </main>

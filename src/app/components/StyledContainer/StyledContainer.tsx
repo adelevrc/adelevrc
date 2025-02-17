@@ -4,7 +4,7 @@ interface StyledContainerPropx {
   children: React.ReactNode;
 }
 const StyledContainer = ({ children }: StyledContainerPropx) => {
-  return <div className={styles.container}>{children}</div>;
+  return <li className={styles.container}>{children}</li>;
 };
 
 export default StyledContainer;

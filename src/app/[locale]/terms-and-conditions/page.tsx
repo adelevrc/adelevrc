@@ -1,11 +1,21 @@
+import { getTranslations } from "next-intl/server";
 import styles from "./generalConditions.module.scss";
 import { useTranslations } from "next-intl";
+import { Props } from "../about/page";
+import { Metadata } from "next";
 
-export const metadata = {
-  title: "Condition Générales - Adèle Vercaygne",
-  description:
-    "Consultez nos conditions générales pour comprendre les droits et obligations liés à nos services de yoga. Informez-vous sur les politiques, annulations et modalités.",
-};
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({
+    locale,
+    namespace: "GeneralTermsAndCondition",
+  });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 const GeneralConditions = () => {
   const t = useTranslations("GeneralTermsAndCondition");

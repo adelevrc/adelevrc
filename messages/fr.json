@@ -190,7 +190,7 @@
             "subscribeNewsletter":"S'inscrire à la newsletter"
         }
     },
-    "Lessons": {
+    "Classes": {
         "metaData": {
             "title": "Les offres de cours - Adèle Vercaygne",
             "description": "Découvrez mes cours de yoga d'une heure, ainsi que des sessions de méditation et de respiration de 30 minutes. Explorez également ma chaîne YouTube pour plus de contenu."
@@ -201,7 +201,18 @@
             "title": "Les cours en ligne",
             "p1": "Participez à mes cours de yoga en ligne et profitez de la pratique dans le confort de votre maison.",
             "p2": "Chaque session dure une heure, nécessitant uniquement une connexion internet et votre tapis de yoga.",
-            "p3": "Les cours en ligne ont lieu :",
+            "p3": "Les cours en français (1 heure) :",
+            "p4": "Les cours en anglais (1 heure) :",
+
+            "frenchSchedule": {
+                "wednesday1": "Mercredi : 12:30 - 18:15 - 19:30 ",
+                "friday": "Vendredi : 12:30 - 18:15 - 19:30",
+                "sunday": "Dimanche : 10:00"
+            },
+            "englishSchedule": {
+                "saturday": "Samedi : 10:00",
+                "sunday": "Dimanche : 8:30"
+            },
             "schedule": {
                 "wednesday": "Mercredi de 19h30 à 20h30",
                 "friday": "Vendredi de 19h30 à 20h30",
@@ -241,7 +252,7 @@
         "moreInfo": {
             "title": "Besoins de plus d'informations ?",
             "description": "Il est normal de vouloir savoir si ce sont des cours qui sont faits pour vous, comment ils se déroulent ou de vouloir faire connaissance avec votre professeur avant. N'hésitez pas à me contacter, nous pourrons échanger par message, email ou de vive voix.", 
-            "button2":"Envoie-moi un message", 
+            "button2":"Me contacter", 
             "button1":"Prendre rendez-vous"
         }
     },
@@ -249,7 +260,8 @@
     "Methods": {
         "metaData": {
             "title": "Ma méthode - Adèle Vercaygne",
-            "description": "Découvrez ma méthode unique de yoga pour développer votre force, améliorer votre souplesse et maîtriser vos postures, tout en cultivant un mental calme et fort."
+            "description" : "Découvrez ma méthode  pour un yoga dynamique, original et de pointe ! "
+
         },
         "title": "Ma méthode",
         "classPrep": {
@@ -297,6 +309,10 @@
         "button": "Réserver un cours"
     },
   "Newsletter":{
+    "metaData":{
+        "title":"S'inscrire à la newsletter", 
+        "description": "Inscrivez vous à la newsletter pour recevoir des réductions exclusives, les ateliers et les cours en avant-première, et des challenges mensuels."
+    },
     "title":"S'inscrire à la newsletter",
     "free": "Gratuit",
     "monthlyTheme": "Annonce du thème du mois",
@@ -312,7 +328,7 @@
             "h1": "Conditions Générales d'Utilisation et de Vente",
             "prelude": {
                 "title": "préambule",
-                "p1": "Le site <strong>www.adelevercaygne.com</strong> (ci-après désigné « le Site ») est le site de commerce électronique de la micro entreprise Adèle Vercaygne accessible par le réseau internet, ouvert à tout utilisateur de ce réseau. Il est édité par Adèle Vercaygne immatriculée sous le numéro SIRET 93247908200012et bénéficiant d’une dispense de TVA conformément à l’article 293B du CGI.",
+                "p1": "Le site <strong>www.adelevercaygne.com</strong> (ci-après désigné « le Site ») est le site de commerce électronique de la micro entreprise Adèle Vercaygne accessible par le réseau internet, ouvert à tout utilisateur de ce réseau. Il est édité par Adèle Vercaygne immatriculée sous le numéro SIRET 93247908200012 et bénéficiant d’une dispense de TVA conformément à l’article 293B du CGI.",
                 "p2": "Le site permet aux utilisateurs de procéder à l’achat de prestations et/ou produits proposés",
                 "p3": "Le site ne permet pas l’achat de prestations ou de produits en vue de leur revente. En conséquence, l’utilisateur du site ne pourra se prévaloir à l’encontre de Adèle Vercaygne, d’aucune perte de chance, d’exploitation ou de profit."
             }, 
@@ -389,7 +405,7 @@
     "Footer": {
     "about" : "À propos", 
     "method":"Méthode",
-    "lessons":"Les cours",
+    "classes":"Les cours",
     "bookClass":"Réserver un cours",
     "freebies":"Freebies",
     "contact":"Contact", 

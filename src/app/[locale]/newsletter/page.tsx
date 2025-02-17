@@ -1,12 +1,22 @@
 import Newsletter from "../../components/Newsletter/Newsletter";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import { useTranslations } from "next-intl";
+import { Props } from "../about/page";
+import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 
-export const metadata = {
-  title: "Ma méthode - Adèle Vercaygne",
-  description:
-    "Découvrez ma méthode unique de yoga pour développer votre force, améliorer votre souplesse et maîtriser vos postures, tout en cultivant un mental calme et fort",
-};
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({
+    locale,
+    namespace: "Newsletter.metaData",
+  });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 const NewsletterPage = () => {
   const t = useTranslations("Newsletter");
