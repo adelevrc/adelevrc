@@ -252,6 +252,13 @@
       "description": "It is normal to want to know if these classes are right for you, how they are structured, or to meet your teacher beforehand. Feel free to contact me, and we can discuss by message, email, or in person.",
       "button2": "Send Me a Message",
       "button1": "Book an Appointment"
+    },
+    "workshops": {
+      "title": "Workshops",
+      "p1": "The <strong>workshops</strong> allow you to delve deeper into a specific theme.",
+      "p2": "They last between 2 hours and half a day and are led by myself or in partnership with other experts.",
+     "p3":"The topics are diverse: neuroscience, mobility, breathing, meditation, yoga, nutrition, sleep, stress management, etc.",
+      "button": "Book a workshop"
     }
   },
 
@@ -398,6 +405,48 @@
         "title": "Article 11: Applicable Law and Jurisdiction",
         "p1": "This contract is governed by French law. In case of a dispute that cannot be resolved amicably between the User and the Editor, the courts of Nantes are competent to resolve the dispute."
       }
+    }
+  },
+    "Workshop": {
+    "header": "Workshops",
+    "intro": "Discover all the workshops offered in partnership with other experts here.",
+    "workshopTitle": "Naturo x Yoga Workshop (in French)",
+    "workshopSubtitle": "Shake off the hibernation, welcome the energy!",
+    "workshopDate": "Sunday, April 6, 2025",
+    "workshopTime": "10:00 AM to 12:30 PM",
+    "workshopLocation": "Online",
+    "bookWorkshop": "Book the workshop",
+    "workshopDescription1": "Winter is gone, spring is here! The sun is back and shining longer, you have plenty of ideas and desires. But how to keep this energy and motivation as long as possible?",
+    "workshopDescription2": "In this workshop, we offer you to discover naturopathic, neurological, and yogic tools to help you stay dynamic and in shape all year round.",
+    "howTitle": "How does it work?",
+    "howDescription1": "1 hour of naturopathy workshop with Lucie where you will learn all the energy secrets. Then a time for exchange to answer all your questions.",
+    "howDescription2": "1 hour of yoga with Adèle with, in addition, neurological tips to activate your energy, keep it, and master it!",
+    "howDescription3": "The workshop takes place online in the comfort of your home!",
+    "costTitle": "How much does this workshop cost?",
+    "costDescription": "€30 per person",
+    "expertsTitle": "The Experts",
+    "lucieName": "Lucie",
+    "lucieTitle": "Naturopath and masseuse",
+    "adeleName": "Adèle",
+    "adeleTitle": "Dynamic yoga teacher",
+    "adeleDescription1": "In her original yoga classes, she integrates mobility and neuroscience to better understand your body, challenge it in a festive and friendly atmosphere!",
+    "adeleDescription2": "She gives you all the necessary tools to progress in your yoga practice and in your other activities!",
+    "faqTitle": "FAQ",
+    "faq1": {
+      "title": "I'm interested but not available on this date, what should I do?",
+      "content": "No worries! You can register and we will send you the workshop replay."
+    },
+    "faq2": {
+      "title": "Will I be able to watch the workshop again if I want to?",
+      "content": "Yes, of course! At the end of the workshop, we will send you the link to watch it again along with a PDF to have all the tools at hand!"
+    },
+    "faq3": {
+      "title": "How much does the workshop cost?",
+      "content": "The workshop costs €30 for 2.5 hours."
+    },
+    "faq4": {
+      "title": "How do I register?",
+      "content": "Nothing could be simpler, just click on this button"
     }
   },
   "Footer": {

@@ -122,6 +122,19 @@ const Classes = () => {
 
           <ButtonLink title={t("moreInfo.button2")} href={"contact"} />
         </article>
+        <article>
+          <div>
+            <h2>{t("workshops.title")}</h2>
+            <p>
+              {t.rich("workshops.p1", {
+                strong: (chunks) => <strong>{chunks}</strong>,
+              })}
+            </p>
+            <p>{t("workshops.p2")}</p>
+            <p>{t("workshops.p3")}</p>
+          </div>
+          <ButtonLink title={t("workshops.button")} href={"workshop"} />
+        </article>
       </section>
 
       <article className={styles.others}>
