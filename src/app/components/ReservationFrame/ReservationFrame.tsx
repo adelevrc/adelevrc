@@ -1,12 +1,15 @@
 import { useTranslations } from "next-intl";
-import { getTranslations } from "next-intl/server";
 
-const BookeoWidget = () => {
+interface Props {
+  title?: string;
+  href?: string;
+}
+const BookeoWidget = ({ title, href }: Props) => {
   const t = useTranslations("HomePage.button");
 
   return (
-    <a href='https://bookeo.com/adelevrc' target='_blank'>
-      {t("bookClass")}
+    <a href={href ?? "https://bookeo.com/adelevrc"} target='_blank'>
+      {title ?? t("bookClass")}
     </a>
   );
 };
