@@ -407,30 +407,37 @@
       }
     }
   },
-    "Workshop": {
+  "Workshop": {
     "header": "Workshops",
     "intro": "Discover all the workshops offered in partnership with other experts here.",
-    "workshopTitle": "Naturo x Yoga Workshop (in French)",
+    "workshopTitle": "Naturopathy x Yoga Workshop (in French)",
     "workshopSubtitle": "Shake off the hibernation, welcome the energy!",
-    "workshopDate": "Sunday, April 6, 2025",
-    "workshopTime": "10:00 AM to 12:30 PM",
-    "workshopLocation": "Online",
+    "workshopDate": "Sunday, April 6, 2025 | 10:00 AM to 12:30 PM | Online",
     "bookWorkshop": "Book the workshop",
-    "workshopDescription1": "Winter is gone, spring is here! The sun is back and shining longer, you have plenty of ideas and desires. But how to keep this energy and motivation as long as possible?",
-    "workshopDescription2": "In this workshop, we offer you to discover naturopathic, neurological, and yogic tools to help you stay dynamic and in shape all year round.",
+    "workshopDescription1": "What better way to welcome spring than with an overview of natural health approaches to boost your vitality!",
+    "workshopDescription2": "For this, through a 2.5-hour online workshop, combining theory and practice, Adèle, a yoga teacher, and Lucie, a naturopath, offer you:",
     "howTitle": "How does it work?",
     "howDescription1": "1 hour of naturopathy workshop with Lucie where you will learn all the energy secrets. Then a time for exchange to answer all your questions.",
     "howDescription2": "1 hour of yoga with Adèle with, in addition, neurological tips to activate your energy, keep it, and master it!",
-    "howDescription3": "The workshop takes place online in the comfort of your home!",
-    "costTitle": "How much does this workshop cost?",
+    "howDescription3": "Participants leave with a <span>written support</span> summarizing the naturopathic advice, as well as the yoga video <span>accessible for life</span>.",
+    "howDescription4": "But also, a playlist and links to go further (podcasts, books, etc.).",
+    "needsTitle": "You need",
+    "need1": "A good internet connection",
+    "need2": "A yoga mat",
+    "need3": "A quiet space",
     "costDescription": "€30 per person",
     "expertsTitle": "The Experts",
     "lucieName": "Lucie",
     "lucieTitle": "Naturopath and masseuse",
+    "lucieDescription": "My name is Lucie de Groote, I trained at the Euronature school of naturopathy in Lille 5 years ago, I also practice wellness massage and foot reflexology. I am passionate about sharing my knowledge of natural health, to help you better understand the needs of your body and mind, allowing you to establish a lifestyle that suits and fulfills you.",
     "adeleName": "Adèle",
     "adeleTitle": "Dynamic yoga teacher",
-    "adeleDescription1": "In her original yoga classes, she integrates mobility and neuroscience to better understand your body, challenge it in a festive and friendly atmosphere!",
-    "adeleDescription2": "She gives you all the necessary tools to progress in your yoga practice and in your other activities!",
+    "adeleDescription1": "In my original yoga classes, I integrate mobility and neuroscience to better understand your body, challenge it in a festive and friendly atmosphere!",
+    "adeleDescription2": "I give you all the necessary tools to progress in your yoga practice and in your other activities!",
+    "requiredRegistration": "Registation required 👇",
+    "gifAlt": "GIF of a child screaming with joy at a hockey game",
+    "lucieAlt": "Profile picture of Lucie De Groote, naturopath and masseuse",
+    "adeleAlt": "Profile picture of Adèle Vercaygne, dynamic yoga teacher",
     "faqTitle": "FAQ",
     "faq1": {
       "title": "I'm interested but not available on this date, what should I do?",
@@ -447,6 +454,14 @@
     "faq4": {
       "title": "How do I register?",
       "content": "Nothing could be simpler, just click on this button"
+    },
+    "faq5": {
+      "title": "What do I need?",
+      "content": "A good internet connection, a yoga mat, a quiet place!"
+    },
+    "faq6": {
+      "title": "I need more information, who should I contact?",
+      "content": "We are available to provide you with more information by email or phone. To contact Lucie: 06.32.45.90.17. To contact Adèle: <a>contact@adelevrc.com</a>"
     }
   },
   "Footer": {

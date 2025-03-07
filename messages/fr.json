@@ -258,7 +258,7 @@
         },
         "moreInfo": {
             "title": "Besoins de plus d'informations ?",
-            "description": "Il est normal de vouloir savoir si ce sont des cours qui sont faits pour vous, comment ils se déroulent ou de vouloir faire connaissance avec votre professeur avant. N'hésitez pas à me contacter, nous pourrons échanger par message, email ou de vive voix.", 
+            "description": "Il est normal de vouloir savoir si ce sont des cours qui sont faits pour vous, comment ils se déroulent ou de vouloir faire connaissance avec votre professeure avant. N'hésitez pas à me contacter, nous pourrons échanger par message, email ou de vive voix.", 
             "button2":"Me contacter", 
             "button1":"Prendre rendez-vous"
         }
@@ -412,27 +412,34 @@
     "Workshop": {
     "header": "Les ateliers",
     "intro": "Découvrez ici tous les ateliers proposés en partenariat avec d'autres expert•es.",
-    "workshopTitle": "Atelier Naturo x Yoga",
-    "workshopSubtitle": "Sortez de l'hibernation, place à l'énergie !",
-    "workshopDate": "Dimanche 6 avril 2025",
-    "workshopTime": "10h à 12h30",
-    "workshopLocation": "En ligne",
-    "bookWorkshop": "Réserver l'atelier",
-    "workshopDescription1": "L'hiver est parti, le printemps est là ! Le soleil revient et brille plus longtemps, vous avez plein d'idées, plein d'envies. Mais comment garder cette énergie et cette motivation le plus longtemps possible ?",
-    "workshopDescription2": "Dans cet atelier, nous vous proposons de découvrir les outils naturopathiques, neurologiques et yogiques pour vous aider à rester dynamique et en forme tout au long de l'année.",
+    "workshopTitle": "Atelier Naturopathie x Yoga",
+    "workshopSubtitle": "Sortir de l'hibernation, place à l'énergie ! ",
+    "workshopDate": "Dimanche 6 avril 2025 | 10h à 12h30 | En ligne",
+    "bookWorkshop": "Réserver sa place",
+    "workshopDescription1": "Quoi de mieux pour accompagner l'arrivée du printemps qu'un tour d'horizon des approches de santé naturelles pour booster votre vitalité!",
+    "workshopDescription2": "Pour cela, à travers un atelier en ligne de 2h30, mêlant théorie et pratique, Adèle, professeure de yoga et Lucie, naturopathe vous proposent:",
     "howTitle": "Comment ça se passe ?",
     "howDescription1": "1 heure d'atelier de naturopathie avec Lucie où vous apprendrez tous les secrets énergétiques. Puis un temps d'échange pour répondre à toutes vos questions.",
     "howDescription2": "1 heure de yoga avec Adèle avec, en plus, des astuces neurologiques pour activer son énergie, la conserver et la maîtriser !",
-    "howDescription3": "L'atelier se passe en ligne dans le confort de votre maison !",
-    "costTitle": "Combien coûte cet atelier ?",
+    "howDescription3": "Les participants repartent avec un <span>support écrit</span> reprenant les conseils naturopathiques, ainsi que la vidéo de yoga <span>accessible à vie</span>. ",
+    "howDescription4": "Mais aussi, une playlist et des liens pour aller plus loin (podcasts, livres, etc).",
+    "needsTitle": "Vous avez besoin",
+    "need1":"D’une bonne connexion internet",
+    "need2":"D’un tapis de yoga",
+    "need3":"D’un espace calme",
     "costDescription": "30 € par personne",
     "expertsTitle": "Les expertes",
     "lucieName": "Lucie",
     "lucieTitle": "Naturopathe et masseuse",
+    "lucieDescription":"Je m’appelle Lucie de Groote, je me suis formée auprès de l’école de naturopathie Euronature de Lille il y a 5 ans, je pratique également le massage bien-être et de la réflexologie plantaire. J’ai à coeur de transmettre mes connaissances en santé naturelle, afin de vous aider à mieux comprendre les besoins de votre corps et de votre esprit, vous permettant ainsi d’instaurer une dynamique de vie qui vous ressemble et vous épanouisse.", 
     "adeleName": "Adèle",
     "adeleTitle": "Professeure de yoga dynamique",
-    "adeleDescription1": "Dans ses cours de yoga originaux, elle intègre de la mobilité et des neurosciences pour mieux comprendre votre corps, le mettre au défi dans une ambiance festive et conviviale !",
-    "adeleDescription2": "Elle vous donne tous les outils nécessaires pour progresser dans votre pratique de yoga et dans vos autres activités !",
+    "adeleDescription1": "Dans mes cours de yoga originaux, j'intègre de la mobilité et des neurosciences pour mieux comprendre votre corps, le mettre au défi dans une ambiance festive et conviviale !",
+    "adeleDescription2": "Je vous donne tous les outils nécessaires pour progresser dans votre pratique de yoga et dans vos autres activités !",
+    "requiredRegistration": "L'inscription est obligatoire 👇",
+    "gifAlt": "GIF d'un enfant qui hurle de bonheur devant un match de hookey",
+    "lucieAlt":"Photo de profil de Lucie De Groote, naturopathe et masseuse",
+    "adeleAlt":"Photo de profil d'Adèle Vercaygne, professeure de yoga dynamique",
     "faqTitle": "FAQ",
     "faq1": {
       "title": "Je suis intéressé•e mais je ne suis pas disponible à cette date, comment faire ?",
@@ -449,6 +456,14 @@
     "faq4": {
       "title": "Comment faire pour s'inscrire ?",
       "content": "Rien de plus simple, il suffit de cliquer sur ce bouton"
+    },
+    "faq5": {
+      "title": "De quoi j'ai besoin ? ",
+      "content": "Une bonne connexion internet, un tapis de yoga, un endroit calme !"
+    }, 
+    "faq6": {
+        "title": "J'ai besoin de plus d'informations, qui contacter ?",
+        "content": "Nous sommes disponibles pour vous donner plus d'informations par email ou par téléphone. Pour contacter Lucie : 06.32.45.90.17. Pour contacter Adèle : <a>contact@adelevrc.com</a>"
     }
   },
     "Footer": {

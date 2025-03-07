@@ -10,7 +10,6 @@
   @include breakpoint-lg {
     padding: 0 5rem 5rem 5rem;
     align-items: center;
-    gap: $pageGap;
     h1 {
       margin-top: 1rem;
     }
@@ -29,17 +28,43 @@
     h3 {
       text-align: center;
     }
+    span {
+      font-weight: bold;
+    }
+    .gif {
+      align-self: center;
+      width: 500px;
+    }
+    .align {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
     .date {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      gap: 1.5rem;
       text-align: center;
     }
     .how {
+      li:first-child {
+        background-color: #f093fb;
+        background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+      }
+      li:last-child {
+        background-color: #fbab7e;
+        background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+      }
+    }
+    .needs {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
-      text-align: center;
+      ul {
+        padding: 1.5rem 0;
+        li {
+          text-align: center;
+          padding: 0;
+        }
+      }
     }
   }
   ul {
@@ -55,13 +80,14 @@
       flex-direction: column;
       padding: 1.5rem;
       border-radius: 30px;
+      gap: 1.5rem;
       @include breakpoint-lg {
         width: 50%;
       }
       .info {
         display: flex;
         align-items: center;
-        gap: 1rem;
+        gap: 1.5rem;
       }
       strong {
         font-weight: 700;
@@ -92,7 +118,7 @@
     .accordionTitle {
       display: flex;
       align-items: center;
-      gap: 1rem;
+      gap: 1.5rem;
       border-bottom: 2px solid $color-black;
       cursor: pointer;
     }
@@ -100,7 +126,7 @@
     .link {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      gap: 1.5rem;
     }
 
     .accordionContent {
