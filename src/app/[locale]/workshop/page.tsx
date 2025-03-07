@@ -6,6 +6,7 @@ import Image from "next/image";
 import styles from "./workshop.module.scss";
 import { Fragment, useState } from "react";
 import React from "react";
+import ExternalLink from "@/app/components/Button/ExternalLink/ExternalLink";
 
 interface Props {
   title: string;
@@ -64,7 +65,12 @@ const WorkshopPage = () => {
           <p>Dimanche 6 avril 2025</p>
           <p>10h à 12h30</p>
           <p>En ligne</p>
+          <ExternalLink
+            title="Réserver l'atelier"
+            link='https://bookeo.com/adelevrc?type=42559HFNHT319570D9CA7F'
+          />
         </div>
+
         <p>
           L'hiver est parti, le printemps est là ! Le soleil revient et brille
           plus longtemps, vous avez plein d'idées, plein d'envies. Mais comment
@@ -76,7 +82,7 @@ const WorkshopPage = () => {
           <span>yogique</span> pour vous aider à rester énergique et énergique
           tout au long de l'année.
         </p>
-        <div>
+        <div className={styles.how}>
           <h3>Comment ça se passe ?</h3>
           <p>
             1 heure d'atelier de naturopathie avec Lucie où vous apprendrez tous
@@ -91,12 +97,18 @@ const WorkshopPage = () => {
             L'atelier se passe <span> en ligne </span> dans le confort de votre
             maison !
           </p>
-          <BookeoWidget title="Réserver l'atelier" />
+          <ExternalLink
+            title="Réserver l'atelier"
+            link='https://bookeo.com/adelevrc?type=42559HFNHT319570D9CA7F'
+          />
         </div>
-        <div>
+        <div className={styles.how}>
           <h3> Combien coûte cet atelier ?</h3>
           <p> 30 € par personne </p>
-          <BookeoWidget title="Réserver l'atelier" />
+          <ExternalLink
+            title="Réserver l'atelier"
+            link='https://bookeo.com/adelevrc?type=42559HFNHT319570D9CA7F'
+          />
         </div>
 
         <h3> Les expertes</h3>
