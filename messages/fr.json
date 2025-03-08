@@ -158,9 +158,8 @@
         },
         "title": "Contactez-moi",
         "p1": "Vous souhaitez en savoir plus sur mes cours de yoga ou de méditation ? Vous préférez discuter avant de réserver ? Je suis ici pour répondre à toutes vos questions.",
-        "p2": "Si vous êtes une entreprise et que vous souhaitez proposer des cours de yoga pour vos salariés, ou si vous voulez prendre contact pour un cours particulier, vous avez deux possibilités :",
-        "p3": "Prenez un rendez-vous de 15 minutes pour discuter en ligne ou écrivez-moi un message via le formulaire ci-dessous."
-    ,"buttonTitle":"Discuter en ligne"
+        "p2": "Si vous êtes une entreprise et que vous souhaitez proposer des cours de yoga pour vos salariés, ou si vous voulez prendre contact pour un cours particulier,vous pouvez m'envoyer un message via le formulaire ci-dessous." ,
+    "buttonTitle":"Discuter en ligne"
     },
     "Freebies": {
         "metaData":{

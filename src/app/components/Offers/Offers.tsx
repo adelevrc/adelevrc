@@ -35,9 +35,7 @@ const Offers = () => {
             })}
           </div>
         }
-        button={
-          <ButtonLink href='/book-class' title={t("secondOffer.button")} />
-        }
+        button={<ButtonLink href='/workshop' title={t("secondOffer.button")} />}
       />
       <Card
         online={false}
@@ -53,7 +51,7 @@ const Offers = () => {
         }
         button={
           <ButtonLink
-            href='https://app.acuityscheduling.com/schedule.php?owner=33520682&owner=33520682&appointmentType=69034331'
+            href='https://bookeo.com/adelevrc'
             title={t("thirdOffer.button")}
             targetBlank={true}
           />

@@ -27,13 +27,6 @@ const Contact = () => {
           <div className={styles.informations}>
             <p>{t("p1")}</p>
             <p>{t("p2")}</p>
-            <p>{t("p3")}</p>
-
-            <ButtonLink
-              href='https://app.acuityscheduling.com/schedule.php?owner=33520682&owner=33520682&appointmentType=69034331'
-              title='Discuter en ligne'
-              targetBlank={true}
-            />
           </div>
 
           <ContactForm />
