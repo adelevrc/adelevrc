@@ -8,7 +8,7 @@
     "eslint:recommended",
     "plugin:react/recommended", // Utilisez cette ligne si vous travaillez avec React
     "plugin:@typescript-eslint/recommended", // Utilisez cette ligne si vous travaillez avec TypeScript
-    "plugin:prettier/recommended" // Intègre Prettier avec ESLint
+    "next/core-web-vitals"
   ],
   "parser": "@typescript-eslint/parser", // Utilisez cette ligne si vous travaillez avec TypeScript
   "parserOptions": {
@@ -21,10 +21,8 @@
   "plugins": [
     "react", // Utilisez cette ligne si vous travaillez avec React
     "@typescript-eslint", // Utilisez cette ligne si vous travaillez avec TypeScript
-    "prettier"
   ],
   "rules": {
-    "prettier/prettier": "error", // Indique à ESLint de traiter les erreurs Prettier comme des erreurs ESLint
     "quotes": ["error", "single"], // Utiliser des guillemets simples pour les chaînes de caractères
     "semi": ["error", "always"], // Toujours utiliser un point-virgule à la fin des lignes
     "no-unused-vars": "warn", // Avertir en cas de variables inutilisées
