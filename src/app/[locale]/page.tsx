@@ -25,7 +25,16 @@ const Home = () => {
   const t = useTranslations("HomePage");
   return (
     <main className={style.main}>
-      <Banner />
+      <div className={style.popup}>
+        <h1>Adèle Vercaygne - Yoga</h1>
+        <p> Le site est en mode construction</p>
+        <div>
+          <p> Nous sommes désolés pour la gêne occassionnée. </p>
+          <p> Nous revenons vite !</p>
+        </div>
+      </div>
+
+      {/*     <Banner />
       <div className={style.imageContainer}>
         <Image
           className={style.picture}
@@ -36,7 +45,7 @@ const Home = () => {
       </div>
       <Description />
       <Offers />
-      <FlowsDescription />
+      <FlowsDescription /> */}
     </main>
   );
 };

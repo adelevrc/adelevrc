@@ -23,20 +23,21 @@ export default async function LocaleLayout({
   params: { locale: string };
 }) {
   const { locale } = await params;
+  /* 
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
   setRequestLocale(locale);
-  const messages = await getMessages();
+  const messages = await getMessages(); */
   return (
-    <html lang={locale}>
+    <html lang='fr'>
       <body>
-        <NextIntlClientProvider messages={messages}>
-          <Header />
-          {children}
-          <LanguageSwitcher />
+        {/*     <NextIntlClientProvider messages={messages}>
+          <Header /> */}
+        {children}
+        {/*         <LanguageSwitcher />
           <Footer />
-        </NextIntlClientProvider>
+        </NextIntlClientProvider> */}
       </body>
     </html>
   );
