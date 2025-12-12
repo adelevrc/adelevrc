@@ -466,9 +466,9 @@
     }
   },
     "Footer": {
-    "about" : "À propos", 
-    "method":"Méthode",
-    "classes":"Les cours",
+        "about" : "À propos", 
+        "method":"Méthode",
+        "classes":"Les cours",
     "bookClass":"Réserver un cours",
     "freebies":"Freebies",
     "contact":"Contact", 
