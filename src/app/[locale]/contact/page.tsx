@@ -1,11 +1,10 @@
-import { getTranslations } from "next-intl/server";
-import ButtonLink from "../../components/Button/Link/Link";
-import ContactForm from "../../components/ContactForm/ContactForm";
-import styles from "./contact.module.scss";
-import { useTranslations } from "next-intl";
-import { Props } from "../about/page";
-import { Metadata } from "next";
 import PageHeader from "@/app/components/PageHeader/PageHeader";
+import { Metadata } from "next";
+import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import ContactForm from "../../components/ContactForm/ContactForm";
+import { Props } from "../about/page";
+import styles from "./contact.module.scss";
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;

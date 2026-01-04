@@ -1,9 +1,8 @@
 "use client";
-import { useEffect, useState } from "react";
-import styles from "./header.module.scss";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
-import LanguageSwitcher from "../LangageSwitcher/LangageSwitcher";
+import { useEffect, useState } from "react";
+import styles from "./header.module.scss";
 
 const Header = () => {
   const t = useTranslations("Footer");
@@ -86,24 +85,6 @@ const Header = () => {
               tabIndex={menuOpen ? 0 : -1}
             >
               {t("classes")}
-            </Link>
-          </li>
-          <li>
-            <Link
-              href={"/book-class"}
-              onClick={handleLinkClick}
-              tabIndex={menuOpen ? 0 : -1}
-            >
-              {t("bookClass")}
-            </Link>
-          </li>
-          <li>
-            <Link
-              href={"/freebies"}
-              onClick={handleLinkClick}
-              tabIndex={menuOpen ? 0 : -1}
-            >
-              {t("freebies")}
             </Link>
           </li>
           <li>

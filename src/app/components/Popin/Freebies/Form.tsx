@@ -9,7 +9,7 @@ import styles from "./freebies.module.scss";
 import { useTranslations } from "next-intl";
 
 interface FormProps {
-  handleSubmit: UseFormHandleSubmit<FieldValues, undefined>;
+  handleSubmit: UseFormHandleSubmit<FieldValues, FieldValues>;
   onSubmit: (data: any) => Promise<void>;
   register: UseFormRegister<FieldValues>;
   watch: UseFormWatch<FieldValues>;

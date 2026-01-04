@@ -55,12 +55,6 @@ const Footer = () => {
             <Link href={"/classes"}>{t("classes")}</Link>
           </li>
           <li>
-            <Link href={"/book-class"}>{t("bookClass")}</Link>
-          </li>
-          <li>
-            <Link href={"/freebies"}>Freebies</Link>
-          </li>
-          <li>
             <Link href={"/contact"}> {t("contact")} </Link>
           </li>
           <li>

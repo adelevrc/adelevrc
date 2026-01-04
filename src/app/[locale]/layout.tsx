@@ -1,8 +1,6 @@
 import { routing } from "@/i18n/routing";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, setRequestLocale } from "next-intl/server";
 import { Poppins } from "next/font/google";
-import { notFound } from "next/navigation";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 
@@ -17,25 +15,15 @@ export const bebasNeue = Poppins({
 
 export default async function LocaleLayout({
   children,
-  params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
 }) {
-  const { locale } = await params;
-
-  if (!routing.locales.includes(locale as any)) {
-    notFound();
-  }
-  setRequestLocale(locale);
-  const messages = await getMessages();
   return (
     <html lang='fr'>
       <body>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider>
           <Header />
-          {children}
-          <LanguageSwitcher />
+          {children}∏
           <Footer />
         </NextIntlClientProvider>
       </body>
@@ -46,3 +34,7 @@ export default async function LocaleLayout({
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
+
+type Props = {
+  children: React.ReactNode;
+};
