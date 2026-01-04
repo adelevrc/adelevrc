@@ -1,5 +1,12 @@
 "use client";
 import { Link } from "@/i18n/routing";
+import {
+  SignInButton,
+  SignUpButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from "@clerk/nextjs";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import styles from "./header.module.scss";
@@ -52,7 +59,6 @@ const Header = () => {
       <Link href={"/"} className={styles.logo}>
         <p className={styles.name}> Adèle Vercaygne</p>
       </Link>
-
       <nav
         className={`${styles.nav} ${menuOpen ? styles.open : ""}`}
         id='nav'
@@ -95,6 +101,17 @@ const Header = () => {
             >
               {t("contact")}
             </Link>
+          </li>
+          <li>
+            <SignedOut>
+              <SignInButton> Se connecter</SignInButton>
+              <SignUpButton> Créer un compte </SignUpButton>
+            </SignedOut>
+          </li>
+          <li>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
           </li>
         </ul>
       </nav>

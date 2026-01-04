@@ -3,8 +3,15 @@ import { NextIntlClientProvider } from "next-intl";
 import { Poppins } from "next/font/google";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
-
-import LanguageSwitcher from "../components/LangageSwitcher/LangageSwitcher";
+import {
+  ClerkProvider,
+  SignInButton,
+  SignUpButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from "@clerk/nextjs";
+import { frFR } from "@clerk/localizations";
 import "../styles/globals.scss";
 
 export const bebasNeue = Poppins({
@@ -21,11 +28,13 @@ export default async function LocaleLayout({
   return (
     <html lang='fr'>
       <body>
-        <NextIntlClientProvider>
-          <Header />
-          {children}∏
-          <Footer />
-        </NextIntlClientProvider>
+        <ClerkProvider localization={frFR}>
+          <NextIntlClientProvider>
+            <Header />
+            {children}∏
+            <Footer />
+          </NextIntlClientProvider>
+        </ClerkProvider>
       </body>
     </html>
   );
