@@ -17,7 +17,7 @@ const Offers = () => {
 
     const boxes = boxesRef.current.querySelectorAll(`.${styles.box}`);
     const scrollPerBox = window.innerHeight * 2;
-
+    const isDev = process.env.NODE_ENV === "development";
     // ===== Scroll animation des boxes =====
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -26,7 +26,7 @@ const Offers = () => {
         end: `+=${boxes.length * scrollPerBox}`,
         scrub: true,
         pin: true,
-        markers: true,
+        markers: isDev,
       },
     });
 
