@@ -1,18 +1,9 @@
 "use client";
-import { Link } from "@/i18n/routing";
-import {
-  SignInButton,
-  SignUpButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from "@clerk/nextjs";
-import { useTranslations } from "next-intl";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import styles from "./header.module.scss";
 
 const Header = () => {
-  const t = useTranslations("Footer");
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -39,7 +30,7 @@ const Header = () => {
   };
 
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${menuOpen ? styles.headerOpen : ""}`}>
       <button
         className={styles.menuIcon}
         onClick={toggleMenu}
@@ -56,6 +47,7 @@ const Header = () => {
           className={`${styles.line} ${styles.lineThree} ${menuOpen ? styles.lineThreeRotation : ""}`}
         />
       </button>
+      <div></div>
       <Link href={"/"} className={styles.logo}>
         <p className={styles.name}> Adèle Vercaygne</p>
       </Link>
@@ -72,7 +64,7 @@ const Header = () => {
               onClick={handleLinkClick}
               tabIndex={menuOpen ? 0 : -1}
             >
-              {t("about")}
+              À propos
             </Link>
           </li>
           <li>
@@ -81,7 +73,7 @@ const Header = () => {
               onClick={handleLinkClick}
               tabIndex={menuOpen ? 0 : -1}
             >
-              {t("method")}
+              Méthode
             </Link>
           </li>
           <li>
@@ -90,7 +82,7 @@ const Header = () => {
               onClick={handleLinkClick}
               tabIndex={menuOpen ? 0 : -1}
             >
-              {t("classes")}
+              Les cours
             </Link>
           </li>
           <li>
@@ -99,19 +91,8 @@ const Header = () => {
               onClick={handleLinkClick}
               tabIndex={menuOpen ? 0 : -1}
             >
-              {t("contact")}
+              Contact
             </Link>
-          </li>
-          <li>
-            <SignedOut>
-              <SignInButton> Se connecter</SignInButton>
-              <SignUpButton> Créer un compte </SignUpButton>
-            </SignedOut>
-          </li>
-          <li>
-            <SignedIn>
-              <UserButton />
-            </SignedIn>
           </li>
         </ul>
       </nav>

@@ -6,7 +6,6 @@ import {
 } from "react-hook-form";
 import { EmailStatus } from "./Freebies";
 import styles from "./freebies.module.scss";
-import { useTranslations } from "next-intl";
 
 interface FormProps {
   handleSubmit: UseFormHandleSubmit<FieldValues, FieldValues>;
@@ -22,52 +21,30 @@ const Form = ({
   watch,
   emailStatus,
 }: FormProps) => {
-  const t = useTranslations("Freebies.form");
   const watchFields = watch();
-  const isFormValid =
-    watchFields.email && watchFields.lastname && watchFields.firstname;
+  const isFormValid = watchFields.email;
 
   return (
     <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
-      <div className={styles.inputContainer}>
-        <input
-          id='lastname'
-          type='text'
-          placeholder=' '
-          {...register("lastname", { required: t("requiredName") })}
-        />
-        <label htmlFor='lastname'>{t("lastName")}</label>
-      </div>
-      <div className={styles.inputContainer}>
-        <input
-          id='firstname'
-          type='text'
-          placeholder=' '
-          {...register("firstname", { required: t("requiredFirstName") })}
-        />
-        <label htmlFor='firstname'>{t("firstName")}</label>
-      </div>
       <div className={styles.inputContainer}>
         <input
           id='email'
           type='email'
           placeholder=' '
           {...register("email", {
-            required: t("requiredEmail"),
+            required: "L'email est requis",
             pattern: {
               value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-              message: t("invalidEmail"),
+              message: "L'email est invalide",
             },
           })}
         />
-        <label htmlFor='email'>{t("email")}</label>
+        <label htmlFor='email'>Email</label>
       </div>
       {emailStatus.isNotSend && (
-        <div className={styles.error}>{t("errorOccured")}</div>
+        <div className={styles.error}>Une erreur s'est produite</div>
       )}
-      {emailStatus.isSend && (
-        <div className={styles.success}>{t("success")} </div>
-      )}
+      {emailStatus.isSend && <div className={styles.success}>Succès !</div>}
       {emailStatus.isPending && (
         <div className={styles.loaderContainer}>
           <div className={styles.loader}></div>
@@ -77,7 +54,7 @@ const Form = ({
         !emailStatus.isSend &&
         !emailStatus.isPending && (
           <button type='submit' disabled={!isFormValid}>
-            {t("send")}
+            envoyer
           </button>
         )}
     </form>
