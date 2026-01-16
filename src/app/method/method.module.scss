@@ -1,0 +1,63 @@
+@import "@/app/styles/mixins";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: $smallPageGap;
+  padding-bottom: 3rem;
+  @include breakpoint-lg {
+    align-items: center;
+    gap: $pageGap;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: $smallPageGap;
+    padding: 0 1rem;
+
+    span {
+      border: $border;
+      border-radius: $borderRadius;
+      padding: $borderSpacing;
+    }
+
+    a {
+      align-self: center;
+    }
+
+    @include breakpoint-xl {
+      padding: 0 5rem 5rem 5rem;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      li {
+        list-style-type: none;
+        padding: 1.5rem;
+        border-radius: 33px;
+        p:first-child {
+          font-family: $poppins;
+        }
+      }
+      @include breakpoint-lg {
+        flex-direction: row;
+        li {
+          list-style-type: none;
+          max-width: 33.33%;
+          width: 33.33%;
+        }
+      }
+    }
+  }
+
+  h2 {
+    text-align: center;
+    line-height: 65px;
+  }
+  .noWrap {
+    text-wrap: nowrap;
+  }
+}

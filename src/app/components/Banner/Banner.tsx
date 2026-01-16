@@ -1,31 +1,30 @@
-import ButtonLink from "../Button/Link/Link";
+import Image from "next/image";
+import image from "../../images/plank-blackhover.webp";
 import PageHeader from "../PageHeader/PageHeader";
 import styles from "./banner.module.scss";
-import { useTranslations } from "next-intl";
 
 const Banner = () => {
-  const t = useTranslations("HomePage");
-  const title = t.rich("title", {
-    span: (chunks) => <span>{chunks}</span>,
-  });
+  const title = (
+    <>
+      La méthode pour un <span>yoga</span> dynamique, léger et original !
+    </>
+  );
   return (
     <section className={styles.banner}>
-      <PageHeader title={title} />
-      <ul>
-        <li className={styles.dynamic}>
-          <span className={styles.empahsis}>{t("dynamic.title")}</span>{" "}
-          <span>{t("dynamic.text")}</span>
-        </li>
-        <li className={styles.cuttingEdge}>
-          <span className={styles.empahsis}>{t("cuttingEdge.title")}</span>{" "}
-          <span>{t("cuttingEdge.text")}</span>
-        </li>
-        <li className={styles.fun}>
-          <span className={styles.empahsis}> {t("fun.title")} </span>{" "}
-          <span>{t("fun.text")}</span>
-        </li>
-      </ul>
-      <ButtonLink href={"book-class"} title={t("button.bookClass")} />
+      <Image
+        src={image}
+        alt='Background'
+        fill
+        priority
+        className='object-cover'
+      />
+      <div className={styles.titleContainer}>
+        <PageHeader title={title} />
+        <p className={styles.subtitle}>
+          Nourrissez votre énergie, cultiver votre calme et développer votre
+          force, sans se prendre au sérieux.
+        </p>
+      </div>
     </section>
   );
 };

@@ -1,0 +1,39 @@
+@import "../../styles//mixins";
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  button {
+    all: unset;
+  }
+
+  .filter {
+    cursor: pointer;
+    text-transform: uppercase;
+    color: $color-black;
+    opacity: 0.6;
+    padding: 0.4rem 0.6rem;
+    text-wrap: nowrap;
+    line-height: 0.4rem;
+    font-size: 0.7rem;
+    background-color: transparent;
+    font-weight: 200;
+    @include breakpoint-md {
+      flex-direction: row;
+      font-size: 0.7rem;
+    }
+  }
+  .selected {
+    opacity: 1;
+    border: 0.5px solid $color-black;
+    border-color: rgba($color: $color-black, $alpha: 0.7);
+    border-radius: 100px;
+    border-spacing: $borderSpacing;
+  }
+
+  @include breakpoint-md {
+    flex-direction: row;
+  }
+}

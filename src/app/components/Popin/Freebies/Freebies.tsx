@@ -2,7 +2,6 @@ import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 import styles from "./freebies.module.scss";
 import { useForm } from "react-hook-form";
 import Form from "./Form";
-import { useTranslations } from "next-intl";
 import { Popin } from "../../Freebies/Container";
 
 export interface EmailStatus {
@@ -17,7 +16,6 @@ interface FreebiesPopinProps {
 }
 
 const FreebiesPopin = ({ setPopin, popin }: FreebiesPopinProps) => {
-  const t = useTranslations("Freebies.form");
   const {
     register,
     watch,
@@ -101,7 +99,7 @@ const FreebiesPopin = ({ setPopin, popin }: FreebiesPopinProps) => {
   const getTitle = (name: string) => {
     switch (name) {
       case "5-tips-to-be-calm":
-        return t("freebiesTitle");
+        return "5 astuces pour trouver le calme dans toutes les situations";
       default:
         return "";
     }
@@ -180,7 +178,7 @@ const FreebiesPopin = ({ setPopin, popin }: FreebiesPopinProps) => {
         </button>
         <h2 id='modal-title'>
           {" "}
-          {t("getFreebie")} {getTitle(popin.name)}
+          Avoir le freeby : {getTitle(popin.name)}
         </h2>
         <Form
           handleSubmit={handleSubmit}

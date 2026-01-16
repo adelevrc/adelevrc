@@ -1,6 +1,5 @@
 "use client";
 
-import { useTranslations } from "next-intl";
 import { useState } from "react";
 import FreebiesPopin from "../Popin/Freebies/Freebies";
 import PageHeader from "../PageHeader/PageHeader";
@@ -13,7 +12,6 @@ export interface Popin {
 
 const Container = () => {
   const [popin, setPopin] = useState<Popin>({ isOpen: false, name: "" });
-  const t = useTranslations("Freebies");
 
   const handlePopinOpening = (name: string) => {
     setPopin({ name, isOpen: true });
@@ -21,13 +19,13 @@ const Container = () => {
   return (
     <>
       {popin.isOpen && <FreebiesPopin setPopin={setPopin} popin={popin} />}
-      <PageHeader title={t("title")} />
-      <p>{t("p1")}</p>
-      <p>{t("p2")}</p>
-      <h3>{t("listTitle")}</h3>
+      <PageHeader title="Freebies" />
+      <p>Qui n'aime pas les cadeaux ?!</p>
+      <p>Sur cette page, retrouvez tous les programmes, astuces, techniques, challenges autour du yoga, de la neurologie et de la mobilité.</p>
+      <h3>Liste des freebies :</h3>
       <ul>
         <li onClick={() => handlePopinOpening("5-tips-to-be-calm")}>
-          <StyledContainer children={<span>{t("item1")}</span>} />
+          <StyledContainer children={<span>5 techniques pour rester calme dans toutes les situations</span>} />
         </li>
       </ul>
     </>

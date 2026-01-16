@@ -1,23 +1,18 @@
 "use client";
-import { Link } from "@/i18n/routing";
-import { useTranslations } from "next-intl";
 import { useState } from "react";
 import style from "./footer.module.scss";
-import { useParams } from "next/navigation";
+import Link from "next/link";
 
 const Footer = () => {
   const [emailIsPending, setEmailIsPending] = useState(false);
   const [emailIsSend, setEmailIsSend] = useState(false);
   const [emailIsNotSend, setEmailIsNotSend] = useState(false);
-  const t = useTranslations("Footer");
-  const { locale } = useParams();
 
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const email = (event.currentTarget.elements as any).email.value;
     const dataForSubscription = {
       email,
-      language: locale,
     };
 
     setEmailIsPending(true);
@@ -46,31 +41,31 @@ const Footer = () => {
       <div className={style.firstSection}>
         <ul className={style.pagesList}>
           <li>
-            <Link href={"/about"}> {t("about")} </Link>
+            <Link href={"/about"}> À propos </Link>
           </li>
           <li>
-            <Link href={"/method"}> {t("method")}</Link>
+            <Link href={"/method"}> Méthode</Link>
           </li>
           <li>
-            <Link href={"/classes"}>{t("classes")}</Link>
+            <Link href={"/classes"}>Les cours</Link>
           </li>
           <li>
-            <Link href={"/book-class"}>{t("bookClass")}</Link>
-          </li>
-          <li>
-            <Link href={"/freebies"}>Freebies</Link>
-          </li>
-          <li>
-            <Link href={"/contact"}> {t("contact")} </Link>
+            <Link href={"/contact"}> Contact </Link>
           </li>
           <li>
             <Link href={"/newsletter"}>Newsletter</Link>
           </li>
         </ul>
         <div className={style.newsletter}>
-          <h2> {t("subscribe")} </h2>
-          {emailIsNotSend && <div className={style.error}>{t("error")}</div>}
-          {emailIsSend && <div className={style.success}>{t("success")}</div>}
+          <h2> S'inscrire à la newsletter </h2>
+          {emailIsNotSend && (
+            <div className={style.error}>Une erreur s'est produite</div>
+          )}
+          {emailIsSend && (
+            <div className={style.success}>
+              Vous êtes inscrit•e à la newsletter !
+            </div>
+          )}
           {emailIsPending && (
             <div className={style.loaderContainer}>
               <div className={style.loader}></div>
@@ -80,7 +75,7 @@ const Footer = () => {
             <form onSubmit={onSubmit}>
               <input
                 name='email'
-                placeholder={t("email.placeholder")}
+                placeholder='Votre adresse email'
                 required
                 type='email'
               ></input>
@@ -97,7 +92,7 @@ const Footer = () => {
           <li>
             <a
               href='https://www.instagram.com/adelevrc_yoga/'
-              aria-label={t("socialNetwork.instagram")}
+              aria-label='Visitez mon profil instagram'
               target='_blank'
             >
               <svg
@@ -113,7 +108,7 @@ const Footer = () => {
           <li>
             <a
               href='https://www.youtube.com/@adelevrc'
-              aria-label={t("socialNetwork.youTube")}
+              aria-label='Visitez ma chaîne YouTube'
               target='_blank'
             >
               <svg
@@ -129,7 +124,7 @@ const Footer = () => {
           <li>
             <a
               href='https://www.tiktok.com/@adelevrc'
-              aria-label={t("socialNetwork.tiktok")}
+              aria-label='Visitez mon profil Tiktok'
               target='_blank'
             >
               <svg
@@ -145,13 +140,10 @@ const Footer = () => {
         </ul>
       </div>
       <div className={style.generalConditions}>
-        <span> Adèle Vercaygne 2025</span> -{" "}
-        <span> {t("allRighReserved")}</span>-{" "}
+        <span> Adèle Vercaygne 2025</span> - <span> Tous droits réservés</span>-{" "}
         <span>
           {" "}
-          <Link href={"/terms-and-conditions"}>
-            {t("generalConditions")}
-          </Link>{" "}
+          <Link href={"/terms-and-conditions"}>Conditions générales</Link>{" "}
         </span>
       </div>
     </footer>

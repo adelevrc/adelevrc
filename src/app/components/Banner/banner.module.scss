@@ -3,97 +3,76 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 0rem 1.5rem;
-  gap: $smallPageGap;
-  @include breakpoint-lg {
-    gap: $pageGap;
-  }
-  h1 {
-    text-transform: none;
-    letter-spacing: 1px;
-    font-size: 40px;
-    // line-height: 5rem;
-    @include breakpoint-lg {
-      padding-top: 2.5rem;
-      font-size: 70px;
-      line-height: 7.5rem;
-    }
-    span {
-      border: $border;
-      border-radius: 100px;
-      border-spacing: $borderSpacing;
-      padding: 0.5rem 1rem;
-      text-wrap: nowrap;
-      line-height: 5rem;
-    }
-  }
-  h2 {
-    padding: 0 1.5rem;
-    font-weight: 400;
-    span {
-      color: $color-orange;
-    }
+  gap: 1rem;
+  background-color: $color-yellow;
+  position: relative;
+  height: 40rem;
+  img {
+    object-fit: cover;
+    object-position: right center;
+    height: 100vh !important;
   }
 
-  ul {
+  .titleContainer {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    li {
-      display: flex;
-      flex-direction: column;
-      list-style-type: none;
-      padding: 1.5rem;
-      border-radius: 30px;
-      width: 100%;
+    z-index: 1;
+    align-self: center;
+    position: relative;
+    margin: auto;
+    h1 {
+      text-transform: none;
+      letter-spacing: 1px;
+      font-size: 2.5rem;
+      line-height: 2.7rem;
+      text-align: left;
+      color: $color-white;
+      white-space: normal;
+      width: 60vw;
 
-      .empahsis {
-        padding: 0;
-        padding-bottom: 0.5rem;
-        color: $color-black;
-        font-weight: 700;
-        background-color: transparent;
-        font-size: 25px;
-        font-family: $poppins;
+      span {
+        color: $color-pink;
       }
     }
-    .dynamic {
-      background-color: #fbab7e;
-      background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
-    }
-    .fun {
-      background-color: #f093fb;
-      background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
-    }
-    .cuttingEdge {
-      background-color: #85ffbd;
-      background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
-    }
-    @include breakpoint-lg {
-      flex-direction: row;
-      padding: 3rem;
-
-      li {
-        max-width: 33.33%;
-        width: 33.33%;
-        padding: 1.5rem;
-
-        span {
-          line-height: 33px;
-        }
-      }
+    .subtitle {
+      z-index: 1;
+      color: $color-white;
+      text-align: left;
+      font-weight: 300;
+      width: 60%;
     }
   }
-  p {
-    color: $color-black;
-    font-weight: 300;
-    text-align: center;
-    padding: 0 1.5rem;
 
-    @include breakpoint-lg {
-      padding: initial;
-      border-radius: 60px;
+  @include breakpoint-md {
+    .titleContainer {
+      h1 {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        align-self: flex-start;
+        width: 40vw;
+      }
+      .subtitle {
+        width: 40%;
+      }
+    }
+
+    img {
+      object-position: center;
+      height: 100vh;
+    }
+  }
+  @include breakpoint-lg {
+    .titleContainer {
+      right: 10%;
+    }
+  }
+
+  @include breakpoint-xl {
+    .titleContainer {
+      right: 20%;
     }
   }
 }
