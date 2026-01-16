@@ -1,37 +1,61 @@
 "use client";
-import { useState } from "react";
-import style from "./footer.module.scss";
+import useEmailStatus from "@/app/hooks/useEmailStatus";
+import { SUBSCRIBE_NEWSLETTER_MUTATION } from "@/graphql/queries/newsletter.mutation";
+import {
+  SubscribeNewsletterInput,
+  SubscribeNewsletterResponse,
+} from "@/graphql/types/newsletter.types";
+import { useMutation } from "@apollo/client/react";
 import Link from "next/link";
+import { useForm } from "react-hook-form";
+import style from "./footer.module.scss";
 
 const Footer = () => {
-  const [emailIsPending, setEmailIsPending] = useState(false);
-  const [emailIsSend, setEmailIsSend] = useState(false);
-  const [emailIsNotSend, setEmailIsNotSend] = useState(false);
+  const { emailStatus, setEmailStatus } = useEmailStatus();
+  const { register, watch, handleSubmit } = useForm();
 
-  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const email = (event.currentTarget.elements as any).email.value;
-    const dataForSubscription = {
-      email,
-    };
+  const [
+    subscribeNewsletter,
+    { loading: mutationLoading, error: mutationError },
+  ] = useMutation<
+    SubscribeNewsletterResponse,
+    { input: SubscribeNewsletterInput }
+  >(SUBSCRIBE_NEWSLETTER_MUTATION);
 
-    setEmailIsPending(true);
+  const onSubmit = async (data: any) => {
+    setEmailStatus((prevState) => ({
+      ...prevState,
+      isPending: true,
+    }));
+
     try {
-      const response = await fetch("/api/subscribe", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(dataForSubscription),
+      const input: SubscribeNewsletterInput = {
+        email: watch("email"),
+      };
+
+      const response = await subscribeNewsletter({
+        variables: { input },
       });
-      const result = await response.json();
-      if (result.message === "200") {
-        setEmailIsSend(true);
-        setEmailIsPending(false);
+
+      if (response.data) {
+        setEmailStatus((prevState) => ({
+          ...prevState,
+          isSend: true,
+          isPending: false,
+        }));
       } else {
-        setEmailIsNotSend(true);
-        setEmailIsPending(false);
+        setEmailStatus((prevState) => ({
+          ...prevState,
+          isNotSend: true,
+          isPending: false,
+        }));
       }
     } catch (error) {
-      setEmailIsNotSend(true);
+      setEmailStatus((prevState) => ({
+        ...prevState,
+        isNotSend: true,
+        isPending: false,
+      }));
     }
   };
 
@@ -58,27 +82,33 @@ const Footer = () => {
         </ul>
         <div className={style.newsletter}>
           <h2> S'inscrire à la newsletter </h2>
-          {emailIsNotSend && (
+          {mutationError && (
             <div className={style.error}>Une erreur s'est produite</div>
           )}
-          {emailIsSend && (
+          {emailStatus.isSend && (
             <div className={style.success}>
               Vous êtes inscrit•e à la newsletter !
             </div>
           )}
-          {emailIsPending && (
+          {mutationLoading && (
             <div className={style.loaderContainer}>
               <div className={style.loader}></div>
             </div>
           )}
-          {!emailIsNotSend && !emailIsSend && !emailIsPending && (
-            <form onSubmit={onSubmit}>
+          {!mutationError && !mutationLoading && !emailStatus.isSend && (
+            <form onSubmit={handleSubmit(onSubmit)}>
               <input
-                name='email'
-                placeholder='Votre adresse email'
-                required
+                id='email'
                 type='email'
-              ></input>
+                placeholder=' '
+                {...register("email", {
+                  required: "L'email est requis",
+                  pattern: {
+                    value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+                    message: "L'email est invalide",
+                  },
+                })}
+              />
               <label>Email</label>
               <button type='submit' className={style.arrowButton}>
                 →
