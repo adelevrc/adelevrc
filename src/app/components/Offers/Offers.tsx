@@ -16,7 +16,7 @@ const Offers = () => {
     if (!boxesRef.current) return;
 
     const boxes = boxesRef.current.querySelectorAll(`.${styles.box}`);
-    const scrollPerBox = window.innerHeight * 5;
+    const scrollPerBox = window.innerHeight * 2;
 
     // ===== Scroll animation des boxes =====
     const tl = gsap.timeline({
