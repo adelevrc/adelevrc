@@ -19,10 +19,25 @@ const Header = () => {
   };
 
   useEffect(() => {
-    document.addEventListener("click", closeMenu);
-    return () => {
-      document.removeEventListener("click", closeMenu);
-    };
+    if (menuOpen) {
+      const scrollY = window.scrollY;
+      document.body.style.position = "fixed";
+      document.body.style.top = `-${scrollY}px`;
+      document.body.style.left = "0";
+      document.body.style.right = "0";
+
+      document.addEventListener("click", closeMenu);
+      return () => {
+        if (menuOpen) {
+          document.body.style.position = "";
+          document.body.style.top = "";
+          document.body.style.left = "";
+          document.body.style.right = "";
+          window.scrollTo(0, scrollY);
+        }
+        document.removeEventListener("click", closeMenu);
+      };
+    }
   }, [menuOpen]);
 
   const handleLinkClick = () => {

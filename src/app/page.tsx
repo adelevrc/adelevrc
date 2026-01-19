@@ -1,9 +1,10 @@
 import { Props } from "@/app/about/page";
-import { Metadata } from "next";
 import styles from "@/app/styles/home.module.scss";
+import { Metadata } from "next";
 import Banner from "./components/Banner/Banner";
 import Description from "./components/Description/Description";
 import Offers from "./components/Offers/Offers";
+import Testimonials from "./components/Testomonials/Testimonials";
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
@@ -17,6 +18,7 @@ const Home = () => {
   return (
     <main className={styles.main}>
       <Banner />
+      <Testimonials />
       <Description />
       <section className={styles.wrapper}>
         <Offers />

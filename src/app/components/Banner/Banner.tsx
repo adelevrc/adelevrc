@@ -6,7 +6,7 @@ import styles from "./banner.module.scss";
 const Banner = () => {
   const title = (
     <>
-      La méthode pour un <span>yoga</span> dynamique, léger et original !
+      La méthode pour un <span>yoga</span> dynamique et joyeux !
     </>
   );
   return (
