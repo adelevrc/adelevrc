@@ -25,6 +25,11 @@ const Testimonials = () => {
         "Adèle est une professeure de yoga qui mêle pratique ancestrale, connaissances en biomécaniques et neurosciences. Ce beau mélange donne lieu à une approche tout autant décomplexée que professionnelle. Des flows tout doux, des séances rythmées ou encore des capsules rapides et efficaces, l'on trouvera forcément la formule qui répondra à notre besoin du moment. Je recommande à 1000% !",
     },
     {
+      clientName: "Fanny",
+      message:
+        "J'ai vu Adèle évoluer dans sa pratique et sa pédagogie : attentive, elle est très à l'écoute et différencie la pratique aux besoins de chacun. C'est une personne solaire avec qui la pratique du Yoga est agréable et enthousiasmant.",
+    },
+    {
       clientName: "Julie",
       message:
         "Ces cours de yoga m’ont fait beaucoup de bien. L’énergie d’Adèle, sa douceur et son attention créent un espace où l’on peut vraiment lâcher prise. On se reconnecte à soi tout en gagnant en force et en confiance.",
