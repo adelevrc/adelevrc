@@ -20,15 +20,16 @@ const Testimonials = () => {
         "J'ai beaucoup apprécié les cours avec Adèle : c'est une personne attentive, à l'écoute, patiente et qui n'hésite pas à me guider lors des figures complexes. Étant débutante dans le yoga, j'ai été très bien accompagnée et je recommande chaudement ses cours !!",
     },
     {
+      clientName: "Louise",
+      message:
+        "J’ai eu la chance de faire plusieurs séances de yoga avec Adèle. A chaque fois elle  m’a proposé des séquences de mouvements fluides et variées, selon mon énergie de la journée. Ce n’est jamais la même séance, et c’est ça qui me plaît le plus. Je découvre de nouvelles postures qui m’invitent à aller plus loin si je le sens, pour dépasser mes blocages. Adele prend le temps, est à l’écoute et adapte sa séance aux besoins de chacun-e. Présence de l’instant et harmonie pour la journée, merci Adèle !",
+    },
+    {
       clientName: "Lucie",
       message:
         "Adèle est une professeure de yoga qui mêle pratique ancestrale, connaissances en biomécaniques et neurosciences. Ce beau mélange donne lieu à une approche tout autant décomplexée que professionnelle. Des flows tout doux, des séances rythmées ou encore des capsules rapides et efficaces, l'on trouvera forcément la formule qui répondra à notre besoin du moment. Je recommande à 1000% !",
     },
-    {
-      clientName: "Fanny",
-      message:
-        "J'ai vu Adèle évoluer dans sa pratique et sa pédagogie : attentive, elle est très à l'écoute et différencie la pratique aux besoins de chacun. C'est une personne solaire avec qui la pratique du Yoga est agréable et enthousiasmant.",
-    },
+
     {
       clientName: "Julie",
       message:
@@ -39,12 +40,25 @@ const Testimonials = () => {
       message:
         "Une expérience vraiment inspirante. Adèle sait créer un cadre créatif et bienveillant où l’on se sent à l’aise. Chaque cours est un moment de joie et de progression. Je recommande sans hésiter.",
     },
+    {
+      clientName: "Fanny",
+      message:
+        "J'ai vu Adèle évoluer dans sa pratique et sa pédagogie : attentive, elle est très à l'écoute et différencie la pratique aux besoins de chacun. C'est une personne solaire avec qui la pratique du Yoga est agréable et enthousiasmant.",
+    },
   ];
   const total = testimonials.length;
   const next = () => setIndex((i) => (i + 1) % total);
   const prev = () => setIndex((i) => (i - 1 + total) % total);
 
-  const colors = ["#390099", "#9e0059", "#ff0054", "#ff5400", "#ffbd00"];
+  const colors = [
+    "#390099",
+    "#9e0059",
+    "#ff0054",
+    "#ff5400",
+    "#ffbd00",
+    "#955DD8",
+    "#E5BDBE",
+  ];
 
   return (
     <>

@@ -111,8 +111,14 @@
     padding: 0;
     .carouselItemContainer {
       border: none;
-      width: 70%;
+      width: 45vh;
+      text-wrap: wrap;
       padding: 0 1.6rem;
+    }
+  }
+  @include breakpoint-lg {
+    .carouselItemContainer {
+      width: 70vh;
     }
   }
 }
