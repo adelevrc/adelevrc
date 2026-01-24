@@ -6,7 +6,7 @@ import styles from "./banner.module.scss";
 const Banner = () => {
   const title = (
     <>
-      La méthode pour un <span>yoga</span> dynamique et joyeux !
+      Développer votre <span>force</span> grâce au yoga
     </>
   );
   return (
@@ -21,8 +21,8 @@ const Banner = () => {
       <div className={styles.titleContainer}>
         <PageHeader title={title} />
         <p className={styles.subtitle}>
-          Nourrissez votre énergie, cultiver votre calme et développer votre
-          force, sans se prendre au sérieux.
+          Affûter votre corps, développer votre esprit sans vous prendre au
+          sérieux.
         </p>
       </div>
     </section>

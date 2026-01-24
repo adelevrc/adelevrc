@@ -53,17 +53,17 @@ const Offers = () => {
         tl.to(
           boxes[i - 1],
           { opacity: 0, duration: 0.5, ease: "power1.inOut" },
-          appearTime - 0.1
+          appearTime - 0.1,
         );
         tl.to(
           box,
           { opacity: 1, duration: 0.5, ease: "power1.inOut" },
-          appearTime
+          appearTime,
         );
         tl.to(
           textElements,
           { opacity: 1, y: 0, duration: 0.5, ease: "power1.out" },
-          appearTime + 0.1
+          appearTime + 0.1,
         );
       }
     });
@@ -87,65 +87,43 @@ const Offers = () => {
       >
         <div className={`${styles.box}`}>
           <div className={`${styles.textContainer}`}>
-            <h2> Exercices neuro</h2>
+            <h2> Force {">"} Souplesse </h2>
+            <p>La souplesse impressionne. La force protège et transforme.</p>
+          </div>
+        </div>
+        <div className={`${styles.box}`}>
+          <div className={`${styles.textContainer}`}>
+            <h2> Questionner {">"} Consommer</h2>
             <p>
-              Pour améliorer en 3 minutes chrono vos flexions, extensions,
-              équilibre et coordination, avec en plus des techniques sur mesure
-              pour vous aider à être plus calme ou plus énergique !
+              Ne pas simplement suivre une pratique. La comprendre, la remettre
+              en question, et se l’approprier.
             </p>
           </div>
         </div>
         <div className={`${styles.box}`}>
           <div className={`${styles.textContainer}`}>
-            <h2> Séquences originales</h2>
+            <h2>Joie {">"} Sérieux</h2>
             <p>
-              Des séquences uniques et des transitions étonnantes que vous
-              n'avez jamais vues nulle part, pour faire travailler vos muscles
-              dans toutes les positions possibles.
+              Du challenge, du jeu, du mouvement. Parce que la joie est une
+              force.
             </p>
           </div>
         </div>
         <div className={`${styles.box}`}>
           <div className={`${styles.textContainer}`}>
-            <h2>Flow pointus</h2>
+            <h2> Explorer {">"} Imiter</h2>
             <p>
-              Élaborés avec un objectif précis (aller dans une posture /
-              travailler une partie du corps). Aucun mouvement à jeter, tout est
-              effic ient.
+              Sortir des formes toutes faites. Chercher, tester, ressentir,
+              plutôt que reproduire sans conscience.
             </p>
           </div>
         </div>
         <div className={`${styles.box}`}>
           <div className={`${styles.textContainer}`}>
-            <h2>Yoga dynamique </h2>
+            <h2>Engagement {">"} Confort </h2>
             <p>
-              Des flows dynamiques, loin d’être statiques. Ils vous permettront
-              de ressentir chaque muscle de votre corps tout en bougeant sur
-              votre tapis.
-            </p>
-          </div>
-        </div>
-        <div className={`${styles.box}`}>
-          <div className={`${styles.textContainer}`}>
-            <h2>Joie et bonne humeur </h2>
-            <p>
-              Pourquoi ne serait-il pas possible de trouver la paix et le calme
-              dans la joie ? Pourquoi la pratique physique du yoga doit-elle
-              être prise autant au sérieux ? Personne ne sait ! Et c'est
-              pourquoi, dans mes flows, je mets tout en œuvre pour vous faire
-              bouger dans la bonne humeur.
-            </p>
-          </div>
-        </div>
-        <div className={`${styles.box}`}>
-          <div className={`${styles.textContainer}`}>
-            <h2>Accessible pour tous les niveaux</h2>
-            <p>
-              Pourquoi ne serait-il pas possible de trouver la paix et le calme
-              dans la joie ? Pourquoi la pratique physique du yoga doit-elle
-              être prise autant au sérieux ? Personne ne sait ! Et c'est
-              pourquoi, dans mes flows, je mets tout en œuvre pour vous faire
-              bouger dans la bonne humeur.
+              Un corps engagé crée une conscience engagée. Le tapis n’est pas
+              une fin, c’est un point de départ.
             </p>
           </div>
         </div>

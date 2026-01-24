@@ -1,6 +1,6 @@
 import { frFR } from "@clerk/localizations";
 import { ClerkProvider } from "@clerk/nextjs";
-import { Poppins, Roboto_Mono } from "next/font/google";
+import { Poppins, Roboto_Mono, Epilogue } from "next/font/google";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Providers from "./providers";
@@ -16,6 +16,11 @@ export const poppins = Poppins({
 export const roboto = Roboto_Mono({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700"],
+});
+
+export const epilogue = Epilogue({
+  subsets: ["latin"],
+  weight: ["900"],
 });
 export default async function LocaleLayout({
   children,

@@ -25,16 +25,17 @@
     margin: auto;
     h1 {
       text-transform: none;
-      letter-spacing: 1px;
+      letter-spacing: -2px;
       font-size: 2.5rem;
       line-height: 2.7rem;
       text-align: left;
       color: $color-white;
       white-space: normal;
       width: 60vw;
+      font-weight: 900;
 
       span {
-        color: $color-pink;
+        color: $color-yellow;
       }
     }
     .subtitle {
@@ -43,6 +44,11 @@
       text-align: left;
       font-weight: 300;
       width: 60%;
+    }
+    @include breakpoint-md {
+      h1 {
+        letter-spacing: -3px;
+      }
     }
   }
 
@@ -55,12 +61,12 @@
         width: 40vw;
       }
       .subtitle {
-        width: 40%;
+        width: 50%;
       }
     }
 
     img {
-      object-position: center;
+      // object-position: center;
       height: 100vh;
     }
   }
