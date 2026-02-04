@@ -1,58 +1,12 @@
-//BREAKPOINTS
-$breakpoint-sm: 576px;
-$breakpoint-md: 768px;
-$breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;
-$breakpoint-xxl: 1400px;
+@use "./variables" as v;
+@use "sass:map";
 
-/// COLORS
-
-$color-deep-black: #000;
-$color-white: #ffffff;
-$color-black: #333333;
-$color-orange: #ff461e;
-$color-yellow: #fff100;
-$color-pink: #fa0cf7;
-//FONT
-$roboto: "Roboto Mono", monospace;
-$poppins: "Poppins", serif;
-$epilogue: "Epilogue", sans-serif;
-
-//BORDER
-$border: 2px solid $color-black;
-$borderRadius: 33px;
-$borderSpacing: 10px;
-
-//SPACING
-$smallPageGap: 3rem;
-$pageGap: 5rem;
-
-@mixin breakpoint-sm {
-  @media (min-width: #{$breakpoint-sm}) {
-    @content;
-  }
-}
-
-@mixin breakpoint-md {
-  @media (min-width: #{$breakpoint-md}) {
-    @content;
-  }
-}
-
-@mixin breakpoint-lg {
-  @media (min-width: #{$breakpoint-lg}) {
-    @content;
-  }
-}
-
-@mixin breakpoint-xl {
-  @media (min-width: #{$breakpoint-xl}) {
-    @content;
-  }
-}
-
-@mixin breakpoint-xxl {
-  @media (min-width: #{$breakpoint-xxl}) {
-    @content;
+@mixin respond($size) {
+  @if map.has-key(v.$breakpoints, $size) {
+    @media (min-width: map.get(v.$breakpoints, $size)) {
+      @content;
+    }
+  } @else {
+    @error "Breakpoint `#{$size}` does not exist. Available: #{map.keys(v.$breakpoints)}";
   }
 }

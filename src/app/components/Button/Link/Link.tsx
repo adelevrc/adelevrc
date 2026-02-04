@@ -1,5 +1,7 @@
 import Link from "next/link";
 import style from "./link.module.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 interface ButtonLinkProps {
   title: string;
   href: string;
@@ -19,6 +21,7 @@ const ButtonLink = ({
       target={targetBlank ? "_blank" : "_self"}
     >
       {title}
+      <FontAwesomeIcon icon={faArrowRight} />
     </Link>
   );
 };

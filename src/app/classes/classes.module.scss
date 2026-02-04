@@ -1,162 +1,169 @@
-@import "@/app/styles/mixins";
+@use "@/app/styles/mixins" as m;
+@use "@/app/styles/variables" as v;
 
 .main {
   display: flex;
   flex-direction: column;
-  gap: $smallPageGap;
-  a {
-    margin-top: $smallPageGap;
-
-    @include breakpoint-lg {
-      margin-top: $pageGap;
-    }
-  }
-  @include breakpoint-lg {
-    gap: $pageGap;
-  }
-
-  h1 + p {
-    text-align: center;
-    padding: 0 1.5rem;
-  }
-
-  ul {
-    margin-top: $smallPageGap;
-    span {
-      font-style: normal;
-    }
-    span:before {
-      content: "\A";
-    }
-  }
-  button,
-  a {
-    align-self: center;
-  }
-  @include breakpoint-lg {
-    align-items: center;
-    h2 {
-      margin-top: 3rem;
-    }
-  }
-
-  li {
-    list-style-type: none;
-  }
-
-  h3 {
-    & {
-      @include breakpoint-lg {
-        text-transform: uppercase;
-        text-align: center;
-      }
-    }
-  }
-
-  .title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    position: relative;
-    h1 {
-      position: absolute;
-    }
-    img {
-      width: 100%;
-      object-fit: cover;
-      height: 30rem;
-    }
-  }
+  gap: 2rem;
 
   section {
+    padding: 1rem 1rem 5rem 1rem;
     display: flex;
     flex-direction: column;
-    gap: $pageGap;
-    line-height: 1.8;
-    padding: 0 1.5rem;
-    article {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      gap: $pageGap;
-      .underline {
-        text-decoration: underline;
-      }
-      div {
-        display: flex;
-        flex-direction: column;
-      }
-      gap: 1.5rem;
-    }
-    & {
-      @include breakpoint-xl {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        width: 80%;
-        gap: 5rem;
+    gap: 2rem;
 
-        button,
-        a {
-          align-self: center;
-          justify-self: flex-end;
-          bottom: 0;
-        }
-      }
-    }
-  }
-
-  .others {
-    display: flex;
-    flex-direction: column;
-    padding: 1.5rem 2.5rem;
-    width: 100%;
-    gap: 0.5rem;
-
-    & {
-      @include breakpoint-lg {
-        width: 80%;
-        margin-bottom: 2rem;
-      }
-    }
-  }
-
-  .moreInfo {
-    display: flex;
-    flex-direction: column;
     h2 {
-      text-align: center;
+      font-size: 3rem;
+      line-height: 3rem;
+      padding-top: 3rem;
     }
-    gap: 1.5rem;
-    padding: 1.5rem 2.5rem;
-    width: 100%;
 
-    & {
-      @include breakpoint-lg {
-        p {
-          width: 80%;
-          align-self: center;
+    ul {
+      li {
+        background-color: #edf2ed;
+        list-style: none;
+        padding: 1.6rem;
+        border-radius: 2rem;
+        width: 70vw;
+        position: relative;
+
+        .content {
+          display: flex;
+          flex-direction: column;
+          padding: 1.6rem;
+          border-radius: 2rem;
+          background-color: #edf2ed;
+
+          .banner {
+            background-color: #7b34ce;
+            border: 4px solid v.$color-pink;
+            width: 200px;
+            padding: 0.7rem 1rem;
+            border-radius: 1rem;
+            transform: rotate(15deg);
+            position: absolute;
+            right: -5%;
+            top: -15px;
+            color: v.$color-white;
+            text-align: center;
+          }
+
+          a {
+            align-self: flex-end;
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: fit-content;
+            gap: 0.2rem;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            font-family: v.$roboto;
+            font-weight: 300;
+
+            svg {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+
+        h3 {
+          font-family: v.$epilogue;
+        }
+      }
+
+      li:last-child {
+        background: none;
+        left: 15%;
+
+        .content {
+          position: relative;
+          z-index: 2;
+          padding: 1.6rem;
+          border-radius: 2rem;
+          background-color: #edf2ed;
+          width: 300px;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          width: 300px;
+          height: 50px;
+          background-color: #edf2ed;
+          transform: skewY(-5deg);
+          transform-origin: bottom left;
+          border-bottom-right-radius: 2rem;
+          border-bottom-left-radius: 2rem;
+          z-index: 1;
+        }
+      }
+
+      li:first-child {
+        background: none;
+
+        .content {
+          position: relative;
+          z-index: 2;
+          padding: 1.6rem;
+          border-radius: 2rem;
+          background-color: #edf2ed;
+          width: 300px;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          width: 300px;
+          height: 50px;
+          background-color: #edf2ed;
+          transform: skewY(5deg);
+          transform-origin: bottom right;
+          border-bottom-right-radius: 2rem;
+          border-bottom-left-radius: 2rem;
+          z-index: 1;
         }
       }
     }
-    .buttonsSection {
-      display: flex;
-      flex-direction: column;
-      align-self: center;
-      gap: 1.5rem;
-      margin-top: $pageGap;
-      a {
-        margin: 0;
-        width: 100%;
+  }
+
+  @include m.respond(md) {
+    section {
+      padding: 5rem 3rem;
+      gap: 5rem;
+
+      h2 {
+        text-align: center;
       }
 
-      & {
-        @include breakpoint-lg {
-          flex-direction: row;
-          gap: 3rem;
-          margin-bottom: 1.5rem;
+      a,
+      button {
+        align-self: center;
+      }
+
+      ul {
+        display: inline-flex;
+        justify-content: center;
+
+        li {
+          width: fit-content;
+        }
+
+        li:last-child {
+          left: unset;
+          top: 30px;
         }
       }
+    }
+  }
+
+  @include m.respond(xxl) {
+    align-items: center;
+
+    section {
+      max-width: 1400px;
     }
   }
 }

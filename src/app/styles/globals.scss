@@ -1,8 +1,8 @@
-@import "./mixins";
-
+@use "./mixins" as m;
+@use "./variables" as v;
 :root {
   --max-width: 1200px;
-  --font-mono: $poppins;
+  --font-mono: v.$poppins;
 }
 
 * {
@@ -13,23 +13,23 @@
 
 html,
 body {
-  font-family: $poppins;
+  font-family: v.$poppins;
   max-width: 100vw;
   overflow-x: hidden;
-  color: $color-black;
+  color: v.$color-black;
 }
 
 h1,
 h2 {
-  font-family: $epilogue;
-  color: $color-deep-black;
+  font-family: v.$epilogue;
+  color: v.$color-black;
 }
 
 h3,
 h4,
 h5,
 h6 {
-  font-family: $poppins;
+  font-family: v.$poppins;
 }
 
 h2 {
@@ -57,7 +57,7 @@ a,
 button {
   color: inherit;
   text-decoration: none;
-  font-family: $poppins;
+  font-family: v.$poppins;
 }
 strong {
   font-weight: 200;

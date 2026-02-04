@@ -1,0 +1,29 @@
+//BREAKPOINTS
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+/// COLORS
+$color-white: #ffffff;
+$color-black: #000;
+$color-orange: #ff461e;
+$color-yellow: #fff100;
+$color-pink: #fa0cf7;
+$color-green: #98e891;
+//FONT
+$roboto: "Roboto Mono", monospace;
+$poppins: "Poppins", serif;
+$epilogue: "Epilogue", sans-serif;
+
+//BORDER
+$border: 2px solid $color-black;
+$borderRadius: 33px;
+$borderSpacing: 10px;
+
+//SPACING
+$smallPageGap: 3rem;
+$pageGap: 5rem;

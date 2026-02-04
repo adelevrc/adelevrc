@@ -1,20 +1,19 @@
-@import "../../styles/mixins";
+@use "@/app/styles/mixins" as m;
+@use "@/app/styles/variables" as v;
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   padding: 1rem;
-  color: $color-black;
+  color: v.$color-black;
   position: fixed;
   width: 100vw;
-  z-index: 2;
+  z-index: 100;
   height: 4rem;
   will-change: background-color, box-shadow, backdrop-filter, color;
 
-  @include breakpoint-xl {
+  @include m.respond(xl) {
     align-items: center;
     padding: 1rem 1.5rem;
     height: 4rem;
@@ -24,37 +23,39 @@
     left: 2%;
     top: 2%;
     border-radius: 8px;
-    color: $color-white;
+    color: v.$color-white;
   }
 
   .logo {
     white-space: nowrap;
     width: 100%;
-    font-family: $epilogue;
+    font-family: v.$epilogue;
     font-weight: 900;
-    color: $color-white;
+    color: v.$color-white;
 
-    @include breakpoint-xl {
+    @include m.respond(xl) {
       margin-left: 0;
-      width: -webkit-fit-content;
-      width: -moz-fit-content;
       width: fit-content;
     }
   }
+
   .name {
     font-size: 1rem;
   }
+
   .line {
     display: block;
     height: 4px;
     width: 100%;
     border-radius: 10px;
-    background: $color-white;
+    background: v.$color-white;
   }
+
   .lineOne {
     transform-origin: 25% 0%;
     transition: transform 0.4s ease-in-out;
   }
+
   .lineTwo {
     transition: transform 0.2s ease-in-out;
   }
@@ -63,6 +64,7 @@
     transform-origin: 5% 100%;
     transition: transform 0.4s ease-in-out;
   }
+
   .lineOneRotation {
     transform: rotate(45deg);
   }
@@ -84,8 +86,6 @@
 
   .menuIcon {
     align-self: center;
-    display: -webkit-boxs;
-    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -94,7 +94,8 @@
     cursor: pointer;
     background: none;
     border: none;
-    @include breakpoint-xl {
+
+    @include m.respond(xl) {
       display: none;
     }
 
@@ -107,17 +108,15 @@
 
   nav {
     position: fixed;
-    top: 3rem;
     top: -100vh;
     height: 100%;
     width: 100%;
     background-size: cover;
-    -webkit-transition: top 0.3s ease;
     transition: top 0.3s ease;
-    z-index: 2;
+    z-index: 100;
     left: 0;
 
-    @include breakpoint-xl {
+    @include m.respond(xl) {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -132,10 +131,10 @@
   nav ul {
     list-style-type: none;
     padding: 50px 20px;
-    background: $color-pink;
+    background: v.$color-pink;
     height: calc(100vh - 4rem);
 
-    @include breakpoint-xl {
+    @include m.respond(xl) {
       display: flex;
       justify-content: center;
       gap: 3rem;
@@ -147,10 +146,10 @@
 
   nav ul li {
     margin: 50px 0;
-    background-color: $color-white;
+    background-color: v.$color-white;
     padding: 1rem;
 
-    @include breakpoint-xl {
+    @include m.respond(xl) {
       display: inline;
       margin: unset;
       background-color: unset;
@@ -160,14 +159,15 @@
   nav ul li a {
     text-decoration: none;
     font-size: 1rem;
-    font-family: $roboto;
+    font-family: v.$roboto;
 
-    @include breakpoint-lg {
+    @include m.respond(lg) {
       font-size: 0.8rem;
       font-weight: 200;
     }
+
     &:hover {
-      color: $color-orange;
+      color: v.$color-orange;
     }
   }
 
@@ -175,13 +175,16 @@
     top: 4rem;
   }
 }
+
 .headerOpen {
-  background-color: $color-pink;
+  background-color: v.$color-pink;
   backdrop-filter: unset;
+
   .logo {
-    color: $color-deep-black;
+    color: v.$color-black;
   }
+
   .line {
-    background-color: $color-deep-black;
+    background-color: v.$color-black;
   }
 }

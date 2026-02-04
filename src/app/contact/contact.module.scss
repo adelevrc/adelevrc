@@ -1,4 +1,6 @@
-@import "@/app/styles/mixins";
+@use "@/app/styles/mixins" as m;
+@use "@/app/styles/variables" as v;
+
 .main {
   display: flex;
   flex-direction: column;
@@ -13,30 +15,35 @@
     .global {
       display: flex;
       gap: 3rem;
-      max-width: $breakpoint-xl;
+      max-width: map-get(v.$breakpoints, "xl");
       a {
         align-self: center;
       }
-      @include breakpoint-lg {
+
+      @include m.respond(lg) {
         width: 100%;
         flex-direction: row;
         justify-content: flex-start;
       }
     }
+
     .informations {
       display: flex;
       flex-direction: column;
       align-self: flex-start;
       gap: 3rem;
     }
+
     p {
       text-align: start;
       width: 100%;
-      @include breakpoint-lg {
+
+      @include m.respond(lg) {
         width: 80%;
       }
     }
-    @include breakpoint-lg {
+
+    @include m.respond(lg) {
       padding: 3rem;
     }
 
@@ -45,7 +52,8 @@
       flex-direction: column;
       gap: 1.5rem;
       align-items: center;
-      @include breakpoint-lg {
+
+      @include m.respond(lg) {
         width: 55%;
       }
     }

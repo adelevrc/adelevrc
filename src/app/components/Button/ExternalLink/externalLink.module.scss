@@ -1,16 +1,37 @@
-@import "../../../styles/mixins";
+@use "@/app/styles/mixins" as m;
+@use "@/app/styles/variables" as v;
 
 .link {
-  padding: 0.5rem 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2.8rem;
+  background-color: v.$color-pink;
   border-radius: 33px;
-  border: 5px solid $color-black;
-  font-weight: 700;
+  border: none;
   cursor: pointer;
   text-align: center;
+  white-space: nowrap;
+  font-family: v.$roboto;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: -0.01ch;
+  color: v.$color-white;
+  font-size: 0.9rem;
   width: fit-content;
-  text-wrap: nowrap;
+
+  transition: transform 0.3s ease;
+
   &:hover {
-    border-color: $color-orange;
-    color: $color-orange;
+    transform: scale(1.05);
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  @include m.respond(md) {
+    font-size: 0.9rem;
   }
 }

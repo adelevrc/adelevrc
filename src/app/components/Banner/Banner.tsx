@@ -9,6 +9,8 @@ const Banner = () => {
       Développer votre <span>force</span> grâce au yoga
     </>
   );
+  const subtitles =
+    " Affûter votre corps, développer votre esprit sans vous prendre au sérieux.";
   return (
     <section className={styles.banner}>
       <Image
@@ -19,11 +21,8 @@ const Banner = () => {
         className='object-cover'
       />
       <div className={styles.titleContainer}>
-        <PageHeader title={title} />
-        <p className={styles.subtitle}>
-          Affûter votre corps, développer votre esprit sans vous prendre au
-          sérieux.
-        </p>
+        <PageHeader title={title} subtitles={subtitles} color='transparent' />
+        <p className={styles.subtitle}></p>
       </div>
     </section>
   );

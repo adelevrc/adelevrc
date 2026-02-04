@@ -1,23 +1,26 @@
-@import "../../styles/mixins";
+@use "@/app/styles/mixins" as m;
+@use "@/app/styles/variables" as v;
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   button {
     background-color: transparent;
     display: flex;
     align-items: center;
     cursor: pointer;
-    color: $color-black;
+    color: v.$color-black;
   }
 
-  @include breakpoint-md {
+  @include m.respond(md) {
     border-bottom-style: solid;
     border-width: 1px;
     border-color: rgba(237 242 237 / 1);
   }
-  @include breakpoint-lg {
+
+  @include m.respond(lg) {
     flex-direction: row;
     align-items: stretch;
   }
@@ -31,12 +34,12 @@
 
   p {
     font-weight: 700;
-    font-family: $roboto;
+    font-family: v.$roboto;
     font-size: 1.2rem;
     letter-spacing: -1px;
   }
 
-  @include breakpoint-lg {
+  @include m.respond(lg) {
     width: 30vw;
     padding: 1rem 2rem;
     border-right-style: solid;
@@ -48,7 +51,8 @@
 .carousel {
   overflow: hidden;
   width: 100%;
-  @include breakpoint-md {
+
+  @include m.respond(md) {
     white-space: nowrap;
   }
 }
@@ -62,7 +66,7 @@
   transition: transform 0.4s ease;
   transform: none;
 
-  @include breakpoint-md {
+  @include m.respond(md) {
     width: max-content;
     animation: scroll 30s linear infinite;
     border-width: 1px;
@@ -70,7 +74,7 @@
     padding-bottom: 1rem;
   }
 
-  @include breakpoint-lg {
+  @include m.respond(lg) {
     padding-top: 1rem;
   }
 }
@@ -95,20 +99,22 @@
 
   .learnMore {
     border: none;
-    font-family: $roboto;
+    font-family: v.$roboto;
     font-size: 0.7rem;
     font-weight: 200;
     line-height: 1rem;
     text-transform: uppercase;
     gap: 0.7rem;
+
     svg {
-      color: $color-black;
+      color: v.$color-black;
     }
   }
 
-  @include breakpoint-md {
+  @include m.respond(md) {
     flex: 0 0 auto;
     padding: 0;
+
     .carouselItemContainer {
       border: none;
       width: 45vh;
@@ -116,7 +122,8 @@
       padding: 0 1.6rem;
     }
   }
-  @include breakpoint-lg {
+
+  @include m.respond(lg) {
     .carouselItemContainer {
       width: 70vh;
     }
@@ -126,36 +133,38 @@
 .carouselText,
 .carouselName {
   font-size: 0.7rem;
-  font-family: $roboto;
+  font-family: v.$roboto;
   font-weight: 300;
   line-height: 1rem;
   text-transform: uppercase;
-  color: $color-deep-black;
+  color: v.$color-black;
 }
 
 .carouselName {
   background-color: rgba(237 242 237/1);
   border-radius: 4px;
-  padding: 0 0.8rem;
+  padding: 0.3rem 0.8rem;
   font-weight: 500;
-  color: $color-white;
-  padding: 0.3rem;
+  color: v.$color-white;
 }
+
 .controls {
   align-items: center;
   justify-content: center;
   display: flex;
   width: 100%;
   gap: 1rem;
+
   button {
     height: 42px;
     width: 42px;
-    border: 1px solid $color-deep-black;
+    border: 1px solid v.$color-black;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
   }
-  @include breakpoint-md {
+
+  @include m.respond(md) {
     display: none;
   }
 }

@@ -10,8 +10,6 @@
   },
   "dependencies": {
     "@apollo/client": "^4.0.11",
-    "@clerk/localizations": "^3.32.1",
-    "@clerk/nextjs": "^6.36.5",
     "@emailjs/browser": "^4.4.1",
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
@@ -23,16 +21,13 @@
     "graphql": "^16.12.0",
     "graphql-tag": "^2.12.6",
     "gsap": "^3.14.2",
-    "motion": "^12.26.1",
     "next": "^16.1.1",
     "next-intl": "^4.7.0",
     "nodemailer": "^6.9.15",
-    "pdf-lib": "^1.17.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.53.0",
     "sass": "^1.77.8",
-    "styled-components": "^6.1.12",
     "typescript-eslint": "^8.17.0"
   },
   "devDependencies": {

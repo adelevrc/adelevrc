@@ -1,0 +1,10 @@
+@use "@/app/styles/mixins" as m;
+@use "@/app/styles/variables" as v;
+
+.movingText {
+  color: v.$color-black;
+}
+
+.orange {
+  color: v.$color-orange;
+}

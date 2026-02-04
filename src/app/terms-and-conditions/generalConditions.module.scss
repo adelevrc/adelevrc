@@ -1,23 +1,28 @@
-@import "@/app/styles/mixins";
+@use "@/app/styles/mixins" as m;
+@use "@/app/styles/variables" as v;
 
 .section {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 2rem;
-  background-color: $color-white;
-  @include breakpoint-lg {
+  background-color: v.$color-white;
+
+  @include m.respond("lg") {
     padding: 5rem;
   }
+
   h1 {
-    color: $color-black;
+    color: v.$color-black;
   }
+
   h2 {
-    color: $color-black;
+    color: v.$color-black;
     text-transform: uppercase;
   }
+
   h3,
   p {
-    color: $color-black;
+    color: v.$color-black;
   }
 }

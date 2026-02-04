@@ -1,12 +1,9 @@
-// src/proxy/proxy.ts
 import type { NextRequest } from 'next/server'
-import authProxy from './auth.proxy'
+import { NextResponse } from 'next/server'
 
 export default function proxy(req: NextRequest) {
-  const authResult = authProxy(req)
-  if (authResult) return authResult
-
-
+  // Ici tu peux faire d'autres traitements si nécessaire
+  return NextResponse.next()
 }
 
 export const config = {

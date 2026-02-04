@@ -1,10 +1,7 @@
-import { frFR } from "@clerk/localizations";
-import { ClerkProvider } from "@clerk/nextjs";
 import { Poppins, Roboto_Mono, Epilogue } from "next/font/google";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Providers from "./providers";
-
 import "@/app/styles/globals.scss";
 
 export const poppins = Poppins({
@@ -30,13 +27,11 @@ export default async function LocaleLayout({
   return (
     <html lang='fr'>
       <body>
-        <ClerkProvider localization={frFR}>
-          <Providers>
-            <Header />
-            {children}
-            <Footer />
-          </Providers>
-        </ClerkProvider>
+        <Providers>
+          <Header />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

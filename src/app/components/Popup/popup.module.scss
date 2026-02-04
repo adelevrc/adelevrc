@@ -1,5 +1,7 @@
-@import "../../styles/mixins";
-//POPUP
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
+// POPUP
 .overlay {
   position: fixed;
   inset: 0;
@@ -13,13 +15,14 @@
 .popup {
   display: flex;
   flex-direction: column;
-  background: $color-white;
+  background: v.$color-white;
   padding: 2rem;
   border-radius: 8px;
   gap: 2rem;
   width: 95%;
   overflow: auto;
   height: 80vh;
+
   button {
     align-self: flex-end;
     position: relative;
@@ -28,20 +31,22 @@
     align-items: center;
     justify-content: center;
     padding: 1.5rem;
-    background-color: $color-deep-black;
-    color: $color-white;
+    background-color: v.$color-black;
+    color: v.$color-white;
     border: none;
     cursor: pointer;
     border-radius: 10rem;
-    font-family: $roboto;
+    font-family: v.$roboto;
     font-weight: 200;
     text-transform: uppercase;
     font-size: 0.8rem;
-    @include breakpoint-lg {
+
+    @include m.respond(lg) {
       padding: 1rem 2rem;
       height: 2rem;
     }
   }
+
   .label {
     display: inline-flex;
     align-items: center;
@@ -64,8 +69,9 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    font-family: $roboto;
+    font-family: v.$roboto;
     list-style-type: none;
+
     li {
       div {
         p {
@@ -78,7 +84,8 @@
       }
     }
   }
-  @include breakpoint-xl {
+
+  @include m.respond(xl) {
     width: 1000px;
   }
 }
@@ -97,7 +104,6 @@
     opacity: 0;
     transform: translateY(30px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -109,7 +115,6 @@
     opacity: 1;
     transform: translateY(0);
   }
-
   to {
     opacity: 0;
     transform: translateY(30px);

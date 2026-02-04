@@ -1,11 +1,45 @@
-@import "../../styles/mixins";
+@use "@/app/styles/mixins" as m;
+@use "@/app/styles/variables" as v;
+
 $image-ratio-desktop: 33.33%;
 $image-ratio-mobile: 100%;
 
-.title {
-  color: $color-black;
-  font-size: 50px;
-  margin-top: 3rem;
-  text-align: center;
-  padding-top: 3rem;
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 1rem;
+  height: 70vh;
+  width: 100%;
+  align-items: flex-start;
+  gap: 3rem;
+  background-color: v.$color-orange;
+
+  @include m.respond(lg) {
+    justify-content: center;
+    height: 80vh;
+    padding: 3rem;
+  }
+
+  .title {
+    color: v.$color-white;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  p {
+    color: v.$color-white;
+    font-weight: 300;
+
+    span {
+      display: block;
+    }
+  }
+}
+
+.purple {
+  background-color: #7b34ce;
+}
+
+.transparent {
+  background-color: transparent;
 }

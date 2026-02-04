@@ -1,4 +1,6 @@
-@import "../../styles/mixins";
+@use "@/app/styles/mixins" as m;
+@use "@/app/styles/variables" as v;
+
 .banner {
   display: flex;
   flex-direction: column;
@@ -6,9 +8,10 @@
   align-items: flex-start;
   padding: 0rem 1.5rem;
   gap: 1rem;
-  background-color: $color-yellow;
+  background-color: v.$color-yellow;
   position: relative;
   height: 100vh;
+
   img {
     object-fit: cover;
     object-position: right center;
@@ -23,36 +26,39 @@
     align-self: center;
     position: relative;
     margin: auto;
+
     h1 {
       text-transform: none;
       letter-spacing: -2px;
       font-size: 2.5rem;
       line-height: 2.7rem;
       text-align: left;
-      color: $color-white;
+      color: v.$color-white;
       white-space: normal;
       width: 60vw;
       font-weight: 900;
 
       span {
-        color: $color-yellow;
+        color: v.$color-yellow;
       }
     }
+
     .subtitle {
       z-index: 1;
-      color: $color-white;
+      color: v.$color-white;
       text-align: left;
       font-weight: 300;
       width: 60%;
     }
-    @include breakpoint-md {
+
+    @include m.respond(md) {
       h1 {
         letter-spacing: -3px;
       }
     }
   }
 
-  @include breakpoint-md {
+  @include m.respond(md) {
     .titleContainer {
       h1 {
         font-size: 3.5rem;
@@ -60,23 +66,24 @@
         align-self: flex-start;
         width: 40vw;
       }
+
       .subtitle {
         width: 50%;
       }
     }
 
     img {
-      // object-position: center;
       height: 100vh;
     }
   }
-  @include breakpoint-lg {
+
+  @include m.respond(lg) {
     .titleContainer {
       right: 10%;
     }
   }
 
-  @include breakpoint-xl {
+  @include m.respond(xl) {
     .titleContainer {
       right: 20%;
     }

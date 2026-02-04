@@ -1,11 +1,14 @@
-@import "@/app/styles/mixins";
+@use "@/app/styles/mixins" as m;
+@use "@/app/styles/variables" as v;
 
 .main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
   h2 {
-    @include breakpoint-lg {
+    @include m.respond(lg) {
+      // Ajoute ici tes styles pour lg
     }
   }
 
@@ -15,11 +18,13 @@
     gap: 3rem;
     padding: 3rem;
     line-height: 30px;
-    color: $color-black;
+    color: v.$color-black;
+
     a {
       align-self: center;
     }
   }
+
   .popup {
     position: fixed;
     inset: 0;
@@ -27,16 +32,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $color-orange;
-    gap: $smallPageGap;
-    padding: $pageGap;
+    background-color: v.$color-orange;
+    gap: v.$smallPageGap;
+    padding: v.$pageGap;
+
     h1 + p {
       font-size: 1.5rem;
     }
+
     p {
       text-align: center;
     }
   }
+
   .wrapper {
     position: relative;
     width: 100%;

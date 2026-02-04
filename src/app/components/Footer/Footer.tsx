@@ -1,64 +1,8 @@
 "use client";
-import useEmailStatus from "@/app/hooks/useEmailStatus";
-import { SUBSCRIBE_NEWSLETTER_MUTATION } from "@/graphql/queries/newsletter.mutation";
-import {
-  SubscribeNewsletterInput,
-  SubscribeNewsletterResponse,
-} from "@/graphql/types/newsletter.types";
-import { useMutation } from "@apollo/client/react";
 import Link from "next/link";
-import { useForm } from "react-hook-form";
 import style from "./footer.module.scss";
 
 const Footer = () => {
-  const { emailStatus, setEmailStatus } = useEmailStatus();
-  const { register, watch, handleSubmit } = useForm();
-
-  const [
-    subscribeNewsletter,
-    { loading: mutationLoading, error: mutationError },
-  ] = useMutation<
-    SubscribeNewsletterResponse,
-    { input: SubscribeNewsletterInput }
-  >(SUBSCRIBE_NEWSLETTER_MUTATION);
-
-  const onSubmit = async (data: any) => {
-    setEmailStatus((prevState) => ({
-      ...prevState,
-      isPending: true,
-    }));
-
-    try {
-      const input: SubscribeNewsletterInput = {
-        email: watch("email"),
-      };
-
-      const response = await subscribeNewsletter({
-        variables: { input },
-      });
-
-      if (response.data) {
-        setEmailStatus((prevState) => ({
-          ...prevState,
-          isSend: true,
-          isPending: false,
-        }));
-      } else {
-        setEmailStatus((prevState) => ({
-          ...prevState,
-          isNotSend: true,
-          isPending: false,
-        }));
-      }
-    } catch (error) {
-      setEmailStatus((prevState) => ({
-        ...prevState,
-        isNotSend: true,
-        isPending: false,
-      }));
-    }
-  };
-
   return (
     <footer className={style.footer}>
       <p> Adèle Vercaygne </p>
@@ -76,46 +20,8 @@ const Footer = () => {
           <li>
             <Link href={"/contact"}> Contact </Link>
           </li>
-          <li>
-            <Link href={"/newsletter"}>Newsletter</Link>
-          </li>
         </ul>
-        <div className={style.newsletter}>
-          <h2> S'inscrire à la newsletter </h2>
-          {mutationError && (
-            <div className={style.error}>Une erreur s'est produite</div>
-          )}
-          {emailStatus.isSend && (
-            <div className={style.success}>
-              Vous êtes inscrit•e à la newsletter !
-            </div>
-          )}
-          {mutationLoading && (
-            <div className={style.loaderContainer}>
-              <div className={style.loader}></div>
-            </div>
-          )}
-          {!mutationError && !mutationLoading && !emailStatus.isSend && (
-            <form onSubmit={handleSubmit(onSubmit)}>
-              <input
-                id='email'
-                type='email'
-                placeholder=' '
-                {...register("email", {
-                  required: "L'email est requis",
-                  pattern: {
-                    value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-                    message: "L'email est invalide",
-                  },
-                })}
-              />
-              <label>Email</label>
-              <button type='submit' className={style.arrowButton}>
-                →
-              </button>
-            </form>
-          )}
-        </div>
+        <div className={style.newsletter}></div>
       </div>
       <div className={style.socialMedia}>
         <ul>

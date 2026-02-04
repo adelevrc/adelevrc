@@ -58,7 +58,7 @@ const Header = () => {
 
       const st = ScrollTrigger.create({
         trigger: document.documentElement,
-        start: "top+=60 top",
+        start: "top+=300 top",
         onEnter: show,
         onLeaveBack: hide,
       });

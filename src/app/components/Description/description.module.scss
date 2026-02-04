@@ -1,4 +1,5 @@
-@import "../../styles/mixins";
+@use "@/app/styles/mixins" as m;
+@use "@/app/styles/variables" as v;
 
 .description {
   display: flex;
@@ -14,24 +15,25 @@
     text-align: center;
     font-size: 3rem;
   }
+
   span {
-    color: $color-orange;
+    color: v.$color-orange;
   }
 
   p {
     text-align: center;
     font-size: 1.2rem;
   }
-  @include breakpoint-md {
-    padding: 10rem 10rem 10rem 10rem;
+
+  @include m.respond(md) {
+    padding: 10rem;
 
     h2 {
       line-height: 5rem;
-      text-align: center;
       font-size: 5rem;
     }
+
     p {
-      text-align: center;
       font-size: 1.2rem;
     }
   }
