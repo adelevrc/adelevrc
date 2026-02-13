@@ -196,20 +196,20 @@ const Header = () => {
         <ul>
           <li>
             <Link
-              href={"/about"}
-              onClick={handleLinkClick}
-              tabIndex={menuOpen ? 0 : -1}
-            >
-              À propos
-            </Link>
-          </li>
-          <li>
-            <Link
               href={"/method"}
               onClick={handleLinkClick}
               tabIndex={menuOpen ? 0 : -1}
             >
               Méthode
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={"/about"}
+              onClick={handleLinkClick}
+              tabIndex={menuOpen ? 0 : -1}
+            >
+              Mon histoire
             </Link>
           </li>
           <li>

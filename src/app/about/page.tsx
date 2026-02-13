@@ -2,7 +2,7 @@ import ButtonLink from "@/app/components/Button/Link/Link";
 import PageHeader from "@/app/components/PageHeader/PageHeader";
 import type { Metadata } from "next";
 import Image from "next/image";
-import laughImage from "@/app/images/smile.png";
+import laughImage from "@/app/images/adele_sourire.svg";
 import styles from "./about.module.scss";
 
 export type Props = {

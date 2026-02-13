@@ -1,0 +1,18 @@
+@use "@/app/styles/mixins" as m;
+@use "@/app/styles/variables" as v;
+
+.stickySection {
+  .stickyList {
+    position: relative;
+    width: 100%;
+    // gap: 1rem;
+
+    .item {
+      display: flex;
+      flex-flow: column;
+      position: sticky;
+      background-color: v.$color-white;
+      padding: 1rem 0;
+    }
+  }
+}

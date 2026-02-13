@@ -7,7 +7,7 @@ import StyledContainer from "../components/StyledContainer/StyledContainer";
 import ExternalLink from "../components/Button/ExternalLink/ExternalLink";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import Title from "../components/Title/Title";
+import Title from "../components/Title/DynamicTitle";
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {

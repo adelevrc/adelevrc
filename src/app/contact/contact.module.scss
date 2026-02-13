@@ -15,7 +15,7 @@
     .global {
       display: flex;
       gap: 3rem;
-      max-width: map-get(v.$breakpoints, "xl");
+      max-width: 1200px;
       a {
         align-self: center;
       }

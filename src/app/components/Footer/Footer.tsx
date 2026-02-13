@@ -9,10 +9,10 @@ const Footer = () => {
       <div className={style.firstSection}>
         <ul className={style.pagesList}>
           <li>
-            <Link href={"/about"}> À propos </Link>
+            <Link href={"/method"}> Méthode</Link>
           </li>
           <li>
-            <Link href={"/method"}> Méthode</Link>
+            <Link href={"/about"}> Mon histoire </Link>
           </li>
           <li>
             <Link href={"/classes"}>Les cours</Link>

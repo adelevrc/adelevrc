@@ -8,3 +8,45 @@
 .orange {
   color: v.$color-orange;
 }
+
+//MAIN TITLE COMPONENT
+.mainTitle {
+  font-weight: 900;
+  font-size: 3rem;
+  letter-spacing: -4px;
+  position: relative;
+  margin-left: 1rem;
+  margin-right: 0.2rem;
+  .spanWrapper {
+    position: relative;
+    display: inline-block;
+    width: 220px;
+    height: 1.2em;
+
+    width: 100%;
+    span {
+      display: block;
+      background-color: v.$color-pink;
+      color: v.$color-white;
+      width: fit-content;
+      position: absolute;
+      // top: 0;
+      left: 0;
+      white-space: nowrap;
+      clip-path: polygon(
+        20% 0%,
+        100% 0,
+        100% 20%,
+        100% 92%,
+        54% 100%,
+        21% 94%,
+        0 95%,
+        0 0
+      );
+    }
+  }
+  @include m.respond(lg) {
+    width: 75%;
+    margin: 0;
+  }
+}

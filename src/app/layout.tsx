@@ -17,7 +17,7 @@ export const roboto = Roboto_Mono({
 
 export const epilogue = Epilogue({
   subsets: ["latin"],
-  weight: ["900"],
+  weight: ["500", "900"],
 });
 export default async function LocaleLayout({
   children,

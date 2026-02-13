@@ -1,4 +1,4 @@
-import Title from "../Title/Title";
+import Title from "../Title/DynamicTitle";
 import style from "./description.module.scss";
 
 const Description = () => {
